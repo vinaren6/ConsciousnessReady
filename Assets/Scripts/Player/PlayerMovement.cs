@@ -34,14 +34,31 @@ public class PlayerMovement : MonoBehaviour
         if (rb2d.velocity.magnitude < maxSpeed)
             {
             movement = movement.normalized;
-            if (rb2d.velocity.y < 1 && rb2d.velocity.y > 0)
+            if (rb2d.velocity.y < 4 && rb2d.velocity.y > 4)
             {
-                movement.y *= 2;
+                
+                
+                movement.y *= 15;
+                Debug.Log(movement.y);
             }
-                //velocity += movement.normalized * acceleration * Time.fixedDeltaTime;
+            if (rb2d.velocity.x < 4 && rb2d.velocity.x > 4)
+            {
+
+
+                movement.x *= 15;
+                Debug.Log(movement.x);
+            }
+            //velocity += movement.normalized * acceleration * Time.fixedDeltaTime;
             rb2d.AddForce(movement * acceleration * Time.fixedDeltaTime, ForceMode2D.Impulse);
+            Vector2 moveDirection = rb2d.velocity;
+            if (moveDirection != Vector2.zero)
+            {
+                float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+                //transform.rotation += 90;
             }
-        Debug.Log(rb2d.velocity.y);
+            }
+        
     }
     private void slowPlayer()
     {
