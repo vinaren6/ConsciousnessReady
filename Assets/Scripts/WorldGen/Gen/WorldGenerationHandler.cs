@@ -10,6 +10,11 @@ public class WorldGenerationHandler : MonoBehaviour
     public WorldGenSettings settings;
     public GameObject cell;
 
+    public CellRules[] cellRules;
+
+    [HideInInspector]
+    public CellRules[][] cellsRulles = new CellRules[4][];
+
     private int[,] world;
     private float worldSize;
 
@@ -25,8 +30,39 @@ public class WorldGenerationHandler : MonoBehaviour
             return;
         }
 
+        SeperateRules();
         GenerateGrid();
         GenerateCells();
+    }
+
+    private void SeperateRules() {
+        List<CellRules> cellRulesDefaltL = new List<CellRules>(), cellRulesOutpostL = new List<CellRules>(), cellRulesStartL = new List<CellRules>(), cellRulesEndL = new List<CellRules>();
+
+        foreach (CellRules rule in cellRules) {
+            switch (rule.type) {
+                case Enum.CellType.Default:
+                cellRulesDefaltL.Add(rule);
+                break;
+
+                case Enum.CellType.Outpost:
+                cellRulesOutpostL.Add(rule);
+                break;
+
+                case Enum.CellType.Start:
+                cellRulesStartL.Add(rule);
+                break;
+
+                case Enum.CellType.End:
+                cellRulesEndL.Add(rule);
+                break;
+            }
+        }
+
+        cellsRulles[0] = cellRulesDefaltL.ToArray();
+        cellsRulles[1] = cellRulesOutpostL.ToArray();
+        cellsRulles[2] = cellRulesStartL.ToArray();
+        cellsRulles[3] = cellRulesEndL.ToArray();
+
     }
 
     private void GenerateGrid() {
@@ -70,8 +106,8 @@ public class WorldGenerationHandler : MonoBehaviour
         //define outpost positions
         int outpostCount = 0;
         while (true) {
-            int x = Random.Range(1, wSize-1);
-            int y = Random.Range(1, wSize-1);
+            int x = Random.Range(1, wSize - 1);
+            int y = Random.Range(1, wSize - 1);
 
             if (world[x, y] == 0) {
                 world[x, y] = 1;
@@ -97,7 +133,11 @@ public class WorldGenerationHandler : MonoBehaviour
     }
 
     private void GenerateCells() {
+
         int wSize = (int)(worldSize + 0.5f);
+
+        Cell[,] worldObjs = new Cell[wSize, wSize];
+
         for (int x = 0; x < wSize; x++) {
             for (int y = 0; y < wSize; y++) {
                 //only valid positions
@@ -109,9 +149,9 @@ public class WorldGenerationHandler : MonoBehaviour
                         (y + 0.5f) * settings.gridSize - worldSize * settings.gridSize / 2);
 
                     //apply type to cell
-                    if (world[x, y] != 0) {
-                        obj.GetComponent<Cell>().type = (Enum.CellType)world[x, y];
-                    }
+                    worldObjs[x, y] = obj.GetComponent<Cell>();
+                    worldObjs[x, y].type = (Enum.CellType)world[x, y];
+
                     switch (world[x, y]) {
                         case 0:
                         obj.name = "Default";
@@ -126,7 +166,29 @@ public class WorldGenerationHandler : MonoBehaviour
                         obj.name = "End";
                         break;
                     }
+
+                } else {
+                    worldObjs[x, y] = null;
                 }
+            }
+        }
+        for (int x = 0; x < wSize; x++) {
+            for (int y = 0; y < wSize; y++) {
+
+                if (x != 0) // left
+                    worldObjs[x, y].nabors[2] = worldObjs[x - 1, y];
+                if (x < wSize - 1) //right
+                    worldObjs[x, y].nabors[3] = worldObjs[x + 1, y];
+
+                if (y != 0) {
+                    if (x != -(y & 1)) {
+                        worldObjs[x, y].nabors[0] = worldObjs[x - (y & 1), y + 1];
+                    }
+                    if (x < wSize - (y & 1)) {
+                        worldObjs[x, y].nabors[0] = worldObjs[x + 1 - (y & 1), y + 1];
+                    }
+                }
+
             }
         }
     }
@@ -138,6 +200,9 @@ public class WorldGenerationHandler : MonoBehaviour
                 Destroy(children[i].gameObject);
         }
         //transform.position = new Vector3();
+#if UNITY_EDITOR
+        SeperateRules();
+#endif
         GenerateGrid();
         GenerateCells();
     }

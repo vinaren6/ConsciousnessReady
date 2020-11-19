@@ -154,11 +154,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   settings: {fileID: 11400000, guid: fcb2991448301ed40b606c08cd4cbb76, type: 2}
   cell: {fileID: 6918383508611067929, guid: 54c707ca34d4d094f9fab70f5786a3dd, type: 3}
+  cellRules:
+  - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
+  - {fileID: 11400000, guid: 85fd60b7060258b42bfa169f2a6c996c, type: 2}
+  - {fileID: 11400000, guid: eeaff838c64fca149aab2f8138e4ce10, type: 2}
+  cellRulesDefalt: []
+  cellRulesOutpost: []
+  cellRulesStart: []
+  cellRulesEnd: []
   debugData: 'Min Max Distance: (5.0, 8.0)
 
-    Size Offset: 2
+    Size Offset: 3.5
 
-    Grid Size: 16'
+    Grid Size:
+    40'
 --- !u!4 &29678144
 Transform:
   m_ObjectHideFlags: 0

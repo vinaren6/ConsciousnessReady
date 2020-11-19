@@ -10,7 +10,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1ee275ff0c4464397bcf3873650857, type: 3}
-  m_Name: Test Cell Rules
+  m_Name: Test Cell 1 Rules
   m_EditorClassIdentifier: 
+  title: Test Cell 1
   type: 0
-  id: 0
+  id: 2
+  cellsUpLeft: []
+  cellsUpRight: []
+  cellsLeft: []
+  cellsRight:
+  - {fileID: 11400000, guid: 85fd60b7060258b42bfa169f2a6c996c, type: 2}
+  cellsDownLeft: []
+  cellsDownRight: []

@@ -13,5 +13,6 @@ MonoBehaviour:
   m_Name: New World Gen Settings
   m_EditorClassIdentifier: 
   minMaxDistance: {x: 5, y: 8}
-  sizeOffset: 2
-  gridSize: 16
+  sizeOffset: 3.5
+  gridSize: 40
+  outpostAmount: 6
