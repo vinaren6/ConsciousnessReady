@@ -1,12 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "ScriptableObjects/WorldGenSettings")]
+[CreateAssetMenu(menuName = "ScriptableObjects/World Gen Settings")]
 public class WorldGenSettings : ScriptableObject
 {
-    public Vector2 minMaxDistance = new Vector2(5,8);
+    public Vector2 minMaxDistance = new Vector2(5, 8);
     public float sizeOffset = 2f;
     public float gridSize = 16f;
-
+    public int outpostAmount = 6;
 }

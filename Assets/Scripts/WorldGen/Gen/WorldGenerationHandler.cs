@@ -10,10 +10,8 @@ public class WorldGenerationHandler : MonoBehaviour
     public WorldGenSettings settings;
     public GameObject cell;
 
-    public int[,] world;
-
+    private int[,] world;
     private float worldSize;
-    private Vector2 center;
 
     [HideInInspector]
     public string debugData = "";
@@ -27,18 +25,18 @@ public class WorldGenerationHandler : MonoBehaviour
             return;
         }
 
-        Generate();
+        GenerateGrid();
         GenerateCells();
     }
 
-    private void Generate() {
+    private void GenerateGrid() {
         float degree = Random.Range(0f, Mathf.PI * 2f);
         float dist = Random.Range(settings.minMaxDistance.x, settings.minMaxDistance.y);
         worldSize = dist + settings.sizeOffset;
         int wSize = (int)(worldSize + 0.5f);
         world = new int[wSize, wSize];
 
-        center = new Vector2(Mathf.Sin(degree) * dist, Mathf.Cos(degree) * dist);
+        Vector2 center = new Vector2(Mathf.Sin(degree) * dist, Mathf.Cos(degree) * dist) / 2f;
 
 
 
@@ -53,18 +51,44 @@ public class WorldGenerationHandler : MonoBehaviour
 #if UNITY_EDITOR
                     DrawCros(x, y, Color.green);
                     cellCount++;
+#endif
                 } else {
+                    //set position to invalid
                     world[x, y] = -1;
+#if UNITY_EDITOR
                     DrawCros(x, y, Color.red);
 #endif
                 }
             }
         }
 
+        //define start and end positions
+        world[(int)(worldSize / 2f - center.x + 0.5f), (int)(worldSize / 2f - center.y + 0.5f)] = 2;
+        world[(int)(worldSize / 2f + center.x + 0.5f), (int)(worldSize / 2f + center.y + 0.5f)] = 3;
+
+
+        //define outpost positions
+        int outpostCount = 0;
+        while (true) {
+            int x = Random.Range(1, wSize-1);
+            int y = Random.Range(1, wSize-1);
+
+            if (world[x, y] == 0) {
+                world[x, y] = 1;
+                outpostCount++;
+                if (outpostCount >= settings.outpostAmount) {
+                    break;
+                }
+            }
+        }
+
+
         //place world in center
+        /*
         transform.position = new Vector3(
-            center.x * settings.gridSize / 2,
-            center.y * settings.gridSize / 2);
+            center.x * settings.gridSize,
+            center.y * settings.gridSize);
+        */
 
 #if UNITY_EDITOR
         debugData = $"Grid: {wSize}, {wSize}\nCell count: {cellCount} / {wSize * wSize}\nWorld size: {wSize * settings.gridSize}x{wSize * settings.gridSize}";
@@ -76,11 +100,32 @@ public class WorldGenerationHandler : MonoBehaviour
         int wSize = (int)(worldSize + 0.5f);
         for (int x = 0; x < wSize; x++) {
             for (int y = 0; y < wSize; y++) {
-                if (world[x, y] >= 0) {
+                //only valid positions
+                if (world[x, y] != -1) {
+                    //create cell
                     GameObject obj = Instantiate(cell, transform);
                     obj.transform.position = new Vector3(
                         (x + 0.5f) * settings.gridSize - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
                         (y + 0.5f) * settings.gridSize - worldSize * settings.gridSize / 2);
+
+                    //apply type to cell
+                    if (world[x, y] != 0) {
+                        obj.GetComponent<Cell>().type = (Enum.CellType)world[x, y];
+                    }
+                    switch (world[x, y]) {
+                        case 0:
+                        obj.name = "Default";
+                        break;
+                        case 1:
+                        obj.name = "Outpost";
+                        break;
+                        case 2:
+                        obj.name = "Start";
+                        break;
+                        case 3:
+                        obj.name = "End";
+                        break;
+                    }
                 }
             }
         }
@@ -92,8 +137,8 @@ public class WorldGenerationHandler : MonoBehaviour
             if (children[i].gameObject != gameObject)
                 Destroy(children[i].gameObject);
         }
-        transform.position = new Vector3();
-        Generate();
+        //transform.position = new Vector3();
+        GenerateGrid();
         GenerateCells();
     }
 
@@ -109,21 +154,20 @@ public class WorldGenerationHandler : MonoBehaviour
 
     private void DrawCros(int x, int y, Color color) {
         Debug.DrawLine(
-            new Vector2(x * settings.gridSize                     - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
-                        y * settings.gridSize                     - worldSize * settings.gridSize / 2),
+            new Vector2(x * settings.gridSize - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
+                        y * settings.gridSize - worldSize * settings.gridSize / 2),
             new Vector2(x * settings.gridSize + settings.gridSize - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
                         y * settings.gridSize + settings.gridSize - worldSize * settings.gridSize / 2),
-            color,    2f);
+            color, 2f);
 
         Debug.DrawLine(
             new Vector2(x * settings.gridSize + settings.gridSize - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
-                        y * settings.gridSize                     - worldSize * settings.gridSize / 2),
-            new Vector2(x * settings.gridSize                     - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
+                        y * settings.gridSize - worldSize * settings.gridSize / 2),
+            new Vector2(x * settings.gridSize - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
                         y * settings.gridSize + settings.gridSize - worldSize * settings.gridSize / 2),
-            color,    2f);
+            color, 2f);
     }
 
 #endif
-
 
 }

@@ -1,5 +1,4 @@
-﻿
-public class Enum
+﻿public class Enum
 {
     public enum CellType
     {
