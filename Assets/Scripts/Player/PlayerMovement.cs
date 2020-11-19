@@ -24,6 +24,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+        Debug.Log(movement);
     }
 
     private void FixedUpdate()
@@ -39,19 +40,28 @@ public class PlayerMovement : MonoBehaviour
                 
                 
                 movement.y *= 15;
-                Debug.Log(movement.y);
+             
             }
             if (rb2d.velocity.x < 4 && rb2d.velocity.x > 4)
             {
 
 
                 movement.x *= 15;
-                Debug.Log(movement.x);
+             
             }
             //velocity += movement.normalized * acceleration * Time.fixedDeltaTime;
             rb2d.AddForce(movement * acceleration * Time.fixedDeltaTime, ForceMode2D.Impulse);
             Vector2 moveDirection = rb2d.velocity;
-            if (moveDirection != Vector2.zero)
+       
+            if (moveDirection.y < 0.3 && moveDirection.y > -0.3 && moveDirection.x == 0)
+            {
+                moveDirection = Vector2.zero;
+            }
+            if (moveDirection.x < 0.3 && moveDirection.x > -0.3 && moveDirection.y == 0)
+            {
+                moveDirection = Vector2.zero;
+            }
+            if (moveDirection != Vector2.zero )
             {
                 float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
@@ -93,8 +103,8 @@ public class PlayerMovement : MonoBehaviour
             if (rb2d.velocity.y < 0.1 && rb2d.velocity.y > -0.1)
             {
                 Vector2 oldMovement = rb2d.velocity;
-                oldMovement.y = 0;
-                rb2d.velocity = oldMovement;
+                //oldMovement.y = 0;
+               // rb2d.velocity = oldMovement;
             }
             if (rb2d.velocity.y > 0)
             {
@@ -114,8 +124,8 @@ public class PlayerMovement : MonoBehaviour
             if (rb2d.velocity.x < 0.1 && rb2d.velocity.x > -0.1)
             {
                 Vector2 oldMovement = rb2d.velocity;
-                oldMovement.x = 0;
-                rb2d.velocity = oldMovement;
+                //oldMovement.x = 0;
+                //rb2d.velocity = oldMovement;
             }
             if (rb2d.velocity.x > 0)
             {
