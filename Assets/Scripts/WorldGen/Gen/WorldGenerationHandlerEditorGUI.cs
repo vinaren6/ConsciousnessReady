@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿#if UNITY_EDITOR
+using UnityEngine;
 using UnityEditor;
 
 [CustomEditor(typeof(WorldGenerationHandler))]
@@ -21,5 +22,5 @@ public class WorldGenerationHandlerEditorGUI : Editor
         GUILayout.Label(myScript.debugData);
 
     }
-
 }
+#endif

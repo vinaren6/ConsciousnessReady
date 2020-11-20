@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 [CustomEditor(typeof(CellRules))]
@@ -86,3 +87,4 @@ public class CellRulesEditorGUI : Editor
         GUILayout.EndScrollView();
     }
 }
+#endif
