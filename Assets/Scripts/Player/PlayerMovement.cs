@@ -24,31 +24,21 @@ public class PlayerMovement : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
-        Debug.Log(movement);
+        
+      
     }
 
     private void FixedUpdate()
     {
         slowPlayer();
-        
-
-        if (rb2d.velocity.magnitude < maxSpeed)
+        Debug.Log(movement + " test 1");
+        Vector2 testMovement = movement.normalized;
+        movement.x = Mathf.Abs(movement.x) * testMovement.x;
+        movement.y = Mathf.Abs(movement.y) * testMovement.y;
+        Debug.Log(movement + " test 2");
+        if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed)
             {
-            movement = movement.normalized;
-            if (rb2d.velocity.y < 4 && rb2d.velocity.y > 4)
-            {
-                
-                
-                movement.y *= 15;
-             
-            }
-            if (rb2d.velocity.x < 4 && rb2d.velocity.x > 4)
-            {
-
-
-                movement.x *= 15;
-             
-            }
+            
             //velocity += movement.normalized * acceleration * Time.fixedDeltaTime;
             rb2d.AddForce(movement * acceleration * Time.fixedDeltaTime, ForceMode2D.Impulse);
             Vector2 moveDirection = rb2d.velocity;
