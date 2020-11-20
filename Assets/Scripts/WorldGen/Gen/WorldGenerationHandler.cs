@@ -21,6 +21,7 @@ public class WorldGenerationHandler : MonoBehaviour
     [HideInInspector]
     public string debugData = "";
 
+
     private void Awake() {
         if (instance == null) {
             instance = this;
@@ -62,6 +63,8 @@ public class WorldGenerationHandler : MonoBehaviour
         cellsRulles[1] = cellRulesOutpostL.ToArray();
         cellsRulles[2] = cellRulesStartL.ToArray();
         cellsRulles[3] = cellRulesEndL.ToArray();
+
+
 
     }
 
@@ -154,16 +157,16 @@ public class WorldGenerationHandler : MonoBehaviour
 
                     switch (world[x, y]) {
                         case 0:
-                        obj.name = "Default";
+                        obj.name = $"{x},{y} Default";
                         break;
                         case 1:
-                        obj.name = "Outpost";
+                        obj.name = $"{x},{y} Outpost";
                         break;
                         case 2:
-                        obj.name = "Start";
+                        obj.name = $"{x},{y} Start";
                         break;
                         case 3:
-                        obj.name = "End";
+                        obj.name = $"{x},{y} End";
                         break;
                     }
 

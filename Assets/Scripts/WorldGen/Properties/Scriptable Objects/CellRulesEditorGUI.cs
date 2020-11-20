@@ -27,13 +27,15 @@ public class CellRulesEditorGUI : Editor
         SerializedProperty cellsDownRight = serializedObject.FindProperty("cellsDownRight");
 
 
-        GUIStyle containerStyle = new GUIStyle("HelpBox");
-        containerStyle.fixedWidth = 128 * 3 + 8;
+        GUIStyle containerStyle = new GUIStyle("HelpBox") {
+            fixedWidth = 128 * 3 + 8
+        };
 
-        GUIStyle boxStyle = new GUIStyle("GroupBox");
-        boxStyle.fixedWidth = 128;
-        boxStyle.margin = new RectOffset(0, 0, 0, 0);
-        boxStyle.padding = new RectOffset(16, 0, 0, 0);
+        GUIStyle boxStyle = new GUIStyle("GroupBox") {
+            fixedWidth = 128,
+            margin = new RectOffset(0, 0, 0, 0),
+            padding = new RectOffset(16, 0, 0, 0)
+        };
 
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
@@ -72,7 +74,7 @@ public class CellRulesEditorGUI : Editor
         DrawDefaultInspector();
     }
     private void DrawList(GUIStyle boxStyle, SerializedProperty cell, CellRules[] cellArray) {
-        scrollIndex = scrollIndex % 6;
+        scrollIndex %= 6;
         scrollPosition[scrollIndex] = GUILayout.BeginScrollView(scrollPosition[scrollIndex], boxStyle, GUILayout.Height(128));
         scrollIndex++;
 
