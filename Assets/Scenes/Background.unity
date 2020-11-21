@@ -557,8 +557,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 7.5
-  flipX: 0
-  flipY: 0
 --- !u!23 &55196882
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2402,8 +2400,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 2.5
-  flipX: 0
-  flipY: 0
 --- !u!23 &317537810
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5760,8 +5756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 12.5
-  flipX: 0
-  flipY: 0
 --- !u!23 &619197048
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -9917,8 +9911,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 5.5
-  flipX: 0
-  flipY: 0
 --- !u!23 &1031556166
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -10402,8 +10394,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 9.5
-  flipX: 0
-  flipY: 0
 --- !u!23 &1080049569
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12982,8 +12972,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 2
-  flipX: 0
-  flipY: 0
 --- !u!23 &1379931192
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -13209,8 +13197,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 3
-  flipX: 0
-  flipY: 0
 --- !u!23 &1455673677
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -14912,8 +14898,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 3.25
-  flipX: 0
-  flipY: 0
 --- !u!1 &1678043802
 GameObject:
   m_ObjectHideFlags: 0
@@ -17025,8 +17009,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   virtualCamera: {fileID: 1548364027}
   amountOfParallax: 4
-  flipX: 0
-  flipY: 0
 --- !u!23 &1880386289
 MeshRenderer:
   m_ObjectHideFlags: 0
