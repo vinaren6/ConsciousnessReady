@@ -9,6 +9,12 @@ public class BackgroundElementScroller : MonoBehaviour
     [SerializeField]
     private float amountOfParallax = 1f;
 
+    [SerializeField]
+    private bool flipX = false;
+
+    [SerializeField]
+    private bool flipY = false;
+
     private float textureOffsetX;
     private float textureOffsetY;
 
@@ -20,6 +26,9 @@ public class BackgroundElementScroller : MonoBehaviour
         mat = GetComponent<Renderer>().material;
         GameObject background = GameObject.FindGameObjectWithTag("BackgroundController");
         backgroundController = background.GetComponent<BackgroundController>();
+
+        //if (flipX)
+            //transform.localScale.x *= -1;
     }
 
 
