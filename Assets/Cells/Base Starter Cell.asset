@@ -9,12 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 451bbb960d39d544f8f823ff2c63ee4b, type: 3}
-  m_Name: New World Gen Settings
+  m_Script: {fileID: 11500000, guid: 8b1ee275ff0c4464397bcf3873650857, type: 3}
+  m_Name: Base Starter Cell
   m_EditorClassIdentifier: 
-  minMaxDistance: {x: 5, y: 8}
-  sizeOffset: 3.5
-  gridSize: 40
-  outpostAmount: 6
-  loadOnStart: 1
-  fastRules: 1
+  title: Base Starter Cell
+  type: 2
+  id: 1
+  cellsUpLeft: []
+  cellsUpRight: []
+  cellsLeft: []
+  cellsRight: []
+  cellsDownLeft: []
+  cellsDownRight: []

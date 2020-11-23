@@ -7,8 +7,6 @@ public class Cell : MonoBehaviour
 {
     public Enum.CellType type;
 
-    public bool loadOnStart = false;
-
     [HideInInspector]
     public Cell[] nabors = new Cell[6];
 
@@ -22,9 +20,9 @@ public class Cell : MonoBehaviour
 
     static bool LoadingLevel = false;
 
-    private void FixedUpdate() {
+    private void Start() {
         enabled = false;
-        if (loadOnStart) {
+        if (WorldGenerationHandler.instance.settings.loadOnStart) {
             LoadLevel();
         }
     }
@@ -59,25 +57,44 @@ public class Cell : MonoBehaviour
             //right / nabors[3]
             //down left / nabors[4]
             //down right / nabors[5]
-            if ((nabors[0] == null || !nabors[0].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpLeft.Length.Equals(0) || //no rules detected                                                                                                              
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[0].type][nabors[0].ruleId].cellsDownRight, WorldGenerationHandler.instance.cellsRulles[type][i]) && //check if nabor accepts target cellsRule
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[0].type][nabors[0].ruleId])) //check if target accepts nabor cellsRule
-            && (nabors[1] == null || !nabors[1].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpRight.Length.Equals(0) ||
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[1].type][nabors[1].ruleId].cellsDownLeft, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[1].type][nabors[1].ruleId]))
-            && (nabors[2] == null || !nabors[2].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsLeft.Length.Equals(0) ||
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[2].type][nabors[2].ruleId].cellsRight, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[2].type][nabors[2].ruleId]))
-            && (nabors[3] == null || !nabors[3].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsRight.Length.Equals(0) ||
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[3].type][nabors[3].ruleId].cellsLeft, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[3].type][nabors[3].ruleId]))
-            && (nabors[4] == null || !nabors[4].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownLeft.Length.Equals(0) ||
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[4].type][nabors[4].ruleId].cellsDownRight, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[4].type][nabors[4].ruleId]))
-            && (nabors[5] == null || !nabors[5].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownRight.Length.Equals(0) ||
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[5].type][nabors[5].ruleId].cellsDownLeft, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
-                ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[5].type][nabors[5].ruleId])))
-                posebleCells.Add(i);
+            if (WorldGenerationHandler.instance.settings.fastRules) {
+                if ((nabors[0] == null || nabors[0].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpLeft.Length.Equals(0) || //no rules detected                                                                                                              
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[0].type][nabors[0].ruleId])) //check if target accepts nabor cellsRule
+                && (nabors[1] == null || nabors[1].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpRight.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[1].type][nabors[1].ruleId]))
+                && (nabors[2] == null || nabors[2].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsLeft.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[2].type][nabors[2].ruleId]))
+                && (nabors[3] == null || nabors[3].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsRight.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[3].type][nabors[3].ruleId]))
+                && (nabors[4] == null || nabors[4].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownLeft.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[4].type][nabors[4].ruleId]))
+                && (nabors[5] == null || nabors[5].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownRight.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[5].type][nabors[5].ruleId])))
+                    posebleCells.Add(i);
+            } else {
+                if ((nabors[0] == null || nabors[0].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpLeft.Length.Equals(0) || //no rules detected                                                                                                              
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[0].type][nabors[0].ruleId].cellsDownRight, WorldGenerationHandler.instance.cellsRulles[type][i]) && //check if nabor accepts target cellsRule
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[0].type][nabors[0].ruleId])) //check if target accepts nabor cellsRule
+                && (nabors[1] == null || nabors[1].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpRight.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[1].type][nabors[1].ruleId].cellsDownLeft, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsUpRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[1].type][nabors[1].ruleId]))
+                && (nabors[2] == null || nabors[2].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsLeft.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[2].type][nabors[2].ruleId].cellsRight, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[2].type][nabors[2].ruleId]))
+                && (nabors[3] == null || nabors[3].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsRight.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[3].type][nabors[3].ruleId].cellsLeft, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[3].type][nabors[3].ruleId]))
+                && (nabors[4] == null || nabors[4].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownLeft.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[4].type][nabors[4].ruleId].cellsDownRight, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownLeft, WorldGenerationHandler.instance.cellsRulles[(int)nabors[4].type][nabors[4].ruleId]))
+                && (nabors[5] == null || nabors[5].ruleId.Equals(-1) || WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownRight.Length.Equals(0) ||
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[(int)nabors[5].type][nabors[5].ruleId].cellsDownLeft, WorldGenerationHandler.instance.cellsRulles[type][i]) &&
+                    ExistInArray(WorldGenerationHandler.instance.cellsRulles[type][i].cellsDownRight, WorldGenerationHandler.instance.cellsRulles[(int)nabors[5].type][nabors[5].ruleId])))
+                    posebleCells.Add(i);
+            }
+
+
+
         }
         if (posebleCells.Count != 0) {
             ruleId = posebleCells[Random.Range(0, posebleCells.Count)];
@@ -133,7 +150,7 @@ public class Cell : MonoBehaviour
         }
     }
     void LoadCoompleate(AsyncOperation obj) {
-        
+
         Scene s = SceneManager.GetSceneByBuildIndex(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id);
         GameObject[] objs = s.GetRootGameObjects();
         for (int i = 0; i < objs.Length; i++) {
@@ -164,5 +181,9 @@ public class Cell : MonoBehaviour
                 return true; //mach found
         return false; //no mach
     }
-
+#if UNITY_EDITOR
+    private void OnDrawGizmos() {
+        Gizmos.DrawWireCube(transform.position, new Vector3(WorldGenerationHandler.instance.settings.gridSize, WorldGenerationHandler.instance.settings.gridSize));
+    }
+#endif
 }

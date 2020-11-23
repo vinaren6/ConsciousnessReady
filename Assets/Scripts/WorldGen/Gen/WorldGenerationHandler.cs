@@ -177,21 +177,31 @@ public class WorldGenerationHandler : MonoBehaviour
         }
         for (int x = 0; x < wSize; x++) {
             for (int y = 0; y < wSize; y++) {
+                if (worldObjs[x, y] is null)
+                    continue;
+                try {
+                    if (x != 0) // left
+                        worldObjs[x, y].nabors[2] = worldObjs[x - 1, y];
+                    if (x < wSize - 1) //right
+                        worldObjs[x, y].nabors[3] = worldObjs[x + 1, y];
 
-                if (x != 0) // left
-                    worldObjs[x, y].nabors[2] = worldObjs[x - 1, y];
-                if (x < wSize - 1) //right
-                    worldObjs[x, y].nabors[3] = worldObjs[x + 1, y];
+                    if (y < wSize - 1) {
+                        if (x - (y & 1) != -1)
+                            worldObjs[x, y].nabors[0] = worldObjs[x - (y & 1), y + 1];
+                        if (x + 1 - (y & 1) < wSize) {
+                            worldObjs[x, y].nabors[1] = worldObjs[x + 1 - (y & 1), y + 1];
+                        }
+                    }
 
-                if (y != 0) {
-                    if (x != -(y & 1)) {
-                        worldObjs[x, y].nabors[0] = worldObjs[x - (y & 1), y + 1];
+                    if (y != 0) {
+                        if (x - (y & 1) != -1)
+                            worldObjs[x, y].nabors[4] = worldObjs[x - (y & 1), y - 1];
+                        if (x + 1 - (y & 1 ) < wSize)
+                            worldObjs[x, y].nabors[5] = worldObjs[x + 1 - (y & 1), y - 1];
                     }
-                    if (x < wSize - (y & 1)) {
-                        worldObjs[x, y].nabors[0] = worldObjs[x + 1 - (y & 1), y + 1];
-                    }
+                } catch (System.Exception e) {
+                    Debug.LogError(e);
                 }
-
             }
         }
     }

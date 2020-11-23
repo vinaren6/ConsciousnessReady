@@ -7,4 +7,7 @@ public class WorldGenSettings : ScriptableObject
     public float sizeOffset = 2f;
     public float gridSize = 16f;
     public int outpostAmount = 6;
+    [Space(10)]
+    public bool loadOnStart = false;
+    public bool fastRules = true;
 }
