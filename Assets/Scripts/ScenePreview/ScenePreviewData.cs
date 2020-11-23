@@ -19,7 +19,7 @@ public class ScenePreviewData
     public string TexturePath { get; private set; }
     public Texture2D Texture {
         get {
-            return _texture ?? (_texture = AssetDatabase.LoadAssetAtPath<Texture2D>(TexturePath));
+            return _texture != null ? _texture : (_texture = AssetDatabase.LoadAssetAtPath<Texture2D>(TexturePath));
         }
     }
 }
