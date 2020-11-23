@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
@@ -39,14 +39,11 @@ public class PlayerMovement : MonoBehaviour
             
 
             }
-      //  Debug.Log(moveDirection.x);
-        if (Mathf.Abs(moveDirection.x) > 0.4 || Mathf.Abs(moveDirection.y) > 0.4)
+      
+        if (moveDirection != Vector2.zero)
         {
-
             float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-           // Debug.Log(angle);
             transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-            //transform.rotation += 90;
         }
 
     }
