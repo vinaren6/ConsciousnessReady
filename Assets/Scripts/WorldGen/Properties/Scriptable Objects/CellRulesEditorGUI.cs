@@ -8,6 +8,7 @@ public class CellRulesEditorGUI : Editor
     Vector2[] scrollPosition = null;
     int scrollIndex = 0;
 
+
     public override void OnInspectorGUI() {
         serializedObject.Update();
         if (scrollPosition == null || scrollPosition.Length < 6) {
@@ -33,8 +34,8 @@ public class CellRulesEditorGUI : Editor
 
         GUIStyle boxStyle = new GUIStyle("GroupBox") {
             fixedWidth = 128,
-            margin = new RectOffset(0, 0, 0, 0),
-            padding = new RectOffset(16, 0, 0, 0)
+            margin = new RectOffset(),
+            padding = new RectOffset()
         };
 
         GUILayout.BeginHorizontal();
@@ -52,7 +53,16 @@ public class CellRulesEditorGUI : Editor
             GUILayout.BeginHorizontal();
             {
                 DrawList(boxStyle, cellsLeft, controller.cellsLeft);
-                GUILayout.BeginVertical(boxStyle, GUILayout.Height(128));
+                GUIStyle centerStyle = new GUIStyle(boxStyle) {
+                    fixedHeight = 128
+                };
+                GUILayout.BeginVertical(centerStyle);
+                if (!(controller.preview is null)) {
+                    GUIStyle imgStyle = new GUIStyle {
+                        margin = new RectOffset()
+                    };
+                    GUILayout.Box(controller.preview, imgStyle);
+                }
                 GUILayout.Label("");
                 GUILayout.EndVertical();
                 DrawList(boxStyle, cellsRight, controller.cellsRight);
@@ -74,16 +84,29 @@ public class CellRulesEditorGUI : Editor
         DrawDefaultInspector();
     }
     private void DrawList(GUIStyle boxStyle, SerializedProperty cell, CellRules[] cellArray) {
+
         scrollIndex %= 6;
         scrollPosition[scrollIndex] = GUILayout.BeginScrollView(scrollPosition[scrollIndex], boxStyle, GUILayout.Height(128));
         scrollIndex++;
 
+        if (cellArray.Length != 0 && !(cellArray[cellArray.Length - 1] is null || cellArray[cellArray.Length - 1].preview is null)) {
+            GUIStyle imgStyle = new GUIStyle {
+                margin = new RectOffset()
+            };
+
+            GUILayout.Box(cellArray[cellArray.Length - 1].preview, imgStyle);
+        }
+
+        GUIStyle style = new GUIStyle {
+            padding = new RectOffset(16, 0, 0, 0)
+        };
+
         if (EditorGUILayout.PropertyField(cell, false))
             foreach (CellRules item in cellArray) {
                 if (item != null)
-                    GUILayout.Label(item.ToString());
+                    GUILayout.Label(item.ToString(), style);
                 else
-                    GUILayout.Label("None");
+                    GUILayout.Label("None", style);
             }
 
         GUILayout.EndScrollView();

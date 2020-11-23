@@ -185,5 +185,11 @@ public class Cell : MonoBehaviour
     private void OnDrawGizmos() {
         Gizmos.DrawWireCube(transform.position, new Vector3(WorldGenerationHandler.instance.settings.gridSize, WorldGenerationHandler.instance.settings.gridSize));
     }
+
+    private void OnDrawGizmosSelected() {
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireCube(transform.position, new Vector3(WorldGenerationHandler.instance.settings.gridSize, WorldGenerationHandler.instance.settings.gridSize));
+    }
+
 #endif
 }

@@ -15,6 +15,7 @@ MonoBehaviour:
   title: Base Starter Cell
   type: 2
   id: 1
+  preview: {fileID: 2800000, guid: 81a3866f3261c4e4e83cc760191c4c10, type: 3}
   cellsUpLeft: []
   cellsUpRight: []
   cellsLeft: []

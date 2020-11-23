@@ -15,6 +15,7 @@ MonoBehaviour:
   title: Test Cell 2
   type: 0
   id: 3
+  preview: {fileID: 2800000, guid: 85ed5cfe3549e3b43b8b3e6000234e5d, type: 3}
   cellsUpLeft: []
   cellsUpRight:
   - {fileID: 11400000, guid: eeaff838c64fca149aab2f8138e4ce10, type: 2}
