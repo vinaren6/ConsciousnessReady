@@ -12,6 +12,8 @@ public class WorldGenerationHandler : MonoBehaviour
 
     public CellRules[] cellRules;
 
+    public Camera[] camScale;
+
     [HideInInspector]
     public CellRules[][] cellsRulles = new CellRules[4][];
 
@@ -34,6 +36,7 @@ public class WorldGenerationHandler : MonoBehaviour
         SeperateRules();
         GenerateGrid();
         GenerateCells();
+        ScaleCemras();
     }
 
     private void SeperateRules() {
@@ -206,6 +209,13 @@ public class WorldGenerationHandler : MonoBehaviour
         }
     }
 
+    private void ScaleCemras() {
+        float size = ((int)(worldSize + 0.5f)) * settings.gridSize /2f+ settings.gridSize;
+        foreach (Camera cam in camScale) {
+            cam.orthographicSize = size;
+        }
+    }
+
     public void Regenerate() {
         Transform[] children = GetComponentsInChildren<Transform>();
         for (int i = 0; i < children.Length; i++) {
@@ -218,6 +228,7 @@ public class WorldGenerationHandler : MonoBehaviour
 #endif
         GenerateGrid();
         GenerateCells();
+        ScaleCemras();
     }
 
 #if UNITY_EDITOR

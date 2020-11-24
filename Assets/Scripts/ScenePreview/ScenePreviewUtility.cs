@@ -16,6 +16,8 @@ public static class ScenePreviewUtility
     public static ScenePreviewData[] Data { get; private set; } = new ScenePreviewData[0];
     public static bool ShowCaptureScreenshotButton { get; private set;  }
 
+    public static CellRules CellRule { get; private set; }
+
     public static void RefreshTextures(ScenePreviewWindow window)
     {
         // Get the selected SceneAsset previews.
@@ -24,6 +26,8 @@ public static class ScenePreviewUtility
              .Select(sceneAsset => new ScenePreviewData(AssetDatabase.GetAssetPath(sceneAsset), GetPreviewPath(((SceneAsset)sceneAsset).name)))
              .OrderBy(n => n.TexturePath)
              .ToList();
+        
+        CellRule = Selection.activeObject is CellRules ? Selection.activeObject as CellRules : null;
 
         if (previewsPaths.Count == 1)
             window.ShowTab();
