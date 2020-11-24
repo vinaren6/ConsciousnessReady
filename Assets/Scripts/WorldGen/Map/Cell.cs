@@ -46,9 +46,9 @@ public class Cell : MonoBehaviour
 
         int type = (int)this.type;
 
-        for (int i = 0; i < WorldGenerationHandler.instance.cellsRulles[(int)type].Length; i++) {
+        for (int i = 0; i < WorldGenerationHandler.instance.cellsRulles[type].Length; i++) {
             //target cellsRule set does not exist
-            if (WorldGenerationHandler.instance.cellsRulles[(int)type][i] == null)
+            if (WorldGenerationHandler.instance.cellsRulles[type][i] == null)
                 continue;
 
             //up left / nabors[0]

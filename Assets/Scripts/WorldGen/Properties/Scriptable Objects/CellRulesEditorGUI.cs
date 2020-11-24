@@ -132,15 +132,6 @@ public class CellRulesEditorGUI : Editor
                         }
                     }
                 }
-
-                /*
-                if (!(controller.preview is null)) {
-                    GUIStyle imgStyle = new GUIStyle {
-                        margin = new RectOffset()
-                    };
-                    GUILayout.Box(controller.preview, imgStyle);
-                } else
-                */
                 GUILayout.Label("");
                 GUILayout.EndVertical();
                 DrawList(boxStyle, cellsRight, controller.cellsRight);
@@ -161,6 +152,12 @@ public class CellRulesEditorGUI : Editor
         GUILayout.EndVertical();
         GUILayout.FlexibleSpace();
         GUILayout.EndHorizontal();
+
+        if (GUILayout.Button("Normalize")) {
+            Normalize(controller);
+        }
+
+
         DrawDefaultInspector();
     }
     private void DrawList(GUIStyle boxStyle, SerializedProperty cell, CellRules[] cellArray) {
@@ -184,5 +181,42 @@ public class CellRulesEditorGUI : Editor
         GUILayout.EndScrollView();
     }
 
+    public void Normalize(CellRules controller) {
+        foreach (CellRules item in controller.cellsDownLeft)
+            if (!ExistInArray(item.cellsUpRight, controller))
+                item.cellsUpRight = AddElementToArray(item.cellsUpRight, controller);
+        foreach (CellRules item in controller.cellsDownRight)
+            if (!ExistInArray(item.cellsUpLeft, controller))
+                item.cellsUpLeft = AddElementToArray(item.cellsUpLeft, controller);
+        foreach (CellRules item in controller.cellsLeft)
+            if (!ExistInArray(item.cellsRight, controller))
+                item.cellsRight = AddElementToArray(item.cellsRight, controller);
+        foreach (CellRules item in controller.cellsRight)
+            if (!ExistInArray(item.cellsLeft, controller))
+                item.cellsLeft = AddElementToArray(item.cellsLeft, controller);
+        foreach (CellRules item in controller.cellsUpLeft)
+            if (!ExistInArray(item.cellsDownRight, controller))
+                item.cellsDownRight = AddElementToArray(item.cellsDownRight, controller);
+        foreach (CellRules item in controller.cellsUpRight)
+            if (!ExistInArray(item.cellsDownLeft, controller))
+                item.cellsDownLeft = AddElementToArray(item.cellsDownLeft, controller);
+    }
+
+    private bool ExistInArray<T>(T[] array, T item) {
+        if (item != null)
+            foreach (T arrayItem in array)
+                if (arrayItem.Equals(item))
+                    return true; //mach found
+        return false; //no mach
+    }
+
+    T[] AddElementToArray<T>(T[] array, T element) {
+        T[] newArray = new T[array.Length + 1];
+        int i;
+        for (i = 0; i < array.Length; i++)
+            newArray[i] = array[i];
+        newArray[i] = element;
+        return newArray;
+    }
 }
 #endif

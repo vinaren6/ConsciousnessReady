@@ -23,4 +23,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cells/Test Cell 3.unity
     guid: 560260c44d2a363449fc87504ab846ae
+  - enabled: 1
+    path: Assets/Cells/Test Cell 4.unity
+    guid: 85d3feea98ad69847a35de846ec16682
+  - enabled: 1
+    path: Assets/Cells/Test Cell 5.unity
+    guid: 2d9c5cd9ed69bce4f8b2891c3d8ed49b
+  - enabled: 1
+    path: Assets/Cells/Test Cell 6.unity
+    guid: 1000b71e5b5ddf34da293ad060b2fb32
+  - enabled: 1
+    path: Assets/Cells/Test Cell 7.unity
+    guid: 70630e494068ebe46b6091c7bc06be8f
   m_configObjects: {}

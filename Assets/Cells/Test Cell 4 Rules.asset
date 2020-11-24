@@ -10,19 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1ee275ff0c4464397bcf3873650857, type: 3}
-  m_Name: Test Cell 3 Rules
+  m_Name: Test Cell 4 Rules
   m_EditorClassIdentifier: 
-  title: corner 1
+  title: Coner 2
   type: 0
-  id: 4
-  preview: {fileID: 2800000, guid: 6262c12c903f1264a934225b4d0f754d, type: 3}
+  id: 5
+  preview: {fileID: 2800000, guid: b0366dad53f135046bfff53be6169b09, type: 3}
   cellsUpLeft:
   - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
-  - {fileID: 11400000}
-  - {fileID: 11400000, guid: 85fd60b7060258b42bfa169f2a6c996c, type: 2}
   cellsUpRight:
   - {fileID: 11400000, guid: 85fd60b7060258b42bfa169f2a6c996c, type: 2}
-  - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
   cellsLeft:
   - {fileID: 11400000, guid: 1d4e2fccda5da5349b39b588d27aaf3f, type: 2}
   - {fileID: 11400000, guid: 6277b8e547fc2cd48b8e7ae29850be74, type: 2}
@@ -30,7 +27,6 @@ MonoBehaviour:
   cellsRight:
   - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
   - {fileID: 11400000, guid: 6277b8e547fc2cd48b8e7ae29850be74, type: 2}
-  - {fileID: 11400000, guid: 1d4e2fccda5da5349b39b588d27aaf3f, type: 2}
   cellsDownLeft:
   - {fileID: 11400000, guid: 85fd60b7060258b42bfa169f2a6c996c, type: 2}
   - {fileID: 11400000, guid: 03c9c2aa49e1c6343bae9d036eecd748, type: 2}
@@ -38,5 +34,5 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6277b8e547fc2cd48b8e7ae29850be74, type: 2}
   - {fileID: 11400000, guid: 1d4e2fccda5da5349b39b588d27aaf3f, type: 2}
   - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
+  - {fileID: 11400000, guid: eeaff838c64fca149aab2f8138e4ce10, type: 2}
   - {fileID: 11400000}
-  - {fileID: 11400000, guid: c770159ae71e7224a99b69ddb26f5ac9, type: 2}

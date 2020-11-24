@@ -10,34 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1ee275ff0c4464397bcf3873650857, type: 3}
-  m_Name: Test Cell 2 Rules
+  m_Name: Test Cell 7 Rules
   m_EditorClassIdentifier: 
-  title: upside down stair
+  title: upside down stair w corner
   type: 0
-  id: 3
-  preview: {fileID: 2800000, guid: 85ed5cfe3549e3b43b8b3e6000234e5d, type: 3}
+  id: 8
+  preview: {fileID: 2800000, guid: 00bbd145c2f35f340a1f607897d60ee3, type: 3}
   cellsUpLeft:
   - {fileID: 11400000, guid: 1d4e2fccda5da5349b39b588d27aaf3f, type: 2}
   - {fileID: 11400000, guid: 6277b8e547fc2cd48b8e7ae29850be74, type: 2}
-  - {fileID: 11400000, guid: 03c9c2aa49e1c6343bae9d036eecd748, type: 2}
+  - {fileID: 11400000}
   cellsUpRight:
   - {fileID: 11400000, guid: eeaff838c64fca149aab2f8138e4ce10, type: 2}
   - {fileID: 11400000, guid: c770159ae71e7224a99b69ddb26f5ac9, type: 2}
   cellsLeft:
   - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
   cellsRight:
-  - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
-  - {fileID: 11400000, guid: 6277b8e547fc2cd48b8e7ae29850be74, type: 2}
-  - {fileID: 11400000, guid: 1d4e2fccda5da5349b39b588d27aaf3f, type: 2}
-  - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
+  - {fileID: 11400000, guid: eeaff838c64fca149aab2f8138e4ce10, type: 2}
+  - {fileID: 11400000, guid: c770159ae71e7224a99b69ddb26f5ac9, type: 2}
   cellsDownLeft:
-  - {fileID: 11400000, guid: eeaff838c64fca149aab2f8138e4ce10, type: 2}
-  - {fileID: 11400000, guid: c770159ae71e7224a99b69ddb26f5ac9, type: 2}
-  - {fileID: 11400000, guid: 6277b8e547fc2cd48b8e7ae29850be74, type: 2}
-  - {fileID: 11400000, guid: 1d4e2fccda5da5349b39b588d27aaf3f, type: 2}
-  cellsDownRight:
-  - {fileID: 11400000, guid: 6277b8e547fc2cd48b8e7ae29850be74, type: 2}
-  - {fileID: 11400000, guid: 1d4e2fccda5da5349b39b588d27aaf3f, type: 2}
   - {fileID: 11400000, guid: a7fc4fb23bed1d441a4b7c070ba04493, type: 2}
-  - {fileID: 11400000, guid: eeaff838c64fca149aab2f8138e4ce10, type: 2}
-  - {fileID: 11400000, guid: c770159ae71e7224a99b69ddb26f5ac9, type: 2}
+  cellsDownRight:
+  - {fileID: 11400000, guid: 85fd60b7060258b42bfa169f2a6c996c, type: 2}
