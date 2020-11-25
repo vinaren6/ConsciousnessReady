@@ -1,13 +1,21 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SetFrameRate : MonoBehaviour
 {
 
+    [SerializeField]
+    private bool LimitFrameRate = false;
+
+    [SerializeField]
+    private int TargetFrameRate = 60;
+
+
     void Awake()
     {
-        //QualitySettings.vSyncCount = 0;  // VSync must be disabled
-        //Application.targetFrameRate = 30;
+        if (LimitFrameRate)
+        {
+            QualitySettings.vSyncCount = 0;  // VSync must be disabled
+            Application.targetFrameRate = TargetFrameRate;
+        }
     }
 }

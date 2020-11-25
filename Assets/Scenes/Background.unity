@@ -265,6 +265,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8362390c61587964b9a67182974ece3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LimitFrameRate: 1
+  TargetFrameRate: 60
 --- !u!1 &139855106
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +881,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4403486515727067437, guid: 75e4cd938ed4a964cbef11e47c44ce36, type: 3}
       propertyPath: m_LinearDrag
-      value: 4.9
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: -4403486515727067437, guid: 75e4cd938ed4a964cbef11e47c44ce36, type: 3}
       propertyPath: m_AngularDrag
@@ -895,7 +897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 862483950, guid: 75e4cd938ed4a964cbef11e47c44ce36, type: 3}
       propertyPath: acceleration
-      value: 17.6
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 3335652426313955498, guid: 75e4cd938ed4a964cbef11e47c44ce36, type: 3}
       propertyPath: m_Name
