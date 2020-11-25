@@ -5,9 +5,9 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField]
-    private float maxSpeed = 0.1f;
+    private float maxSpeed = 5.5f;
     [SerializeField]
-    private float acceleration = 0f;
+    private float acceleration = 2f;
     Vector2 movement;
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
@@ -36,12 +36,13 @@ public class PlayerMovement : MonoBehaviour
     
         if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed)
             {
-            movement = movement.normalized;
-            rb2d.AddForce(movement * acceleration * Time.fixedDeltaTime, ForceMode2D.Impulse);
+           // movement = movement.normalized;
+           // Debug.Log(movement.x);
+            rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * Time.fixedDeltaTime, ForceMode2D.Impulse);
+            Debug.Log(rb2d.velocity.x);
 
-            
 
-            }
+        }
          
         if (moveDirection != Vector2.zero)
         {
