@@ -26,9 +26,9 @@ public class PlayerMovement : MonoBehaviour
         movement.y = Input.GetAxisRaw("Vertical");
 
         moveDirection.x = Input.GetAxisRaw("RightAnalogX") * -1;
-        moveDirection.y = Input.GetAxisRaw("RightAnalogY");
+        moveDirection.y = Input.GetAxisRaw("RightAnalogY") * -1;
 
-        
+
     }
 
     private void FixedUpdate()
@@ -65,7 +65,7 @@ public class PlayerMovement : MonoBehaviour
 
                 
                 float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+                transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
             }
         }
 
