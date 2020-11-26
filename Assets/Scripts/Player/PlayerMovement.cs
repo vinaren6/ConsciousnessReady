@@ -49,21 +49,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     
-    void Update()
-    {
-        
-
-       // up.performed += context => Debug.Log("performed");
-       // up.canceled += context => Debug.Log("canceled");
-     
-        // movement.x = Input.GetAxisRaw("Horizontal");
-        //  movement.y = Input.GetAxisRaw("Vertical");
-
-        // moveDirection.x = Input.GetAxisRaw("RightAnalogX") * -1;
-        //  moveDirection.y = Input.GetAxisRaw("RightAnalogY") * -1;
-
-
-    }
+   
 
     private void FixedUpdate()
     {
@@ -99,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
                 Debug.Log("test");
                 
                 float angle = Mathf.Atan2(RotationDirection.y, RotationDirection.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+                transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
             }
         }
 

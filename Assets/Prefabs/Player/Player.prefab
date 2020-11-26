@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 862483951}
   - component: {fileID: 436775859}
   m_Layer: 11
-  m_Name: shepherd_modified
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -326,7 +326,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Rotation X
       m_Flags: 4
-    - m_Name: negative
+    - m_Name: positive
       m_Id: 1a3da3ad-58e9-4d64-839d-169bb8dc161c
       m_Path: <Gamepad>/rightStick/left
       m_Interactions: 
@@ -334,7 +334,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Rotation X
       m_Flags: 8
-    - m_Name: positive
+    - m_Name: negative
       m_Id: c5153f21-8c9c-4d83-a77f-b10bc5171fc4
       m_Path: <Gamepad>/rightStick/right
       m_Interactions: 
@@ -358,7 +358,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Rotation Y
       m_Flags: 4
-    - m_Name: negative
+    - m_Name: positive
       m_Id: c624981c-a2d8-423b-8f9b-2e07a4494133
       m_Path: <Gamepad>/rightStick/down
       m_Interactions: 
@@ -366,7 +366,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Rotation Y
       m_Flags: 8
-    - m_Name: positive
+    - m_Name: negative
       m_Id: 7f60b8ee-7689-4670-af6e-58c5b6c95a90
       m_Path: <Gamepad>/rightStick/up
       m_Interactions: 
