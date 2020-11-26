@@ -52,8 +52,6 @@ public class AI : MonoBehaviour
     {
         rb2d = GetComponent<Rigidbody2D>();
         targetRB2D = target.GetComponent<Rigidbody2D>();
-
-        Time.timeScale = 5f;
     }
 
 
