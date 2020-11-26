@@ -206,7 +206,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 1D Axis
+    - m_Name: gamepad
       m_Id: 915056ed-1722-4700-8d9c-4912628afb11
       m_Path: 1DAxis
       m_Interactions: 
@@ -230,6 +230,30 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Movement X
       m_Flags: 8
+    - m_Name: keyboard
+      m_Id: 00fda8b6-e939-400a-bc88-430b5c6bb62a
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: d41cba6a-b066-497e-99da-a3fbbda7313e
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 14e4037f-7f19-4ea9-a801-2d553fc7b2fe
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 8
   movementY:
     m_Name: Movement Y
     m_Type: 0
@@ -238,7 +262,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 1D Axis
+    - m_Name: gamepad
       m_Id: f3a49549-d5e2-4cc0-a2e6-f7b329272742
       m_Path: 1DAxis
       m_Interactions: 
@@ -262,6 +286,30 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Movement Y
       m_Flags: 8
+    - m_Name: keyboard
+      m_Id: ec4f22f5-77a4-46f7-8cb8-14c695698257
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 5906710f-1139-4ecd-945e-90df03fed3b7
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 76d3ce73-0977-464c-855a-0f697b41b57c
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 8
   rotationX:
     m_Name: Rotation X
     m_Type: 0
@@ -270,7 +318,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 1D Axis
+    - m_Name: gamepad
       m_Id: 97f8c062-5bc6-49cc-90ef-a8896c14c503
       m_Path: 1DAxis
       m_Interactions: 
@@ -302,7 +350,7 @@ MonoBehaviour:
     m_Processors: 
     m_Interactions: 
     m_SingletonActionBindings:
-    - m_Name: 1D Axis
+    - m_Name: gamepad
       m_Id: 69cafa87-f81b-492d-91e7-baf94a7267e2
       m_Path: 1DAxis
       m_Interactions: 

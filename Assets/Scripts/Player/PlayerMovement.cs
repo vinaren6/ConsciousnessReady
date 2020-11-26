@@ -91,14 +91,14 @@ public class PlayerMovement : MonoBehaviour
 
         if (moveDirection == Vector2.zero)
         {
-            moveDirection = rb2d.velocity;
+            Vector2 RotationDirection = rb2d.velocity;
            
 
-            if (moveDirection != Vector2.zero)
+            if (RotationDirection != Vector2.zero)
             {
-
+                Debug.Log("test");
                 
-                float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+                float angle = Mathf.Atan2(RotationDirection.y, RotationDirection.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
             }
         }
