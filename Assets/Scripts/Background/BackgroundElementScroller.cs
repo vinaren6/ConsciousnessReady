@@ -9,8 +9,13 @@ public class BackgroundElementScroller : MonoBehaviour
     [SerializeField]
     private float amountOfParallax = 1f;
 
+    private float speed = 10f;
+
     private float textureOffsetX;
     private float textureOffsetY;
+
+    private float twinkleAmount = 0;
+
 
     private Material mat;
     private BackgroundController backgroundController;
@@ -25,8 +30,10 @@ public class BackgroundElementScroller : MonoBehaviour
 
     void Update()
     {
-        textureOffsetX = (virtualCamera.transform.position.x * amountOfParallax) / backgroundController.speedOfParallax / 10;
-        textureOffsetY = (virtualCamera.transform.position.y * amountOfParallax) / backgroundController.speedOfParallax / 10;
+
+        textureOffsetX = ( (virtualCamera.transform.position.x * amountOfParallax) / backgroundController.speedOfParallax / speed ) * twinkleAmount;
+        textureOffsetY = ((virtualCamera.transform.position.y * amountOfParallax) / backgroundController.speedOfParallax / speed ) * twinkleAmount;
+
         mat.SetTextureOffset("_MainTex", new Vector2(textureOffsetX, textureOffsetY));
     }
 }
