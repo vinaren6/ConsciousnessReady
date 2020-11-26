@@ -31,8 +31,8 @@ public class BackgroundElementScroller : MonoBehaviour
     void Update()
     {
 
-        textureOffsetX = ( (virtualCamera.transform.position.x * amountOfParallax) / backgroundController.speedOfParallax / speed ) * twinkleAmount;
-        textureOffsetY = ((virtualCamera.transform.position.y * amountOfParallax) / backgroundController.speedOfParallax / speed ) * twinkleAmount;
+        textureOffsetX = ( (virtualCamera.transform.position.x * amountOfParallax) / backgroundController.speedOfParallax / speed );
+        textureOffsetY = ((virtualCamera.transform.position.y * amountOfParallax) / backgroundController.speedOfParallax / speed );
 
         mat.SetTextureOffset("_MainTex", new Vector2(textureOffsetX, textureOffsetY));
     }

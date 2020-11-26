@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: -4403486515727067437}
   - component: {fileID: 862483946}
   - component: {fileID: 862483951}
-  - component: {fileID: 862483950}
-  m_Layer: 0
+  - component: {fileID: 436775859}
+  m_Layer: 11
   m_Name: shepherd_modified
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,13 +72,13 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -302664117
+  m_SortingLayer: 3
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 01ec2b039a6cf8b49aaf3d3cb2704e12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
-  m_FlipY: 1
+  m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 0.7, y: 0.79}
   m_AdaptiveModeThreshold: 0.5
@@ -98,15 +98,15 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 1.5
-  m_AngularDrag: 0.05
+  m_Mass: 0.5
+  m_LinearDrag: 4
+  m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!60 &862483946
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -186,7 +186,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &862483950
+--- !u!114 &436775859
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -374,5 +374,5 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Rotation Y
       m_Flags: 8
-  maxSpeed: 25
-  acceleration: 4
+  maxSpeed: 10
+  acceleration: 15
