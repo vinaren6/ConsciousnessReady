@@ -5,11 +5,11 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private InputAction up;
-    [SerializeField] private InputAction down;
-    [SerializeField] private InputAction left;
-    [SerializeField] private InputAction right;
-    [SerializeField] private InputAction rotation;
+    [SerializeField] private InputAction movementX;
+    [SerializeField] private InputAction movementY;
+  
+    [SerializeField] private InputAction rotationX;
+    [SerializeField] private InputAction rotationY;
 
 
     [SerializeField]
@@ -20,29 +20,32 @@ public class PlayerMovement : MonoBehaviour
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
     Rigidbody2D rb2d;
-
+    float deadSpaceRotation = 0.2f;
     // Start is called before the first frame update
     void Start()
     {
-        rotation.Enable();
-        up.Enable();
-        down.Enable();
-        left.Enable();
-        right.Enable();
-        rb2d = GetComponent<Rigidbody2D>();
-        up.performed += context => movement.y = context.ReadValue<float>();
-        up.canceled += context => movement.y = 0;
+        rotationX.Enable();
+        rotationY.Enable();
+        movementX.Enable();
+        movementY.Enable();
+         rb2d = GetComponent<Rigidbody2D>();
+        movementX.performed += context => movement.x = context.ReadValue<float>();
+        movementX.canceled += context => movement.x = 0;
 
-        down.performed += context => movement.y = context.ReadValue<float>() * -1;
-        down.canceled += context => movement.y = 0;
+        movementY.performed += context => movement.y = context.ReadValue<float>();
+        movementY.canceled += context => movement.y = 0;
 
-        left.performed += context => movement.x = context.ReadValue<float>() * -1;
-        left.canceled += context => movement.x = 0;
-       
-        right.performed += context => movement.x = context.ReadValue<float>();
-        right.canceled += context => movement.x = 0;
-
-        rotation.performed += context => moveDirection = context.ReadValue<Vector2>() ;
+        rotationX.performed += context => { 
+            if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
+            {
+                moveDirection.x = context.ReadValue<float>();
+            }  } ;
+        rotationY.performed += context => {
+            if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
+            {
+                moveDirection.y = context.ReadValue<float>();
+            }
+        }; ;
     }
 
     
@@ -50,7 +53,8 @@ public class PlayerMovement : MonoBehaviour
     {
         
 
-       
+       // up.performed += context => Debug.Log("performed");
+       // up.canceled += context => Debug.Log("canceled");
      
         // movement.x = Input.GetAxisRaw("Horizontal");
         //  movement.y = Input.GetAxisRaw("Vertical");
@@ -95,7 +99,7 @@ public class PlayerMovement : MonoBehaviour
 
                 
                 float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+                transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
             }
         }
 
