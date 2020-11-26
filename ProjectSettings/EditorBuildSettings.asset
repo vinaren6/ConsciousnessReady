@@ -35,4 +35,5 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cells/Test Cell 7.unity
     guid: 70630e494068ebe46b6091c7bc06be8f
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 1a2775d9a73d2a44c8d13cc8fe914045, type: 2}

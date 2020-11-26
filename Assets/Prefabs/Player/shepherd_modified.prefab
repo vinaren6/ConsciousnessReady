@@ -198,5 +198,181 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83bb049764915204a9d6843d81e202d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  movementX:
+    m_Name: Movement X
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: bfecb7eb-a8ef-482f-ad50-4341c093e7c1
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: gamepad
+      m_Id: 915056ed-1722-4700-8d9c-4912628afb11
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: a71dcdc7-0ae8-462a-bfe4-40888530f7d0
+      m_Path: <Gamepad>/leftStick/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 7c6ceeae-aac6-455c-83a1-c55e963dec4b
+      m_Path: <Gamepad>/leftStick/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 8
+    - m_Name: keyboard
+      m_Id: 00fda8b6-e939-400a-bc88-430b5c6bb62a
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: d41cba6a-b066-497e-99da-a3fbbda7313e
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 14e4037f-7f19-4ea9-a801-2d553fc7b2fe
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement X
+      m_Flags: 8
+  movementY:
+    m_Name: Movement Y
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 8d5c04c3-a743-48ea-906b-6c76d592702a
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: gamepad
+      m_Id: f3a49549-d5e2-4cc0-a2e6-f7b329272742
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 0ee5c310-ca51-4ec4-9bb9-b14d9960fb89
+      m_Path: <Gamepad>/leftStick/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 6d831e4d-048c-4f88-b029-bdc462316676
+      m_Path: <Gamepad>/leftStick/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 8
+    - m_Name: keyboard
+      m_Id: ec4f22f5-77a4-46f7-8cb8-14c695698257
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 5906710f-1139-4ecd-945e-90df03fed3b7
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 76d3ce73-0977-464c-855a-0f697b41b57c
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Movement Y
+      m_Flags: 8
+  rotationX:
+    m_Name: Rotation X
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 8729835f-41a5-409a-b39f-baa20bef11f9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: gamepad
+      m_Id: 97f8c062-5bc6-49cc-90ef-a8896c14c503
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotation X
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: 1a3da3ad-58e9-4d64-839d-169bb8dc161c
+      m_Path: <Gamepad>/rightStick/left
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotation X
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: c5153f21-8c9c-4d83-a77f-b10bc5171fc4
+      m_Path: <Gamepad>/rightStick/right
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotation X
+      m_Flags: 8
+  rotationY:
+    m_Name: Rotation Y
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e3d1f8ff-23c9-4201-be95-8d0d9ee7bcbb
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: gamepad
+      m_Id: 69cafa87-f81b-492d-91e7-baf94a7267e2
+      m_Path: 1DAxis
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotation Y
+      m_Flags: 4
+    - m_Name: negative
+      m_Id: c624981c-a2d8-423b-8f9b-2e07a4494133
+      m_Path: <Gamepad>/rightStick/down
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotation Y
+      m_Flags: 8
+    - m_Name: positive
+      m_Id: 7f60b8ee-7689-4670-af6e-58c5b6c95a90
+      m_Path: <Gamepad>/rightStick/up
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Rotation Y
+      m_Flags: 8
   maxSpeed: 25
   acceleration: 4
