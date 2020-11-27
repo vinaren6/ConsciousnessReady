@@ -13,9 +13,12 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private InputAction boostInput;
 
-    float boostSpeed = 1;
+    float boost = 1;
+    [SerializeField] private float boostSpeed = 2.5f;
+    
+    [SerializeField] private float boostTimerLengt = 10;
     float boostTimer = 10;
-
+    bool isBoost;
     [SerializeField]
     private float maxSpeed = 5.5f;
     [SerializeField]
@@ -28,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        boostTimer = boostTimerLengt;
         rotationX.Enable();
         rotationY.Enable();
         movementX.Enable();
@@ -53,22 +57,54 @@ public class PlayerMovement : MonoBehaviour
             }
         }; ;
         rotationY.canceled += context => moveDirection.y = 0;
-        boostInput.performed += context => boostSpeed = 4;
-        boostInput.canceled += context => boostSpeed = 1;
+        boostInput.started += context => {
+            if (boostTimer > 0)
+            {
+                isBoost = true;
+                boost = boostSpeed;
+               
+            }
+            else
+            {
+                isBoost = false;
+            }
+            Debug.Log(boostTimer);
+        };
+        boostInput.canceled += context => { boost = 1; isBoost = false;  };
 
     }
+    private void Update()
+    {
+        
+        if (isBoost)
+        {
+            boostTimer -= Time.deltaTime;
+            if (boostTimer <= 0)
+            {
+                isBoost = false;
+            }
+        }
+        else
+        {
+            boost = 1;
+            if (boostTimer < boostTimerLengt)
+            {
+                boostTimer += Time.deltaTime;
+            }
+            
+        }
+    }
 
-    
-   
+
 
     private void FixedUpdate()
     {
     
-        if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed * boostSpeed)
+        if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed * boost)
             {
            // movement = movement.normalized;
            // Debug.Log(movement.x);
-            rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boostSpeed * Time.fixedDeltaTime, ForceMode2D.Impulse);
+            rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boost * Time.fixedDeltaTime, ForceMode2D.Impulse);
           //  Debug.Log(rb2d.velocity.x);
 
 
