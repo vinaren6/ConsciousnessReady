@@ -44,7 +44,7 @@ public class AI : MonoBehaviour
     Transform[] guns;
 
     float activeFireDelay = 1f;
-    GameObject lastBullet;
+    bool skip = false;
 
     [System.Flags]
     enum Behavor
@@ -75,7 +75,7 @@ public class AI : MonoBehaviour
     private void FixedUpdate()
     {
         float dist = 1f;
-
+        skip = false;
         //rotate baseed on targets position
         if (behavor.HasFlag(Behavor.Hunt)) {
             dist = Vector3.Distance(target.position, transform.position);
@@ -166,8 +166,9 @@ public class AI : MonoBehaviour
                     RaycastHit2D hitFire = Physics2D.Raycast(transform.position, transform.up, dist, layerMask);
                     if (hitFire.distance == 0) {
                         activeFireDelay = fireDelay;
+                        skip = true;
                         foreach (Transform gun in guns) {
-                            lastBullet = Instantiate(bullet, gun.position, gun.rotation);
+                            Instantiate(bullet, gun.position, gun.rotation);
                         }
                     }
                 }
@@ -178,8 +179,8 @@ public class AI : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Enemy Bullet") {
-            if (lastBullet == null || lastBullet != collision.gameObject)
-            Destroy(collision.gameObject);
+            if (!skip)
+                Destroy(collision.gameObject);
         }
     }
 
