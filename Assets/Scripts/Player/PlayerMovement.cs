@@ -40,12 +40,14 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveDirection.x = context.ReadValue<float>();
             }  } ;
+        rotationX.canceled += context => moveDirection.x = 0;
         rotationY.performed += context => {
             if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
             {
                 moveDirection.y = context.ReadValue<float>();
             }
         }; ;
+        rotationY.canceled += context => moveDirection.y = 0;
     }
 
     
