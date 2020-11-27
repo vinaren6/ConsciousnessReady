@@ -34,10 +34,27 @@ public class AI : MonoBehaviour
 
     private Vector3 lastPos = new Vector3();
 
+    [Space(10)]
+    [Header("Guns")]
+    [SerializeField]
+    float fireDelay = 3f;
+    [SerializeField]
+    GameObject bullet;
+    [SerializeField]
+    Transform[] guns;
+
+    float activeFireDelay = 1f;
+    GameObject lastBullet;
+
+    [System.Flags]
     enum Behavor
     {
-        Hunt,
-        Run
+        Nothing = 0,
+        Hunt = 1 << 0,
+        Stationary = 1 << 1,
+        Fire = 1 << 2,
+        Kamikaze = 1 << 3,
+        Everything = ~0
     }
 
     private void Awake()
@@ -57,88 +74,114 @@ public class AI : MonoBehaviour
 
     private void FixedUpdate()
     {
-        float dist = 1;
+        float dist = 1f;
 
-        if (lastPos == transform.position)
-            turning += 180;
-        else
-            lastPos = transform.position;
-
-        if (behavor == Behavor.Run) {
-            Vector3 dir = target.position - transform.position;
-            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            angle += 90;
-            transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
-        } else {
+        //rotate baseed on targets position
+        if (behavor.HasFlag(Behavor.Hunt)) {
             dist = Vector3.Distance(target.position, transform.position);
             Vector3 dir = target.position + targetDistanceMultiplier * dist * new Vector3(targetRB2D.velocity.x, targetRB2D.velocity.y) - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             angle -= 90;
             transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
-
-        }
-
-        bool hits = false;
-
-        RaycastHit2D hit1 = Physics2D.Raycast(transform.position, angle1 * transform.up, maxDistance, layerMask);
-        if (hit1.distance != 0) {
-            hits = true;
-#if UNITY_EDITOR
-            Debug.DrawRay(transform.position, angle1 * transform.up * hit1.distance, Color.yellow);
-#endif
         } else {
-            hit1.distance = maxDistance;
-#if UNITY_EDITOR
-            Debug.DrawRay(transform.position, angle1 * transform.up * maxDistance, Color.green);
-#endif
+            Vector3 dir = target.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            angle += 90;
+            transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
         }
-        RaycastHit2D hit2 = Physics2D.Raycast(transform.position, angle2 * transform.up, maxDistance, layerMask);
-        if (hit2.distance != 0) {
-            hits = true;
+
+
+        if (!behavor.HasFlag(Behavor.Stationary)) {
+
+            //turn around if stuck
+            if (lastPos == transform.position)
+                turning += 180;
+            else
+                lastPos = transform.position;
+
+            //avoid colition will wall
+            bool hits = false;
+            RaycastHit2D hit1 = Physics2D.Raycast(transform.position, angle1 * transform.up, maxDistance, layerMask);
+            if (hit1.distance != 0) {
+                hits = true;
 #if UNITY_EDITOR
-            Debug.DrawRay(transform.position, angle2 * transform.up * hit2.distance, Color.yellow);
+                Debug.DrawRay(transform.position, angle1 * transform.up * hit1.distance, Color.yellow);
 #endif
-        } else {
-            hit2.distance = maxDistance;
-#if UNITY_EDITOR
-            Debug.DrawRay(transform.position, angle2 * transform.up * maxDistance, Color.green);
-#endif
-        }
-        float speedMultiplier = 1;
-        if (hits) {
-            if (hit1.distance < hit2.distance) {
-                speedMultiplier = hit1.distance * 1.2f / maxDistance - 0.2f;
-                turning += Time.fixedDeltaTime * turnSpeed;
-                if (turning > 360)
-                    turning -= 360;
             } else {
-                speedMultiplier = Mathf.Min(hit2.distance * 3f / maxDistance - 0.5f, 1f);
-                turning -= Time.fixedDeltaTime * turnSpeed;
-                if (turning < -360)
-                    turning += 360;
+                hit1.distance = maxDistance;
+#if UNITY_EDITOR
+                Debug.DrawRay(transform.position, angle1 * transform.up * maxDistance, Color.green);
+#endif
             }
-        } else {
+            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, angle2 * transform.up, maxDistance, layerMask);
+            if (hit2.distance != 0) {
+                hits = true;
+#if UNITY_EDITOR
+                Debug.DrawRay(transform.position, angle2 * transform.up * hit2.distance, Color.yellow);
+#endif
+            } else {
+                hit2.distance = maxDistance;
+#if UNITY_EDITOR
+                Debug.DrawRay(transform.position, angle2 * transform.up * maxDistance, Color.green);
+#endif
+            }
+            float speedMultiplier = 1;
+            // turn away from opsticle
+            if (hits) {
+                if (hit1.distance < hit2.distance) {
+                    speedMultiplier = Mathf.Min(hit1.distance * 3f / maxDistance - 0.5f, 1f);
+                    turning += Time.fixedDeltaTime * turnSpeed;
+                } else {
+                    speedMultiplier = Mathf.Min(hit2.distance * 3f / maxDistance - 0.5f, 1f);
+                    turning -= Time.fixedDeltaTime * turnSpeed;
+                }
+            } else {
 
-            if (turning > 180) {
-                turning += Time.fixedDeltaTime * turnSpeed;
-                if (turning > 360)
-                    turning -= 360;
-            } else if (turning < -180) {
-                turning -= Time.fixedDeltaTime * turnSpeed;
-                if (turning < -360)
-                    turning += 360;
-            } else
+                if (turning > 180)
+                    turning += Time.fixedDeltaTime * turnSpeed;
+                else if (turning < -180)
+                    turning -= Time.fixedDeltaTime * turnSpeed;
+                else
+                    turning -= Mathf.Clamp(turning * 0.05f, -Time.fixedDeltaTime * turnSpeed, Time.fixedDeltaTime * turnSpeed);
+            }
+            turning %= 360;
 
-                turning -= Mathf.Clamp(turning * 0.05f, -Time.fixedDeltaTime * turnSpeed, Time.fixedDeltaTime * turnSpeed);
+            if (!behavor.HasFlag(Behavor.Kamikaze) && behavor.HasFlag(Behavor.Hunt)) {
+                //dont ram the target
+                speedMultiplier *= Mathf.Min(dist - 1.75f, 1f);
+            }
+
+            //apply acceleration
+            if (rb2d.velocity.magnitude < maxSpeed) {
+                rb2d.AddForce(transform.up * acceleration * speedMultiplier * Time.fixedDeltaTime, ForceMode2D.Impulse);
+            }
+
         }
 
-        if (behavor == Behavor.Hunt)
-            speedMultiplier *= Mathf.Min(dist - 1.5f, 1f);
-
-        if (rb2d.velocity.magnitude < maxSpeed) {
-            rb2d.AddForce(transform.up * acceleration * speedMultiplier * Time.fixedDeltaTime, ForceMode2D.Impulse);
+        if (behavor.HasFlag(Behavor.Fire)) {
+            //fire at target
+            activeFireDelay -= Time.fixedDeltaTime;
+            if (activeFireDelay < 0) {
+                if ((turning < 45 || turning < -315) && (turning > -45 || turning > 315)) {
+                    RaycastHit2D hitFire = Physics2D.Raycast(transform.position, transform.up, dist, layerMask);
+                    if (hitFire.distance == 0) {
+                        activeFireDelay = fireDelay;
+                        foreach (Transform gun in guns) {
+                            lastBullet = Instantiate(bullet, gun.position, gun.rotation);
+                        }
+                    }
+                }
+            }
         }
-
     }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.tag == "Enemy Bullet") {
+            if (lastBullet == null || lastBullet != collision.gameObject)
+            Destroy(collision.gameObject);
+        }
+    }
+
 
 }

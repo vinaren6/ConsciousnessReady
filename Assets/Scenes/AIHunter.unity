@@ -469,7 +469,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 582eff7dd6c9b9742886e00ee8cdbd27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeScale: 20
+  timeScale: 1
 --- !u!4 &316561695
 Transform:
   m_ObjectHideFlags: 0
@@ -728,16 +728,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227a9725888c3684a849d4abd62a5c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavor: 0
+  behavor: 5
   layerMask:
     serializedVersion: 2
-    m_Bits: 14135
+    m_Bits: 5943
   maxSpeed: 5.5
   acceleration: 1.75
   target: {fileID: 988820674}
   maxDistance: 6.5
   turnSpeed: 20
   targetDistanceMultiplier: 0.5
+  fireDelay: 3
+  bullet: {fileID: 4896796078918369617, guid: da315062692094e4b97e8bd615054a3e, type: 3}
+  guns:
+  - {fileID: 440518539}
 --- !u!96 &440518541
 TrailRenderer:
   serializedVersion: 2
@@ -1112,7 +1116,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227a9725888c3684a849d4abd62a5c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavor: 1
+  behavor: 0
   layerMask:
     serializedVersion: 2
     m_Bits: 7991
@@ -1122,6 +1126,9 @@ MonoBehaviour:
   maxDistance: 6.5
   turnSpeed: 20
   targetDistanceMultiplier: 0.1
+  fireDelay: 0
+  bullet: {fileID: 0}
+  guns: []
 --- !u!50 &988820672
 Rigidbody2D:
   serializedVersion: 4

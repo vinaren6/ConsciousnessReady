@@ -3,8 +3,16 @@
 public class Bullet : MonoBehaviour
 {
     public float speed = 5;
+    [SerializeField]
+    float life = 16;
+
+    private void Start()
+    {
+        Destroy(gameObject, life);
+    }
+
     private void FixedUpdate()
     {
-        transform.Translate(transform.up * Time.fixedDeltaTime * speed);
+        transform.position += transform.up * Time.fixedDeltaTime * speed;
     }
 }
