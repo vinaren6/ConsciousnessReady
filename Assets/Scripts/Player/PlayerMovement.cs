@@ -84,7 +84,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 Debug.Log("test");
                 
-                float angle = Mathf.Atan2(RotationDirection.y, RotationDirection.x) * Mathf.Rad2Deg;
+                float angle = Mathf.Atan2(-RotationDirection.y, -RotationDirection.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
             }
         }
