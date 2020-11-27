@@ -11,6 +11,10 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputAction rotationX;
     [SerializeField] private InputAction rotationY;
 
+    [SerializeField] private InputAction boostInput;
+
+    float boostSpeed = 1;
+    float boostTimer = 10;
 
     [SerializeField]
     private float maxSpeed = 5.5f;
@@ -28,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
         rotationY.Enable();
         movementX.Enable();
         movementY.Enable();
+        boostInput.Enable();
          rb2d = GetComponent<Rigidbody2D>();
         movementX.performed += context => movement.x = context.ReadValue<float>();
         movementX.canceled += context => movement.x = 0;
@@ -48,6 +53,9 @@ public class PlayerMovement : MonoBehaviour
             }
         }; ;
         rotationY.canceled += context => moveDirection.y = 0;
+        boostInput.performed += context => boostSpeed = 4;
+        boostInput.canceled += context => boostSpeed = 1;
+
     }
 
     
@@ -56,11 +64,11 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
     
-        if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed)
+        if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed * boostSpeed)
             {
            // movement = movement.normalized;
            // Debug.Log(movement.x);
-            rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * Time.fixedDeltaTime, ForceMode2D.Impulse);
+            rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boostSpeed * Time.fixedDeltaTime, ForceMode2D.Impulse);
           //  Debug.Log(rb2d.velocity.x);
 
 
@@ -84,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (RotationDirection != Vector2.zero)
             {
-                Debug.Log("test");
+            
                 
                 float angle = Mathf.Atan2(-RotationDirection.y, -RotationDirection.x) * Mathf.Rad2Deg;
                 transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);

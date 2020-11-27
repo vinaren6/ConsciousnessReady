@@ -374,5 +374,29 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Rotation Y
       m_Flags: 8
+  boostInput:
+    m_Name: Boost Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 9557757d-17dc-4917-88fd-b2e61a67fa88
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: d89f35b8-8839-4b0a-ac59-7ed1f044f516
+      m_Path: <Keyboard>/leftShift
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Boost Input
+      m_Flags: 0
+    - m_Name: 
+      m_Id: fafe6cb9-a60b-41ad-8710-4aa94978164b
+      m_Path: <Gamepad>/leftTrigger
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Boost Input
+      m_Flags: 0
   maxSpeed: 10
   acceleration: 15
