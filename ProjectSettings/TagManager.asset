@@ -16,7 +16,7 @@ TagManager:
   - 
   - 
   - Activation Trigger
-  - 
+  - Visual Effects
   - Background
   - Player
   - Environment
@@ -43,11 +43,17 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Background
+    uniqueID: 299289733
+    locked: 0
+  - name: Visual Effects
+    uniqueID: 2195571885
+    locked: 0
   - name: Hazards
     uniqueID: 3430918519
     locked: 0
-  - name: Background
-    uniqueID: 299289733
+  - name: Environment
+    uniqueID: 1450122937
     locked: 0
   - name: Player
     uniqueID: 3992303179
