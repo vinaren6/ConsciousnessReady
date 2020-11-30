@@ -59,14 +59,10 @@ public class AI : MonoBehaviour
 
     private void Awake()
     {
-        Physics2D.queriesStartInColliders = false;
+        //Physics2D.queriesStartInColliders = false;
         angle1 = Quaternion.AngleAxis(-15, new Vector3(0, 0, 1));
         angle2 = Quaternion.AngleAxis(15, new Vector3(0, 0, 1));
 
-    }
-
-    void Start()
-    {
         rb2d = GetComponent<Rigidbody2D>();
         targetRB2D = target.GetComponent<Rigidbody2D>();
     }
