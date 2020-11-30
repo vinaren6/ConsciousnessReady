@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnableScriptOnTrigger : MonoBehaviour
 {
@@ -9,11 +7,13 @@ public class EnableScriptOnTrigger : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        script.enabled = true;
+        if (collision.tag == "Player")
+            script.enabled = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        script.enabled = false;
+        if (collision.tag == "Player")
+            script.enabled = false;
     }
 }

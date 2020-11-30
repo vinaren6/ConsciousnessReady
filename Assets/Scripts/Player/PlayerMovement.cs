@@ -28,9 +28,15 @@ public class PlayerMovement : MonoBehaviour
     Quaternion moveDirectioJoyCon;
     Rigidbody2D rb2d;
     float deadSpaceRotation = 0.2f;
+
+    //statice refrence to the player obj.
+    static public GameObject playerObj;
+
     // Start is called before the first frame update
     void Start()
     {
+        playerObj = gameObject;
+
         boostTimer = boostTimerLengt;
         rotationX.Enable();
         rotationY.Enable();

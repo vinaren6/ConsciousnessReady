@@ -342,7 +342,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 8
+  m_Radius: 10
 --- !u!1 &83646957
 GameObject:
   m_ObjectHideFlags: 3
@@ -970,7 +970,7 @@ MonoBehaviour:
   target: {fileID: 1088433522}
   maxDistance: 7
   turnSpeed: 30
-  targetDistanceMultiplier: 0.4
+  targetDistanceMultiplier: 0.2
   fireDelay: 3
   bullet: {fileID: 4896796078918369617, guid: da315062692094e4b97e8bd615054a3e, type: 3}
   guns:
@@ -1636,7 +1636,7 @@ MonoBehaviour:
   target: {fileID: 1088433522}
   maxDistance: 7
   turnSpeed: 30
-  targetDistanceMultiplier: 0.4
+  targetDistanceMultiplier: 0.2
   fireDelay: 3
   bullet: {fileID: 4896796078918369617, guid: da315062692094e4b97e8bd615054a3e, type: 3}
   guns:
@@ -2324,7 +2324,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 8
+  m_Radius: 10
 --- !u!1 &1196728009
 GameObject:
   m_ObjectHideFlags: 0

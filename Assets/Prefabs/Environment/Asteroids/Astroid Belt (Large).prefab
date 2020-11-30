@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6119908226612756471}
   - component: {fileID: 6119908226612756470}
   - component: {fileID: 5428214710385903417}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   - component: {fileID: 6119908227013461253}
   - component: {fileID: 6119908227013461252}
   - component: {fileID: 6379222479692678691}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -293,7 +293,7 @@ GameObject:
   - component: {fileID: 6119908227058090720}
   - component: {fileID: 6119908227058090751}
   - component: {fileID: 6119908227058090750}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -433,7 +433,7 @@ GameObject:
   - component: {fileID: 6119908227134926879}
   - component: {fileID: 6119908227134926878}
   - component: {fileID: 9100457847177404041}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 6119908227386126523}
   - component: {fileID: 6119908227386126522}
   - component: {fileID: 4839947566518802119}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 6119908227766749359}
   - component: {fileID: 6119908227766749358}
   - component: {fileID: 2841298689635325613}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -863,7 +863,7 @@ GameObject:
   - component: {fileID: 6119908227921411850}
   - component: {fileID: 6119908227921411849}
   - component: {fileID: 8423918600418476079}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1003,7 +1003,7 @@ GameObject:
   - component: {fileID: 6119908227942751068}
   - component: {fileID: 6119908227942751067}
   - component: {fileID: 8008798182574167346}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1142,7 +1142,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6119908228456717581}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Astroid Belt (Large)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1184,7 +1184,7 @@ GameObject:
   - component: {fileID: 6119908228560428261}
   - component: {fileID: 6119908228560428260}
   - component: {fileID: 6018307482075046464}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Asteroids_KJ_v003_GRADED_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
