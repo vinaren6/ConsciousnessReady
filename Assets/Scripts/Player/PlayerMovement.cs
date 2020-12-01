@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
     Quaternion moveDirectioJoyCon;
     Rigidbody2D rb2d;
     float deadSpaceRotation = 0.2f;
-    [SerializeField] Animation propulsion;
+    [SerializeField] Animator propulsion;
     [SerializeField] Animator ship;
     //statice refrence to the player obj.
     static public GameObject playerObj;
@@ -91,6 +91,8 @@ public class PlayerMovement : MonoBehaviour
         {
             ship.SetBool("ShipMoving", false);
         }
+        propulsion.SetFloat("ShipVelocity", rb2d.velocity.magnitude);
+
         if (isBoost)
         {
             boostTimer -= Time.deltaTime;
@@ -108,6 +110,7 @@ public class PlayerMovement : MonoBehaviour
             }
             
         }
+        propulsion.SetBool("NitroBoost", isBoost);
     }
 
 
