@@ -28,13 +28,15 @@ public class PlayerMovement : MonoBehaviour
     Quaternion moveDirectioJoyCon;
     Rigidbody2D rb2d;
     float deadSpaceRotation = 0.2f;
-
+    [SerializeField] Animation propulsion;
+    [SerializeField] Animator ship;
     //statice refrence to the player obj.
     static public GameObject playerObj;
 
     // Start is called before the first frame update
     void Start()
     {
+
         playerObj = gameObject;
 
         boostTimer = boostTimerLengt;
@@ -81,7 +83,14 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        
+        if (rb2d.velocity.magnitude > 0.3)
+        {
+            ship.SetBool("ShipMoving", true);
+        }
+        else
+        {
+            ship.SetBool("ShipMoving", false);
+        }
         if (isBoost)
         {
             boostTimer -= Time.deltaTime;
@@ -124,9 +133,10 @@ public class PlayerMovement : MonoBehaviour
             moveDirectioJoyCon = Quaternion.AngleAxis(angle + 90, Vector3.forward);
             transform.rotation = moveDirectioJoyCon;
            // Debug.Log(Quaternion.AngleAxis(angle + 90, Vector3.forward).z + "  " + Quaternion.AngleAxis(angle + 90, Vector3.forward).w);
+
         }
 
-
+        Debug.Log(rb2d.velocity.magnitude);
         if (moveDirection == Vector2.zero)
         {
             Vector2 RotationDirection = rb2d.velocity;
@@ -137,7 +147,41 @@ public class PlayerMovement : MonoBehaviour
             
                 
                 float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
-                transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+              //  transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+                Quaternion test = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+               // Camera.main.transform.eulerAngles.z;
+              //  Debug.Log(Camera.main.transform.eulerAngles.z + angle + 90);
+                float newRotation = Camera.main.transform.eulerAngles.z + angle + 90;
+                if (newRotation < 0)
+                {
+                   newRotation = 360 + newRotation;
+                }
+
+                // Debug.Log(newRotation);
+                // Debug.Log(newRotation < transform.rotation.z);
+                Vector3 eulerRotation = transform.rotation.eulerAngles;
+               // Debug.Log(newRotation + "  " + eulerRotation.z);
+                if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
+                {
+
+                    Debug.Log(eulerRotation.z);
+                    if (eulerRotation.z >= 358)
+                    {
+                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
+                    }
+                    else if (newRotation - eulerRotation.z <= newRotation)
+                    {
+
+                        // Debug.Log(newRotation + "  " + eulerRotation.z);
+                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 1);
+
+                        //  transform.rotation = new Vector3(0, 0, transform.rotation.z + 1 * Time.fixedDeltaTime);
+                    }
+                }
+
+
+
+
             }
         }
 

@@ -57,7 +57,7 @@ public class AI : MonoBehaviour
         Everything = ~0
     }
 
-    private void Awake()
+    private void Start()
     {
         //Physics2D.queriesStartInColliders = false;
         angle1 = Quaternion.AngleAxis(-15, new Vector3(0, 0, 1));
