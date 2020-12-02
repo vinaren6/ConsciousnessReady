@@ -76,7 +76,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 isBoost = false;
             }
-            Debug.Log(boostTimer);
+            
         };
         boostInput.canceled += context => { boost = 1; isBoost = false;  };
 
@@ -139,7 +139,7 @@ public class PlayerMovement : MonoBehaviour
 
         }
 
-        Debug.Log(rb2d.velocity.magnitude);
+    
         if (moveDirection == Vector2.zero)
         {
             Vector2 RotationDirection = rb2d.velocity;
@@ -167,16 +167,30 @@ public class PlayerMovement : MonoBehaviour
                 if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
                 {
 
-                    Debug.Log(eulerRotation.z);
-                    if (eulerRotation.z >= 358)
+                    Debug.Log(newRotation - eulerRotation.z);
+                    if (eulerRotation.z > 359)
                     {
                         transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
+                        eulerRotation = transform.rotation.eulerAngles;
                     }
-                    else if (newRotation - eulerRotation.z <= newRotation)
+                    if (eulerRotation.z < 0)
+                    {
+                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 358);
+                        eulerRotation = transform.rotation.eulerAngles;
+                    }
+                    if ((newRotation - eulerRotation.z < 180 && newRotation - eulerRotation.z > 0)  || newRotation - eulerRotation.z < -180)
                     {
 
                         // Debug.Log(newRotation + "  " + eulerRotation.z);
                         transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 1);
+
+                        //  transform.rotation = new Vector3(0, 0, transform.rotation.z + 1 * Time.fixedDeltaTime);
+                    }
+                    else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
+                    {
+
+                        // Debug.Log(newRotation + "  " + eulerRotation.z);
+                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 1);
 
                         //  transform.rotation = new Vector3(0, 0, transform.rotation.z + 1 * Time.fixedDeltaTime);
                     }
