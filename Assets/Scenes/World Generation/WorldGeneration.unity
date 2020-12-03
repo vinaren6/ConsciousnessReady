@@ -156,6 +156,10 @@ MonoBehaviour:
   cell: {fileID: 6918383508611067929, guid: 54c707ca34d4d094f9fab70f5786a3dd, type: 3}
   cellRules:
   - {fileID: 11400000, guid: 96ee5e0acb0ee954e91ea4e8599fe45b, type: 2}
+  - {fileID: 11400000, guid: b74428d67589f9448857b7b90cb0188e, type: 2}
+  - {fileID: 11400000, guid: 3f30a7ac8ea674b46919f1afbe0e6caf, type: 2}
+  - {fileID: 11400000, guid: 58019726bc0e6b1469381ff864c93d24, type: 2}
+  - {fileID: 11400000, guid: 25ee400383c1e3741a09c1e3ab58b09e, type: 2}
   camScale:
   - {fileID: 37926916}
   debugData: 'Min Max Distance: (5.0, 8.0)

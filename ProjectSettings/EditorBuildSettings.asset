@@ -17,5 +17,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/World Generation/Cells/Start/StartCell.unity
     guid: 3edb4d0ad1b897b44a63a69acf79ca3c
+  - enabled: 1
+    path: Assets/World Generation/Cells/Astroids Cell.unity
+    guid: 6aeb0d45d0284aa4797d70ad56dac198
+  - enabled: 1
+    path: Assets/World Generation/Cells/Blackhole Cell.unity
+    guid: fc35b39a4149f4c4a8b2c8e06e12baa6
+  - enabled: 1
+    path: Assets/World Generation/Cells/Slumber Cell.unity
+    guid: 35f816ab5e7d3f249aef561db5be6f91
+  - enabled: 1
+    path: Assets/World Generation/Cells/Borders Cell.unity
+    guid: a617072bd9d582949834f8d369f53b32
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1a2775d9a73d2a44c8d13cc8fe914045, type: 2}

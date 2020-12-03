@@ -130,10 +130,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -149,12 +149,12 @@ TextureImporter:
       name: Alien_KJ_V004_1
       rect:
         serializedVersion: 2
-        x: 187
+        x: 188
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -170,12 +170,12 @@ TextureImporter:
       name: Alien_KJ_V004_2
       rect:
         serializedVersion: 2
-        x: 374
+        x: 375
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -191,12 +191,12 @@ TextureImporter:
       name: Alien_KJ_V004_3
       rect:
         serializedVersion: 2
-        x: 561
+        x: 564
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -212,12 +212,12 @@ TextureImporter:
       name: Alien_KJ_V004_4
       rect:
         serializedVersion: 2
-        x: 748
+        x: 752
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: Alien_KJ_V004_5
       rect:
         serializedVersion: 2
-        x: 935
+        x: 939
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,12 +254,12 @@ TextureImporter:
       name: Alien_KJ_V004_6
       rect:
         serializedVersion: 2
-        x: 1122
+        x: 1126
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -275,12 +275,12 @@ TextureImporter:
       name: Alien_KJ_V004_7
       rect:
         serializedVersion: 2
-        x: 1309
+        x: 1313
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -296,12 +296,12 @@ TextureImporter:
       name: Alien_KJ_V004_8
       rect:
         serializedVersion: 2
-        x: 1496
+        x: 1500
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -317,12 +317,12 @@ TextureImporter:
       name: Alien_KJ_V004_9
       rect:
         serializedVersion: 2
-        x: 1683
+        x: 1688
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -338,12 +338,12 @@ TextureImporter:
       name: Alien_KJ_V004_10
       rect:
         serializedVersion: 2
-        x: 1870
+        x: 1875
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -359,12 +359,12 @@ TextureImporter:
       name: Alien_KJ_V004_11
       rect:
         serializedVersion: 2
-        x: 2057
+        x: 2062
         y: 0
-        width: 187.58333
+        width: 177
         height: 261
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
