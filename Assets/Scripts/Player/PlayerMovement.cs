@@ -173,8 +173,9 @@ public class PlayerMovement : MonoBehaviour
                             {
                                 test1 = test1 / 100 + 1;
                             }
-                          //  Debug.Log(test1);
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 200 * test1  * Time.deltaTime);
+                            test1 = test1 * 10;
+                            //  Debug.Log(test1);
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 25 * test1  * Time.deltaTime);
 
 
                         }
@@ -182,17 +183,12 @@ public class PlayerMovement : MonoBehaviour
                         {
                             float test1 = Mathf.Abs(newRotation - eulerRotation.z);
                             Debug.Log(test1);
-                            if (test1 < -180)
-                            {
-                                test1 = 1 + (180 - Mathf.Abs(test1 + 180)) / 100;
-                            }
-                            else
-                            {
+                           
                                 test1 = test1 / 100 + 1;
-                            }
+                            test1 = test1 * 10;
                             
 
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 200 * test1 * Time.deltaTime);
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 25 * test1 * Time.deltaTime);
 
 
                         }
