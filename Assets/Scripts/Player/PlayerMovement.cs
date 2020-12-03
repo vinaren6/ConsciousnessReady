@@ -112,7 +112,7 @@ public class PlayerMovement : MonoBehaviour
             
         }
       
-            if (moveDirection != Vector2.zero)
+            if (moveDirection   != Vector2.zero)
         {
 
             float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
@@ -150,7 +150,7 @@ public class PlayerMovement : MonoBehaviour
                     if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
                     {
 
-                        Debug.Log(newRotation - eulerRotation.z);
+                        //Debug.Log(newRotation - eulerRotation.z);
                         if (eulerRotation.z > 359)
                         {
                             transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
@@ -163,17 +163,36 @@ public class PlayerMovement : MonoBehaviour
                         }
                         if ((newRotation - eulerRotation.z < 180 && newRotation - eulerRotation.z > 0) || newRotation - eulerRotation.z < -180)
                         {
-
-
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 70 * Time.deltaTime);
+                            float test1 = newRotation - eulerRotation.z;
+                            
+                            if (test1 < -180)
+                            {
+                                test1 = 1 + (180 - Mathf.Abs(test1 + 180)) / 100;
+                            }
+                            else
+                            {
+                                test1 = test1 / 100 + 1;
+                            }
+                          //  Debug.Log(test1);
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 200 * test1  * Time.deltaTime);
 
 
                         }
                         else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
                         {
+                            float test1 = Mathf.Abs(newRotation - eulerRotation.z);
+                            Debug.Log(test1);
+                            if (test1 < -180)
+                            {
+                                test1 = 1 + (180 - Mathf.Abs(test1 + 180)) / 100;
+                            }
+                            else
+                            {
+                                test1 = test1 / 100 + 1;
+                            }
+                            
 
-
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 70 * Time.deltaTime);
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 200 * test1 * Time.deltaTime);
 
 
                         }
