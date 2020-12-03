@@ -23,6 +23,7 @@ public class PlayerMovement : MonoBehaviour
     private float maxSpeed = 5.5f;
     [SerializeField]
     private float acceleration = 2f;
+    [SerializeField]  private bool newRotation;
     Vector2 movement;
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
@@ -110,6 +111,89 @@ public class PlayerMovement : MonoBehaviour
             }
             
         }
+      
+            if (moveDirection != Vector2.zero)
+        {
+
+            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
+            //Debug.Log(angle);
+            moveDirectioJoyCon = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+            transform.rotation = moveDirectioJoyCon;
+            // Debug.Log(Quaternion.AngleAxis(angle + 90, Vector3.forward).z + "  " + Quaternion.AngleAxis(angle + 90, Vector3.forward).w);
+
+        }
+        if (newRotation)
+        {
+
+            if (moveDirection == Vector2.zero)
+            {
+                Vector2 RotationDirection = rb2d.velocity;
+
+
+
+
+                if (movement != Vector2.zero)
+                {
+
+
+                    float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
+
+                    Quaternion test = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+
+                    float newRotation = Camera.main.transform.eulerAngles.z + angle + 90;
+                    if (newRotation < 0)
+                    {
+                        newRotation = 360 + newRotation;
+                    }
+
+                    Vector3 eulerRotation = transform.rotation.eulerAngles;
+                    if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
+                    {
+
+                        Debug.Log(newRotation - eulerRotation.z);
+                        if (eulerRotation.z > 359)
+                        {
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
+                            eulerRotation = transform.rotation.eulerAngles;
+                        }
+                        if (eulerRotation.z < 0)
+                        {
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 358);
+                            eulerRotation = transform.rotation.eulerAngles;
+                        }
+                        if ((newRotation - eulerRotation.z < 180 && newRotation - eulerRotation.z > 0) || newRotation - eulerRotation.z < -180)
+                        {
+
+
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 70 * Time.deltaTime);
+
+
+                        }
+                        else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
+                        {
+
+
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 70 * Time.deltaTime);
+
+
+                        }
+                    }
+                }
+            }
+        }
+        else
+        {
+            Debug.Log("hi");
+            var dir = rb2d.velocity;
+            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+        }
+
+
+
+            
+        
+
         propulsion.SetBool("NitroBoost", isBoost);
     }
 
@@ -117,91 +201,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-    
+
         if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed * boost)
-            {
-           // movement = movement.normalized;
-           // Debug.Log(movement.x);
+        {
+            // movement = movement.normalized;
+            // Debug.Log(movement.x);
             rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boost * Time.fixedDeltaTime, ForceMode2D.Impulse);
-          //  Debug.Log(rb2d.velocity.x);
+            //  Debug.Log(rb2d.velocity.x);
 
 
         }
-         
-        if (moveDirection != Vector2.zero)
-        {
-            
-            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-            //Debug.Log(angle);
-            moveDirectioJoyCon = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-            transform.rotation = moveDirectioJoyCon;
-           // Debug.Log(Quaternion.AngleAxis(angle + 90, Vector3.forward).z + "  " + Quaternion.AngleAxis(angle + 90, Vector3.forward).w);
 
-        }
-
-    
-        if (moveDirection == Vector2.zero)
-        {
-            Vector2 RotationDirection = rb2d.velocity;
-           
-
-            if (movement != Vector2.zero)
-            {
-            
-                
-                float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
-              //  transform.rotation = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-                Quaternion test = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-               // Camera.main.transform.eulerAngles.z;
-              //  Debug.Log(Camera.main.transform.eulerAngles.z + angle + 90);
-                float newRotation = Camera.main.transform.eulerAngles.z + angle + 90;
-                if (newRotation < 0)
-                {
-                   newRotation = 360 + newRotation;
-                }
-
-                // Debug.Log(newRotation);
-                // Debug.Log(newRotation < transform.rotation.z);
-                Vector3 eulerRotation = transform.rotation.eulerAngles;
-               // Debug.Log(newRotation + "  " + eulerRotation.z);
-                if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
-                {
-
-                    Debug.Log(newRotation - eulerRotation.z);
-                    if (eulerRotation.z > 359)
-                    {
-                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
-                        eulerRotation = transform.rotation.eulerAngles;
-                    }
-                    if (eulerRotation.z < 0)
-                    {
-                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 358);
-                        eulerRotation = transform.rotation.eulerAngles;
-                    }
-                    if ((newRotation - eulerRotation.z < 180 && newRotation - eulerRotation.z > 0)  || newRotation - eulerRotation.z < -180)
-                    {
-
-                        // Debug.Log(newRotation + "  " + eulerRotation.z);
-                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 1);
-
-                        //  transform.rotation = new Vector3(0, 0, transform.rotation.z + 1 * Time.fixedDeltaTime);
-                    }
-                    else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
-                    {
-
-                        // Debug.Log(newRotation + "  " + eulerRotation.z);
-                        transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 1);
-
-                        //  transform.rotation = new Vector3(0, 0, transform.rotation.z + 1 * Time.fixedDeltaTime);
-                    }
-                }
-
-
-
-
-            }
-        }
 
     }
-    
 }
