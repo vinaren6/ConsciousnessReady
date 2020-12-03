@@ -2,27 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(CircleCollider2D))]
 public class Rippler : MonoBehaviour
 {
     [SerializeField]
     Material material;
 
     [SerializeField]
-    int numPosCount = 16;
+    int numPosCount = 32;
+    [SerializeField]
+    int numAddisonalPos = 32;
 
-    [SerializeField]
+    [SerializeField, Range(0f, 1f)]
     float hitSize = 0.05f;
-    [SerializeField]
+    [SerializeField, Range(0f, 1f)]
     float smoothSize = 0.01f;
 
     [SerializeField]
     float lineWidth = 0.075f;
     [SerializeField]
-    float time = 15f;
-    [SerializeField]
     float rippleSize = 5f;
     [SerializeField]
-    float delay = 1f;
+    float time = 15f;
+    [SerializeField]
+    float delay = 0.5f;
+
+    [SerializeField]
+    float smoothing = 1f;
 
 
     LineRenderer lineRenderer;
@@ -31,10 +37,16 @@ public class Rippler : MonoBehaviour
 
     CircleCollider2D coll;
 
+    AnimationCurve actualCurve;
+
+    Animator animator;
+
     void Start()
     {
         lineRenderer = NewLine();
         coll = GetComponent<CircleCollider2D>();
+        animator = gameObject.transform.parent.GetComponent<Animator>();
+        ResetCurve();
     }
 
     void FixedUpdate()
@@ -46,6 +58,7 @@ public class Rippler : MonoBehaviour
             coll.radius = size * rippleSize;
             lineRenderer.widthMultiplier = lineWidth * (1 - size);
             Line(size * rippleSize);
+            Smooth();
 
         } else {
 
@@ -82,10 +95,10 @@ public class Rippler : MonoBehaviour
     }
     void Line(LineRenderer lineRenderer, float distMutliplier)
     {
-        lineRenderer.positionCount = numPosCount;
+        lineRenderer.positionCount = numPosCount + (int)(numAddisonalPos * size);
         Vector3[] poss = new Vector3[lineRenderer.positionCount];
         for (int i = 0; i < lineRenderer.positionCount; i++) {
-            float ang = (float)i / numPosCount * Mathf.PI * 2f;
+            float ang = (float)i / lineRenderer.positionCount * Mathf.PI * 2f;
             poss[i] = new Vector3(Mathf.Sin(ang) * distMutliplier, Mathf.Cos(ang) * distMutliplier);
         }
         lineRenderer.SetPositions(poss);
@@ -137,22 +150,11 @@ public class Rippler : MonoBehaviour
         }
 
         //fixes issues whnen trying to create a hole inside a hole.
-        //bool angle1 = true, angle2 = true;
         for (int i = 0; i < keys.Count; i++) {
             if (IsBetwin(keys[i].time, angle, hitSize)) {
                 keys.RemoveAt(i);
                 i--;
             }
-            /*
-            else if (IsBetwin(keys[i].time, angle, hitSize + smoothSize)) {
-                
-                    angle1 = false;
-                
-                    angle2 = false;
-                
-            }
-            */
-
         }
 
         //set value 0 for bottom
@@ -169,20 +171,7 @@ public class Rippler : MonoBehaviour
         if (lineRenderer.widthCurve.Evaluate(v) == 1)
             keys.Add(NewKeyframeRaw(v, 1));
 
-        //cleen up, remve single tops
-        /*
-        for (int i = 1; i < keys.Count - 1; i++) {
-            if (keys[i].value == 1 && 
-                keys[i - 1].value == 0 && 
-                keys[i + 1].value == 0) {
-                keys.RemoveAt(i);
-                i--;
-            }
-        }
-        */
-
         //cleen up, remove unnessesary keys
-
         for (int i = 1; i < keys.Count - 1; i++) {
             if (keys[i].value == 0 && keys[i - 1].value == 0 && keys[i + 1].value == 0) {
                 keys.RemoveAt(i);
@@ -191,17 +180,35 @@ public class Rippler : MonoBehaviour
         }
 
 
-        AnimationCurve ac = new AnimationCurve();
-        ac.keys = keys.ToArray();
-        lineRenderer.widthCurve = ac;
+        actualCurve = new AnimationCurve(keys.ToArray());
 
+        for (int i = 0; i < keys.Count; i++) {
+            keys[i] = NewKeyframeRaw(keys[i].time, lineRenderer.widthCurve.Evaluate(keys[i].time));
+        }
+
+        lineRenderer.widthCurve = new AnimationCurve(keys.ToArray());
+
+
+    }
+
+    void Smooth()
+    {
+        Keyframe[] keys = actualCurve.keys;
+        for (int i = 0; i < keys.Length; i++) {
+            if (!keys[i].value.Equals(1))
+            keys[i] = NewKeyframeRaw(keys[i].time, Mathf.Max(lineRenderer.widthCurve.keys[i].value - Time.fixedDeltaTime / smoothing, 0));
+        }
+
+        lineRenderer.widthCurve = new AnimationCurve(keys);
     }
 
     void ResetCurve()
     {
-        AnimationCurve ac = new AnimationCurve();
-        ac.keys = new Keyframe[] { NewKeyframeRaw(0, 1) };
-        lineRenderer.widthCurve = ac;
+        Keyframe[] keys = new Keyframe[] { NewKeyframeRaw(0, 1) };
+        actualCurve = new AnimationCurve(keys);
+        lineRenderer.widthCurve = new AnimationCurve(keys);
+
+        animator.Play("Ripple");
     }
 
     Keyframe NewKeyframe(float time, float value)
