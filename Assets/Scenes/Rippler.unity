@@ -1846,18 +1846,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 141830740, guid: c233a512c88fa1d4c8ed34683e781e80, type: 3}
-      propertyPath: smoothing
-      value: 0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 141830740, guid: c233a512c88fa1d4c8ed34683e781e80, type: 3}
-      propertyPath: numPosCount
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 141830740, guid: c233a512c88fa1d4c8ed34683e781e80, type: 3}
-      propertyPath: numAddisonalPos
-      value: 80
-      objectReference: {fileID: 0}
     - target: {fileID: 2659638037017339328, guid: c233a512c88fa1d4c8ed34683e781e80, type: 3}
       propertyPath: m_RootOrder
       value: 3
