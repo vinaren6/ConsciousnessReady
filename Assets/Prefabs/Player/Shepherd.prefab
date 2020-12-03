@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7927683191028843587}
   m_Layer: 11
   m_Name: PlayerShip_Animated
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -408,7 +408,7 @@ GameObject:
   - component: {fileID: 7927683192662318536}
   m_Layer: 11
   m_Name: Propulsion_Animated
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -508,7 +508,7 @@ GameObject:
   - component: {fileID: 7927683192913059052}
   m_Layer: 11
   m_Name: Shepherd
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
