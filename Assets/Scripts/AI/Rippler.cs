@@ -30,6 +30,9 @@ public class Rippler : MonoBehaviour
     [SerializeField]
     float smoothing = 1f;
 
+    [SerializeField]
+    float pussingForce = 5f;
+
 
     LineRenderer lineRenderer;
 
@@ -109,10 +112,24 @@ public class Rippler : MonoBehaviour
         Vector2 pos = new Vector2(transform.position.x, transform.position.y);
         Vector2 hit = collision.ClosestPoint(transform.position);
         hit -= pos;
+        float orgAngle = Mathf.Atan2(hit.y, hit.x);
         float angle = 360f - Mathf.Atan2(hit.y, hit.x) * Mathf.Rad2Deg;
         angle += 90f;
         angle %= 360f;
         angle /= 360f;
+
+
+        if (lineRenderer.widthCurve.Evaluate(angle) > 0.75f) {
+            //hit
+            if (collision.transform.tag == "Player") {
+                Rigidbody2D collRB2D;
+                if (collision.TryGetComponent<Rigidbody2D>(out collRB2D)) {
+                    float radAngle = (orgAngle + Mathf.PI) % (Mathf.PI * 2f);
+                    collRB2D.AddForce(new Vector2(Mathf.Sin(radAngle) * pussingForce, Mathf.Cos(radAngle)) * pussingForce, ForceMode2D.Impulse);
+                }
+            }
+        }
+
 
         Hole(angle);
     }

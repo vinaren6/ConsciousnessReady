@@ -54,6 +54,7 @@ MonoBehaviour:
   time: 10
   delay: 0.2
   smoothing: 0.95
+  pussingForce: 1.2
 --- !u!58 &141830739
 CircleCollider2D:
   m_ObjectHideFlags: 0
