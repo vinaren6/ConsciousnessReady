@@ -2658,9 +2658,9 @@ GameObject:
   - component: {fileID: 1431874853}
   - component: {fileID: 1431874856}
   - component: {fileID: 1431874855}
-  - component: {fileID: 1431874857}
   - component: {fileID: 1431874858}
   - component: {fileID: 1431874854}
+  - component: {fileID: 1431874857}
   m_Layer: 10
   m_Name: Overlay Camera
   m_TagString: MainCamera
@@ -2771,15 +2771,15 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1431874852}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Script: {fileID: 11500000, guid: c88f5cead0c0b2a4eb05b5900433f8d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AssetsPPU: 125
+  m_AssetsPPU: 108
   m_RefResolutionX: 1920
   m_RefResolutionY: 1080
-  m_UpscaleRT: 0
+  m_UpscaleRT: 1
   m_PixelSnapping: 0
   m_CropFrameX: 0
   m_CropFrameY: 0
