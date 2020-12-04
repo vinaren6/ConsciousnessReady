@@ -318,8 +318,26 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Boost Input
       m_Flags: 0
+  slowInput:
+    m_Name: Slow Input
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: d896e9ed-884f-4615-a3a2-8db5329277a8
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f02e09ba-8c0e-4590-a3b9-d2a9015f1c0c
+      m_Path: <Keyboard>/ctrl
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Slow Input
+      m_Flags: 0
   boostSpeed: 2.5
   boostTimerLengt: 10
+  rotationAcceleration: 10
+  rotationSpeed: 25
   maxSpeed: 10
   acceleration: 15
   newRotation: 1

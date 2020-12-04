@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 29678144}
   - component: {fileID: 29678143}
+  - component: {fileID: 29678145}
   m_Layer: 0
   m_Name: World
   m_TagString: Untagged
@@ -161,6 +162,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 58019726bc0e6b1469381ff864c93d24, type: 2}
   - {fileID: 11400000, guid: 25ee400383c1e3741a09c1e3ab58b09e, type: 2}
   - {fileID: 11400000, guid: a5c9c91ce18150341b3234a8e22fed0c, type: 2}
+  - {fileID: 11400000, guid: f4bfcfbcbd87ecd459450ca21cef9b4a, type: 2}
   camScale:
   - {fileID: 37926916}
   debugData: 'Min Max Distance: (5.0, 8.0)
@@ -183,6 +185,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &29678145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 29678142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2d4a35bb94c1c4e93366728dc5c782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reset:
+    m_Name: Reset
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 36c95b3d-25a3-4900-b236-b9aed234c6d4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 784662c0-4a70-463e-902b-5ed43a50e8c2
+      m_Path: <Keyboard>/r
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Reset
+      m_Flags: 0
 --- !u!1 &37926915
 GameObject:
   m_ObjectHideFlags: 0
