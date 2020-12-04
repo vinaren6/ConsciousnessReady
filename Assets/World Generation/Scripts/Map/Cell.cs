@@ -219,7 +219,12 @@ public class Cell : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.tag == "Player" && !isLoaded && !enabled && GameHaveStarted) {
-            LoadLevel();
+            if (scene.name == transform.name + " Scene") {
+                LoadingLevel = true;
+                AsyncOperation load = SceneManager.LoadSceneAsync(scene.buildIndex, LoadSceneMode.Additive);
+                load.completed += EndLoad;
+            } else
+                LoadLevel();
         }
     }
 
