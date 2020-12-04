@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
-
+using UnityEngine.InputSystem;
 public class Reset : MonoBehaviour
 {
-
-    void Update()
+    [SerializeField] private InputAction reset;
+    void Start()
     {
-        if (Input.GetKeyUp(KeyCode.R)) {
-            SceneManager.LoadScene(0);
-        }
+        reset.Enable();
+        reset.performed += context => SceneManager.LoadScene(0) ;
     }
 }

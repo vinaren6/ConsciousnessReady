@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private InputAction rotationY;
 
     [SerializeField] private InputAction boostInput;
+    [SerializeField] private InputAction slowInput;
 
     float boost = 1;
     [SerializeField] private float boostSpeed = 2.5f;
@@ -50,7 +51,8 @@ public class PlayerMovement : MonoBehaviour
         movementX.Enable();
         movementY.Enable();
         boostInput.Enable();
-         rb2d = GetComponent<Rigidbody2D>();
+        slowInput.Enable();
+        rb2d = GetComponent<Rigidbody2D>();
         movementX.performed += context => movement.x = context.ReadValue<float>();
         movementX.canceled += context => movement.x = 0;
 
@@ -84,6 +86,11 @@ public class PlayerMovement : MonoBehaviour
             
         };
         boostInput.canceled += context => { boost = 1; isBoost = false;  };
+        slowInput.started += context => {
+            maxSpeed = 2f;
+
+        };
+        slowInput.canceled += context => { maxSpeed = 5.5f; };
 
     }
     private void Update()
