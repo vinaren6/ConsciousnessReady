@@ -36,9 +36,6 @@ public class AI : MonoBehaviour
     [SerializeField]
     private float targetDistanceMultiplier = 0.1f;
 
-    [SerializeField]
-    bool antiStuck = true;
-
     private Vector3 lastPos = new Vector3();
 
     [Space(10)]
@@ -61,6 +58,8 @@ public class AI : MonoBehaviour
         Stationary = 1 << 1,
         Fire = 1 << 2,
         Kamikaze = 1 << 3,
+        AntiStuck = 1 << 4,
+        SmoothTracking = 1 << 5,
         Everything = ~0
     }
 
@@ -112,23 +111,28 @@ public class AI : MonoBehaviour
             Vector3 dir = target.position + targetDistanceMultiplier * dist * new Vector3(targetRB2D.velocity.x, targetRB2D.velocity.y) - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             angle -= 90;
-            //LimitRotation(angle + turning);
-            oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
-            transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
+            if (behavor.HasFlag(Behavor.SmoothTracking)) {
+                oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
+                transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
+            } else
+                transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
+
         } else {
             Vector3 dir = target.position - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             angle += 90;
-            //LimitRotation(angle + turning);
-            oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
-            transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
+            if (behavor.HasFlag(Behavor.SmoothTracking)) {
+                oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
+                transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
+            } else
+                transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
         }
 
 
         if (!behavor.HasFlag(Behavor.Stationary)) {
 
             //turn around if stuck
-            if (antiStuck) {
+            if (behavor.HasFlag(Behavor.AntiStuck)) {
                 if (lastPos == transform.position)
                     turning += 180;
                 else
