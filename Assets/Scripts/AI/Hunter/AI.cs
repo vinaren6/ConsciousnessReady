@@ -21,7 +21,11 @@ public class AI : MonoBehaviour
     Rigidbody2D targetRB2D;
 
     [SerializeField]
-    private float maxDistance = 6.5f;
+    private float RayDistance = 6.5f;
+    [SerializeField]
+    private float TargetAvoidDistance = 1.75f;
+    [SerializeField]
+    private float CosisionAvoidDistance = 0.5f;
 
     private Quaternion angle1, angle2;
 
@@ -31,6 +35,9 @@ public class AI : MonoBehaviour
 
     [SerializeField]
     private float targetDistanceMultiplier = 0.1f;
+
+    [SerializeField]
+    bool antiStuck = true;
 
     private Vector3 lastPos = new Vector3();
 
@@ -67,9 +74,32 @@ public class AI : MonoBehaviour
         if (target == null) {
             target = PlayerMovement.playerObj.transform;
         }
-            targetRB2D = target.GetComponent<Rigidbody2D>();
-    }
+        targetRB2D = target.GetComponent<Rigidbody2D>();
 
+        oldAngle = transform.rotation.eulerAngles.z % 180f;
+    }
+    /*
+    private void OnEnable()
+    {
+        if (target == null) {
+            target = PlayerMovement.playerObj.transform;
+        }
+
+        if (behavor.HasFlag(Behavor.Hunt)) {
+            Vector3 dir = target.position + targetDistanceMultiplier * Vector3.Distance(target.position, transform.position) * new Vector3(targetRB2D.velocity.x, targetRB2D.velocity.y) - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            angle -= 90;
+            turning += transform.rotation.eulerAngles.z - angle;
+        } else {
+            Vector3 dir = target.position - transform.position;
+            float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+            angle += 90;
+            turning += transform.rotation.eulerAngles.z - angle;
+        }
+    }
+    */
+
+    float oldAngle = 0f;
 
     private void FixedUpdate()
     {
@@ -82,57 +112,63 @@ public class AI : MonoBehaviour
             Vector3 dir = target.position + targetDistanceMultiplier * dist * new Vector3(targetRB2D.velocity.x, targetRB2D.velocity.y) - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             angle -= 90;
-            transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
+            //LimitRotation(angle + turning);
+            oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
+            transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
         } else {
             Vector3 dir = target.position - transform.position;
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             angle += 90;
-            transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
+            //LimitRotation(angle + turning);
+            oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
+            transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
         }
 
 
         if (!behavor.HasFlag(Behavor.Stationary)) {
 
             //turn around if stuck
-            if (lastPos == transform.position)
-                turning += 180;
-            else
-                lastPos = transform.position;
+            if (antiStuck) {
+                if (lastPos == transform.position)
+                    turning += 180;
+                else
+                    lastPos = transform.position;
+            }
 
             //avoid colition will wall
             bool hits = false;
-            RaycastHit2D hit1 = Physics2D.Raycast(transform.position, angle1 * transform.up, maxDistance, layerMask);
+            RaycastHit2D hit1 = Physics2D.Raycast(transform.position, angle1 * transform.up, RayDistance, layerMask);
             if (hit1.distance != 0) {
                 hits = true;
 #if UNITY_EDITOR
                 Debug.DrawRay(transform.position, angle1 * transform.up * hit1.distance, Color.yellow);
 #endif
             } else {
-                hit1.distance = maxDistance;
+                hit1.distance = RayDistance;
 #if UNITY_EDITOR
-                Debug.DrawRay(transform.position, angle1 * transform.up * maxDistance, Color.green);
+                Debug.DrawRay(transform.position, angle1 * transform.up * RayDistance, Color.green);
 #endif
             }
-            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, angle2 * transform.up, maxDistance, layerMask);
+            RaycastHit2D hit2 = Physics2D.Raycast(transform.position, angle2 * transform.up, RayDistance, layerMask);
             if (hit2.distance != 0) {
                 hits = true;
 #if UNITY_EDITOR
                 Debug.DrawRay(transform.position, angle2 * transform.up * hit2.distance, Color.yellow);
 #endif
             } else {
-                hit2.distance = maxDistance;
+                hit2.distance = RayDistance;
 #if UNITY_EDITOR
-                Debug.DrawRay(transform.position, angle2 * transform.up * maxDistance, Color.green);
+                Debug.DrawRay(transform.position, angle2 * transform.up * RayDistance, Color.green);
 #endif
             }
             float speedMultiplier = 1;
             // turn away from opsticle
             if (hits) {
                 if (hit1.distance < hit2.distance) {
-                    speedMultiplier = Mathf.Min(hit1.distance * 3f / maxDistance - 0.5f, 1f);
+                    speedMultiplier = Mathf.Min(hit1.distance * 3f / RayDistance - CosisionAvoidDistance, 1f);
                     turning += Time.fixedDeltaTime * turnSpeed;
                 } else {
-                    speedMultiplier = Mathf.Min(hit2.distance * 3f / maxDistance - 0.5f, 1f);
+                    speedMultiplier = Mathf.Min(hit2.distance * 3f / RayDistance - CosisionAvoidDistance, 1f);
                     turning -= Time.fixedDeltaTime * turnSpeed;
                 }
             } else {
@@ -148,7 +184,7 @@ public class AI : MonoBehaviour
 
             if (!behavor.HasFlag(Behavor.Kamikaze) && behavor.HasFlag(Behavor.Hunt)) {
                 //dont ram the target
-                speedMultiplier *= Mathf.Min(dist - 1.75f, 1f);
+                speedMultiplier *= Mathf.Min(dist - TargetAvoidDistance, 1f);
             }
 
             //apply acceleration
