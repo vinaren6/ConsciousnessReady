@@ -34,12 +34,14 @@ public class PlayerMovement : MonoBehaviour
     //statice refrence to the player obj.
     static public GameObject playerObj;
 
-    // Start is called before the first frame update
+
+    private void Awake()
+    {
+        playerObj = gameObject;
+    }
+
     void Start()
     {
-
-        playerObj = gameObject;
-
         boostTimer = boostTimerLengt;
         rotationX.Enable();
         rotationY.Enable();
