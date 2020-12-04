@@ -35,5 +35,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/World Generation/Cells/Droid Cell.unity
     guid: d3be0b24509ad6e458f53b4fbb5a5377
+  - enabled: 1
+    path: Assets/World Generation/Cells/Borders Cell (Purple).unity
+    guid: 2c0dd209f9cc6494cafad3e8699a531d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1a2775d9a73d2a44c8d13cc8fe914045, type: 2}

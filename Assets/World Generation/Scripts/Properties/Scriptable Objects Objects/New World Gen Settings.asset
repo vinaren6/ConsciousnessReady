@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 451bbb960d39d544f8f823ff2c63ee4b, type: 3}
   m_Name: New World Gen Settings
   m_EditorClassIdentifier: 
-  minMaxDistance: {x: 5, y: 8}
+  minMaxDistance: {x: 10, y: 16}
   sizeOffset: 3.5
   gridSize: 40
   outpostAmount: 6
