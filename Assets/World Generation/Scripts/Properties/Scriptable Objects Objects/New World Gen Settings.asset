@@ -16,5 +16,5 @@ MonoBehaviour:
   sizeOffset: 3.5
   gridSize: 40
   outpostAmount: 6
-  loadOnStart: 1
+  loadOnStart: 0
   fastRules: 1

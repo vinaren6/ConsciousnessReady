@@ -20,25 +20,37 @@ public class Cell : MonoBehaviour
 
     static bool LoadingLevel = false;
 
-    private void Start() {
+    static bool GameHaveStarted = false;
+
+    private void Start()
+    {
         enabled = false;
         if (WorldGenerationHandler.instance.settings.loadOnStart) {
             LoadLevel();
+        } else if (type == Enum.CellType.Start) {
+            LoadLevel(true);
         }
     }
 
-    private void Update() {
+    private void Update()
+    {
+        if (isLoaded) {
+            enabled = false;
+            return;
+        }
         if (!LoadingLevel) {
             LoadingLevel = true;
             enabled = false;
             if (scene.name == transform.name + " Scene") {
-                SceneManager.LoadSceneAsync(scene.buildIndex, LoadSceneMode.Additive);
+                AsyncOperation load = SceneManager.LoadSceneAsync(scene.buildIndex, LoadSceneMode.Additive);
+                load.completed += EndLoad;
             } else
                 StartCoroutine(LoadSceneAsync());
         }
     }
 
-    void LoadLevel() {
+    void LoadLevel(bool gameStart = false)
+    {
         //List<CellRules> indexList = new List<CellRules>(WorldGenerationHandler.instance.cellsRulles[(int)type]);
 
         List<int> posebleCells = new List<int>()//, posebleCellsFlipHorizontal = new List<int>(), posebleCellsFlipVertical = new List<int>()
@@ -98,11 +110,12 @@ public class Cell : MonoBehaviour
         }
         if (posebleCells.Count != 0) {
             ruleId = posebleCells[Random.Range(0, posebleCells.Count)];
-            LoadScene();
+            LoadScene(gameStart);
         }
     }
 
-    void LoadScene() {
+    void LoadScene(bool gameStart = false)
+    {
         if (ruleId != -1 && !isLoaded) {
             //SceneManager.LoadSceneAsync(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id, LoadSceneMode.Additive);
             if (LoadingLevel) {
@@ -112,23 +125,29 @@ public class Cell : MonoBehaviour
                 LoadingLevel = true;
 
                 if (scene.name == transform.name + " Scene") {
-                    SceneManager.LoadSceneAsync(scene.buildIndex, LoadSceneMode.Additive);
+                    AsyncOperation load = SceneManager.LoadSceneAsync(scene.buildIndex, LoadSceneMode.Additive);
+                    load.completed += EndLoad;
                 } else {
-                    //StartCoroutine(LoadSceneAsync());
-                    scene = SceneManager.CreateScene(transform.name + " Scene");
-                    AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id, LoadSceneMode.Additive);
-                    asyncLoad.completed += LoadCoompleate;
+
+                    //scene = SceneManager.CreateScene(transform.name + " Scene");
+                    //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id, LoadSceneMode.Additive);
+                    //asyncLoad.completed += LoadCoompleate;
+
+                    StartCoroutine(LoadSceneAsync(gameStart));
                 }
             }
         }
     }
-    void UnloadSceane() {
+    void UnloadSceane()
+    {
         if (ruleId != -1 && isLoaded) {
             SceneManager.UnloadSceneAsync(scene);
+            isLoaded = false;
         }
     }
 
-    IEnumerator LoadSceneAsync() {
+    IEnumerator LoadSceneAsync(bool gameStart = false)
+    {
         scene = SceneManager.CreateScene(transform.name + " Scene");
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id, LoadSceneMode.Additive);
         while (!asyncLoad.isDone) {
@@ -143,13 +162,17 @@ public class Cell : MonoBehaviour
                 SceneManager.MoveGameObjectToScene(objs[i], scene);
             }
             AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(s);
-            asyncUnload.completed += EndLoad;
+            if (gameStart)
+                asyncUnload.completed += EndLoadStart;
+            else
+                asyncUnload.completed += EndLoad;
         } catch (System.Exception ex) {
             Debug.LogError(ex);
             LoadingLevel = false;
         }
     }
-    void LoadCoompleate(AsyncOperation obj) {
+    void LoadCoompleate(AsyncOperation obj)
+    {
 
         Scene s = SceneManager.GetSceneByBuildIndex(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id);
         GameObject[] objs = s.GetRootGameObjects();
@@ -160,20 +183,30 @@ public class Cell : MonoBehaviour
         AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(s);
         asyncUnload.completed += EndLoad;
     }
-    void EndLoad(AsyncOperation obj) {
+    void EndLoad(AsyncOperation obj)
+    {
         LoadingLevel = false;
         isLoaded = true;
     }
+    void EndLoadStart(AsyncOperation obj)
+    {
+        LoadingLevel = false;
+        isLoaded = true;
+        GameHaveStarted = true;
+    }
 
 
-    public void Load() {
+    public void Load()
+    {
         ruleId = savedRuleId;
     }
-    public void Save() {
+    public void Save()
+    {
         savedRuleId = ruleId;
     }
 
-    private bool ExistInArray<T>(T[] array, T item) {
+    private bool ExistInArray<T>(T[] array, T item)
+    {
         if (array.Length.Equals(0) || item == null)
             return true; //there is no item or no array
         foreach (T arrayItem in array)
@@ -181,12 +214,30 @@ public class Cell : MonoBehaviour
                 return true; //mach found
         return false; //no mach
     }
+
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.tag == "Player" && !isLoaded && !enabled && GameHaveStarted) {
+            LoadLevel();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.tag == "Player" && isLoaded && type != Enum.CellType.Start)
+            UnloadSceane();
+    }
+
+
 #if UNITY_EDITOR
-    private void OnDrawGizmos() {
+    private void OnDrawGizmos()
+    {
         Gizmos.DrawWireCube(transform.position, new Vector3(WorldGenerationHandler.instance.settings.gridSize, WorldGenerationHandler.instance.settings.gridSize));
     }
 
-    private void OnDrawGizmosSelected() {
+    private void OnDrawGizmosSelected()
+    {
         Gizmos.color = Color.green;
         Gizmos.DrawWireCube(transform.position, new Vector3(WorldGenerationHandler.instance.settings.gridSize, WorldGenerationHandler.instance.settings.gridSize));
     }
