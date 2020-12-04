@@ -7,6 +7,6 @@ public class Reset : MonoBehaviour
     void Start()
     {
         reset.Enable();
-        reset.performed += context => SceneManager.LoadScene(0) ;
+        reset.performed += context => SceneManager.LoadScene(1) ;
     }
 }
