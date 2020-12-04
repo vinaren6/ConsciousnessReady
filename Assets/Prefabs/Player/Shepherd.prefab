@@ -319,7 +319,7 @@ MonoBehaviour:
       m_Action: Boost Input
       m_Flags: 0
   boostSpeed: 2.5
-  boostTimerLengt: 4
+  boostTimerLengt: 5
   maxSpeed: 10
   acceleration: 15
   newRotation: 0

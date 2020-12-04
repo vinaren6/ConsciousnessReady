@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/World Generation/WorldGeneration.unity
     guid: 64090f8b4092a054db321e963b51c90a
   - enabled: 1
-    path: Assets/Cells/Start/StartCell.unity
+    path: Assets/World Generation/Cells/Start/StartCell.unity
     guid: 3edb4d0ad1b897b44a63a69acf79ca3c
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1a2775d9a73d2a44c8d13cc8fe914045, type: 2}
