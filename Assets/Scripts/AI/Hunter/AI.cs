@@ -65,14 +65,15 @@ public class AI : MonoBehaviour
 
         rb2d = GetComponent<Rigidbody2D>();
         if (target == null) {
-            targetRB2D = PlayerMovement.playerObj.transform.GetComponent<Rigidbody2D>();
-        } else 
-        targetRB2D = target.GetComponent<Rigidbody2D>();
+            target = PlayerMovement.playerObj.transform;
+        }
+            targetRB2D = target.GetComponent<Rigidbody2D>();
     }
 
 
     private void FixedUpdate()
     {
+
         float dist = 1f;
         skip = false;
         //rotate baseed on targets position
