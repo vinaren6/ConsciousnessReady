@@ -160,6 +160,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f30a7ac8ea674b46919f1afbe0e6caf, type: 2}
   - {fileID: 11400000, guid: 58019726bc0e6b1469381ff864c93d24, type: 2}
   - {fileID: 11400000, guid: 25ee400383c1e3741a09c1e3ab58b09e, type: 2}
+  - {fileID: 11400000, guid: a5c9c91ce18150341b3234a8e22fed0c, type: 2}
   camScale:
   - {fileID: 37926916}
   debugData: 'Min Max Distance: (5.0, 8.0)
