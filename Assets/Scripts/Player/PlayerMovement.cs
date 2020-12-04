@@ -17,6 +17,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float boostSpeed = 2.5f;
     
     [SerializeField] private float boostTimerLengt = 10;
+    [SerializeField] private float rotationAcceleration = 10;
+    [SerializeField] private float rotationSpeed = 25;
     float boostTimer = 10;
     bool isBoost;
     [SerializeField]
@@ -175,9 +177,9 @@ public class PlayerMovement : MonoBehaviour
                             {
                                 test1 = test1 / 100 + 1;
                             }
-                            test1 = test1 * 10;
+                            test1 = test1 * rotationAcceleration;
                             //  Debug.Log(test1);
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + 25 * test1  * Time.deltaTime);
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + rotationSpeed * test1  * Time.deltaTime);
 
 
                         }
@@ -187,10 +189,10 @@ public class PlayerMovement : MonoBehaviour
                             Debug.Log(test1);
                            
                                 test1 = test1 / 100 + 1;
-                            test1 = test1 * 10;
+                            test1 = test1 * rotationAcceleration;
                             
 
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - 25 * test1 * Time.deltaTime);
+                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - rotationSpeed * test1 * Time.deltaTime);
 
 
                         }
