@@ -3199,6 +3199,10 @@ PrefabInstance:
       propertyPath: boostSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7927683191028843584, guid: 37078f3d83fcb41419a58aac22a9cfbb, type: 3}
+      propertyPath: rotationSpeed
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 7927683191028843615, guid: 37078f3d83fcb41419a58aac22a9cfbb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -8885,6 +8889,10 @@ PrefabInstance:
     - target: {fileID: 6580903076804868663, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
       propertyPath: m_TrackedObjectOffset.y
       value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 7434387152284078068, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: m_Name
+      value: Background
       objectReference: {fileID: 0}
     - target: {fileID: 8165800029562662117, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
       propertyPath: m_RenderPostProcessing
