@@ -1,0 +1,5746 @@
+fileFormatVersion: 2
+guid: 82b52f731d895604784fddebff154cda
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7847369218609783779
+    second: UnstableSpace_Shape2_v001.0051
+  - first:
+      213: -7670168435238836918
+    second: UnstableSpace_Shape2_v001.0052
+  - first:
+      213: 6957840499898093938
+    second: UnstableSpace_Shape2_v001.0053
+  - first:
+      213: 1342453253079342766
+    second: UnstableSpace_Shape2_v001.0054
+  - first:
+      213: -5558910823500923238
+    second: UnstableSpace_Shape2_v001.0055
+  - first:
+      213: -4011402811861703061
+    second: UnstableSpace_Shape2_v001.0056
+  - first:
+      213: 4730586694133738955
+    second: UnstableSpace_Shape2_v001.0057
+  - first:
+      213: 5590710359023547029
+    second: UnstableSpace_Shape2_v001.0058
+  - first:
+      213: -5391720543152348340
+    second: UnstableSpace_Shape2_v001.0059
+  - first:
+      213: 6928462131214551026
+    second: UnstableSpace_Shape2_v001.0060
+  - first:
+      213: -957805282904690598
+    second: UnstableSpace_Shape2_v001.0061
+  - first:
+      213: -8867716986522330144
+    second: UnstableSpace_Shape2_v001.0062
+  - first:
+      213: -3845538717985659644
+    second: UnstableSpace_Shape2_v001.0063
+  - first:
+      213: -477414308895111648
+    second: UnstableSpace_Shape2_v001.0064
+  - first:
+      213: -3063396769424021356
+    second: UnstableSpace_Shape2_v001.0065
+  - first:
+      213: -1231658433688065287
+    second: UnstableSpace_Shape2_v001.0066
+  - first:
+      213: 3090488779614893927
+    second: UnstableSpace_Shape2_v001.0067
+  - first:
+      213: 2197103564788283986
+    second: UnstableSpace_Shape2_v001.0068
+  - first:
+      213: 7979460030185990965
+    second: UnstableSpace_Shape2_v001.0069
+  - first:
+      213: -4905558889293774700
+    second: UnstableSpace_Shape2_v001.0070
+  - first:
+      213: 2928836504313741025
+    second: UnstableSpace_Shape2_v001.0071
+  - first:
+      213: 6321724880171079
+    second: UnstableSpace_Shape2_v001.0072
+  - first:
+      213: -2394676323867081522
+    second: UnstableSpace_Shape2_v001.0073
+  - first:
+      213: 8339895522021578617
+    second: UnstableSpace_Shape2_v001.0074
+  - first:
+      213: 5560137030283096959
+    second: UnstableSpace_Shape2_v001.0075
+  - first:
+      213: 7196992248026635757
+    second: UnstableSpace_Shape2_v001.0076
+  - first:
+      213: -1141239076490771866
+    second: UnstableSpace_Shape2_v001.0077
+  - first:
+      213: -3003311963738820277
+    second: UnstableSpace_Shape2_v001.0078
+  - first:
+      213: 7342370259515664291
+    second: UnstableSpace_Shape2_v001.0079
+  - first:
+      213: 6253233073596688020
+    second: UnstableSpace_Shape2_v001.0080
+  - first:
+      213: 3923049042334053939
+    second: UnstableSpace_Shape2_v001.0081
+  - first:
+      213: 6578422434917205700
+    second: UnstableSpace_Shape2_v001.0082
+  - first:
+      213: -2334235792812470087
+    second: UnstableSpace_Shape2_v001.0083
+  - first:
+      213: 6675141417132812862
+    second: UnstableSpace_Shape2_v001.0084
+  - first:
+      213: -366567671169330138
+    second: UnstableSpace_Shape2_v001.0085
+  - first:
+      213: -2674855567327047013
+    second: UnstableSpace_Shape2_v001.0086
+  - first:
+      213: -7336134530504942651
+    second: UnstableSpace_Shape2_v001.0087
+  - first:
+      213: 1797638416758373060
+    second: UnstableSpace_Shape2_v001.0088
+  - first:
+      213: 3488428504203161164
+    second: UnstableSpace_Shape2_v001.0089
+  - first:
+      213: 672964539227989284
+    second: UnstableSpace_Shape2_v001.0090
+  - first:
+      213: -1309297875675356492
+    second: UnstableSpace_Shape2_v001.0091
+  - first:
+      213: -4400471837925018791
+    second: UnstableSpace_Shape2_v001.0092
+  - first:
+      213: -1022934692764809081
+    second: UnstableSpace_Shape2_v001.0093
+  - first:
+      213: -8709220744192034121
+    second: UnstableSpace_Shape2_v001.0094
+  - first:
+      213: 8385325882230909574
+    second: UnstableSpace_Shape2_v001.0095
+  - first:
+      213: 1856729144549269148
+    second: UnstableSpace_Shape2_v001.0096
+  - first:
+      213: 9193113378677357203
+    second: UnstableSpace_Shape2_v001.0097
+  - first:
+      213: 2449159781268122152
+    second: UnstableSpace_Shape2_v001.0098
+  - first:
+      213: -777246330443540597
+    second: UnstableSpace_Shape2_v001.0099
+  - first:
+      213: -2600320489792437244
+    second: UnstableSpace_Shape2_v001.0100
+  - first:
+      213: -5571393569846618185
+    second: UnstableSpace_Shape2_v001.0101
+  - first:
+      213: 3771574209361258841
+    second: UnstableSpace_Shape2_v001.0102
+  - first:
+      213: -8765307130193355317
+    second: UnstableSpace_Shape2_v001.0103
+  - first:
+      213: -7737455431956291622
+    second: UnstableSpace_Shape2_v001.0104
+  - first:
+      213: 1705504809912152178
+    second: UnstableSpace_Shape2_v001.0105
+  - first:
+      213: 7187839276040186348
+    second: UnstableSpace_Shape2_v001.0106
+  - first:
+      213: 1229552209414210913
+    second: UnstableSpace_Shape2_v001.0107
+  - first:
+      213: -3522510766314423729
+    second: UnstableSpace_Shape2_v001.0108
+  - first:
+      213: -5621902596553643888
+    second: UnstableSpace_Shape2_v001.0109
+  - first:
+      213: -3128480198294841063
+    second: UnstableSpace_Shape2_v001.0110
+  - first:
+      213: 8985078608274487196
+    second: UnstableSpace_Shape2_v001.0111
+  - first:
+      213: 4540528846465121230
+    second: UnstableSpace_Shape2_v001.0112
+  - first:
+      213: 4615284695149639752
+    second: UnstableSpace_Shape2_v001.0113
+  - first:
+      213: 7753796876668378389
+    second: UnstableSpace_Shape2_v001.0114
+  - first:
+      213: 6803719056456230548
+    second: UnstableSpace_Shape2_v001.0115
+  - first:
+      213: 3562756330753037705
+    second: UnstableSpace_Shape2_v001.0116
+  - first:
+      213: -6951281973746147374
+    second: UnstableSpace_Shape2_v001.0117
+  - first:
+      213: -5873026206948083589
+    second: UnstableSpace_Shape2_v001.0118
+  - first:
+      213: 5791500604593383828
+    second: UnstableSpace_Shape2_v001.0119
+  - first:
+      213: -1183683783206475640
+    second: UnstableSpace_Shape2_v001.0120
+  - first:
+      213: 1105156320789968798
+    second: UnstableSpace_Shape2_v001.0121
+  - first:
+      213: 1037950950902890155
+    second: UnstableSpace_Shape2_v001.0122
+  - first:
+      213: -2725654418178358140
+    second: UnstableSpace_Shape2_v001.0123
+  - first:
+      213: 2640406961514993933
+    second: UnstableSpace_Shape2_v001.0124
+  - first:
+      213: 7887297980992758148
+    second: UnstableSpace_Shape2_v001.0125
+  - first:
+      213: -2209866349286400774
+    second: UnstableSpace_Shape2_v001.0126
+  - first:
+      213: 7585414621799068060
+    second: UnstableSpace_Shape2_v001.0127
+  - first:
+      213: -6745687786013290197
+    second: UnstableSpace_Shape2_v001.0128
+  - first:
+      213: -5444519870171418294
+    second: UnstableSpace_Shape2_v001.0129
+  - first:
+      213: -5065257585355235281
+    second: UnstableSpace_Shape2_v001.0130
+  - first:
+      213: -2179657581595112312
+    second: UnstableSpace_Shape2_v001.0131
+  - first:
+      213: 8496833165027252523
+    second: UnstableSpace_Shape2_v001.0132
+  - first:
+      213: 8182329921037869983
+    second: UnstableSpace_Shape2_v001.0133
+  - first:
+      213: -8374243610199293357
+    second: UnstableSpace_Shape2_v001.0134
+  - first:
+      213: -8955638562704628924
+    second: UnstableSpace_Shape2_v001.0135
+  - first:
+      213: -2653392507841670256
+    second: UnstableSpace_Shape2_v001.0136
+  - first:
+      213: 2920732749010186527
+    second: UnstableSpace_Shape2_v001.0137
+  - first:
+      213: 2601025302459626889
+    second: UnstableSpace_Shape2_v001.0138
+  - first:
+      213: -3264504028453775154
+    second: UnstableSpace_Shape2_v001.0139
+  - first:
+      213: -7432558684342027082
+    second: UnstableSpace_Shape2_v001.0140
+  - first:
+      213: 225135969690290090
+    second: UnstableSpace_Shape2_v001.0141
+  - first:
+      213: -6406073077680765776
+    second: UnstableSpace_Shape2_v001.0142
+  - first:
+      213: -8304297040932185739
+    second: UnstableSpace_Shape2_v001.0143
+  - first:
+      213: -710512932207603458
+    second: UnstableSpace_Shape2_v001.0144
+  - first:
+      213: 2794989790405408529
+    second: UnstableSpace_Shape2_v001.0145
+  - first:
+      213: 8619836340382943584
+    second: UnstableSpace_Shape2_v001.0146
+  - first:
+      213: -2794542895487082206
+    second: UnstableSpace_Shape2_v001.0147
+  - first:
+      213: 8331267595863431995
+    second: UnstableSpace_Shape2_v001.0148
+  - first:
+      213: -3752743415451660403
+    second: UnstableSpace_Shape2_v001.0149
+  - first:
+      213: -2222396274171623099
+    second: UnstableSpace_Shape2_v001.0150
+  - first:
+      213: -8934708489063067457
+    second: UnstableSpace_Shape2_v001.0151
+  - first:
+      213: 1305939340613517490
+    second: UnstableSpace_Shape2_v001.0152
+  - first:
+      213: 8614202020022276383
+    second: UnstableSpace_Shape2_v001.0153
+  - first:
+      213: 2224106823427515926
+    second: UnstableSpace_Shape2_v001.0154
+  - first:
+      213: 337874388182461929
+    second: UnstableSpace_Shape2_v001.0155
+  - first:
+      213: -4958499234257164194
+    second: UnstableSpace_Shape2_v001.0156
+  - first:
+      213: 3172037986512670380
+    second: UnstableSpace_Shape2_v001.0157
+  - first:
+      213: -8656311533438970898
+    second: UnstableSpace_Shape2_v001.0158
+  - first:
+      213: 7675601674039654091
+    second: UnstableSpace_Shape2_v001.0159
+  - first:
+      213: -4871213398436165544
+    second: UnstableSpace_Shape2_v001.0160
+  - first:
+      213: -5661956991582757831
+    second: UnstableSpace_Shape2_v001.0161
+  - first:
+      213: 7766914569496340991
+    second: UnstableSpace_Shape2_v001.0162
+  - first:
+      213: -3999065773135514263
+    second: UnstableSpace_Shape2_v001.0163
+  - first:
+      213: 1242046343463022397
+    second: UnstableSpace_Shape2_v001.0164
+  - first:
+      213: -9052149005607117046
+    second: UnstableSpace_Shape2_v001.0165
+  - first:
+      213: 7686983281826124813
+    second: UnstableSpace_Shape2_v001.0166
+  - first:
+      213: -4931959364972225960
+    second: UnstableSpace_Shape2_v001.0167
+  - first:
+      213: -6351105473182556749
+    second: UnstableSpace_Shape2_v001.0168
+  - first:
+      213: 8408129158539271068
+    second: UnstableSpace_Shape2_v001.0169
+  - first:
+      213: 8825506220909887003
+    second: UnstableSpace_Shape2_v001.0170
+  - first:
+      213: 2179536133238873185
+    second: UnstableSpace_Shape2_v001.0171
+  - first:
+      213: 6168616274968709249
+    second: UnstableSpace_Shape2_v001.0172
+  - first:
+      213: 7966194495709598343
+    second: UnstableSpace_Shape2_v001.0173
+  - first:
+      213: 475404677630525420
+    second: UnstableSpace_Shape2_v001.0174
+  - first:
+      213: -6112777468073259483
+    second: UnstableSpace_Shape2_v001.0175
+  - first:
+      213: 5436420885560514016
+    second: UnstableSpace_Shape2_v001.0176
+  - first:
+      213: 2504550328913431822
+    second: UnstableSpace_Shape2_v001.0177
+  - first:
+      213: 6613685371942172792
+    second: UnstableSpace_Shape2_v001.0178
+  - first:
+      213: 6819721193668214682
+    second: UnstableSpace_Shape2_v001.0179
+  - first:
+      213: -1642179494131362693
+    second: UnstableSpace_Shape2_v001.0180
+  - first:
+      213: -8390105710961285252
+    second: UnstableSpace_Shape2_v001.0181
+  - first:
+      213: -2775945217873911404
+    second: UnstableSpace_Shape2_v001.0182
+  - first:
+      213: 7260570525562207139
+    second: UnstableSpace_Shape2_v001.0183
+  - first:
+      213: -6431197975366442812
+    second: UnstableSpace_Shape2_v001.0184
+  - first:
+      213: -7132326811422521534
+    second: UnstableSpace_Shape2_v001.0185
+  - first:
+      213: -1763423380161463819
+    second: UnstableSpace_Shape2_v001.0186
+  - first:
+      213: 8489373858708872789
+    second: UnstableSpace_Shape2_v001.0187
+  - first:
+      213: 8178090918882306851
+    second: UnstableSpace_Shape2_v001.0188
+  - first:
+      213: -9201083495304624093
+    second: UnstableSpace_Shape2_v001.0189
+  - first:
+      213: 7015796188795164836
+    second: UnstableSpace_Shape2_v001.0190
+  - first:
+      213: 8718163857270498557
+    second: UnstableSpace_Shape2_v001.0191
+  - first:
+      213: -2148798365416023712
+    second: UnstableSpace_Shape2_v001.0192
+  - first:
+      213: 5573291266710520237
+    second: UnstableSpace_Shape2_v001.0193
+  - first:
+      213: 2745820176442354705
+    second: UnstableSpace_Shape2_v001.0194
+  - first:
+      213: 8109885363513847917
+    second: UnstableSpace_Shape2_v001.0195
+  - first:
+      213: -1470357166732385348
+    second: UnstableSpace_Shape2_v001.0196
+  - first:
+      213: 5308390139642597319
+    second: UnstableSpace_Shape2_v001.0197
+  - first:
+      213: 6017287303385771103
+    second: UnstableSpace_Shape2_v001.0198
+  - first:
+      213: 2249751739823323088
+    second: UnstableSpace_Shape2_v001.0199
+  - first:
+      213: -1648151446490562512
+    second: UnstableSpace_Shape2_v001.0200
+  - first:
+      213: -7431231905194475839
+    second: UnstableSpace_Shape2_v001.0201
+  - first:
+      213: 9128866817314984707
+    second: UnstableSpace_Shape2_v001.0202
+  - first:
+      213: -8596493687058925329
+    second: UnstableSpace_Shape2_v001.0203
+  - first:
+      213: 5175931813304653195
+    second: UnstableSpace_Shape2_v001.0204
+  - first:
+      213: 5145395917554244069
+    second: UnstableSpace_Shape2_v001.0205
+  - first:
+      213: -5117803837182119974
+    second: UnstableSpace_Shape2_v001.0206
+  - first:
+      213: -3727238947883947812
+    second: UnstableSpace_Shape2_v001.0207
+  - first:
+      213: 3765310694546213126
+    second: UnstableSpace_Shape2_v001.0208
+  - first:
+      213: 5558052010551467917
+    second: UnstableSpace_Shape2_v001.0209
+  - first:
+      213: 1908041441794612225
+    second: UnstableSpace_Shape2_v001.0210
+  - first:
+      213: -8911798931414962588
+    second: UnstableSpace_Shape2_v001.0211
+  - first:
+      213: 2447209440229204202
+    second: UnstableSpace_Shape2_v001.0212
+  - first:
+      213: -5734646777744437071
+    second: UnstableSpace_Shape2_v001.0213
+  - first:
+      213: -9191442141116557856
+    second: UnstableSpace_Shape2_v001.0214
+  - first:
+      213: -8722794913478721882
+    second: UnstableSpace_Shape2_v001.0215
+  - first:
+      213: 1072255196910524812
+    second: UnstableSpace_Shape2_v001.0216
+  - first:
+      213: 416634753716019579
+    second: UnstableSpace_Shape2_v001.0217
+  - first:
+      213: -5730515961649790155
+    second: UnstableSpace_Shape2_v001.0218
+  - first:
+      213: -3729347740803723313
+    second: UnstableSpace_Shape2_v001.0219
+  - first:
+      213: -5797833755168893419
+    second: UnstableSpace_Shape2_v001.0220
+  - first:
+      213: -478735363378232281
+    second: UnstableSpace_Shape2_v001.0221
+  - first:
+      213: -7827920585981079776
+    second: UnstableSpace_Shape2_v001.0222
+  - first:
+      213: 8927809778099740204
+    second: UnstableSpace_Shape2_v001.0223
+  - first:
+      213: -5914197548901077636
+    second: UnstableSpace_Shape2_v001.0224
+  - first:
+      213: -1278038242672166484
+    second: UnstableSpace_Shape2_v001.0225
+  - first:
+      213: -201024387165133400
+    second: UnstableSpace_Shape2_v001.0226
+  - first:
+      213: 6552271727008043880
+    second: UnstableSpace_Shape2_v001.0227
+  - first:
+      213: 6062486295242637123
+    second: UnstableSpace_Shape2_v001.0228
+  - first:
+      213: -6212784978527062231
+    second: UnstableSpace_Shape2_v001.0229
+  - first:
+      213: -58456434151681384
+    second: UnstableSpace_Shape2_v001.0230
+  - first:
+      213: -2542168914104399349
+    second: UnstableSpace_Shape2_v001.0231
+  - first:
+      213: 5466057135236171833
+    second: UnstableSpace_Shape2_v001.0232
+  - first:
+      213: -900226973264686966
+    second: UnstableSpace_Shape2_v001.0233
+  - first:
+      213: 2462286651262827300
+    second: UnstableSpace_Shape2_v001.0234
+  - first:
+      213: 6632245400783827060
+    second: UnstableSpace_Shape2_v001.0235
+  - first:
+      213: 5899746430928296171
+    second: UnstableSpace_Shape2_v001.0236
+  - first:
+      213: -8042801798448956962
+    second: UnstableSpace_Shape2_v001.0237
+  - first:
+      213: 153316550014765815
+    second: UnstableSpace_Shape2_v001.0238
+  - first:
+      213: 3496122967216160891
+    second: UnstableSpace_Shape2_v001.0239
+  - first:
+      213: 3363221631170704082
+    second: UnstableSpace_Shape2_v001.0240
+  - first:
+      213: 7627871818150998712
+    second: UnstableSpace_Shape2_v001.0241
+  - first:
+      213: 627681574283026759
+    second: UnstableSpace_Shape2_v001.0242
+  - first:
+      213: -68172227831045445
+    second: UnstableSpace_Shape2_v001.0243
+  - first:
+      213: -7693123616213683004
+    second: UnstableSpace_Shape2_v001.0244
+  - first:
+      213: 691688368716759733
+    second: UnstableSpace_Shape2_v001.0245
+  - first:
+      213: 3521722331413554435
+    second: UnstableSpace_Shape2_v001.0246
+  - first:
+      213: 7823885546395796509
+    second: UnstableSpace_Shape2_v001.0247
+  - first:
+      213: 4548483020208314300
+    second: UnstableSpace_Shape2_v001.0248
+  - first:
+      213: -3982326969602423616
+    second: UnstableSpace_Shape2_v001.0249
+  - first:
+      213: -3678133353655244048
+    second: UnstableSpace_Shape2_v001.0250
+  - first:
+      213: -3872219031345139220
+    second: UnstableSpace_Shape2_v001.0251
+  - first:
+      213: 7742673075277002627
+    second: UnstableSpace_Shape2_v001.0252
+  - first:
+      213: -6061012895361534211
+    second: UnstableSpace_Shape2_v001.0253
+  - first:
+      213: 301320789464804018
+    second: UnstableSpace_Shape2_v001.0254
+  - first:
+      213: 1121882058732656804
+    second: UnstableSpace_Shape2_v001.0255
+  - first:
+      213: 6555552612048076955
+    second: UnstableSpace_Shape2_v001.0256
+  - first:
+      213: -2401659357295860801
+    second: UnstableSpace_Shape2_v001.0257
+  - first:
+      213: -7702125035235862944
+    second: UnstableSpace_Shape2_v001.0258
+  - first:
+      213: -5982702668736933158
+    second: UnstableSpace_Shape2_v001.0259
+  - first:
+      213: 2638159064981944828
+    second: UnstableSpace_Shape2_v001.0260
+  - first:
+      213: 3953542215805193745
+    second: UnstableSpace_Shape2_v001.0261
+  - first:
+      213: 3629526745559485317
+    second: UnstableSpace_Shape2_v001.0262
+  - first:
+      213: -5176727934470608159
+    second: UnstableSpace_Shape2_v001.0263
+  - first:
+      213: -6151526032482174799
+    second: UnstableSpace_Shape2_v001.0264
+  - first:
+      213: -4148616733933602840
+    second: UnstableSpace_Shape2_v001.0265
+  - first:
+      213: -2729950578205159625
+    second: UnstableSpace_Shape2_v001.0266
+  - first:
+      213: 2211084087745879243
+    second: UnstableSpace_Shape2_v001.0267
+  - first:
+      213: -6940703721167481061
+    second: UnstableSpace_Shape2_v001.0268
+  - first:
+      213: 4541758113542306849
+    second: UnstableSpace_Shape2_v001.0269
+  - first:
+      213: -7540903933801597041
+    second: UnstableSpace_Shape2_v001.0270
+  - first:
+      213: -1216247820606233485
+    second: UnstableSpace_Shape2_v001.0271
+  - first:
+      213: 7438173115836002566
+    second: UnstableSpace_Shape2_v001.0272
+  - first:
+      213: -8791932923061982987
+    second: UnstableSpace_Shape2_v001.0273
+  - first:
+      213: -405951017117230565
+    second: UnstableSpace_Shape2_v001.0274
+  - first:
+      213: 6452160503752698585
+    second: UnstableSpace_Shape2_v001.0275
+  - first:
+      213: 6362352786671697679
+    second: UnstableSpace_Shape2_v001.0276
+  - first:
+      213: -7497561639973318697
+    second: UnstableSpace_Shape2_v001.0277
+  - first:
+      213: 5888814942464412864
+    second: UnstableSpace_Shape2_v001.0278
+  - first:
+      213: 4290986232780903190
+    second: UnstableSpace_Shape2_v001.0279
+  - first:
+      213: 6380301097733613573
+    second: UnstableSpace_Shape2_v001.0280
+  - first:
+      213: -156623601733231699
+    second: UnstableSpace_Shape2_v001.0281
+  - first:
+      213: 95921651470278402
+    second: UnstableSpace_Shape2_v001.0282
+  - first:
+      213: 3325171629893010219
+    second: UnstableSpace_Shape2_v001.0283
+  - first:
+      213: 8122605141748213282
+    second: UnstableSpace_Shape2_v001.0284
+  - first:
+      213: 5942966034230863494
+    second: UnstableSpace_Shape2_v001.0285
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0051
+      rect:
+        serializedVersion: 2
+        x: 693
+        y: 1134
+        width: 28
+        height: 39
+      alignment: 9
+      pivot: {x: 4.178571, y: 2.102564}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e322982ab477ec60800000000000000
+      internalID: 7847369218609783779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0052
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1133
+        width: 35
+        height: 40
+      alignment: 9
+      pivot: {x: 3.4285715, y: 1.85}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a45ec2a42761e8590800000000000000
+      internalID: -7670168435238836918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0053
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 3
+        width: 41
+        height: 47
+      alignment: 9
+      pivot: {x: 3, y: 1.6382979}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 271904802173f8060800000000000000
+      internalID: 6957840499898093938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0054
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 208
+        width: 45
+        height: 51
+      alignment: 9
+      pivot: {x: 2.7777777, y: 1.5294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eae9c5dfe1a51a210800000000000000
+      internalID: 1342453253079342766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0055
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 419
+        width: 47
+        height: 55
+      alignment: 9
+      pivot: {x: 2.680851, y: 1.4363636}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e3723fe08cad2b0800000000000000
+      internalID: -5558910823500923238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0056
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 261
+        width: 49
+        height: 58
+      alignment: 9
+      pivot: {x: 2.5918367, y: 1.3793104}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b66eafb5562a458c0800000000000000
+      internalID: -4011402811861703061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0057
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 131
+        width: 51
+        height: 60
+      alignment: 9
+      pivot: {x: 2.509804, y: 1.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcde70bd88b66a140800000000000000
+      internalID: 4730586694133738955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0058
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 129
+        width: 51
+        height: 62
+      alignment: 9
+      pivot: {x: 2.509804, y: 1.3064516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 592f1bf5371369d40800000000000000
+      internalID: 5590710359023547029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0059
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 384
+        width: 53
+        height: 63
+      alignment: 9
+      pivot: {x: 2.4339623, y: 1.2857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c436a398bb2cc25b0800000000000000
+      internalID: -5391720543152348340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0060
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 449
+        width: 53
+        height: 64
+      alignment: 9
+      pivot: {x: 2.4339623, y: 1.265625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f70aca8997d62060800000000000000
+      internalID: 6928462131214551026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0061
+      rect:
+        serializedVersion: 2
+        x: 799
+        y: 1133
+        width: 65
+        height: 75
+      alignment: 9
+      pivot: {x: 2.0153847, y: 1.0933334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a50397c7b2135b2f0800000000000000
+      internalID: -957805282904690598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0062
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 977
+        width: 55
+        height: 67
+      alignment: 9
+      pivot: {x: 2.3636363, y: 1.2089552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb93a9426a8fe480800000000000000
+      internalID: -8867716986522330144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0063
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 688
+        width: 55
+        height: 68
+      alignment: 9
+      pivot: {x: 2.3636363, y: 1.1911764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 405247819e6e1aac0800000000000000
+      internalID: -3845538717985659644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0064
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 1174
+        width: 56
+        height: 81
+      alignment: 9
+      pivot: {x: 2.3392856, y: 1.0617284}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0264e9b2732ef59f0800000000000000
+      internalID: -477414308895111648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0065
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 586
+        width: 56
+        height: 69
+      alignment: 9
+      pivot: {x: 2.3392856, y: 1.1594203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498e6686ed0ac75d0800000000000000
+      internalID: -3063396769424021356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0066
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 512
+        width: 56
+        height: 70
+      alignment: 9
+      pivot: {x: 2.3392856, y: 1.1428572}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9faa86f1e2548eee0800000000000000
+      internalID: -1231658433688065287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0067
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 584
+        width: 56
+        height: 71
+      alignment: 9
+      pivot: {x: 2.3392856, y: 1.1267606}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 767b643cb2f93ea20800000000000000
+      internalID: 3090488779614893927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0068
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 3
+        width: 66
+        height: 88
+      alignment: 9
+      pivot: {x: 2.1363637, y: 1.0681819}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25a33f92d0ead7e10800000000000000
+      internalID: 2197103564788283986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0069
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 758
+        width: 56
+        height: 71
+      alignment: 9
+      pivot: {x: 2.3392856, y: 1.112676}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53be9a6de9cbcbe60800000000000000
+      internalID: 7979460030185990965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0070
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 1975
+        width: 57
+        height: 72
+      alignment: 9
+      pivot: {x: 2.3157895, y: 1.0972222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49082e25e24fbebb0800000000000000
+      internalID: -4905558889293774700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0071
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 657
+        width: 57
+        height: 72
+      alignment: 9
+      pivot: {x: 2.3157895, y: 1.0833334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee31d4784155a820800000000000000
+      internalID: 2928836504313741025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0072
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 3
+        width: 59
+        height: 81
+      alignment: 9
+      pivot: {x: 2.2711864, y: 1.0493827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 740b9d54395761000800000000000000
+      internalID: 6321724880171079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0073
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 1608
+        width: 68
+        height: 95
+      alignment: 9
+      pivot: {x: 2.014706, y: 0.9263158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec44ddb229664ced0800000000000000
+      internalID: -2394676323867081522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0074
+      rect:
+        serializedVersion: 2
+        x: 860
+        y: 831
+        width: 76
+        height: 85
+      alignment: 9
+      pivot: {x: 1.7894737, y: 0.9882353}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97797f56ac24db370800000000000000
+      internalID: 8339895522021578617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0075
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 1529
+        width: 70
+        height: 77
+      alignment: 9
+      pivot: {x: 1.9857143, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f73f4809b23992d40800000000000000
+      internalID: 5560137030283096959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0076
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 1648
+        width: 58
+        height: 76
+      alignment: 9
+      pivot: {x: 2.2931035, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ded1eda715ad0e360800000000000000
+      internalID: 7196992248026635757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0077
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1
+        width: 71
+        height: 94
+      alignment: 9
+      pivot: {x: 1.9436619, y: 0.9255319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66209f14b118920f0800000000000000
+      internalID: -1141239076490771866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0078
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 945
+        width: 73
+        height: 85
+      alignment: 9
+      pivot: {x: 1.9041096, y: 0.9411765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b41baa36ea71256d0800000000000000
+      internalID: -3003311963738820277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0079
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 1410
+        width: 58
+        height: 78
+      alignment: 9
+      pivot: {x: 2.2931035, y: 0.94871795}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a7e2d779d655e560800000000000000
+      internalID: 7342370259515664291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0080
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 213
+        width: 71
+        height: 101
+      alignment: 9
+      pivot: {x: 1.9577465, y: 0.7821782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49664717952f7c650800000000000000
+      internalID: 6253233073596688020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0081
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 664
+        width: 73
+        height: 108
+      alignment: 9
+      pivot: {x: 1.9589041, y: 0.8425926}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 336f1cc9158717630800000000000000
+      internalID: 3923049042334053939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0082
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 449
+        width: 68
+        height: 104
+      alignment: 9
+      pivot: {x: 1.9852941, y: 0.8076923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c643bfb9504b4b50800000000000000
+      internalID: 6578422434917205700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0083
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 818
+        width: 62
+        height: 98
+      alignment: 9
+      pivot: {x: 2.2096775, y: 0.75510204}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b0196be9e02b9fd0800000000000000
+      internalID: -2334235792812470087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0084
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1726
+        width: 66
+        height: 94
+      alignment: 9
+      pivot: {x: 2.0454545, y: 0.84042555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3ae2b1a0cdd2ac50800000000000000
+      internalID: 6675141417132812862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0085
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 111
+        width: 62
+        height: 100
+      alignment: 9
+      pivot: {x: 2.2258065, y: 0.71}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6245fcd25a0b9eaf0800000000000000
+      internalID: -366567671169330138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0086
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 476
+        width: 77
+        height: 103
+      alignment: 9
+      pivot: {x: 1.8961039, y: 0.70873785}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b92def3980101ead0800000000000000
+      internalID: -2674855567327047013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0087
+      rect:
+        serializedVersion: 2
+        x: 668
+        y: 1017
+        width: 79
+        height: 114
+      alignment: 9
+      pivot: {x: 1.7848102, y: 0.622807}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb96c45380d03a90800000000000000
+      internalID: -7336134530504942651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0088
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 355
+        width: 75
+        height: 122
+      alignment: 9
+      pivot: {x: 1.9466667, y: 0.6639344}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ca7a71ad9e72f810800000000000000
+      internalID: 1797638416758373060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0089
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 686
+        width: 80
+        height: 105
+      alignment: 9
+      pivot: {x: 1.8, y: 0.72380954}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4e6069fd33696030800000000000000
+      internalID: 3488428504203161164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0090
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 1226
+        width: 83
+        height: 111
+      alignment: 9
+      pivot: {x: 1.7710843, y: 0.6126126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4256e13dea9d65900800000000000000
+      internalID: 672964539227989284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0091
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 1439
+        width: 76
+        height: 115
+      alignment: 9
+      pivot: {x: 1.9078947, y: 0.67826086}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b2623fd48074dde0800000000000000
+      internalID: -1309297875675356492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0092
+      rect:
+        serializedVersion: 2
+        x: 675
+        y: 188
+        width: 74
+        height: 110
+      alignment: 9
+      pivot: {x: 2.0270271, y: 0.6181818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9537e589d226ee2c0800000000000000
+      internalID: -4400471837925018791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0093
+      rect:
+        serializedVersion: 2
+        x: 857
+        y: 1818
+        width: 76
+        height: 113
+      alignment: 9
+      pivot: {x: 1.9078947, y: 0.6460177}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7888451115ecdc1f0800000000000000
+      internalID: -1022934692764809081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0094
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 260
+        width: 76
+        height: 121
+      alignment: 9
+      pivot: {x: 2, y: 0.61157024}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ba78f760e1a22780800000000000000
+      internalID: -8709220744192034121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0095
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 1432
+        width: 84
+        height: 116
+      alignment: 9
+      pivot: {x: 1.7738096, y: 0.5862069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68a23486679ae5470800000000000000
+      internalID: 8385325882230909574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0096
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1550
+        width: 80
+        height: 119
+      alignment: 9
+      pivot: {x: 1.8875, y: 0.6386555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9e59f0d15d64c910800000000000000
+      internalID: 1856729144549269148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0097
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 1701
+        width: 81
+        height: 113
+      alignment: 9
+      pivot: {x: 1.8765432, y: 0.63716817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39a74f329ef749f70800000000000000
+      internalID: 9193113378677357203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0098
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 1355
+        width: 82
+        height: 111
+      alignment: 9
+      pivot: {x: 1.8536586, y: 0.6396396}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82ae8a848d92df120800000000000000
+      internalID: 2449159781268122152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0099
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1166
+        width: 83
+        height: 118
+      alignment: 9
+      pivot: {x: 1.8192772, y: 0.65254235}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b87dfea949aa635f0800000000000000
+      internalID: -777246330443540597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0100
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 1932
+        width: 84
+        height: 115
+      alignment: 9
+      pivot: {x: 1.8095238, y: 0.6347826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40480c7aa4ec9ebd0800000000000000
+      internalID: -2600320489792437244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0101
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 752
+        width: 82
+        height: 122
+      alignment: 9
+      pivot: {x: 1.8170732, y: 0.6147541}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b79565111f6ea2b0800000000000000
+      internalID: -5571393569846618185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0102
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 123
+        width: 86
+        height: 121
+      alignment: 9
+      pivot: {x: 1.8372093, y: 0.56198347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 959a001c2c2575430800000000000000
+      internalID: 3771574209361258841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0103
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 1531
+        width: 88
+        height: 120
+      alignment: 9
+      pivot: {x: 1.7613636, y: 0.60833335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcd50ad0b9f5b5680800000000000000
+      internalID: -8765307130193355317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0104
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1529
+        width: 84
+        height: 122
+      alignment: 9
+      pivot: {x: 1.8690476, y: 0.5409836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adf14d887490f9490800000000000000
+      internalID: -7737455431956291622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0105
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 93
+        width: 84
+        height: 126
+      alignment: 9
+      pivot: {x: 1.7976191, y: 0.5873016}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 270b885a69b2ba710800000000000000
+      internalID: 1705504809912152178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0106
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 1671
+        width: 79
+        height: 120
+      alignment: 9
+      pivot: {x: 1.8987342, y: 0.55}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9e9fe1db550c360800000000000000
+      internalID: 7187839276040186348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0107
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 735
+        width: 87
+        height: 124
+      alignment: 9
+      pivot: {x: 1.8045977, y: 0.6048387}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1654ee2583f301110800000000000000
+      internalID: 1229552209414210913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0108
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 1123
+        width: 86
+        height: 123
+      alignment: 9
+      pivot: {x: 1.8023256, y: 0.5691057}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4af6500f178d1fc0800000000000000
+      internalID: -3522510766314423729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0109
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 86
+        width: 88
+        height: 108
+      alignment: 9
+      pivot: {x: 1.8068181, y: 0.5555556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 098e292ef5dfaf1b0800000000000000
+      internalID: -5621902596553643888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0110
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 196
+        width: 86
+        height: 109
+      alignment: 9
+      pivot: {x: 1.8837209, y: 0.5229358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 919dac5c5d76594d0800000000000000
+      internalID: -3128480198294841063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0111
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 607
+        width: 93
+        height: 124
+      alignment: 9
+      pivot: {x: 1.7096775, y: 0.5080645}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c977925a36961bc70800000000000000
+      internalID: 8985078608274487196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0112
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 93
+        width: 83
+        height: 126
+      alignment: 9
+      pivot: {x: 1.8554217, y: 0.56349206}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecbb7f9dde2330f30800000000000000
+      internalID: 4540528846465121230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0113
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 1822
+        width: 96
+        height: 111
+      alignment: 9
+      pivot: {x: 1.6875, y: 0.5135135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 848f0b73af8cc0040800000000000000
+      internalID: 4615284695149639752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0114
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1019
+        width: 95
+        height: 112
+      alignment: 9
+      pivot: {x: 1.6736842, y: 0.5089286}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51d1a5e8d250b9b60800000000000000
+      internalID: 7753796876668378389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0115
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 1684
+        width: 96
+        height: 115
+      alignment: 9
+      pivot: {x: 1.7291666, y: 0.5304348}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49621a72f6aab6e50800000000000000
+      internalID: 6803719056456230548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0116
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 164
+        width: 88
+        height: 118
+      alignment: 9
+      pivot: {x: 1.7840909, y: 0.5169492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9851fcba104717130800000000000000
+      internalID: 3562756330753037705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0117
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 772
+        width: 92
+        height: 117
+      alignment: 9
+      pivot: {x: 1.7608696, y: 0.52136755}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfd845dfd5188f90800000000000000
+      internalID: -6951281973746147374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0118
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 793
+        width: 94
+        height: 107
+      alignment: 9
+      pivot: {x: 1.7340425, y: 0.5046729}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b78bc4a08c1de7ea0800000000000000
+      internalID: -5873026206948083589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0119
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 1556
+        width: 101
+        height: 115
+      alignment: 9
+      pivot: {x: 1.6435643, y: 0.49565217}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 499af3d7d1b8f5050800000000000000
+      internalID: 5791500604593383828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0120
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1270
+        width: 98
+        height: 120
+      alignment: 9
+      pivot: {x: 1.7142857, y: 0.48333332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 888669fded5b29fe0800000000000000
+      internalID: -1183683783206475640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0121
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 1407
+        width: 95
+        height: 120
+      alignment: 9
+      pivot: {x: 1.6842105, y: 0.51666665}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97b6f181dd465f00800000000000000
+      internalID: 1105156320789968798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0122
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1286
+        width: 99
+        height: 119
+      alignment: 9
+      pivot: {x: 1.6464647, y: 0.48739496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae78daf3ea876e00800000000000000
+      internalID: 1037950950902890155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0123
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1936
+        width: 88
+        height: 111
+      alignment: 9
+      pivot: {x: 1.7613636, y: 0.46846846}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48441007fb78c2ad0800000000000000
+      internalID: -2725654418178358140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0124
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 739
+        width: 96
+        height: 123
+      alignment: 9
+      pivot: {x: 1.7083334, y: 0.50406504}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09d19b542c94a420800000000000000
+      internalID: 2640406961514993933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0125
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 1673
+        width: 106
+        height: 118
+      alignment: 9
+      pivot: {x: 1.5943396, y: 0.42372882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 481aaba99bf457d60800000000000000
+      internalID: 7887297980992758148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0126
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1651
+        width: 102
+        height: 128
+      alignment: 9
+      pivot: {x: 1.6078432, y: 0.453125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afcd1b1834af451e0800000000000000
+      internalID: -2209866349286400774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0127
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1247
+        width: 98
+        height: 129
+      alignment: 9
+      pivot: {x: 1.7244898, y: 0.4728682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c913366c86ec44960800000000000000
+      internalID: 7585414621799068060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0128
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1210
+        width: 100
+        height: 112
+      alignment: 9
+      pivot: {x: 1.66, y: 0.45535713}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b219cf4e2b08262a0800000000000000
+      internalID: -6745687786013290197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0129
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 1453
+        width: 97
+        height: 113
+      alignment: 9
+      pivot: {x: 1.6391753, y: 0.44247788}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4170ed360e2174b0800000000000000
+      internalID: -5444519870171418294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0130
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1801
+        width: 106
+        height: 118
+      alignment: 9
+      pivot: {x: 1.5849056, y: 0.45762712}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f206c01201794b9b0800000000000000
+      internalID: -5065257585355235281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0131
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 300
+        width: 93
+        height: 116
+      alignment: 9
+      pivot: {x: 1.6989248, y: 0.44827586}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88c49055afc40c1e0800000000000000
+      internalID: -2179657581595112312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0132
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 524
+        width: 94
+        height: 119
+      alignment: 9
+      pivot: {x: 1.6914893, y: 0.44537815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b291535deb0dae570800000000000000
+      internalID: 8496833165027252523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0133
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 1392
+        width: 110
+        height: 122
+      alignment: 9
+      pivot: {x: 1.5181818, y: 0.45081967}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93238a16b97d8170800000000000000
+      internalID: 8182329921037869983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0134
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 1788
+        width: 99
+        height: 128
+      alignment: 9
+      pivot: {x: 1.6868687, y: 0.4375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3528c7f1ec5b8cb80800000000000000
+      internalID: -8374243610199293357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0135
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 645
+        width: 102
+        height: 119
+      alignment: 9
+      pivot: {x: 1.627451, y: 0.44537815}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443633d1d2e27b380800000000000000
+      internalID: -8955638562704628924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0136
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 1705
+        width: 102
+        height: 111
+      alignment: 9
+      pivot: {x: 1.6078432, y: 0.43243244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0931a6882914d2bd0800000000000000
+      internalID: -2653392507841670256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0137
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1929
+        width: 106
+        height: 118
+      alignment: 9
+      pivot: {x: 1.5471698, y: 0.3983051}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f113a94e5f6888820800000000000000
+      internalID: 2920732749010186527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0138
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 418
+        width: 100
+        height: 116
+      alignment: 9
+      pivot: {x: 1.66, y: 0.43965518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985b8e45bb2b81420800000000000000
+      internalID: 2601025302459626889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0139
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 97
+        width: 103
+        height: 123
+      alignment: 9
+      pivot: {x: 1.5922331, y: 0.41463414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec85e28d1e622b2d0800000000000000
+      internalID: -3264504028453775154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0140
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 138
+        width: 103
+        height: 120
+      alignment: 9
+      pivot: {x: 1.6116505, y: 0.41666666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bc7c87814f3ad890800000000000000
+      internalID: -7432558684342027082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0141
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 477
+        width: 107
+        height: 126
+      alignment: 9
+      pivot: {x: 1.6074766, y: 0.4047619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa78d8bb8f7df1300800000000000000
+      internalID: 225135969690290090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0142
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1588
+        width: 108
+        height: 111
+      alignment: 9
+      pivot: {x: 1.5462962, y: 0.4054054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b405a70a7e0917a0800000000000000
+      internalID: -6406073077680765776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0143
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 506
+        width: 108
+        height: 121
+      alignment: 9
+      pivot: {x: 1.5925926, y: 0.3966942}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 579d8edd6d531cc80800000000000000
+      internalID: -8304297040932185739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0144
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 351
+        width: 108
+        height: 124
+      alignment: 9
+      pivot: {x: 1.537037, y: 0.42741936}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0d17ba040c326f0800000000000000
+      internalID: -710512932207603458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0145
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 109
+        width: 113
+        height: 121
+      alignment: 9
+      pivot: {x: 1.5132743, y: 0.38016528}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11735f7e76cc9c620800000000000000
+      internalID: 2794989790405408529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0146
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 492
+        width: 113
+        height: 121
+      alignment: 9
+      pivot: {x: 1.4690266, y: 0.42975205}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06947825b7fcf9770800000000000000
+      internalID: 8619836340382943584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0147
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 222
+        width: 111
+        height: 125
+      alignment: 9
+      pivot: {x: 1.5135136, y: 0.392}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 221a6ecea0ac739d0800000000000000
+      internalID: -2794542895487082206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0148
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 221
+        width: 101
+        height: 126
+      alignment: 9
+      pivot: {x: 1.5940593, y: 0.4047619}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b992cccbb9e9370800000000000000
+      internalID: 8331267595863431995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0149
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1468
+        width: 113
+        height: 111
+      alignment: 9
+      pivot: {x: 1.5044248, y: 0.3783784}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8f41dc1fb39bebc0800000000000000
+      internalID: -3752743415451660403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0150
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 1512
+        width: 116
+        height: 130
+      alignment: 9
+      pivot: {x: 1.4568965, y: 0.3923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54949d70d567821e0800000000000000
+      internalID: -2222396274171623099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0151
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 1921
+        width: 115
+        height: 126
+      alignment: 9
+      pivot: {x: 1.4695653, y: 0.3968254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb09ab1a7f9810480800000000000000
+      internalID: -8934708489063067457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0152
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 1921
+        width: 113
+        height: 126
+      alignment: 9
+      pivot: {x: 1.4778761, y: 0.3968254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b00a7f39e0af1210800000000000000
+      internalID: 1305939340613517490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0153
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 733
+        width: 111
+        height: 126
+      alignment: 9
+      pivot: {x: 1.5135136, y: 0.42063493}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1151e2e81bcb8770800000000000000
+      internalID: 8614202020022276383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0154
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 605
+        width: 110
+        height: 126
+      alignment: 9
+      pivot: {x: 1.4727273, y: 0.3888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6166be04f5d9dde10800000000000000
+      internalID: 2224106823427515926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0155
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1653
+        width: 114
+        height: 126
+      alignment: 9
+      pivot: {x: 1.4736842, y: 0.34126985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed615647fe50b400800000000000000
+      internalID: 337874388182461929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0156
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 892
+        width: 117
+        height: 116
+      alignment: 9
+      pivot: {x: 1.4700855, y: 0.37068966}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e582e0bb73fdf2bb0800000000000000
+      internalID: -4958499234257164194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0157
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 1008
+        width: 116
+        height: 119
+      alignment: 9
+      pivot: {x: 1.4568965, y: 0.38655463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cae02281eb7550c20800000000000000
+      internalID: 3172037986512670380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0158
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1248
+        width: 113
+        height: 128
+      alignment: 9
+      pivot: {x: 1.4955752, y: 0.3359375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3d040068a9ed780800000000000000
+      internalID: -8656311533438970898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0159
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1117
+        width: 116
+        height: 128
+      alignment: 9
+      pivot: {x: 1.4568965, y: 0.3828125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc6f6823e07358a60800000000000000
+      internalID: 7675601674039654091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0160
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1516
+        width: 108
+        height: 128
+      alignment: 9
+      pivot: {x: 1.4907408, y: 0.375}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858c6111939f56cb0800000000000000
+      internalID: -4871213398436165544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0161
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 232
+        width: 115
+        height: 121
+      alignment: 9
+      pivot: {x: 1.4782609, y: 0.38842976}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c9b2f4d10bc61b0800000000000000
+      internalID: -5661956991582757831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0162
+      rect:
+        serializedVersion: 2
+        x: 318
+        y: 629
+        width: 112
+        height: 121
+      alignment: 9
+      pivot: {x: 1.4642857, y: 0.34710744}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff9a2ab66af99cb60800000000000000
+      internalID: 7766914569496340991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0163
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1510
+        width: 105
+        height: 132
+      alignment: 9
+      pivot: {x: 1.5238096, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 965b5d60ed67088c0800000000000000
+      internalID: -3999065773135514263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0164
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 404
+        width: 105
+        height: 118
+      alignment: 9
+      pivot: {x: 1.5238096, y: 0.37288135}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3fafa89192ac3110800000000000000
+      internalID: 1242046343463022397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0165
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 1010
+        width: 118
+        height: 117
+      alignment: 9
+      pivot: {x: 1.4661016, y: 0.32478634}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0fd1e2907e406280800000000000000
+      internalID: -9052149005607117046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0166
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 654
+        width: 110
+        height: 116
+      alignment: 9
+      pivot: {x: 1.4909091, y: 0.31896552}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d04dc934196adaa60800000000000000
+      internalID: 7686983281826124813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0167
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 1124
+        width: 121
+        height: 122
+      alignment: 9
+      pivot: {x: 1.4297521, y: 0.3114754}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85a5b2496192e8bb0800000000000000
+      internalID: -4931959364972225960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0168
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1791
+        width: 108
+        height: 127
+      alignment: 9
+      pivot: {x: 1.4907408, y: 0.3464567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd1ae3c8375cd7a0800000000000000
+      internalID: -6351105473182556749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0169
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1781
+        width: 116
+        height: 129
+      alignment: 9
+      pivot: {x: 1.4568965, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9b5658ebecafa470800000000000000
+      internalID: 8408129158539271068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0170
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 1646
+        width: 116
+        height: 130
+      alignment: 9
+      pivot: {x: 1.4741379, y: 0.32307693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1e755cf52f7a7a70800000000000000
+      internalID: 8825506220909887003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0171
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1378
+        width: 117
+        height: 130
+      alignment: 9
+      pivot: {x: 1.4529915, y: 0.32307693}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16cd4d4c0944f3e10800000000000000
+      internalID: 2179536133238873185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0172
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1912
+        width: 120
+        height: 135
+      alignment: 9
+      pivot: {x: 1.4333333, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1880431c1d35b9550800000000000000
+      internalID: 6168616274968709249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0173
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 891
+        width: 112
+        height: 117
+      alignment: 9
+      pivot: {x: 1.5178572, y: 0.2905983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7825178efab9d8e60800000000000000
+      internalID: 7966194495709598343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0174
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 864
+        width: 115
+        height: 123
+      alignment: 9
+      pivot: {x: 1.452174, y: 0.31707317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ceff9b6190af89600800000000000000
+      internalID: 475404677630525420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0175
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1644
+        width: 108
+        height: 132
+      alignment: 9
+      pivot: {x: 1.4907408, y: 0.34848484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e4b78974d0b2ba0800000000000000
+      internalID: -6112777468073259483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0176
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 1258
+        width: 112
+        height: 122
+      alignment: 9
+      pivot: {x: 1.4732143, y: 0.33606556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e55955fdfb027b40800000000000000
+      internalID: 5436420885560514016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0177
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1793
+        width: 114
+        height: 126
+      alignment: 9
+      pivot: {x: 1.4298246, y: 0.3015873}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0d09f42143f1c220800000000000000
+      internalID: 2504550328913431822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0178
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 1
+        width: 118
+        height: 120
+      alignment: 9
+      pivot: {x: 1.4237288, y: 0.35}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8787fc21ec788cb50800000000000000
+      internalID: 6613685371942172792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0179
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 861
+        width: 112
+        height: 126
+      alignment: 9
+      pivot: {x: 1.4375, y: 0.33333334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9ffbcf0b4484ae50800000000000000
+      internalID: 6819721193668214682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0180
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 349
+        width: 104
+        height: 126
+      alignment: 9
+      pivot: {x: 1.5480769, y: 0.34126985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b749ed2637ec539e0800000000000000
+      internalID: -1642179494131362693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0181
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 383
+        width: 99
+        height: 121
+      alignment: 9
+      pivot: {x: 1.5757576, y: 0.3140496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c772d2efe4b509b80800000000000000
+      internalID: -8390105710961285252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0182
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 992
+        width: 108
+        height: 123
+      alignment: 9
+      pivot: {x: 1.4722222, y: 0.32520324}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4916eac288cd979d0800000000000000
+      internalID: -2775945217873911404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0183
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 1382
+        width: 111
+        height: 128
+      alignment: 9
+      pivot: {x: 1.4774774, y: 0.296875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ab7ec2cc6ab2c460800000000000000
+      internalID: 7260570525562207139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0184
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 887
+        width: 114
+        height: 119
+      alignment: 9
+      pivot: {x: 1.4298246, y: 0.3277311}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c0621ee38bcfb6a0800000000000000
+      internalID: -6431197975366442812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0185
+      rect:
+        serializedVersion: 2
+        x: 234
+        y: 1920
+        width: 119
+        height: 127
+      alignment: 9
+      pivot: {x: 1.3865546, y: 0.2992126}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2478a2fbd82e40d90800000000000000
+      internalID: -7132326811422521534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0186
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 902
+        width: 105
+        height: 113
+      alignment: 9
+      pivot: {x: 1.4952381, y: 0.30088496}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f97bdc57cf0787e0800000000000000
+      internalID: -1763423380161463819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0187
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 615
+        width: 108
+        height: 122
+      alignment: 9
+      pivot: {x: 1.4537038, y: 0.31967214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55e54ddbb8050d570800000000000000
+      internalID: 8489373858708872789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0188
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 876
+        width: 106
+        height: 122
+      alignment: 9
+      pivot: {x: 1.5, y: 0.28688523}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32be3d08c5a6e7170800000000000000
+      internalID: 8178090918882306851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0189
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1149
+        width: 118
+        height: 119
+      alignment: 9
+      pivot: {x: 1.4152542, y: 0.27731094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32888a97f4f2f4080800000000000000
+      internalID: -9201083495304624093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0190
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 479
+        width: 108
+        height: 124
+      alignment: 9
+      pivot: {x: 1.4722222, y: 0.2983871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8dca1667d1d5160800000000000000
+      internalID: 7015796188795164836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0191
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 1918
+        width: 109
+        height: 129
+      alignment: 9
+      pivot: {x: 1.4678899, y: 0.27906978}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4e14e56d32df870800000000000000
+      internalID: 8718163857270498557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0192
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 1410
+        width: 97
+        height: 119
+      alignment: 9
+      pivot: {x: 1.5876288, y: 0.29411766}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 069107f754fed22e0800000000000000
+      internalID: -2148798365416023712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0193
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1778
+        width: 110
+        height: 132
+      alignment: 9
+      pivot: {x: 1.4454546, y: 0.3030303}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da14116e0ee485d40800000000000000
+      internalID: 5573291266710520237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0194
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 1568
+        width: 101
+        height: 114
+      alignment: 9
+      pivot: {x: 1.5643564, y: 0.28947368}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11c62f907ec1b1620800000000000000
+      internalID: 2745820176442354705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0195
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 989
+        width: 113
+        height: 126
+      alignment: 9
+      pivot: {x: 1.4336283, y: 0.26984128}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60f16525c91c8070800000000000000
+      internalID: 8109885363513847917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0196
+      rect:
+        serializedVersion: 2
+        x: 385
+        y: 766
+        width: 107
+        height: 119
+      alignment: 9
+      pivot: {x: 1.4579439, y: 0.2857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb367f772fd389be0800000000000000
+      internalID: -1470357166732385348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0197
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 369
+        width: 110
+        height: 121
+      alignment: 9
+      pivot: {x: 1.4727273, y: 0.25619835}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cf459af4b03ba940800000000000000
+      internalID: 5308390139642597319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0198
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 536
+        width: 105
+        height: 116
+      alignment: 9
+      pivot: {x: 1.5047619, y: 0.23275863}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5ce6c5ebe2b18350800000000000000
+      internalID: 6017287303385771103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0199
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 1000
+        width: 107
+        height: 122
+      alignment: 9
+      pivot: {x: 1.4485981, y: 0.31967214}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d77cf4a949b83f10800000000000000
+      internalID: 2249751739823323088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0200
+      rect:
+        serializedVersion: 2
+        x: 588
+        y: 774
+        width: 110
+        height: 116
+      alignment: 9
+      pivot: {x: 1.4636364, y: 0.28448275}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03042efddf69029e0800000000000000
+      internalID: -1648151446490562512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0201
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 246
+        width: 106
+        height: 121
+      alignment: 9
+      pivot: {x: 1.4716982, y: 0.29752067}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ce755f54f5fed890800000000000000
+      internalID: -7431231905194475839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0202
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 1816
+        width: 100
+        height: 114
+      alignment: 9
+      pivot: {x: 1.54, y: 0.22807017}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30319e7e00040be70800000000000000
+      internalID: 9128866817314984707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0203
+      rect:
+        serializedVersion: 2
+        x: 781
+        y: 1933
+        width: 98
+        height: 114
+      alignment: 9
+      pivot: {x: 1.5918367, y: 0.27192983}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe8f6fca98e13b880800000000000000
+      internalID: -8596493687058925329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0204
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 1324
+        width: 101
+        height: 113
+      alignment: 9
+      pivot: {x: 1.5445545, y: 0.22123894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b85daa99f8a94d740800000000000000
+      internalID: 5175931813304653195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0205
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 16
+        width: 99
+        height: 120
+      alignment: 9
+      pivot: {x: 1.5151515, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e9d096535e186740800000000000000
+      internalID: 5145395917554244069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0206
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 1291
+        width: 100
+        height: 117
+      alignment: 9
+      pivot: {x: 1.51, y: 0.25641027}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: adfe0ae7688e9f8b0800000000000000
+      internalID: -5117803837182119974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0207
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 1
+        width: 99
+        height: 106
+      alignment: 9
+      pivot: {x: 1.5454545, y: 0.21698113}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd86066bcef264cc0800000000000000
+      internalID: -3727238947883947812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0208
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 1935
+        width: 101
+        height: 112
+      alignment: 9
+      pivot: {x: 1.5049505, y: 0.25}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60908619022114430800000000000000
+      internalID: 3765310694546213126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0209
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1175
+        width: 94
+        height: 114
+      alignment: 9
+      pivot: {x: 1.5744681, y: 0.28070176}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8fd0141bda222d40800000000000000
+      internalID: 5558052010551467917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0210
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 284
+        width: 96
+        height: 118
+      alignment: 9
+      pivot: {x: 1.5625, y: 0.2542373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10c54e20599ba7a10800000000000000
+      internalID: 1908041441794612225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0211
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 307
+        width: 100
+        height: 109
+      alignment: 9
+      pivot: {x: 1.5, y: 0.18348624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46e2e4fa61ee25480800000000000000
+      internalID: -8911798931414962588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0212
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1339
+        width: 94
+        height: 112
+      alignment: 9
+      pivot: {x: 1.5957447, y: 0.17857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae028df150c36f120800000000000000
+      internalID: 2447209440229204202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0213
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 555
+        width: 93
+        height: 107
+      alignment: 9
+      pivot: {x: 1.5913979, y: 0.26168224}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b0543c93217a60b0800000000000000
+      internalID: -5734646777744437071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0214
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 1581
+        width: 90
+        height: 113
+      alignment: 9
+      pivot: {x: 1.6666666, y: 0.27433628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5113d2210717080800000000000000
+      internalID: -9191442141116557856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0215
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 918
+        width: 87
+        height: 99
+      alignment: 9
+      pivot: {x: 1.7011495, y: 0.21212122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae3485dd3862f680800000000000000
+      internalID: -8722794913478721882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0216
+      rect:
+        serializedVersion: 2
+        x: 743
+        y: 581
+        width: 96
+        height: 103
+      alignment: 9
+      pivot: {x: 1.59375, y: 0.19417475}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c891b68ab6a61ee00800000000000000
+      internalID: 1072255196910524812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0217
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 316
+        width: 88
+        height: 101
+      alignment: 9
+      pivot: {x: 1.6931819, y: 0.18811882}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b716350e91f28c500800000000000000
+      internalID: 416634753716019579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0218
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 1014
+        width: 93
+        height: 114
+      alignment: 9
+      pivot: {x: 1.655914, y: 0.21052632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 533882e281e1970b0800000000000000
+      internalID: -5730515961649790155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0219
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1257
+        width: 90
+        height: 96
+      alignment: 9
+      pivot: {x: 1.6555556, y: 0.17708333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcf0d791df1be3cc0800000000000000
+      internalID: -3729347740803723313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0220
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 77
+        width: 93
+        height: 109
+      alignment: 9
+      pivot: {x: 1.5913979, y: 0.25688073}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 516936cfae4f98fa0800000000000000
+      internalID: -5797833755168893419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0221
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 1696
+        width: 101
+        height: 114
+      alignment: 9
+      pivot: {x: 1.5445545, y: 0.21929824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7244c6439b03b59f0800000000000000
+      internalID: -478735363378232281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0222
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 1032
+        width: 86
+        height: 99
+      alignment: 9
+      pivot: {x: 1.6860465, y: 0.15151516}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02f41ae73b3ad5390800000000000000
+      internalID: -7827920585981079776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0223
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 52
+        width: 96
+        height: 110
+      alignment: 9
+      pivot: {x: 1.5416666, y: 0.19090909}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2ed4ed01b3f5eb70800000000000000
+      internalID: 8927809778099740204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0224
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 1812
+        width: 87
+        height: 115
+      alignment: 9
+      pivot: {x: 1.7241379, y: 0.2347826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7de34ef9ac8ceda0800000000000000
+      internalID: -5914197548901077636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0225
+      rect:
+        serializedVersion: 2
+        x: 961
+        y: 10
+        width: 94
+        height: 99
+      alignment: 9
+      pivot: {x: 1.5851064, y: 0.21212122}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca939285dfe734ee0800000000000000
+      internalID: -1278038242672166484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0226
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1841
+        width: 84
+        height: 93
+      alignment: 9
+      pivot: {x: 1.7261904, y: 0.15053764}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5e4db8261d53df0800000000000000
+      internalID: -201024387165133400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0227
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1175
+        width: 82
+        height: 114
+      alignment: 9
+      pivot: {x: 1.7926829, y: 0.2631579}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86356289b685eea50800000000000000
+      internalID: 6552271727008043880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0228
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 1490
+        width: 87
+        height: 96
+      alignment: 9
+      pivot: {x: 1.6436782, y: 0.20833333}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34f7c934a27422450800000000000000
+      internalID: 6062486295242637123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0229
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1370
+        width: 88
+        height: 96
+      alignment: 9
+      pivot: {x: 1.6931819, y: 0.16666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 927f2019af0c7c9a0800000000000000
+      internalID: -6212784978527062231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0230
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 1133
+        width: 81
+        height: 91
+      alignment: 9
+      pivot: {x: 1.7777778, y: 0.13186814}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8929d8fce22503ff0800000000000000
+      internalID: -58456434151681384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0231
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 5
+        width: 77
+        height: 86
+      alignment: 9
+      pivot: {x: 1.8311689, y: 0.12790698}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0a44c377d668bcd0800000000000000
+      internalID: -2542168914104399349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0232
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 5
+        width: 81
+        height: 86
+      alignment: 9
+      pivot: {x: 1.7777778, y: 0.15116279}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 938cdbb01065bdb40800000000000000
+      internalID: 5466057135236171833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0233
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 1046
+        width: 72
+        height: 85
+      alignment: 9
+      pivot: {x: 1.9583334, y: 0.14117648}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8055516650c183f0800000000000000
+      internalID: -900226973264686966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0234
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 731
+        width: 78
+        height: 85
+      alignment: 9
+      pivot: {x: 1.9102564, y: 0.15294118}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42bf4bfd9accb2220800000000000000
+      internalID: 2462286651262827300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0235
+      rect:
+        serializedVersion: 2
+        x: 1119
+        y: 1887
+        width: 63
+        height: 72
+      alignment: 9
+      pivot: {x: 2.142857, y: 0.083333336}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47030f88d087a0c50800000000000000
+      internalID: 6632245400783827060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0236
+      rect:
+        serializedVersion: 2
+        x: 1074
+        y: 1961
+        width: 69
+        height: 86
+      alignment: 9
+      pivot: {x: 2.0144928, y: 0.10465116}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be81c58ee1c10e150800000000000000
+      internalID: 5899746430928296171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0237
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 808
+        width: 57
+        height: 66
+      alignment: 9
+      pivot: {x: 2.3333333, y: 0.045454547}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed9b39c706a326090800000000000000
+      internalID: -8042801798448956962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0238
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 1
+        width: 66
+        height: 74
+      alignment: 9
+      pivot: {x: 2, y: 0.13513513}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fa81d50790b02200800000000000000
+      internalID: 153316550014765815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0239
+      rect:
+        serializedVersion: 2
+        x: 923
+        y: 515
+        width: 54
+        height: 69
+      alignment: 9
+      pivot: {x: 2.4074075, y: 0.10144927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b700100c059b48030800000000000000
+      internalID: 3496122967216160891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0240
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 79
+        width: 42
+        height: 50
+      alignment: 9
+      pivot: {x: 3, y: -0.06}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d2f6d221409cae20800000000000000
+      internalID: 3363221631170704082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0241
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 693
+        width: 33
+        height: 36
+      alignment: 9
+      pivot: {x: 3.6969697, y: -0.22222222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b27a112105abd960800000000000000
+      internalID: 7627871818150998712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0242
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 741a233f019f5b800800000000000000
+      internalID: 627681574283026759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0243
+      rect:
+        serializedVersion: 2
+        x: 723
+        y: 1133
+        width: 74
+        height: 75
+      alignment: 9
+      pivot: {x: 1.8918918, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb2659058bdcd0ff0800000000000000
+      internalID: -68172227831045445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0244
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 1288
+        width: 72
+        height: 80
+      alignment: 9
+      pivot: {x: 1.9444444, y: 0.175}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c43a6ab4d88c3590800000000000000
+      internalID: -7693123616213683004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0245
+      rect:
+        serializedVersion: 2
+        x: 938
+        y: 876
+        width: 58
+        height: 67
+      alignment: 9
+      pivot: {x: 2.310345, y: 0.05970149}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b2c1a818ee599900800000000000000
+      internalID: 691688368716759733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0246
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 1767
+        width: 67
+        height: 72
+      alignment: 9
+      pivot: {x: 1.9850746, y: 0.1388889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30527713dcbafd030800000000000000
+      internalID: 3521722331413554435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0247
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 375
+        width: 56
+        height: 64
+      alignment: 9
+      pivot: {x: 2.375, y: 0.046875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d140c34a376049c60800000000000000
+      internalID: 7823885546395796509
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0248
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 251
+        width: 54
+        height: 63
+      alignment: 9
+      pivot: {x: 2.4444444, y: 0.04761905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7996e35357f1f30800000000000000
+      internalID: 4548483020208314300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0249
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 193
+        width: 53
+        height: 62
+      alignment: 9
+      pivot: {x: 2.490566, y: 0.032258064}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c4c36d68beebb8c0800000000000000
+      internalID: -3982326969602423616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0250
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 321
+        width: 51
+        height: 61
+      alignment: 9
+      pivot: {x: 2.5686274, y: 0.032786883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0faecd2d335a4fcc0800000000000000
+      internalID: -3678133353655244048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0251
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 3
+        width: 76
+        height: 81
+      alignment: 9
+      pivot: {x: 1.9078947, y: 0.24691358}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce17a209e4d134ac0800000000000000
+      internalID: -3872219031345139220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0252
+      rect:
+        serializedVersion: 2
+        x: 998
+        y: 911
+        width: 74
+        height: 64
+      alignment: 9
+      pivot: {x: 1.918919, y: 0.0625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387fdd7b320837b60800000000000000
+      internalID: 7742673075277002627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0253
+      rect:
+        serializedVersion: 2
+        x: 968
+        y: 257
+        width: 63
+        height: 62
+      alignment: 9
+      pivot: {x: 2.142857, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6f9e062e4f2eba0800000000000000
+      internalID: -6061012895361534211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0254
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 441
+        width: 56
+        height: 69
+      alignment: 9
+      pivot: {x: 2.3392856, y: 0.11594203}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ba6d7b59a18e2400800000000000000
+      internalID: 301320789464804018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0255
+      rect:
+        serializedVersion: 2
+        x: 951
+        y: 321
+        width: 44
+        height: 52
+      alignment: 9
+      pivot: {x: 2.9318182, y: -0.01923077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8d4a6d9c9b19f00800000000000000
+      internalID: 1121882058732656804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0256
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 420
+        width: 50
+        height: 54
+      alignment: 9
+      pivot: {x: 2.64, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90828b2e500afa50800000000000000
+      internalID: 6555552612048076955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0257
+      rect:
+        serializedVersion: 2
+        x: 669
+        y: 3
+        width: 41
+        height: 47
+      alignment: 9
+      pivot: {x: 3.121951, y: -0.04255319}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb323e00a879baed0800000000000000
+      internalID: -2401659357295860801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0258
+      rect:
+        serializedVersion: 2
+        x: 712
+        y: 5
+        width: 40
+        height: 45
+      alignment: 9
+      pivot: {x: 3.2, y: -0.06666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0669f1b861e8c1590800000000000000
+      internalID: -7702125035235862944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0259
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1130
+        width: 37
+        height: 43
+      alignment: 9
+      pivot: {x: 3.4324324, y: -0.069767445}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad25729de9b29fca0800000000000000
+      internalID: -5982702668736933158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0260
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 1133
+        width: 36
+        height: 40
+      alignment: 9
+      pivot: {x: 3.5277777, y: -0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf9b93921bf9c9420800000000000000
+      internalID: 2638159064981944828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0261
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 1130
+        width: 42
+        height: 43
+      alignment: 9
+      pivot: {x: 3.1190476, y: -0.093023255}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11e4491d2bdcdd630800000000000000
+      internalID: 3953542215805193745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0262
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 1129
+        width: 32
+        height: 35
+      alignment: 9
+      pivot: {x: 3.9375, y: -0.17142858}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58b4ad3585bae5230800000000000000
+      internalID: 3629526745559485317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0263
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 316
+        width: 44
+        height: 57
+      alignment: 9
+      pivot: {x: 3.0681818, y: 0.2982456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1eaa90ffe519828b0800000000000000
+      internalID: -5176727934470608159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0264
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 195
+        width: 40
+        height: 60
+      alignment: 9
+      pivot: {x: 3.275, y: 0.21666667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b8f4576aa361aaa0800000000000000
+      internalID: -6151526032482174799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0265
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1138
+        width: 24
+        height: 26
+      alignment: 9
+      pivot: {x: 5.1666665, y: -0.3846154}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e775a09f072d66c0800000000000000
+      internalID: -4148616733933602840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0266
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1129
+        width: 19
+        height: 18
+      alignment: 9
+      pivot: {x: 6.4736843, y: -0.8888889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73f85bbb9644d1ad0800000000000000
+      internalID: -2729950578205159625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0267
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1130
+        width: 37
+        height: 17
+      alignment: 9
+      pivot: {x: 3.2972972, y: -0.88235295}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc9c9253495fae10800000000000000
+      internalID: 2211084087745879243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0268
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 1781
+        width: 8
+        height: 8
+      alignment: 9
+      pivot: {x: 15, y: -2.625}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1794903dbaadaf90800000000000000
+      internalID: -6940703721167481061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0269
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12cff65e0f0970f30800000000000000
+      internalID: 4541758113542306849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0270
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f87f86c53d3595790800000000000000
+      internalID: -7540903933801597041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0271
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3742ce51d050f1fe0800000000000000
+      internalID: -1216247820606233485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0272
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 601f34b2a03b93760800000000000000
+      internalID: 7438173115836002566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0273
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f824df8697ccf580800000000000000
+      internalID: -8791932923061982987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0274
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1ad48463b5cd5af0800000000000000
+      internalID: -405951017117230565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0275
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9da2cfb0bcdaa8950800000000000000
+      internalID: 6452160503752698585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0276
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0f7849762e9b4850800000000000000
+      internalID: 6362352786671697679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0277
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df8bc7896f43f790800000000000000
+      internalID: -7497561639973318697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0278
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cc8a996df549b150800000000000000
+      internalID: 5888814942464412864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0279
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6135ffc7e35ac8b30800000000000000
+      internalID: 4290986232780903190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0280
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 508627a4b026b8850800000000000000
+      internalID: 6380301097733613573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0281
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dab9f3ff9af83ddf0800000000000000
+      internalID: -156623601733231699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0282
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20f972adb38c45100800000000000000
+      internalID: 95921651470278402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0283
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b23caf8daf1652e20800000000000000
+      internalID: 3325171629893010219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0284
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 226e9ac475a49b070800000000000000
+      internalID: 8122605141748213282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UnstableSpace_Shape2_v001.0285
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 1778
+        width: 1
+        height: 1
+      alignment: 9
+      pivot: {x: 240, y: -134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 686ea86fe18a97250800000000000000
+      internalID: 5942966034230863494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

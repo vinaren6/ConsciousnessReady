@@ -746,12 +746,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0068
       rect:
         serializedVersion: 2
-        x: 1571
-        y: 511
-        width: 64
-        height: 61
+        x: 840
+        y: 1948
+        width: 3
+        height: 3
       alignment: 9
-      pivot: {x: -0.8828125, y: 0.20491803}
+      pivot: {x: 42.666668, y: -41.666668}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -767,12 +767,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0069
       rect:
         serializedVersion: 2
-        x: 1369
-        y: 525
-        width: 64
-        height: 61
+        x: 1202
+        y: 1516
+        width: 37
+        height: 35
       alignment: 9
-      pivot: {x: -0.8828125, y: 0.20491803}
+      pivot: {x: -1.918919, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -788,12 +788,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0070
       rect:
         serializedVersion: 2
-        x: 1571
-        y: 574
-        width: 66
-        height: 62
+        x: 1384
+        y: 1423
+        width: 46
+        height: 44
       alignment: 9
-      pivot: {x: -0.84090906, y: 0.21774194}
+      pivot: {x: -1.4347826, y: 0.11363637}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -809,12 +809,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0071
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 22
-        width: 67
-        height: 62
+        x: 1573
+        y: 1316
+        width: 51
+        height: 48
       alignment: 9
-      pivot: {x: -0.8134328, y: 0.21774194}
+      pivot: {x: -1.2352941, y: 0.14583333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -830,12 +830,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0072
       rect:
         serializedVersion: 2
-        x: 997
-        y: 21
-        width: 67
-        height: 63
+        x: 1031
+        y: 623
+        width: 55
+        height: 52
       alignment: 9
-      pivot: {x: -0.8134328, y: 0.23015873}
+      pivot: {x: -1.1090909, y: 0.17307693}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -851,12 +851,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0073
       rect:
         serializedVersion: 2
-        x: 926
-        y: 21
-        width: 69
-        height: 63
+        x: 1987
+        y: 1083
+        width: 59
+        height: 55
       alignment: 9
-      pivot: {x: -0.7753623, y: 0.23015873}
+      pivot: {x: -1, y: 0.2}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -872,12 +872,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0074
       rect:
         serializedVersion: 2
-        x: 1787
-        y: 585
-        width: 69
-        height: 64
+        x: 1987
+        y: 1138
+        width: 61
+        height: 57
       alignment: 9
-      pivot: {x: -0.7753623, y: 0.2421875}
+      pivot: {x: -0.9508197, y: 0.21052632}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -893,12 +893,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0075
       rect:
         serializedVersion: 2
-        x: 1787
-        y: 651
-        width: 70
-        height: 64
+        x: 1032
+        y: 675
+        width: 64
+        height: 59
       alignment: 9
-      pivot: {x: -0.75, y: 0.2421875}
+      pivot: {x: -0.875, y: 0.22033899}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -914,12 +914,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0076
       rect:
         serializedVersion: 2
-        x: 852
-        y: 19
-        width: 72
-        height: 65
+        x: 1032
+        y: 734
+        width: 66
+        height: 60
       alignment: 9
-      pivot: {x: -0.7152778, y: 0.23846154}
+      pivot: {x: -0.8333333, y: 0.23333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -935,12 +935,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0077
       rect:
         serializedVersion: 2
-        x: 968
-        y: 386
-        width: 72
-        height: 66
+        x: 1522
+        y: 457
+        width: 67
+        height: 62
       alignment: 9
-      pivot: {x: -0.7152778, y: 0.25}
+      pivot: {x: -0.80597013, y: 0.24193548}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -956,12 +956,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0078
       rect:
         serializedVersion: 2
-        x: 1350
-        y: 275
-        width: 73
-        height: 66
+        x: 1522
+        y: 519
+        width: 69
+        height: 62
       alignment: 9
-      pivot: {x: -0.6917808, y: 0.25}
+      pivot: {x: -0.76811594, y: 0.24193548}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -977,12 +977,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0079
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 343
-        width: 73
-        height: 67
+        x: 1976
+        y: 904
+        width: 71
+        height: 64
       alignment: 9
-      pivot: {x: -0.6917808, y: 0.26119402}
+      pivot: {x: -0.73239434, y: 0.25}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -998,12 +998,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0080
       rect:
         serializedVersion: 2
-        x: 1971
-        y: 236
-        width: 75
-        height: 67
+        x: 1976
+        y: 968
+        width: 72
+        height: 65
       alignment: 9
-      pivot: {x: -0.66, y: 0.26119402}
+      pivot: {x: -0.7083333, y: 0.26153848}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1019,12 +1019,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0081
       rect:
         serializedVersion: 2
-        x: 1354
-        y: 412
-        width: 75
-        height: 67
+        x: 436
+        y: 154
+        width: 74
+        height: 65
       alignment: 9
-      pivot: {x: -0.66, y: 0.26119402}
+      pivot: {x: -0.6756757, y: 0.26153848}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1040,12 +1040,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0082
       rect:
         serializedVersion: 2
-        x: 1971
-        y: 305
-        width: 76
-        height: 68
+        x: 1973
+        y: 837
+        width: 75
+        height: 67
       alignment: 9
-      pivot: {x: -0.6381579, y: 0.2720588}
+      pivot: {x: -0.6533333, y: 0.26865673}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1061,12 +1061,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0083
       rect:
         serializedVersion: 2
-        x: 1163
-        y: 432
-        width: 77
-        height: 68
+        x: 435
+        y: 83
+        width: 76
+        height: 67
       alignment: 9
-      pivot: {x: -0.6168831, y: 0.2720588}
+      pivot: {x: -0.6315789, y: 0.26865673}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1082,12 +1082,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0084
       rect:
         serializedVersion: 2
-        x: 1163
-        y: 502
-        width: 78
-        height: 69
+        x: 434
+        y: 13
+        width: 77
+        height: 68
       alignment: 9
-      pivot: {x: -0.60897434, y: 0.2826087}
+      pivot: {x: -0.6233766, y: 0.27941176}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1103,12 +1103,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0085
       rect:
         serializedVersion: 2
-        x: 1558
-        y: 440
-        width: 79
-        height: 69
+        x: 356
+        y: 13
+        width: 78
+        height: 68
       alignment: 9
-      pivot: {x: -0.5886076, y: 0.2826087}
+      pivot: {x: -0.6025641, y: 0.27941176}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1124,12 +1124,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0086
       rect:
         serializedVersion: 2
-        x: 1558
-        y: 369
+        x: 356
+        y: 81
         width: 79
         height: 69
       alignment: 9
-      pivot: {x: -0.5886076, y: 0.2826087}
+      pivot: {x: -0.5822785, y: 0.28985506}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1145,12 +1145,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0087
       rect:
         serializedVersion: 2
-        x: 968
-        y: 454
+        x: 356
+        y: 150
         width: 80
-        height: 70
+        height: 69
       alignment: 9
-      pivot: {x: -0.56875, y: 0.29285714}
+      pivot: {x: -0.575, y: 0.28985506}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1166,12 +1166,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0088
       rect:
         serializedVersion: 2
-        x: 1966
-        y: 1105
+        x: 466
+        y: 387
         width: 81
         height: 70
       alignment: 9
-      pivot: {x: -0.5493827, y: 0.29285714}
+      pivot: {x: -0.5555556, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1187,12 +1187,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0089
       rect:
         serializedVersion: 2
-        x: 1966
-        y: 1034
-        width: 81
-        height: 69
+        x: 356
+        y: 219
+        width: 82
+        height: 70
       alignment: 9
-      pivot: {x: -0.5493827, y: 0.29710144}
+      pivot: {x: -0.5365854, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1208,12 +1208,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0090
       rect:
         serializedVersion: 2
-        x: 1158
-        y: 360
+        x: 401
+        y: 291
         width: 82
         height: 70
       alignment: 9
-      pivot: {x: -0.5304878, y: 0.30714285}
+      pivot: {x: -0.5365854, y: 0.3}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1229,12 +1229,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0091
       rect:
         serializedVersion: 2
-        x: 670
-        y: 372
-        width: 84
-        height: 70
+        x: 273
+        y: 144
+        width: 83
+        height: 71
       alignment: 9
-      pivot: {x: -0.50595236, y: 0.30714285}
+      pivot: {x: -0.5180723, y: 0.30985916}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1250,12 +1250,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0092
       rect:
         serializedVersion: 2
-        x: 766
-        y: 14
+        x: 272
+        y: 71
         width: 84
-        height: 70
+        height: 71
       alignment: 9
-      pivot: {x: -0.50595236, y: 0.30714285}
+      pivot: {x: -0.5, y: 0.30985916}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1271,12 +1271,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0093
       rect:
         serializedVersion: 2
-        x: 766
-        y: 371
-        width: 85
+        x: 272
+        y: 0
+        width: 84
         height: 71
       alignment: 9
-      pivot: {x: -0.4882353, y: 0.31690142}
+      pivot: {x: -0.5, y: 0.30985916}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1292,12 +1292,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0094
       rect:
         serializedVersion: 2
-        x: 766
-        y: 298
+        x: 1963
+        y: 765
         width: 85
-        height: 71
+        height: 72
       alignment: 9
-      pivot: {x: -0.4882353, y: 0.31690142}
+      pivot: {x: -0.48235294, y: 0.31944445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1313,12 +1313,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0095
       rect:
         serializedVersion: 2
-        x: 1769
-        y: 439
+        x: 315
+        y: 289
         width: 86
-        height: 71
+        height: 72
       alignment: 9
-      pivot: {x: -0.47093022, y: 0.31690142}
+      pivot: {x: -0.4651163, y: 0.31944445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1334,12 +1334,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0096
       rect:
         serializedVersion: 2
-        x: 1769
-        y: 512
+        x: 269
+        y: 215
         width: 87
-        height: 71
+        height: 72
       alignment: 9
-      pivot: {x: -0.45402297, y: 0.31690142}
+      pivot: {x: -0.4597701, y: 0.31944445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1355,12 +1355,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0097
       rect:
         serializedVersion: 2
-        x: 670
-        y: 444
+        x: 185
+        y: 142
         width: 88
         height: 72
       alignment: 9
-      pivot: {x: -0.4375, y: 0.3263889}
+      pivot: {x: -0.4431818, y: 0.31944445}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1376,12 +1376,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0098
       rect:
         serializedVersion: 2
-        x: 959
-        y: 312
-        width: 88
+        x: 226
+        y: 287
+        width: 89
         height: 72
       alignment: 9
-      pivot: {x: -0.4375, y: 0.3263889}
+      pivot: {x: -0.42696628, y: 0.33333334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1397,12 +1397,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0099
       rect:
         serializedVersion: 2
-        x: 766
-        y: 444
+        x: 183
+        y: 59
         width: 89
         height: 72
       alignment: 9
-      pivot: {x: -0.4213483, y: 0.3263889}
+      pivot: {x: -0.42696628, y: 0.33333334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1418,12 +1418,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0100
       rect:
         serializedVersion: 2
-        x: 395
-        y: 11
+        x: 179
+        y: 214
         width: 90
-        height: 73
+        height: 72
       alignment: 9
-      pivot: {x: -0.40555555, y: 0.33561644}
+      pivot: {x: -0.41111112, y: 0.33333334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1439,12 +1439,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0101
       rect:
         serializedVersion: 2
-        x: 674
-        y: 12
-        width: 90
+        x: 94
+        y: 131
+        width: 91
         height: 72
       alignment: 9
-      pivot: {x: -0.40555555, y: 0.3402778}
+      pivot: {x: -0.3956044, y: 0.33333334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1460,12 +1460,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0102
       rect:
         serializedVersion: 2
-        x: 581
-        y: 12
-        width: 91
-        height: 72
+        x: 134
+        y: 286
+        width: 92
+        height: 73
       alignment: 9
-      pivot: {x: -0.3901099, y: 0.3402778}
+      pivot: {x: -0.38043478, y: 0.34246576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1481,12 +1481,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0103
       rect:
         serializedVersion: 2
-        x: 487
-        y: 12
-        width: 92
-        height: 72
+        x: 92
+        y: 47
+        width: 91
+        height: 73
       alignment: 9
-      pivot: {x: -0.375, y: 0.3402778}
+      pivot: {x: -0.3846154, y: 0.34246576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1502,12 +1502,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0104
       rect:
         serializedVersion: 2
-        x: 300
-        y: 11
-        width: 93
+        x: 0
+        y: 47
+        width: 92
         height: 73
       alignment: 9
-      pivot: {x: -0.36021507, y: 0.34931508}
+      pivot: {x: -0.36956522, y: 0.34246576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1523,12 +1523,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0105
       rect:
         serializedVersion: 2
-        x: 204
-        y: 11
-        width: 94
+        x: 86
+        y: 203
+        width: 93
         height: 73
       alignment: 9
-      pivot: {x: -0.34574467, y: 0.34931508}
+      pivot: {x: -0.3548387, y: 0.34246576}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1544,12 +1544,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0106
       rect:
         serializedVersion: 2
-        x: 1542
-        y: 294
-        width: 95
-        height: 73
+        x: 0
+        y: 120
+        width: 94
+        height: 74
       alignment: 9
-      pivot: {x: -0.33157894, y: 0.34931508}
+      pivot: {x: -0.34042552, y: 0.35135135}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1565,12 +1565,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0107
       rect:
         serializedVersion: 2
-        x: 1949
-        y: 86
-        width: 96
+        x: 1821
+        y: 478
+        width: 95
         height: 73
       alignment: 9
-      pivot: {x: -0.31770834, y: 0.34931508}
+      pivot: {x: -0.3263158, y: 0.3561644}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1586,12 +1586,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0108
       rect:
         serializedVersion: 2
-        x: 1759
-        y: 363
+        x: 1949
+        y: 618
         width: 96
-        height: 74
+        height: 73
       alignment: 9
-      pivot: {x: -0.30729166, y: 0.3581081}
+      pivot: {x: -0.3125, y: 0.3561644}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1607,12 +1607,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0109
       rect:
         serializedVersion: 2
-        x: 1950
-        y: 161
+        x: 1526
+        y: 1103
         width: 97
         height: 73
       alignment: 9
-      pivot: {x: -0.29381442, y: 0.36301368}
+      pivot: {x: -0.29896906, y: 0.3561644}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1628,12 +1628,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0110
       rect:
         serializedVersion: 2
-        x: 1757
-        y: 288
+        x: 1526
+        y: 1176
         width: 98
-        height: 73
+        height: 74
       alignment: 9
-      pivot: {x: -0.28061223, y: 0.36301368}
+      pivot: {x: -0.2857143, y: 0.36486486}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1649,12 +1649,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0111
       rect:
         serializedVersion: 2
-        x: 103
-        y: 11
+        x: 1949
+        y: 691
         width: 99
-        height: 73
+        height: 74
       alignment: 9
-      pivot: {x: -0.26767677, y: 0.36301368}
+      pivot: {x: -0.27272728, y: 0.36486486}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1670,12 +1670,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0112
       rect:
         serializedVersion: 2
-        x: 1
-        y: 11
+        x: 1132
+        y: 523
         width: 100
-        height: 73
+        height: 74
       alignment: 9
-      pivot: {x: -0.255, y: 0.36301368}
+      pivot: {x: -0.26, y: 0.36486486}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1691,12 +1691,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0113
       rect:
         serializedVersion: 2
-        x: 1846
-        y: 121
-        width: 101
+        x: 1232
+        y: 498
+        width: 100
         height: 74
       alignment: 9
-      pivot: {x: -0.24257426, y: 0.3716216}
+      pivot: {x: -0.25, y: 0.36486486}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1712,12 +1712,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0114
       rect:
         serializedVersion: 2
-        x: 1846
-        y: 197
-        width: 102
+        x: 1031
+        y: 523
+        width: 101
         height: 74
       alignment: 9
-      pivot: {x: -0.23039216, y: 0.3716216}
+      pivot: {x: -0.23762377, y: 0.3783784}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1733,12 +1733,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0115
       rect:
         serializedVersion: 2
-        x: 1637
-        y: 214
+        x: 1910
+        y: 292
         width: 103
         height: 74
       alignment: 9
-      pivot: {x: -0.20873787, y: 0.3716216}
+      pivot: {x: -0.21359223, y: 0.3783784}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1754,12 +1754,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0116
       rect:
         serializedVersion: 2
-        x: 1531
-        y: 219
+        x: 1698
+        y: 303
         width: 104
-        height: 73
+        height: 74
       alignment: 9
-      pivot: {x: -0.19711539, y: 0.37671232}
+      pivot: {x: -0.20192307, y: 0.3783784}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1775,12 +1775,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0117
       rect:
         serializedVersion: 2
-        x: 1242
-        y: 329
+        x: 1915
+        y: 366
         width: 106
         height: 74
       alignment: 9
-      pivot: {x: -0.1745283, y: 0.38513514}
+      pivot: {x: -0.17924528, y: 0.3783784}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1796,12 +1796,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0118
       rect:
         serializedVersion: 2
-        x: 858
-        y: 450
-        width: 108
+        x: 1698
+        y: 377
+        width: 107
         height: 74
       alignment: 9
-      pivot: {x: -0.15277778, y: 0.38513514}
+      pivot: {x: -0.1588785, y: 0.3783784}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1817,12 +1817,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0119
       rect:
         serializedVersion: 2
-        x: 1242
-        y: 405
-        width: 110
-        height: 74
+        x: 1916
+        y: 440
+        width: 109
+        height: 75
       alignment: 9
-      pivot: {x: -0.13181818, y: 0.38513514}
+      pivot: {x: -0.13761468, y: 0.38666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1838,12 +1838,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0120
       rect:
         serializedVersion: 2
-        x: 1345
-        y: 930
-        width: 177
-        height: 74
+        x: 1791
+        y: 776
+        width: 172
+        height: 75
       alignment: 9
-      pivot: {x: 0.3022599, y: 0.38513514}
+      pivot: {x: 0.27906978, y: 0.38666666}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1859,12 +1859,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0121
       rect:
         serializedVersion: 2
-        x: 1361
-        y: 1006
-        width: 182
+        x: 369
+        y: 741
+        width: 180
         height: 74
       alignment: 9
-      pivot: {x: 0.32142857, y: 0.38513514}
+      pivot: {x: 0.31111112, y: 0.3918919}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1880,12 +1880,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0122
       rect:
         serializedVersion: 2
-        x: 570
-        y: 993
-        width: 185
+        x: 0
+        y: 836
+        width: 183
         height: 74
       alignment: 9
-      pivot: {x: 0.33243242, y: 0.39864865}
+      pivot: {x: 0.32786885, y: 0.3918919}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1901,12 +1901,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0123
       rect:
         serializedVersion: 2
-        x: 1829
-        y: 1294
-        width: 188
-        height: 74
+        x: 1153
+        y: 1163
+        width: 186
+        height: 75
       alignment: 9
-      pivot: {x: 0.3430851, y: 0.39864865}
+      pivot: {x: 0.33870968, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1922,12 +1922,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0124
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1211
-        width: 189
-        height: 74
+        x: 1813
+        y: 1195
+        width: 188
+        height: 75
       alignment: 9
-      pivot: {x: 0.35185185, y: 0.39864865}
+      pivot: {x: 0.34574467, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1943,12 +1943,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0125
       rect:
         serializedVersion: 2
-        x: 1212
-        y: 1265
-        width: 191
-        height: 74
+        x: 0
+        y: 1140
+        width: 190
+        height: 75
       alignment: 9
-      pivot: {x: 0.35863873, y: 0.39864865}
+      pivot: {x: 0.35263157, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1964,12 +1964,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0126
       rect:
         serializedVersion: 2
-        x: 599
-        y: 1300
-        width: 192
+        x: 390
+        y: 1272
+        width: 191
         height: 75
       alignment: 9
-      pivot: {x: 0.36197916, y: 0.40666667}
+      pivot: {x: 0.36125654, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1985,12 +1985,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0127
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1287
+        x: 794
+        y: 1367
         width: 192
-        height: 75
+        height: 74
       alignment: 9
-      pivot: {x: 0.3671875, y: 0.40666667}
+      pivot: {x: 0.36458334, y: 0.4054054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2006,12 +2006,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0128
       rect:
         serializedVersion: 2
-        x: 1
+        x: 0
         y: 1290
         width: 194
         height: 75
       alignment: 9
-      pivot: {x: 0.37371135, y: 0.40666667}
+      pivot: {x: 0.371134, y: 0.41333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2027,12 +2027,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0129
       rect:
         serializedVersion: 2
-        x: 402
-        y: 1364
-        width: 195
-        height: 74
+        x: 0
+        y: 1215
+        width: 194
+        height: 75
       alignment: 9
-      pivot: {x: 0.37692308, y: 0.41216215}
+      pivot: {x: 0.37628865, y: 0.41333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2048,12 +2048,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0130
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1214
-        width: 194
-        height: 74
+        x: 599
+        y: 1381
+        width: 195
+        height: 75
       alignment: 9
-      pivot: {x: 0.378866, y: 0.41216215}
+      pivot: {x: 0.3794872, y: 0.41333333}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2069,12 +2069,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0131
       rect:
         serializedVersion: 2
-        x: 610
-        y: 1377
-        width: 195
-        height: 77
+        x: 1006
+        y: 1475
+        width: 196
+        height: 76
       alignment: 9
-      pivot: {x: 0.3820513, y: 0.4090909}
+      pivot: {x: 0.38265306, y: 0.40789473}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2090,12 +2090,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0132
       rect:
         serializedVersion: 2
-        x: 1244
-        y: 1558
-        width: 196
+        x: 1239
+        y: 1467
+        width: 195
         height: 80
       alignment: 9
-      pivot: {x: 0.38520408, y: 0.39375}
+      pivot: {x: 0.3846154, y: 0.4}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2111,12 +2111,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0133
       rect:
         serializedVersion: 2
-        x: 204
-        y: 1377
+        x: 0
+        y: 1365
         width: 196
         height: 83
       alignment: 9
-      pivot: {x: 0.39030612, y: 0.37951806}
+      pivot: {x: 0.3877551, y: 0.38554215}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2132,12 +2132,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0134
       rect:
         serializedVersion: 2
-        x: 1662
-        y: 1551
-        width: 199
+        x: 1443
+        y: 1472
+        width: 200
         height: 87
       alignment: 9
-      pivot: {x: 0.39949748, y: 0.36206895}
+      pivot: {x: 0.4, y: 0.3678161}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2153,12 +2153,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0135
       rect:
         serializedVersion: 2
-        x: 208
-        y: 1462
+        x: 1666
+        y: 1675
         width: 202
-        height: 89
+        height: 88
       alignment: 9
-      pivot: {x: 0.40841585, y: 0.36516854}
+      pivot: {x: 0.4108911, y: 0.36363637}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2174,12 +2174,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0136
       rect:
         serializedVersion: 2
-        x: 626
-        y: 1562
-        width: 203
+        x: 1463
+        y: 1766
+        width: 204
         height: 90
       alignment: 9
-      pivot: {x: 0.41625616, y: 0.3611111}
+      pivot: {x: 0.41666666, y: 0.36666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2195,12 +2195,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0137
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1473
-        width: 205
+        x: 206
+        y: 1576
+        width: 206
         height: 90
       alignment: 9
-      pivot: {x: 0.42195123, y: 0.3611111}
+      pivot: {x: 0.4223301, y: 0.36666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2216,12 +2216,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0138
       rect:
         serializedVersion: 2
-        x: 1059
-        y: 1861
-        width: 207
-        height: 90
+        x: 206
+        y: 1666
+        width: 206
+        height: 91
       alignment: 9
-      pivot: {x: 0.42753622, y: 0.3611111}
+      pivot: {x: 0.42718446, y: 0.36263737}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2237,12 +2237,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0139
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1565
-        width: 207
-        height: 92
+        x: 1680
+        y: 1864
+        width: 208
+        height: 91
       alignment: 9
-      pivot: {x: 0.43236715, y: 0.36413044}
+      pivot: {x: 0.43269232, y: 0.36263737}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2258,12 +2258,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0140
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1761
-        width: 208
+        x: 631
+        y: 1859
+        width: 209
         height: 92
       alignment: 9
-      pivot: {x: 0.43509614, y: 0.36413044}
+      pivot: {x: 0.43540668, y: 0.36956522}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2279,12 +2279,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0141
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1857
+        x: 631
+        y: 1767
         width: 209
         height: 92
       alignment: 9
-      pivot: {x: 0.43779904, y: 0.36413044}
+      pivot: {x: 0.4401914, y: 0.36956522}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2300,12 +2300,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0142
       rect:
         serializedVersion: 2
-        x: 638
-        y: 1858
+        x: 421
+        y: 1766
         width: 209
-        height: 93
+        height: 92
       alignment: 9
-      pivot: {x: 0.44258374, y: 0.37096775}
+      pivot: {x: 0.4401914, y: 0.36956522}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2321,12 +2321,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0143
       rect:
         serializedVersion: 2
-        x: 426
-        y: 1857
-        width: 209
+        x: 1263
+        y: 1955
+        width: 210
         height: 93
       alignment: 9
-      pivot: {x: 0.44258374, y: 0.37096775}
+      pivot: {x: 0.44285715, y: 0.37634408}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2342,12 +2342,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0144
       rect:
         serializedVersion: 2
-        x: 1486
-        y: 1954
+        x: 1473
+        y: 1955
         width: 210
         height: 93
       alignment: 9
-      pivot: {x: 0.44523808, y: 0.37096775}
+      pivot: {x: 0.44761905, y: 0.37634408}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2363,12 +2363,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0145
       rect:
         serializedVersion: 2
-        x: 638
-        y: 1953
+        x: 1683
+        y: 1955
         width: 210
-        height: 94
+        height: 93
       alignment: 9
-      pivot: {x: 0.45, y: 0.3776596}
+      pivot: {x: 0.44761905, y: 0.37634408}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2384,12 +2384,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0146
       rect:
         serializedVersion: 2
-        x: 850
-        y: 1953
-        width: 210
+        x: 211
+        y: 1954
+        width: 211
         height: 94
       alignment: 9
-      pivot: {x: 0.45, y: 0.3776596}
+      pivot: {x: 0.45023698, y: 0.38297874}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2405,12 +2405,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0147
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1953
-        width: 211
+        x: 1053
+        y: 1954
+        width: 210
         height: 94
       alignment: 9
-      pivot: {x: 0.45260665, y: 0.3776596}
+      pivot: {x: 0.45238096, y: 0.38297874}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2426,12 +2426,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0148
       rect:
         serializedVersion: 2
-        x: 1062
-        y: 1953
-        width: 210
+        x: 422
+        y: 1954
+        width: 211
         height: 94
       alignment: 9
-      pivot: {x: 0.4547619, y: 0.3882979}
+      pivot: {x: 0.4549763, y: 0.38297874}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2447,12 +2447,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0149
       rect:
         serializedVersion: 2
-        x: 1274
+        x: 843
         y: 1953
         width: 210
-        height: 94
+        height: 95
       alignment: 9
-      pivot: {x: 0.4547619, y: 0.3882979}
+      pivot: {x: 0.45714286, y: 0.38947368}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2468,12 +2468,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0150
       rect:
         serializedVersion: 2
-        x: 426
-        y: 1952
+        x: 0
+        y: 1856
         width: 210
-        height: 95
+        height: 96
       alignment: 9
-      pivot: {x: 0.4595238, y: 0.39473686}
+      pivot: {x: 0.45714286, y: 0.39583334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2489,12 +2489,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0151
       rect:
         serializedVersion: 2
-        x: 214
-        y: 1951
-        width: 210
+        x: 0
+        y: 1952
+        width: 211
         height: 96
       alignment: 9
-      pivot: {x: 0.4595238, y: 0.40104166}
+      pivot: {x: 0.45971563, y: 0.39583334}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2510,12 +2510,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0152
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1855
+        x: 421
+        y: 1858
         width: 210
         height: 96
       alignment: 9
-      pivot: {x: 0.4595238, y: 0.40104166}
+      pivot: {x: 0.46190476, y: 0.40625}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2531,12 +2531,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0153
       rect:
         serializedVersion: 2
-        x: 1486
-        y: 1855
-        width: 209
+        x: 633
+        y: 1951
+        width: 210
         height: 97
       alignment: 9
-      pivot: {x: 0.4617225, y: 0.4072165}
+      pivot: {x: 0.46190476, y: 0.41237113}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2552,12 +2552,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0154
       rect:
         serializedVersion: 2
-        x: 1698
-        y: 1949
-        width: 209
-        height: 98
+        x: 211
+        y: 1857
+        width: 210
+        height: 97
       alignment: 9
-      pivot: {x: 0.4617225, y: 0.41326532}
+      pivot: {x: 0.46190476, y: 0.41237113}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2573,12 +2573,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0155
       rect:
         serializedVersion: 2
-        x: 1697
-        y: 1850
+        x: 1053
+        y: 1856
         width: 209
-        height: 97
+        height: 98
       alignment: 9
-      pivot: {x: 0.4617225, y: 0.41752577}
+      pivot: {x: 0.46411484, y: 0.41836736}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2594,12 +2594,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0156
       rect:
         serializedVersion: 2
-        x: 637
-        y: 1758
-        width: 208
+        x: 843
+        y: 1855
+        width: 209
         height: 98
       alignment: 9
-      pivot: {x: 0.46394232, y: 0.4234694}
+      pivot: {x: 0.46411484, y: 0.41836736}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2615,12 +2615,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0157
       rect:
         serializedVersion: 2
-        x: 213
-        y: 1757
-        width: 208
-        height: 98
+        x: 1263
+        y: 1856
+        width: 209
+        height: 99
       alignment: 9
-      pivot: {x: 0.46394232, y: 0.4234694}
+      pivot: {x: 0.46411484, y: 0.42424244}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2636,12 +2636,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0158
       rect:
         serializedVersion: 2
-        x: 849
-        y: 1852
+        x: 0
+        y: 1757
         width: 208
         height: 99
       alignment: 9
-      pivot: {x: 0.46394232, y: 0.42929292}
+      pivot: {x: 0.46634614, y: 0.43434343}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2657,12 +2657,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0159
       rect:
         serializedVersion: 2
-        x: 423
-        y: 1756
-        width: 207
+        x: 1472
+        y: 1856
+        width: 208
         height: 99
       alignment: 9
-      pivot: {x: 0.46618357, y: 0.42929292}
+      pivot: {x: 0.46634614, y: 0.43434343}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2679,11 +2679,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 210
-        y: 1656
-        width: 207
-        height: 99
+        y: 1757
+        width: 208
+        height: 100
       alignment: 9
-      pivot: {x: 0.46618357, y: 0.43939394}
+      pivot: {x: 0.46634614, y: 0.44}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2699,12 +2699,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0161
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1659
+        x: 1052
+        y: 1756
         width: 207
         height: 100
       alignment: 9
-      pivot: {x: 0.46618357, y: 0.445}
+      pivot: {x: 0.46859902, y: 0.44}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2720,12 +2720,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0162
       rect:
         serializedVersion: 2
-        x: 1059
-        y: 1759
-        width: 206
-        height: 100
+        x: 1680
+        y: 1763
+        width: 207
+        height: 101
       alignment: 9
-      pivot: {x: 0.4684466, y: 0.445}
+      pivot: {x: 0.46859902, y: 0.44554454}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2741,12 +2741,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0163
       rect:
         serializedVersion: 2
-        x: 1268
-        y: 1850
-        width: 206
-        height: 101
+        x: 840
+        y: 1755
+        width: 207
+        height: 100
       alignment: 9
-      pivot: {x: 0.4684466, y: 0.45049506}
+      pivot: {x: 0.46859902, y: 0.45}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2762,12 +2762,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0164
       rect:
         serializedVersion: 2
-        x: 847
-        y: 1750
+        x: 418
+        y: 1665
         width: 206
-        height: 100
+        height: 101
       alignment: 9
-      pivot: {x: 0.4684466, y: 0.455}
+      pivot: {x: 0.47087377, y: 0.45544556}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2783,12 +2783,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0165
       rect:
         serializedVersion: 2
-        x: 419
-        y: 1653
-        width: 205
+        x: 0
+        y: 1656
+        width: 206
         height: 101
       alignment: 9
-      pivot: {x: 0.4707317, y: 0.46039605}
+      pivot: {x: 0.47087377, y: 0.45544556}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2804,12 +2804,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0166
       rect:
         serializedVersion: 2
-        x: 210
-        y: 1553
-        width: 205
-        height: 101
+        x: 630
+        y: 1665
+        width: 206
+        height: 102
       alignment: 9
-      pivot: {x: 0.4707317, y: 0.46039605}
+      pivot: {x: 0.47087377, y: 0.46078432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2825,12 +2825,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0167
       rect:
         serializedVersion: 2
-        x: 632
-        y: 1654
-        width: 205
+        x: 1259
+        y: 1754
+        width: 204
         height: 102
       alignment: 9
-      pivot: {x: 0.4707317, y: 0.46568626}
+      pivot: {x: 0.47058824, y: 0.47058824}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2846,12 +2846,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0168
       rect:
         serializedVersion: 2
-        x: 839
-        y: 1647
-        width: 203
-        height: 101
+        x: 1047
+        y: 1654
+        width: 204
+        height: 102
       alignment: 9
-      pivot: {x: 0.47044334, y: 0.47029704}
+      pivot: {x: 0.47058824, y: 0.47058824}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2867,12 +2867,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0169
       rect:
         serializedVersion: 2
-        x: 1267
-        y: 1746
-        width: 203
-        height: 102
+        x: 0
+        y: 1553
+        width: 204
+        height: 103
       alignment: 9
-      pivot: {x: 0.47044334, y: 0.47549018}
+      pivot: {x: 0.47058824, y: 0.47572815}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2888,12 +2888,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0170
       rect:
         serializedVersion: 2
-        x: 1055
-        y: 1655
-        width: 203
+        x: 836
+        y: 1653
+        width: 204
         height: 102
       alignment: 9
-      pivot: {x: 0.47044334, y: 0.47549018}
+      pivot: {x: 0.47058824, y: 0.48039216}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2909,12 +2909,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0171
       rect:
         serializedVersion: 2
-        x: 1476
-        y: 1750
+        x: 1463
+        y: 1663
         width: 203
         height: 103
       alignment: 9
-      pivot: {x: 0.47044334, y: 0.48058254}
+      pivot: {x: 0.4729064, y: 0.4854369}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2930,12 +2930,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0172
       rect:
         serializedVersion: 2
-        x: 417
-        y: 1548
+        x: 1040
+        y: 1551
         width: 202
         height: 103
       alignment: 9
-      pivot: {x: 0.47277227, y: 0.49029127}
+      pivot: {x: 0.47029704, y: 0.4854369}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2951,12 +2951,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0173
       rect:
         serializedVersion: 2
-        x: 1681
-        y: 1745
-        width: 201
-        height: 103
+        x: 1251
+        y: 1650
+        width: 202
+        height: 104
       alignment: 9
-      pivot: {x: 0.47014925, y: 0.49029127}
+      pivot: {x: 0.47029704, y: 0.4903846}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2972,12 +2972,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0174
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1367
+        x: 1242
+        y: 1547
         width: 201
-        height: 104
+        height: 103
       alignment: 9
-      pivot: {x: 0.47014925, y: 0.49519232}
+      pivot: {x: 0.47263682, y: 0.49514562}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2993,12 +2993,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0175
       rect:
         serializedVersion: 2
-        x: 1674
-        y: 1640
-        width: 200
-        height: 103
+        x: 1666
+        y: 1571
+        width: 201
+        height: 104
       alignment: 9
-      pivot: {x: 0.4725, y: 0.5}
+      pivot: {x: 0.47263682, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3014,12 +3014,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0176
       rect:
         serializedVersion: 2
-        x: 1472
-        y: 1644
-        width: 200
+        x: 1453
+        y: 1559
+        width: 201
         height: 104
       alignment: 9
-      pivot: {x: 0.4725, y: 0.5048077}
+      pivot: {x: 0.47263682, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3035,12 +3035,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0177
       rect:
         serializedVersion: 2
-        x: 1260
-        y: 1640
-        width: 199
+        x: 1654
+        y: 1467
+        width: 200
         height: 104
       alignment: 9
-      pivot: {x: 0.46984926, y: 0.5048077}
+      pivot: {x: 0.47, y: 0.50961536}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3056,12 +3056,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0178
       rect:
         serializedVersion: 2
-        x: 1461
-        y: 1538
+        x: 204
+        y: 1472
         width: 199
         height: 104
       alignment: 9
-      pivot: {x: 0.46984926, y: 0.5144231}
+      pivot: {x: 0.4723618, y: 0.50961536}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3077,12 +3077,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0179
       rect:
         serializedVersion: 2
-        x: 1044
-        y: 1549
-        width: 198
-        height: 104
+        x: 412
+        y: 1560
+        width: 199
+        height: 105
       alignment: 9
-      pivot: {x: 0.4722222, y: 0.5144231}
+      pivot: {x: 0.4723618, y: 0.51428574}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3098,12 +3098,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0180
       rect:
         serializedVersion: 2
-        x: 1662
-        y: 1444
+        x: 611
+        y: 1561
         width: 198
-        height: 105
+        height: 104
       alignment: 9
-      pivot: {x: 0.4722222, y: 0.5190476}
+      pivot: {x: 0.46969697, y: 0.5192308}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3119,12 +3119,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0181
       rect:
         serializedVersion: 2
-        x: 621
-        y: 1456
-        width: 197
-        height: 104
+        x: 0
+        y: 1448
+        width: 198
+        height: 105
       alignment: 9
-      pivot: {x: 0.46954316, y: 0.52403843}
+      pivot: {x: 0.46969697, y: 0.52380955}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3140,12 +3140,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0182
       rect:
         serializedVersion: 2
-        x: 831
-        y: 1540
+        x: 809
+        y: 1547
         width: 197
-        height: 105
+        height: 106
       alignment: 9
-      pivot: {x: 0.46954316, y: 0.5285714}
+      pivot: {x: 0.4720812, y: 0.5283019}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3161,12 +3161,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0183
       rect:
         serializedVersion: 2
-        x: 412
-        y: 1440
-        width: 196
-        height: 106
+        x: 611
+        y: 1456
+        width: 197
+        height: 105
       alignment: 9
-      pivot: {x: 0.4719388, y: 0.5330189}
+      pivot: {x: 0.4720812, y: 0.53333336}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3182,12 +3182,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0184
       rect:
         serializedVersion: 2
-        x: 820
-        y: 1433
-        width: 195
-        height: 105
+        x: 403
+        y: 1454
+        width: 196
+        height: 106
       alignment: 9
-      pivot: {x: 0.46923077, y: 0.53809524}
+      pivot: {x: 0.46938777, y: 0.5377358}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3203,12 +3203,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0185
       rect:
         serializedVersion: 2
-        x: 1244
-        y: 1450
-        width: 195
+        x: 198
+        y: 1366
+        width: 196
         height: 106
       alignment: 9
-      pivot: {x: 0.46923077, y: 0.5424528}
+      pivot: {x: 0.46938777, y: 0.5377358}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3224,12 +3224,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0186
       rect:
         serializedVersion: 2
-        x: 1030
+        x: 808
         y: 1441
         width: 195
         height: 106
       alignment: 9
-      pivot: {x: 0.46923077, y: 0.5424528}
+      pivot: {x: 0.47179487, y: 0.5471698}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3245,12 +3245,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0187
       rect:
         serializedVersion: 2
-        x: 204
-        y: 1269
+        x: 196
+        y: 1260
         width: 194
         height: 106
       alignment: 9
-      pivot: {x: 0.4716495, y: 0.5518868}
+      pivot: {x: 0.46907216, y: 0.5471698}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3266,12 +3266,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0188
       rect:
         serializedVersion: 2
-        x: 1227
-        y: 1341
-        width: 193
+        x: 1854
+        y: 1378
+        width: 194
         height: 107
       alignment: 9
-      pivot: {x: 0.46891192, y: 0.55607474}
+      pivot: {x: 0.46907216, y: 0.55140185}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3287,12 +3287,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0189
       rect:
         serializedVersion: 2
-        x: 1441
-        y: 1428
-        width: 193
-        height: 108
+        x: 394
+        y: 1347
+        width: 194
+        height: 107
       alignment: 9
-      pivot: {x: 0.46891192, y: 0.5601852}
+      pivot: {x: 0.46907216, y: 0.5607477}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3308,12 +3308,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0190
       rect:
         serializedVersion: 2
-        x: 1017
-        y: 1332
+        x: 1434
+        y: 1364
         width: 193
-        height: 107
+        height: 108
       alignment: 9
-      pivot: {x: 0.46891192, y: 0.56542057}
+      pivot: {x: 0.4715026, y: 0.5648148}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3329,12 +3329,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0191
       rect:
         serializedVersion: 2
-        x: 807
-        y: 1323
+        x: 1819
+        y: 1270
         width: 192
         height: 108
       alignment: 9
-      pivot: {x: 0.46614584, y: 0.5694444}
+      pivot: {x: 0.46875, y: 0.5648148}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3350,12 +3350,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0192
       rect:
         serializedVersion: 2
-        x: 1422
-        y: 1316
-        width: 191
-        height: 110
+        x: 1003
+        y: 1367
+        width: 192
+        height: 108
       alignment: 9
-      pivot: {x: 0.4685864, y: 0.5772727}
+      pivot: {x: 0.46875, y: 0.5740741}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3371,12 +3371,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0193
       rect:
         serializedVersion: 2
-        x: 1636
-        y: 1331
-        width: 191
-        height: 111
+        x: 1627
+        y: 1357
+        width: 192
+        height: 110
       alignment: 9
-      pivot: {x: 0.4685864, y: 0.5900901}
+      pivot: {x: 0.46875, y: 0.58181816}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3392,12 +3392,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0194
       rect:
         serializedVersion: 2
-        x: 594
-        y: 1186
-        width: 190
-        height: 112
+        x: 588
+        y: 1270
+        width: 191
+        height: 111
       alignment: 9
-      pivot: {x: 0.46578947, y: 0.59375}
+      pivot: {x: 0.46596858, y: 0.5855856}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3413,12 +3413,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0195
       rect:
         serializedVersion: 2
-        x: 1001
-        y: 1217
+        x: 194
+        y: 1148
         width: 190
-        height: 113
+        height: 112
       alignment: 9
-      pivot: {x: 0.46578947, y: 0.5973451}
+      pivot: {x: 0.46842104, y: 0.59821427}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3434,12 +3434,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0196
       rect:
         serializedVersion: 2
-        x: 793
-        y: 1208
+        x: 390
+        y: 1159
         width: 190
         height: 113
       alignment: 9
-      pivot: {x: 0.46578947, y: 0.6061947}
+      pivot: {x: 0.46842104, y: 0.6017699}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3455,12 +3455,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0197
       rect:
         serializedVersion: 2
-        x: 387
-        y: 1095
-        width: 188
+        x: 1195
+        y: 1353
+        width: 189
         height: 114
       alignment: 9
-      pivot: {x: 0.46542552, y: 0.6096491}
+      pivot: {x: 0.46560848, y: 0.6052632}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3476,12 +3476,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0198
       rect:
         serializedVersion: 2
-        x: 191
-        y: 1036
-        width: 188
+        x: 1384
+        y: 1250
+        width: 189
         height: 114
       alignment: 9
-      pivot: {x: 0.46542552, y: 0.6096491}
+      pivot: {x: 0.46560848, y: 0.61403507}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3497,12 +3497,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0199
       rect:
         serializedVersion: 2
-        x: 1
-        y: 981
-        width: 188
+        x: 1624
+        y: 1243
+        width: 189
         height: 114
       alignment: 9
-      pivot: {x: 0.46542552, y: 0.6184211}
+      pivot: {x: 0.46560848, y: 0.61403507}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3518,12 +3518,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0200
       rect:
         serializedVersion: 2
-        x: 197
-        y: 1152
-        width: 188
+        x: 384
+        y: 1044
+        width: 187
         height: 115
       alignment: 9
-      pivot: {x: 0.46542552, y: 0.62173915}
+      pivot: {x: 0.46524063, y: 0.6173913}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3539,12 +3539,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0201
       rect:
         serializedVersion: 2
-        x: 1193
-        y: 1148
+        x: 571
+        y: 1040
         width: 187
-        height: 115
+        height: 114
       alignment: 9
-      pivot: {x: 0.46256685, y: 0.62173915}
+      pivot: {x: 0.46524063, y: 0.622807}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3560,12 +3560,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0202
       rect:
         serializedVersion: 2
-        x: 985
-        y: 1100
+        x: 190
+        y: 1033
         width: 187
         height: 115
       alignment: 9
-      pivot: {x: 0.46256685, y: 0.6304348}
+      pivot: {x: 0.46524063, y: 0.62608695}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3581,12 +3581,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0203
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1097
-        width: 188
+        x: 0
+        y: 1025
+        width: 187
         height: 115
       alignment: 9
-      pivot: {x: 0.46010637, y: 0.6304348}
+      pivot: {x: 0.45989305, y: 0.62608695}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3602,12 +3602,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0204
       rect:
         serializedVersion: 2
-        x: 1615
-        y: 1213
+        x: 966
+        y: 1252
         width: 187
-        height: 116
+        height: 115
       alignment: 9
-      pivot: {x: 0.45721924, y: 0.6336207}
+      pivot: {x: 0.45989305, y: 0.6347826}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3623,12 +3623,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0205
       rect:
         serializedVersion: 2
-        x: 786
-        y: 1091
+        x: 1153
+        y: 1238
         width: 187
         height: 115
       alignment: 9
-      pivot: {x: 0.45721924, y: 0.6391304}
+      pivot: {x: 0.45989305, y: 0.6347826}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3644,12 +3644,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0206
       rect:
         serializedVersion: 2
-        x: 577
-        y: 1069
+        x: 779
+        y: 1251
         width: 187
-        height: 115
+        height: 116
       alignment: 9
-      pivot: {x: 0.45721924, y: 0.6391304}
+      pivot: {x: 0.45989305, y: 0.63793105}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3665,12 +3665,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0207
       rect:
         serializedVersion: 2
-        x: 1
-        y: 863
-        width: 186
-        height: 116
+        x: 966
+        y: 1137
+        width: 187
+        height: 115
       alignment: 9
-      pivot: {x: 0.4543011, y: 0.64224136}
+      pivot: {x: 0.45454547, y: 0.6434783}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3686,12 +3686,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0208
       rect:
         serializedVersion: 2
-        x: 381
-        y: 978
+        x: 767
+        y: 1136
         width: 187
         height: 115
       alignment: 9
-      pivot: {x: 0.45187166, y: 0.6478261}
+      pivot: {x: 0.45454547, y: 0.6434783}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3707,12 +3707,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0209
       rect:
         serializedVersion: 2
-        x: 191
-        y: 919
+        x: 580
+        y: 1154
         width: 187
-        height: 115
+        height: 116
       alignment: 9
-      pivot: {x: 0.45187166, y: 0.6478261}
+      pivot: {x: 0.45454547, y: 0.6465517}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3728,12 +3728,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0210
       rect:
         serializedVersion: 2
-        x: 1405
-        y: 1198
-        width: 187
-        height: 116
+        x: 377
+        y: 929
+        width: 186
+        height: 115
       alignment: 9
-      pivot: {x: 0.45187166, y: 0.6508621}
+      pivot: {x: 0.4516129, y: 0.65217394}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3749,12 +3749,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0211
       rect:
         serializedVersion: 2
-        x: 1804
-        y: 1177
+        x: 187
+        y: 918
         width: 186
         height: 115
       alignment: 9
-      pivot: {x: 0.44892472, y: 0.65652174}
+      pivot: {x: 0.4516129, y: 0.65217394}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3770,12 +3770,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0212
       rect:
         serializedVersion: 2
-        x: 1594
-        y: 1096
+        x: 0
+        y: 910
         width: 186
         height: 115
       alignment: 9
-      pivot: {x: 0.44892472, y: 0.65652174}
+      pivot: {x: 0.4516129, y: 0.66086954}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3791,12 +3791,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0213
       rect:
         serializedVersion: 2
-        x: 1382
-        y: 1082
+        x: 1340
+        y: 1135
         width: 186
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44892472, y: 0.6622807}
+      pivot: {x: 0.4516129, y: 0.66086954}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3812,12 +3812,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0214
       rect:
         serializedVersion: 2
-        x: 1862
-        y: 1370
+        x: 1153
+        y: 1048
         width: 185
         height: 115
       alignment: 9
-      pivot: {x: 0.44594595, y: 0.6652174}
+      pivot: {x: 0.44864866, y: 0.66086954}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3833,12 +3833,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0215
       rect:
         serializedVersion: 2
-        x: 1174
-        y: 1031
+        x: 954
+        y: 1023
         width: 185
-        height: 115
+        height: 114
       alignment: 9
-      pivot: {x: 0.44594595, y: 0.6652174}
+      pivot: {x: 0.44864866, y: 0.6666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3854,12 +3854,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0216
       rect:
         serializedVersion: 2
-        x: 975
-        y: 984
+        x: 1624
+        y: 1128
         width: 185
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44594595, y: 0.67105263}
+      pivot: {x: 0.44864866, y: 0.6695652}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3875,12 +3875,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0217
       rect:
         serializedVersion: 2
-        x: 766
-        y: 975
+        x: 1338
+        y: 1020
         width: 185
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44594595, y: 0.67105263}
+      pivot: {x: 0.44864866, y: 0.6695652}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3896,12 +3896,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0218
       rect:
         serializedVersion: 2
-        x: 1863
-        y: 1487
+        x: 758
+        y: 1022
         width: 184
         height: 114
       alignment: 9
-      pivot: {x: 0.44293478, y: 0.67105263}
+      pivot: {x: 0.4456522, y: 0.6754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3917,12 +3917,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0219
       rect:
         serializedVersion: 2
-        x: 570
-        y: 877
-        width: 183
+        x: 563
+        y: 926
+        width: 184
         height: 114
       alignment: 9
-      pivot: {x: 0.44535518, y: 0.6798246}
+      pivot: {x: 0.4456522, y: 0.6754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3938,12 +3938,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0220
       rect:
         serializedVersion: 2
-        x: 380
-        y: 862
-        width: 183
+        x: 373
+        y: 815
+        width: 184
         height: 114
       alignment: 9
-      pivot: {x: 0.44535518, y: 0.6798246}
+      pivot: {x: 0.4456522, y: 0.6754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3959,12 +3959,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0221
       rect:
         serializedVersion: 2
-        x: 189
-        y: 803
+        x: 186
+        y: 804
         width: 183
         height: 114
       alignment: 9
-      pivot: {x: 0.44535518, y: 0.6798246}
+      pivot: {x: 0.44262296, y: 0.6754386}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -3980,12 +3980,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0222
       rect:
         serializedVersion: 2
-        x: 1
-        y: 747
+        x: 0
+        y: 721
         width: 182
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44230768, y: 0.6798246}
+      pivot: {x: 0.44505495, y: 0.67826086}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4001,12 +4001,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0223
       rect:
         serializedVersion: 2
-        x: 1782
-        y: 1061
+        x: 1139
+        y: 933
         width: 182
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44230768, y: 0.6798246}
+      pivot: {x: 0.44505495, y: 0.67826086}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4022,12 +4022,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0224
       rect:
         serializedVersion: 2
-        x: 1570
-        y: 980
+        x: 942
+        y: 908
         width: 182
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44230768, y: 0.6798246}
+      pivot: {x: 0.44505495, y: 0.67826086}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4043,12 +4043,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0225
       rect:
         serializedVersion: 2
-        x: 1162
-        y: 915
+        x: 1867
+        y: 1485
         width: 181
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44475138, y: 0.6798246}
+      pivot: {x: 0.44198895, y: 0.67826086}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4064,12 +4064,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0226
       rect:
         serializedVersion: 2
-        x: 953
-        y: 867
+        x: 1868
+        y: 1600
         width: 180
         height: 115
       alignment: 9
-      pivot: {x: 0.44166666, y: 0.6826087}
+      pivot: {x: 0.44444445, y: 0.67826086}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4085,12 +4085,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0227
       rect:
         serializedVersion: 2
-        x: 755
-        y: 858
+        x: 747
+        y: 907
         width: 180
         height: 115
       alignment: 9
-      pivot: {x: 0.44166666, y: 0.6826087}
+      pivot: {x: 0.44444445, y: 0.67826086}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4106,12 +4106,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0228
       rect:
         serializedVersion: 2
-        x: 565
-        y: 760
-        width: 179
-        height: 115
+        x: 557
+        y: 812
+        width: 180
+        height: 114
       alignment: 9
-      pivot: {x: 0.4441341, y: 0.6826087}
+      pivot: {x: 0.44444445, y: 0.68421054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4127,12 +4127,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0229
       rect:
         serializedVersion: 2
-        x: 374
-        y: 745
+        x: 182
+        y: 690
         width: 179
-        height: 115
+        height: 114
       alignment: 9
-      pivot: {x: 0.4441341, y: 0.6826087}
+      pivot: {x: 0.44134077, y: 0.68421054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4148,12 +4148,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0230
       rect:
         serializedVersion: 2
-        x: 185
-        y: 686
+        x: 0
+        y: 606
         width: 178
         height: 115
       alignment: 9
-      pivot: {x: 0.44101125, y: 0.6826087}
+      pivot: {x: 0.44382024, y: 0.6869565}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4169,12 +4169,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0231
       rect:
         serializedVersion: 2
-        x: 1
-        y: 631
+        x: 1809
+        y: 1080
         width: 178
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.44101125, y: 0.6885965}
+      pivot: {x: 0.44382024, y: 0.6869565}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4190,12 +4190,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0232
       rect:
         serializedVersion: 2
-        x: 1754
-        y: 945
+        x: 1623
+        y: 1013
         width: 177
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.4435028, y: 0.6885965}
+      pivot: {x: 0.44067797, y: 0.6869565}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4211,12 +4211,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0233
       rect:
         serializedVersion: 2
-        x: 1524
-        y: 864
+        x: 1800
+        y: 965
         width: 176
-        height: 114
+        height: 115
       alignment: 9
-      pivot: {x: 0.4403409, y: 0.6885965}
+      pivot: {x: 0.4431818, y: 0.6869565}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4232,12 +4232,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0234
       rect:
         serializedVersion: 2
-        x: 1345
-        y: 814
-        width: 175
-        height: 114
+        x: 1623
+        y: 898
+        width: 176
+        height: 115
       alignment: 9
-      pivot: {x: 0.44285715, y: 0.6885965}
+      pivot: {x: 0.4431818, y: 0.6869565}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4253,12 +4253,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0235
       rect:
         serializedVersion: 2
-        x: 1135
-        y: 799
+        x: 1799
+        y: 851
         width: 174
         height: 114
       alignment: 9
-      pivot: {x: 0.4454023, y: 0.6885965}
+      pivot: {x: 0.44252872, y: 0.68421054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4274,12 +4274,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0236
       rect:
         serializedVersion: 2
-        x: 937
-        y: 752
+        x: 1321
+        y: 906
         width: 173
-        height: 113
+        height: 114
       alignment: 9
-      pivot: {x: 0.44219652, y: 0.6858407}
+      pivot: {x: 0.44508672, y: 0.68421054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4295,12 +4295,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0237
       rect:
         serializedVersion: 2
-        x: 746
-        y: 743
-        width: 172
-        height: 113
+        x: 1618
+        y: 784
+        width: 173
+        height: 114
       alignment: 9
-      pivot: {x: 0.44476745, y: 0.6858407}
+      pivot: {x: 0.44508672, y: 0.68421054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4316,12 +4316,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0238
       rect:
         serializedVersion: 2
-        x: 555
-        y: 645
-        width: 172
-        height: 113
+        x: 1124
+        y: 819
+        width: 171
+        height: 114
       alignment: 9
-      pivot: {x: 0.44476745, y: 0.6858407}
+      pivot: {x: 0.44444445, y: 0.68421054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4337,12 +4337,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0239
       rect:
         serializedVersion: 2
-        x: 1876
-        y: 1603
+        x: 927
+        y: 794
         width: 171
-        height: 113
+        height: 114
       alignment: 9
-      pivot: {x: 0.44152048, y: 0.6858407}
+      pivot: {x: 0.44444445, y: 0.68421054}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4358,12 +4358,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0240
       rect:
         serializedVersion: 2
-        x: 365
-        y: 630
+        x: 737
+        y: 794
         width: 171
         height: 113
       alignment: 9
-      pivot: {x: 0.44152048, y: 0.6858407}
+      pivot: {x: 0.44444445, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4379,12 +4379,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0241
       rect:
         serializedVersion: 2
-        x: 181
-        y: 571
+        x: 549
+        y: 699
         width: 170
         height: 113
       alignment: 9
-      pivot: {x: 0.44411764, y: 0.6858407}
+      pivot: {x: 0.44117647, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4400,12 +4400,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0242
       rect:
         serializedVersion: 2
-        x: 1
-        y: 516
-        width: 169
+        x: 361
+        y: 628
+        width: 170
         height: 113
       alignment: 9
-      pivot: {x: 0.4408284, y: 0.6858407}
+      pivot: {x: 0.44117647, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4421,12 +4421,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0243
       rect:
         serializedVersion: 2
-        x: 1702
-        y: 831
-        width: 169
-        height: 112
+        x: 178
+        y: 577
+        width: 168
+        height: 113
       alignment: 9
-      pivot: {x: 0.4408284, y: 0.69196427}
+      pivot: {x: 0.44047618, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4442,12 +4442,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0244
       rect:
         serializedVersion: 2
-        x: 1873
-        y: 816
+        x: 0
+        y: 493
         width: 168
-        height: 112
+        height: 113
       alignment: 9
-      pivot: {x: 0.4375, y: 0.69196427}
+      pivot: {x: 0.44047618, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4463,12 +4463,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0245
       rect:
         serializedVersion: 2
-        x: 1522
-        y: 750
-        width: 167
-        height: 112
+        x: 1295
+        y: 793
+        width: 168
+        height: 113
       alignment: 9
-      pivot: {x: 0.44011977, y: 0.69196427}
+      pivot: {x: 0.44047618, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4484,12 +4484,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0246
       rect:
         serializedVersion: 2
-        x: 1691
-        y: 717
+        x: 1616
+        y: 671
         width: 167
-        height: 112
+        height: 113
       alignment: 9
-      pivot: {x: 0.44011977, y: 0.69196427}
+      pivot: {x: 0.43712574, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4505,12 +4505,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0247
       rect:
         serializedVersion: 2
-        x: 1860
-        y: 702
+        x: 1783
+        y: 663
         width: 166
-        height: 112
+        height: 113
       alignment: 9
-      pivot: {x: 0.43674698, y: 0.69196427}
+      pivot: {x: 0.43975905, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4526,12 +4526,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0248
       rect:
         serializedVersion: 2
-        x: 1311
-        y: 700
-        width: 166
-        height: 112
+        x: 1098
+        y: 706
+        width: 165
+        height: 113
       alignment: 9
-      pivot: {x: 0.43674698, y: 0.69196427}
+      pivot: {x: 0.43636364, y: 0.6902655}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4547,12 +4547,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0249
       rect:
         serializedVersion: 2
-        x: 1112
-        y: 685
+        x: 1263
+        y: 681
         width: 165
         height: 112
       alignment: 9
-      pivot: {x: 0.43333334, y: 0.69196427}
+      pivot: {x: 0.43636364, y: 0.6964286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4568,12 +4568,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0250
       rect:
         serializedVersion: 2
-        x: 920
-        y: 638
+        x: 1428
+        y: 581
         width: 164
         height: 112
       alignment: 9
-      pivot: {x: 0.4359756, y: 0.69196427}
+      pivot: {x: 0.43292683, y: 0.6964286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4589,12 +4589,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0251
       rect:
         serializedVersion: 2
-        x: 1884
-        y: 1718
-        width: 163
-        height: 111
+        x: 1592
+        y: 559
+        width: 164
+        height: 112
       alignment: 9
-      pivot: {x: 0.43251532, y: 0.6981982}
+      pivot: {x: 0.43292683, y: 0.6964286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4610,12 +4610,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0252
       rect:
         serializedVersion: 2
-        x: 729
-        y: 630
-        width: 163
-        height: 111
+        x: 1756
+        y: 551
+        width: 162
+        height: 112
       alignment: 9
-      pivot: {x: 0.43251532, y: 0.6981982}
+      pivot: {x: 0.43209878, y: 0.6964286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4631,12 +4631,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0253
       rect:
         serializedVersion: 2
-        x: 538
-        y: 532
-        width: 162
-        height: 111
+        x: 1887
+        y: 1715
+        width: 161
+        height: 112
       alignment: 9
-      pivot: {x: 0.42901236, y: 0.6981982}
+      pivot: {x: 0.42857143, y: 0.6964286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4652,12 +4652,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0254
       rect:
         serializedVersion: 2
-        x: 353
-        y: 517
-        width: 160
-        height: 111
+        x: 719
+        y: 682
+        width: 161
+        height: 112
       alignment: 9
-      pivot: {x: 0.428125, y: 0.6981982}
+      pivot: {x: 0.42857143, y: 0.6964286}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4673,12 +4673,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0255
       rect:
         serializedVersion: 2
-        x: 172
-        y: 458
+        x: 1888
+        y: 1827
         width: 160
         height: 111
       alignment: 9
-      pivot: {x: 0.428125, y: 0.6981982}
+      pivot: {x: 0.425, y: 0.7027027}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4694,12 +4694,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0256
       rect:
         serializedVersion: 2
-        x: 1
-        y: 403
-        width: 159
+        x: 531
+        y: 588
+        width: 158
         height: 111
       alignment: 9
-      pivot: {x: 0.4245283, y: 0.6981982}
+      pivot: {x: 0.42405063, y: 0.7027027}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4715,12 +4715,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0257
       rect:
         serializedVersion: 2
-        x: 1479
-        y: 638
+        x: 346
+        y: 517
         width: 158
-        height: 110
+        height: 111
       alignment: 9
-      pivot: {x: 0.42088607, y: 0.70454544}
+      pivot: {x: 0.42405063, y: 0.7027027}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4736,12 +4736,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0258
       rect:
         serializedVersion: 2
-        x: 1279
-        y: 588
-        width: 156
-        height: 110
+        x: 168
+        y: 466
+        width: 157
+        height: 111
       alignment: 9
-      pivot: {x: 0.4198718, y: 0.70454544}
+      pivot: {x: 0.42038217, y: 0.7027027}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4757,12 +4757,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0259
       rect:
         serializedVersion: 2
-        x: 1086
-        y: 573
+        x: 0
+        y: 382
         width: 156
-        height: 110
+        height: 111
       alignment: 9
-      pivot: {x: 0.4198718, y: 0.70454544}
+      pivot: {x: 0.41666666, y: 0.7027027}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4778,12 +4778,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0260
       rect:
         serializedVersion: 2
-        x: 894
-        y: 526
-        width: 155
+        x: 1893
+        y: 1938
+        width: 154
         height: 110
       alignment: 9
-      pivot: {x: 0.41612902, y: 0.70454544}
+      pivot: {x: 0.41558442, y: 0.7090909}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4799,12 +4799,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0261
       rect:
         serializedVersion: 2
-        x: 702
-        y: 518
-        width: 154
+        x: 1463
+        y: 693
+        width: 153
         height: 110
       alignment: 9
-      pivot: {x: 0.41233766, y: 0.70454544}
+      pivot: {x: 0.4117647, y: 0.7090909}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4820,12 +4820,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0262
       rect:
         serializedVersion: 2
-        x: 515
-        y: 421
-        width: 153
-        height: 109
+        x: 880
+        y: 684
+        width: 152
+        height: 110
       alignment: 9
-      pivot: {x: 0.40849674, y: 0.71100914}
+      pivot: {x: 0.40789473, y: 0.7090909}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4841,12 +4841,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0263
       rect:
         serializedVersion: 2
-        x: 334
-        y: 406
-        width: 150
-        height: 109
+        x: 880
+        y: 574
+        width: 151
+        height: 110
       alignment: 9
-      pivot: {x: 0.40333334, y: 0.71100914}
+      pivot: {x: 0.40397352, y: 0.7090909}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4862,12 +4862,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0264
       rect:
         serializedVersion: 2
-        x: 162
-        y: 347
-        width: 149
+        x: 1096
+        y: 597
+        width: 148
         height: 109
       alignment: 9
-      pivot: {x: 0.39932886, y: 0.71100914}
+      pivot: {x: 0.39864865, y: 0.7155963}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4883,12 +4883,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0265
       rect:
         serializedVersion: 2
-        x: 1
-        y: 293
-        width: 148
-        height: 108
+        x: 1244
+        y: 572
+        width: 147
+        height: 109
       alignment: 9
-      pivot: {x: 0.39527026, y: 0.7175926}
+      pivot: {x: 0.39455783, y: 0.7155963}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4904,12 +4904,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0266
       rect:
         serializedVersion: 2
-        x: 1639
-        y: 607
-        width: 146
+        x: 689
+        y: 574
+        width: 145
         height: 108
       alignment: 9
-      pivot: {x: 0.38698632, y: 0.7175926}
+      pivot: {x: 0.3862069, y: 0.712963}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4925,12 +4925,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0267
       rect:
         serializedVersion: 2
-        x: 1859
-        y: 592
+        x: 504
+        y: 481
         width: 143
-        height: 108
+        height: 107
       alignment: 9
-      pivot: {x: 0.3811189, y: 0.7175926}
+      pivot: {x: 0.37762237, y: 0.7196262}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4946,12 +4946,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0268
       rect:
         serializedVersion: 2
-        x: 1858
-        y: 482
+        x: 325
+        y: 410
         width: 141
-        height: 108
+        height: 107
       alignment: 9
-      pivot: {x: 0.3723404, y: 0.7175926}
+      pivot: {x: 0.36879432, y: 0.7196262}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4967,12 +4967,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0269
       rect:
         serializedVersion: 2
-        x: 1908
-        y: 1831
-        width: 139
+        x: 156
+        y: 359
+        width: 137
         height: 107
       alignment: 9
-      pivot: {x: 0.36330935, y: 0.7242991}
+      pivot: {x: 0.35766423, y: 0.7196262}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -4988,12 +4988,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0270
       rect:
         serializedVersion: 2
-        x: 1909
-        y: 1940
-        width: 136
-        height: 107
+        x: 0
+        y: 276
+        width: 134
+        height: 106
       alignment: 9
-      pivot: {x: 0.3492647, y: 0.7242991}
+      pivot: {x: 0.3432836, y: 0.7264151}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5009,12 +5009,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0271
       rect:
         serializedVersion: 2
-        x: 1437
-        y: 530
-        width: 132
+        x: 1391
+        y: 475
+        width: 131
         height: 106
       alignment: 9
-      pivot: {x: 0.32954547, y: 0.7311321}
+      pivot: {x: 0.32824427, y: 0.7264151}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5030,12 +5030,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0272
       rect:
         serializedVersion: 2
-        x: 1639
-        y: 499
-        width: 128
-        height: 106
+        x: 1494
+        y: 907
+        width: 127
+        height: 105
       alignment: 9
-      pivot: {x: 0.31640625, y: 0.7311321}
+      pivot: {x: 0.31496063, y: 0.73333335}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5051,12 +5051,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0273
       rect:
         serializedVersion: 2
-        x: 1857
-        y: 375
-        width: 126
-        height: 105
+        x: 1494
+        y: 803
+        width: 124
+        height: 104
       alignment: 9
-      pivot: {x: 0.30555555, y: 0.7380952}
+      pivot: {x: 0.2983871, y: 0.74038464}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5072,12 +5072,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0274
       rect:
         serializedVersion: 2
-        x: 1244
-        y: 481
-        width: 123
-        height: 105
+        x: 1918
+        y: 515
+        width: 120
+        height: 103
       alignment: 9
-      pivot: {x: 0.28861788, y: 0.7380952}
+      pivot: {x: 0.28333333, y: 0.74757284}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5093,12 +5093,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0275
       rect:
         serializedVersion: 2
-        x: 1435
-        y: 424
-        width: 121
-        height: 104
+        x: 1591
+        y: 458
+        width: 117
+        height: 101
       alignment: 9
-      pivot: {x: 0.2768595, y: 0.7451923}
+      pivot: {x: 0.26495728, y: 0.75247526}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5114,12 +5114,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0276
       rect:
         serializedVersion: 2
-        x: 1639
-        y: 394
-        width: 118
-        height: 103
+        x: 1708
+        y: 451
+        width: 113
+        height: 100
       alignment: 9
-      pivot: {x: 0.26694915, y: 0.75242716}
+      pivot: {x: 0.24778761, y: 0.76}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5135,12 +5135,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0277
       rect:
         serializedVersion: 2
-        x: 1639
-        y: 290
-        width: 116
-        height: 102
+        x: 1589
+        y: 361
+        width: 109
+        height: 97
       alignment: 9
-      pivot: {x: 0.25431034, y: 0.75980395}
+      pivot: {x: 0.2293578, y: 0.77319586}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5156,12 +5156,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0278
       rect:
         serializedVersion: 2
-        x: 1933
-        y: 930
-        width: 114
-        height: 102
+        x: 1805
+        y: 297
+        width: 105
+        height: 94
       alignment: 9
-      pivot: {x: 0.24122807, y: 0.75980395}
+      pivot: {x: 0.20952381, y: 0.78723407}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5177,12 +5177,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0279
       rect:
         serializedVersion: 2
-        x: 1857
-        y: 273
-        width: 112
-        height: 100
+        x: 1523
+        y: 1012
+        width: 100
+        height: 91
       alignment: 9
-      pivot: {x: 0.22767857, y: 0.775}
+      pivot: {x: 0.18, y: 0.8021978}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5198,12 +5198,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0280
       rect:
         serializedVersion: 2
-        x: 1051
-        y: 473
-        width: 110
-        height: 98
+        x: 1821
+        y: 391
+        width: 94
+        height: 87
       alignment: 9
-      pivot: {x: 0.21363637, y: 0.78061223}
+      pivot: {x: 0.14893617, y: 0.82758623}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5219,12 +5219,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0281
       rect:
         serializedVersion: 2
-        x: 1431
-        y: 325
-        width: 109
-        height: 97
+        x: 0
+        y: 194
+        width: 86
+        height: 82
       alignment: 9
-      pivot: {x: 0.20642202, y: 0.7886598}
+      pivot: {x: 0.10465116, y: 0.8414634}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5240,12 +5240,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0282
       rect:
         serializedVersion: 2
-        x: 1050
-        y: 375
-        width: 106
-        height: 96
+        x: 438
+        y: 228
+        width: 71
+        height: 63
       alignment: 9
-      pivot: {x: 0.19339623, y: 0.796875}
+      pivot: {x: 0.028169014, y: 0.85714287}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5261,12 +5261,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0283
       rect:
         serializedVersion: 2
-        x: 1425
-        y: 229
-        width: 104
-        height: 94
+        x: 1987
+        y: 1033
+        width: 56
+        height: 50
       alignment: 9
-      pivot: {x: 0.17788461, y: 0.8138298}
+      pivot: {x: -0.14285715, y: 0.9}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5282,12 +5282,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0284
       rect:
         serializedVersion: 2
-        x: 1742
-        y: 193
-        width: 102
-        height: 93
+        x: 1006
+        y: 1625
+        width: 29
+        height: 28
       alignment: 9
-      pivot: {x: 0.16176471, y: 0.82258064}
+      pivot: {x: -0.8965517, y: 1.1428572}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -5303,12 +5303,12 @@ TextureImporter:
       name: UnstableSpace_Shape1_v001.0285
       rect:
         serializedVersion: 2
-        x: 857
-        y: 356
-        width: 100
-        height: 92
+        x: 840
+        y: 1948
+        width: 3
+        height: 3
       alignment: 9
-      pivot: {x: 0.145, y: 0.83152175}
+      pivot: {x: 42.666668, y: -41.666668}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
