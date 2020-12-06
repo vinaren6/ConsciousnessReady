@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Blackhole
   type: 0
-  id: 4
+  id: 3
   preview: {fileID: 2800000, guid: 105d59ad171f17f4684b249079d257a2, type: 3}
   cellsUpLeft: []
   cellsUpRight: []

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Astroid
   type: 0
-  id: 3
+  id: 2
   preview: {fileID: 2800000, guid: 5dcfe206237224d43be19b6919bb60e3, type: 3}
   cellsUpLeft: []
   cellsUpRight: []
