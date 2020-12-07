@@ -338,8 +338,9 @@ MonoBehaviour:
   boostTimerLengt: 10
   rotationAcceleration: 10
   rotationSpeed: 20
-  maxSpeed: 10
+  maxSpeedValue: 5.5
   acceleration: 15
+  slowSpeed: 2.5
   newRotation: 1
   propulsion: {fileID: 7927683192662318536}
   ship: {fileID: 7927683191028843614}
