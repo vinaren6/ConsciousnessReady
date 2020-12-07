@@ -334,10 +334,10 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Slow Input
       m_Flags: 0
-  boostSpeed: 2.5
+  boostSpeed: 2
   boostTimerLengt: 10
   rotationAcceleration: 10
-  rotationSpeed: 25
+  rotationSpeed: 20
   maxSpeed: 10
   acceleration: 15
   newRotation: 1
