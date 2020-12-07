@@ -22,10 +22,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float rotationSpeed = 25;
     float boostTimer = 10;
     bool isBoost;
-    [SerializeField]
+    [SerializeField] private float maxSpeedValue = 5.5f;
     private float maxSpeed = 5.5f;
-    [SerializeField]
-    private float acceleration = 2f;
+    
+    [SerializeField] private float acceleration = 2f;
+    [SerializeField] private float slowSpeed = 2f;
     [SerializeField]  private bool newRotation;
     Vector2 movement;
     Vector2 moveDirection;
@@ -45,6 +46,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        maxSpeed = maxSpeedValue;
         boostTimer = boostTimerLengt;
         rotationX.Enable();
         rotationY.Enable();
@@ -87,10 +89,10 @@ public class PlayerMovement : MonoBehaviour
         };
         boostInput.canceled += context => { boost = 1; isBoost = false;  };
         slowInput.started += context => {
-            maxSpeed = 2f;
+            maxSpeed = slowSpeed;
 
         };
-        slowInput.canceled += context => { maxSpeed = 5.5f; };
+        slowInput.canceled += context => { maxSpeed = maxSpeedValue; };
 
     }
     private void Update()
@@ -185,21 +187,37 @@ public class PlayerMovement : MonoBehaviour
                                 test1 = test1 / 100 + 1;
                             }
                             test1 = test1 * rotationAcceleration;
-                            //  Debug.Log(test1);
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + rotationSpeed * test1  * Time.deltaTime);
+
+                            if (eulerRotation.z + rotationSpeed * test1 * Time.deltaTime > newRotation && eulerRotation.z < newRotation + 180)
+                            {
+                                Debug.Log("hello");
+                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
+                            }
+                            else
+                            {
+                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + rotationSpeed * test1  * Time.deltaTime);
+                            }
+                            
 
 
                         }
                         else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
                         {
                             float test1 = Mathf.Abs(newRotation - eulerRotation.z);
-                            Debug.Log(test1);
+                          
                            
                                 test1 = test1 / 100 + 1;
                             test1 = test1 * rotationAcceleration;
-                            
 
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - rotationSpeed * test1 * Time.deltaTime);
+                            if (eulerRotation.z - rotationSpeed * test1 * Time.deltaTime < newRotation && eulerRotation.z> newRotation - 180)
+                            {
+                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
+                            }
+                            else
+                            {
+                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - rotationSpeed * test1 * Time.deltaTime);
+                            }
+                           
 
 
                         }
