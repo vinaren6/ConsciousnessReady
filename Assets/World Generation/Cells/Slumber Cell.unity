@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 1081879963}
   - component: {fileID: 1081879965}
   - component: {fileID: 1081879964}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Slumber Cell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
