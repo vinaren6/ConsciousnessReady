@@ -18,3 +18,7 @@ MonoBehaviour:
   outpostAmount: 6
   loadOnStart: 0
   fastRules: 1
+  movebleObjs:
+    serializedVersion: 2
+    m_Bits: 8705
+  dontUnloadObjInDistance: 6

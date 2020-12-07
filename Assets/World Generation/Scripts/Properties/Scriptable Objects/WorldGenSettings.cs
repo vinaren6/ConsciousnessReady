@@ -10,4 +10,7 @@ public class WorldGenSettings : ScriptableObject
     [Space(10)]
     public bool loadOnStart = false;
     public bool fastRules = true;
+    [Space(10)]
+    public LayerMask movebleObjs;
+    public float dontUnloadObjInDistance = 8f;
 }

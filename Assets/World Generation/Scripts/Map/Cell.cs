@@ -25,10 +25,8 @@ public class Cell : MonoBehaviour
     private void Start()
     {
         enabled = false;
-        if (WorldGenerationHandler.instance.settings.loadOnStart) {
+        if (WorldGenerationHandler.instance.settings.loadOnStart || type == Enum.CellType.Start) {
             LoadLevel();
-        } else if (type == Enum.CellType.Start) {
-            LoadLevel(true);
         }
     }
 
@@ -49,7 +47,7 @@ public class Cell : MonoBehaviour
         }
     }
 
-    void LoadLevel(bool gameStart = false)
+    void LoadLevel()
     {
         //List<CellRules> indexList = new List<CellRules>(WorldGenerationHandler.instance.cellsRulles[(int)type]);
 
@@ -110,11 +108,11 @@ public class Cell : MonoBehaviour
         }
         if (posebleCells.Count != 0) {
             ruleId = posebleCells[Random.Range(0, posebleCells.Count)];
-            LoadScene(gameStart);
+            LoadScene();
         }
     }
 
-    void LoadScene(bool gameStart = false)
+    void LoadScene()
     {
         if (ruleId != -1 && !isLoaded) {
             //SceneManager.LoadSceneAsync(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id, LoadSceneMode.Additive);
@@ -133,7 +131,7 @@ public class Cell : MonoBehaviour
                     //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id, LoadSceneMode.Additive);
                     //asyncLoad.completed += LoadCoompleate;
 
-                    StartCoroutine(LoadSceneAsync(gameStart));
+                    StartCoroutine(LoadSceneAsync());
                 }
             }
         }
@@ -141,12 +139,22 @@ public class Cell : MonoBehaviour
     void UnloadSceane()
     {
         if (ruleId != -1 && isLoaded) {
+
+            GameObject[] objs = scene.GetRootGameObjects();
+            for (int i = 0; i < objs.Length; i++) {
+                if (((1 << objs[i].layer) & WorldGenerationHandler.instance.settings.movebleObjs.value) == 1)
+                    if (Vector3.Distance(objs[i].transform.position, transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
+                        SceneManager.MoveGameObjectToScene(objs[i], SceneManager.GetSceneAt(2));
+                        //Debug.Log("move " + objs[i].name + " to scene: " + SceneManager.GetSceneAt(2).name);
+                    }
+            }
+
             SceneManager.UnloadSceneAsync(scene);
             isLoaded = false;
         }
     }
 
-    IEnumerator LoadSceneAsync(bool gameStart = false)
+    IEnumerator LoadSceneAsync()
     {
         scene = SceneManager.CreateScene(transform.name + " Scene");
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id, LoadSceneMode.Additive);
@@ -158,11 +166,11 @@ public class Cell : MonoBehaviour
             s = SceneManager.GetSceneByBuildIndex(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id);
             GameObject[] objs = s.GetRootGameObjects();
             for (int i = 0; i < objs.Length; i++) {
-                objs[i].transform.position = transform.position;
+                objs[i].transform.position += transform.position;
                 SceneManager.MoveGameObjectToScene(objs[i], scene);
             }
             AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(s);
-            if (gameStart)
+            if (type == Enum.CellType.Start)
                 asyncUnload.completed += EndLoadStart;
             else
                 asyncUnload.completed += EndLoad;
@@ -177,7 +185,7 @@ public class Cell : MonoBehaviour
         Scene s = SceneManager.GetSceneByBuildIndex(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id);
         GameObject[] objs = s.GetRootGameObjects();
         for (int i = 0; i < objs.Length; i++) {
-            objs[i].transform.position = transform.position;
+            objs[i].transform.position += transform.position;
             SceneManager.MoveGameObjectToScene(objs[i], scene);
         }
         AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(s);
@@ -219,12 +227,15 @@ public class Cell : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.tag == "Player" && !isLoaded && !enabled && GameHaveStarted) {
-            if (scene.name == transform.name + " Scene") {
-                LoadingLevel = true;
-                AsyncOperation load = SceneManager.LoadSceneAsync(scene.buildIndex, LoadSceneMode.Additive);
-                load.completed += EndLoad;
-            } else
+            if (ruleId != -1) {
+                //if (scene.name == transform.name + " Scene") {
+                //LoadingLevel = true;
+                //AsyncOperation load = SceneManager.LoadSceneAsync(scene.buildIndex, LoadSceneMode.Additive);
+                //load.completed += EndLoad;
+                LoadScene();
+            } else {
                 LoadLevel();
+            }
         }
     }
 
