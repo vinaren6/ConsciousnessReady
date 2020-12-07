@@ -24,7 +24,8 @@ public class PlayerMovement : MonoBehaviour
     bool isBoost;
     [SerializeField] private float maxSpeedValue = 5.5f;
     private float maxSpeed = 5.5f;
-    
+    [SerializeField] float dragSlow = 1.5f;
+    [SerializeField] float dragFast = 4.0f;
     [SerializeField] private float acceleration = 2f;
     [SerializeField] private float slowSpeed = 2f;
     [SerializeField]  private bool newRotation;
@@ -55,11 +56,31 @@ public class PlayerMovement : MonoBehaviour
         boostInput.Enable();
         slowInput.Enable();
         rb2d = GetComponent<Rigidbody2D>();
-        movementX.performed += context => movement.x = context.ReadValue<float>();
-        movementX.canceled += context => movement.x = 0;
+        movementX.performed += context => {
+            movement.x = context.ReadValue<float>();
+            rb2d.drag = 4.0f;
+        };
+        movementX.canceled += context => {
+            movement.x = 0;
+            if (movement.y == 0)
+            {
+                rb2d.drag = 1.5f;
+            }
+            };
 
-        movementY.performed += context => movement.y = context.ReadValue<float>();
-        movementY.canceled += context => movement.y = 0;
+        movementY.performed += context =>
+        {
+            movement.y = context.ReadValue<float>();
+            rb2d.drag = 4.0f;
+        };
+        movementY.canceled += context =>
+        {
+            movement.y = 0;
+            if (movement.x == 0)
+            {
+                rb2d.drag = 1.5f;
+            }
+        };
 
         rotationX.performed += context => { 
             if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
@@ -72,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 moveDirection.y = context.ReadValue<float>();
             }
-        }; ;
+        };
         rotationY.canceled += context => moveDirection.y = 0;
         boostInput.started += context => {
             if (boostTimer > 0)
@@ -100,6 +121,7 @@ public class PlayerMovement : MonoBehaviour
         if (rb2d.velocity.magnitude > 0.3)
         {
             ship.SetBool("ShipMoving", true);
+            
         }
         else
         {
