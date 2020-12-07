@@ -7,8 +7,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     private float health = 100f;
 
-    [SerializeField]
-    private float deathEffect;
+    //[SerializeField]
+    //private float deathEffect;
 
     public void TakeDamage(int damage)
     {
