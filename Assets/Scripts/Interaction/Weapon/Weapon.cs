@@ -11,11 +11,9 @@ public class Weapon : MonoBehaviour
     private Transform firePoint;
 
     [SerializeField]
-    private float rate;
+    private float cooldown = 0.1f;
 
-    [SerializeField]
-    private float cooldown;
-
+    private float elapsedTime = 0f;
 
     [Header("Projectiles")]
     [SerializeField]
@@ -24,6 +22,7 @@ public class Weapon : MonoBehaviour
     [Header("Input")]
     [SerializeField]
     private InputAction fireButton;
+
 
     private void OnEnable()
     {
@@ -35,16 +34,15 @@ public class Weapon : MonoBehaviour
         fireButton.Disable();
     }
 
-    void Start()
-    {
-
-    }
 
     void Update()
     {
-        if (fireButton.ReadValue<float>() == 1)
+        elapsedTime += Time.deltaTime;
+
+        if (fireButton.ReadValue<float>() == 1 && elapsedTime > cooldown)
         {
             Shoot();
+            elapsedTime = 0f;
         }
     }
 
