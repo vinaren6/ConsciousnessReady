@@ -39,7 +39,8 @@ public class PlayerMovement : MonoBehaviour
     //statice refrence to the player obj.
     static public GameObject playerObj;
 
-
+   
+   
     private void Awake()
     {
         playerObj = gameObject;
@@ -47,6 +48,12 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
+        
+
+
+
+
+
         maxSpeed = maxSpeedValue;
         boostTimer = boostTimerLengt;
         rotationX.Enable();
@@ -64,7 +71,7 @@ public class PlayerMovement : MonoBehaviour
             movement.x = 0;
             if (movement.y == 0)
             {
-                rb2d.drag = 1.5f;
+                rb2d.drag = dragSlow;
             }
             };
 
@@ -78,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
             movement.y = 0;
             if (movement.x == 0)
             {
-                rb2d.drag = 1.5f;
+                rb2d.drag = dragSlow;
             }
         };
 
