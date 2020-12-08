@@ -33,7 +33,7 @@ public class Projectile : MonoBehaviour
             transform.SetParent(other.transform);
             Destroy(GetComponent<Rigidbody2D>());
 
-            Invoke("DisableParticles", particlesLifetimeAfterCollision);
+            Invoke("DecreaseParticles", particlesLifetimeAfterCollision);
 
             Health enemy = other.gameObject.GetComponent<Health>();
 
@@ -47,12 +47,13 @@ public class Projectile : MonoBehaviour
 
     }
 
-    void DisableParticles()
+    void DecreaseParticles()
     {
         if (transform.childCount > 0)
         {
             ParticleSystem particleSystem = transform.GetChild(0).GetComponent<ParticleSystem>();
-            particleSystem.Stop();
+            var main = particleSystem.main;
+            main.maxParticles = 20;
         }
     }
 
