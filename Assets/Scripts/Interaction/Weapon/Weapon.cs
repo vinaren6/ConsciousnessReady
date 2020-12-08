@@ -11,6 +11,9 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private float coolDown = 0.3f;
 
+    [SerializeField]
+    private float knockBack = 5;
+
 
     [Header("Projectiles")]
 
@@ -50,6 +53,7 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         Projectile projectile = Instantiate(defaultProjectile, gun.position, transform.rotation);
+        GetComponent<Rigidbody2D>().AddForce(transform.up * -knockBack, ForceMode2D.Impulse);
     }
 
 

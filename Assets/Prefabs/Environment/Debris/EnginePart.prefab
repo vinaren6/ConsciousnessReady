@@ -14,8 +14,8 @@ GameObject:
   - component: {fileID: 8328997171980769891}
   - component: {fileID: 8328997171980769890}
   m_Layer: 12
-  m_Name: Debris2_KJ_v002_0
-  m_TagString: Untagged
+  m_Name: EnginePart
+  m_TagString: Small Debris
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

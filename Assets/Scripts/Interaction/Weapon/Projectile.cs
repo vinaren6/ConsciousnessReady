@@ -23,7 +23,12 @@ public class Projectile : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other)
     {
 
-        if (!hasCollided)
+        if (other.gameObject.tag == "Small Debris")
+        {
+            Physics2D.IgnoreCollision(other.collider, GetComponent<Collider2D>());
+        }
+
+        else if (!hasCollided)
         {
             transform.SetParent(other.transform);
             Destroy(GetComponent<Rigidbody2D>());
@@ -32,15 +37,12 @@ public class Projectile : MonoBehaviour
 
             Health enemy = other.gameObject.GetComponent<Health>();
 
-
             if (enemy != null)
             {
                 enemy.TakeDamage(damage);
             }
 
             hasCollided = true;
-
-            //Destroy(gameObject);
         }
 
     }
