@@ -21,4 +21,4 @@ MonoBehaviour:
   movebleObjs:
     serializedVersion: 2
     m_Bits: 8705
-  dontUnloadObjInDistance: 6
+  dontUnloadObjInDistance: 16
