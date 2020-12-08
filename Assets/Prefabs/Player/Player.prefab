@@ -378,6 +378,15 @@ MonoBehaviour:
   newRotation: 1
   propulsion: {fileID: 7927683192662318536}
   ship: {fileID: 7927683191028843614}
+  projectile: {fileID: 0}
+  shoot:
+    m_Name: 
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
 --- !u!50 &7927683191028843585
 Rigidbody2D:
   serializedVersion: 4
@@ -463,8 +472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 1940802446}
   coolDown: 0.3
-  projectileSpeed: 30
-  defaultProjectile: {fileID: 0}
+  defaultProjectile: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
   fireButton:
     m_Name: Fire Button
     m_Type: 0

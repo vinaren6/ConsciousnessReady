@@ -6,17 +6,52 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     private int damage = 40;
 
+    [SerializeField]
+    private float speed = 30f;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    [SerializeField]
+    private float particlesLifetimeAfterCollision = 2.0f;
+
+    private bool hasCollided = false;
+
+
+    private void Start()
     {
-        Health enemy = other.GetComponent<Health>();
+        GetComponent<Rigidbody2D>().AddForce(transform.up * speed, ForceMode2D.Impulse);
+    }
 
-        if (enemy != null)
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+
+        if (!hasCollided)
         {
-            enemy.TakeDamage(damage);
+            transform.SetParent(other.transform);
+            Destroy(GetComponent<Rigidbody2D>());
+
+            Invoke("DisableParticles", particlesLifetimeAfterCollision);
+
+            Health enemy = other.gameObject.GetComponent<Health>();
+
+
+            if (enemy != null)
+            {
+                enemy.TakeDamage(damage);
+            }
+
+            hasCollided = true;
+
+            //Destroy(gameObject);
         }
 
-        //Destroy(gameObject);
+    }
+
+    void DisableParticles()
+    {
+        if (transform.childCount > 0)
+        {
+            ParticleSystem particleSystem = transform.GetChild(0).GetComponent<ParticleSystem>();
+            particleSystem.Stop();
+        }
     }
 
 }

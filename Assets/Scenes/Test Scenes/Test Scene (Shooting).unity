@@ -186,6 +186,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Left)
       objectReference: {fileID: 0}
+    - target: {fileID: 5966901695965621330, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
 --- !u!1001 &5634755
@@ -251,6 +255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Teal)
       objectReference: {fileID: 0}
+    - target: {fileID: 7805201221284281051, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
 --- !u!4 &24123232 stripped
@@ -313,6 +321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Blue)
       objectReference: {fileID: 0}
+    - target: {fileID: 3155573511787693759, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
 --- !u!1001 &32029921
@@ -325,6 +337,10 @@ PrefabInstance:
     - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4506260245602159063, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_RootOrder
@@ -382,6 +398,10 @@ PrefabInstance:
     - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right Teal) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7824109288490680151, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_RootOrder
@@ -483,6 +503,10 @@ PrefabInstance:
     - target: {fileID: 7922337875907840253, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
       propertyPath: m_Name
       value: Large Debris (On Fire)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7922337875907840253, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
@@ -720,6 +744,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (On Fire)
       objectReference: {fileID: 0}
+    - target: {fileID: 7922337875907840253, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
 --- !u!1 &101319847
@@ -731,7 +759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 101319848}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Set (Large Debris) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -892,6 +920,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Left Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 3912060917718468851, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
 --- !u!4 &157524237 stripped
@@ -980,7 +1012,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 194938473}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Set (Small Debris)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1075,6 +1107,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnstableSpace_Shape1 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1545523498570487414, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
 --- !u!4 &205445076 stripped
@@ -1142,6 +1178,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (On Fire)
       objectReference: {fileID: 0}
+    - target: {fileID: 7922337875907840253, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
 --- !u!1001 &211720420
@@ -1198,6 +1238,10 @@ PrefabInstance:
     - target: {fileID: 3912060917718468851, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Brown)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3912060917718468851, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
@@ -1721,6 +1765,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right)
       objectReference: {fileID: 0}
+    - target: {fileID: 8101499108704856651, guid: 479216be72337544e860e536aa33a9cf, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 8101499108704856652, guid: 479216be72337544e860e536aa33a9cf, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -1910,6 +1958,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Green)
       objectReference: {fileID: 0}
+    - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2957568614247770291, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -1994,6 +2046,10 @@ PrefabInstance:
     - target: {fileID: 2634242870262047461, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Green)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634242870262047461, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2634242870262047466, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
       propertyPath: m_RootOrder
@@ -2176,6 +2232,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Blue)
       objectReference: {fileID: 0}
+    - target: {fileID: 9064871837872297172, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 9064871837872297173, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2326,6 +2386,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Teal)
       objectReference: {fileID: 0}
+    - target: {fileID: 7805201221284281051, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
 --- !u!1001 &566557264
@@ -2396,6 +2460,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 3360638735445822670, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3360638735445822671, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -2457,219 +2525,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2957568614247770291, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
   m_PrefabInstance: {fileID: 430832251}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &626026889 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7477270765736997791, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-  m_PrefabInstance: {fileID: 964018011}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &626026890 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-  m_PrefabInstance: {fileID: 964018011}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626026889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49b50c3647caa648be9c0d4ef0570de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &626026894 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-  m_PrefabInstance: {fileID: 964018011}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &626026895
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626026889}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.05
-  m_Pitch: 2
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!82 &626026896
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626026889}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.01
-  m_Pitch: 0.5
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1001 &634345094
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2798,6 +2653,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnstableSpace_Shape1 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1545523498570487414, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
 --- !u!4 &644689972 stripped
@@ -2815,6 +2674,10 @@ PrefabInstance:
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape2 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_IsActive
@@ -2940,7 +2803,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 680428110}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Set (Large Debris) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2986,6 +2849,10 @@ PrefabInstance:
     - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4506260245602159063, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_RootOrder
@@ -3114,6 +2981,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Teal)
       objectReference: {fileID: 0}
+    - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7824109288490680151, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -3225,6 +3096,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 2298225835891463743, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
 --- !u!1001 &790448582
@@ -3237,6 +3112,10 @@ PrefabInstance:
     - target: {fileID: 2634242870262047461, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Green)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634242870262047461, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2634242870262047466, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
       propertyPath: m_RootOrder
@@ -3391,7 +3270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 855453354}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Space Graveyard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3427,9 +3306,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 859759295, guid: 37078f3d83fcb41419a58aac22a9cfbb, type: 3}
+      propertyPath: coolDown
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 859759295, guid: 37078f3d83fcb41419a58aac22a9cfbb, type: 3}
+      propertyPath: projectileSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 859759295, guid: 37078f3d83fcb41419a58aac22a9cfbb, type: 3}
       propertyPath: defaultProjectile
       value: 
-      objectReference: {fileID: 626026890}
+      objectReference: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
     - target: {fileID: 7927683192913059052, guid: 37078f3d83fcb41419a58aac22a9cfbb, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -3554,6 +3441,10 @@ PrefabInstance:
     - target: {fileID: 7990547524346749775, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right Green)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7990547524346749775, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
@@ -3713,6 +3604,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnstableSpace_Shape1 (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1545523498570487414, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
 --- !u!4 &928998020 stripped
@@ -3783,6 +3678,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Left)
       objectReference: {fileID: 0}
+    - target: {fileID: 5966901695965621330, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
 --- !u!4 &941801239 stripped
@@ -3799,7 +3698,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 942763745}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Set (Large Debris)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3892,95 +3791,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca7d6463c83c83841a438baf9ae82edd, type: 3}
---- !u!1001 &964018011
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5934034278983476341, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: speed
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925295544471479884, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_FlipY
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925295544471479884, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_Size.x
-      value: 0.14
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925295544471479884, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_Size.y
-      value: 0.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 6925295544471479884, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 4538732487474477430, guid: 69c17f0506cee5548a598155fb6c2c33, type: 3}
-    - target: {fileID: 7477270765736997791, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_Name
-      value: Projectile (Player Default)
-      objectReference: {fileID: 0}
-    - target: {fileID: 8597307983014870444, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
 --- !u!1001 &981471497
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3991,6 +3801,10 @@ PrefabInstance:
     - target: {fileID: 8101499108704856651, guid: 479216be72337544e860e536aa33a9cf, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101499108704856651, guid: 479216be72337544e860e536aa33a9cf, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8101499108704856652, guid: 479216be72337544e860e536aa33a9cf, type: 3}
       propertyPath: m_RootOrder
@@ -4261,6 +4075,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Green) (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2957568614247770291, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_RootOrder
       value: 14
@@ -4396,6 +4214,10 @@ PrefabInstance:
       value: UnstableSpace_Shape2 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -4503,6 +4325,10 @@ PrefabInstance:
     - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right Teal)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7824109288490680151, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_RootOrder
@@ -4612,6 +4438,10 @@ PrefabInstance:
     - target: {fileID: 7805201221284281051, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
       propertyPath: m_Name
       value: Large Debris (Teal)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7805201221284281051, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
@@ -4738,7 +4568,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1171639178}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Hazards
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4867,6 +4697,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Left Green)
       objectReference: {fileID: 0}
+    - target: {fileID: 2634242870262047461, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2634242870262047466, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -4922,7 +4756,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1280964848}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Environment
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5165,6 +4999,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Left Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 3912060917718468851, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
 --- !u!4 &1344824050 stripped
@@ -5227,6 +5065,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 2298225835891463743, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
 --- !u!1 &1354188347
@@ -5238,7 +5080,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1354188348}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Set (Small Debris) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5352,6 +5194,10 @@ PrefabInstance:
     - target: {fileID: 1545523498570487414, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape1 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1545523498570487414, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
@@ -5468,6 +5314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnstableSpace_Shape3 (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 749970746224313499, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5525,6 +5375,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 3360638735445822670, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3360638735445822671, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -5581,6 +5435,10 @@ PrefabInstance:
     - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape3 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 749970746224313499, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_RootOrder
@@ -5648,6 +5506,10 @@ PrefabInstance:
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_IsActive
@@ -5755,7 +5617,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1494875617}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Set (Large Debris) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5801,6 +5663,10 @@ PrefabInstance:
     - target: {fileID: 9064871837872297172, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
       propertyPath: m_Name
       value: Large Debris (Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064871837872297172, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9064871837872297173, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
       propertyPath: m_RootOrder
@@ -5858,6 +5724,10 @@ PrefabInstance:
     - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4506260245602159063, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_RootOrder
@@ -5920,6 +5790,10 @@ PrefabInstance:
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_IsActive
@@ -6033,6 +5907,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Green)
       objectReference: {fileID: 0}
+    - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 2957568614247770291, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -6102,6 +5980,10 @@ PrefabInstance:
     - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape3 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 749970746224313499, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_RootOrder
@@ -6360,6 +6242,10 @@ PrefabInstance:
     - target: {fileID: 3360638735445822670, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right Brown)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3360638735445822670, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3360638735445822671, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
       propertyPath: m_RootOrder
@@ -6682,6 +6568,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Green)
       objectReference: {fileID: 0}
+    - target: {fileID: 7990547524346749775, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
 --- !u!1001 &1733504722
@@ -6787,6 +6677,10 @@ PrefabInstance:
     - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_Name
       value: Large Debris (Green) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2957568614247770291, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_RootOrder
@@ -6958,135 +6852,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227a9725888c3684a849d4abd62a5c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1001 &1756354618
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 626026894}
-    m_Modifications:
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.002
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.011
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295009, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295012, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: m_Name
-      value: Ice Particles (Projectiles)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: looping
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: ShapeModule.type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: ShapeModule.m_Scale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: CollisionModule.enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeModule.curve.scalar
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: ShapeModule.radius.value
-      value: 0.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeModule.y.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeModule.z.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeBySpeedModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeBySpeedModule.range.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeBySpeedModule.range.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeModule.curve.minScalar
-      value: 1.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: ShapeModule.radiusThickness
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: SizeModule.curve.minMaxState
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: InitialModule.maxNumParticles
-      value: 1000
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: InitialModule.startLifetime.scalar
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2163327433704295014, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
-      propertyPath: EmissionModule.rateOverDistance.scalar
-      value: 25
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 208afe79727895f4f939a956b86e0f73, type: 3}
 --- !u!4 &1764862140 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7990547524346749774, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
@@ -7209,6 +6974,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Teal)
       objectReference: {fileID: 0}
+    - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 7824109288490680151, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -7270,6 +7039,10 @@ PrefabInstance:
     - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_Name
       value: Large Debris (Green)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2957568614247770291, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_RootOrder
@@ -7382,6 +7155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Blue)
       objectReference: {fileID: 0}
+    - target: {fileID: 3155573511787693759, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
 --- !u!1001 &1902979213
@@ -7394,6 +7171,10 @@ PrefabInstance:
     - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right Teal) (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7824109288490680151, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_RootOrder
@@ -7613,6 +7394,10 @@ PrefabInstance:
     - target: {fileID: 8101499108704856651, guid: 479216be72337544e860e536aa33a9cf, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101499108704856651, guid: 479216be72337544e860e536aa33a9cf, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8101499108704856652, guid: 479216be72337544e860e536aa33a9cf, type: 3}
       propertyPath: m_RootOrder
@@ -7837,6 +7622,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Green)
       objectReference: {fileID: 0}
+    - target: {fileID: 7990547524346749775, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
 --- !u!1001 &1992800731
@@ -7987,6 +7776,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 2298225835891463743, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
 --- !u!1001 &2013453896
@@ -8051,6 +7844,10 @@ PrefabInstance:
     - target: {fileID: 5966901695965621330, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5966901695965621330, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
@@ -8179,6 +7976,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Blue)
       objectReference: {fileID: 0}
+    - target: {fileID: 3155573511787693759, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
 --- !u!4 &2035161579 stripped
@@ -8195,7 +7996,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2036332776}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Set (Small Debris) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8244,13 +8045,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061184305}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2061184305
 Transform:
   m_ObjectHideFlags: 0
@@ -8280,6 +8081,10 @@ PrefabInstance:
     - target: {fileID: 9064871837872297172, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
       propertyPath: m_Name
       value: Large Debris (Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064871837872297172, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9064871837872297173, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
       propertyPath: m_RootOrder
@@ -8446,6 +8251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnstableSpace_Shape3 (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 749970746224313499, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -8502,6 +8311,10 @@ PrefabInstance:
     - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape3
+      objectReference: {fileID: 0}
+    - target: {fileID: 749970746224313498, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 749970746224313499, guid: 14d7b55736ee551429b92561130eba8f, type: 3}
       propertyPath: m_RootOrder
@@ -8661,6 +8474,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: UnstableSpace_Shape1
       objectReference: {fileID: 0}
+    - target: {fileID: 1545523498570487414, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
+      propertyPath: m_Layer
+      value: 15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4b4919148633ed144a9f6a7441e74c7d, type: 3}
 --- !u!1001 &2298225836325225269
@@ -8718,6 +8535,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 2298225835891463743, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e8d60c812da580469b0302e2d346b82, type: 3}
 --- !u!1001 &2634242872034561074
@@ -8730,6 +8551,10 @@ PrefabInstance:
     - target: {fileID: 2634242870262047461, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Green)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2634242870262047461, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2634242870262047466, guid: 46852b966d8290a49b4355e23222eae4, type: 3}
       propertyPath: m_RootOrder
@@ -8787,6 +8612,10 @@ PrefabInstance:
     - target: {fileID: 2880507662606433929, guid: b4f57a7502b61284f8d2df05d4856884, type: 3}
       propertyPath: m_Name
       value: Earth
+      objectReference: {fileID: 0}
+    - target: {fileID: 2880507662606433929, guid: b4f57a7502b61284f8d2df05d4856884, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2880507662606433935, guid: b4f57a7502b61284f8d2df05d4856884, type: 3}
       propertyPath: m_RootOrder
@@ -8857,6 +8686,10 @@ PrefabInstance:
     - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_Name
       value: Large Debris (Green)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2957568614247770290, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2957568614247770291, guid: 7ee0e48e17dc05942b1f7334b90c7250, type: 3}
       propertyPath: m_RootOrder
@@ -8959,6 +8792,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Blue)
       objectReference: {fileID: 0}
+    - target: {fileID: 3155573511787693759, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb348f878ebcfd940beac4d73962b476, type: 3}
 --- !u!1001 &3360638733893803906
@@ -8971,6 +8808,10 @@ PrefabInstance:
     - target: {fileID: 3360638735445822670, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right Brown)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3360638735445822670, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 3360638735445822671, guid: 12c5d796f95372d4981d8b5849ee9042, type: 3}
       propertyPath: m_RootOrder
@@ -9073,6 +8914,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Left Brown)
       objectReference: {fileID: 0}
+    - target: {fileID: 3912060917718468851, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
 --- !u!1001 &4506260245789469581
@@ -9085,6 +8930,10 @@ PrefabInstance:
     - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_Name
       value: Large Debris (Left Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4506260245602159060, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4506260245602159063, guid: 6cfa9c4b33b48164292189aa0c5bb5f2, type: 3}
       propertyPath: m_RootOrder
@@ -9142,6 +8991,10 @@ PrefabInstance:
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_Name
       value: UnstableSpace_Shape2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
+      propertyPath: m_Layer
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 5943081244095576457, guid: 79d0458be087c604c8ae12c957e95c56, type: 3}
       propertyPath: m_IsActive
@@ -9256,6 +9109,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Left)
       objectReference: {fileID: 0}
+    - target: {fileID: 5966901695965621330, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a80cea4624eb84181abd897dc497dc, type: 3}
 --- !u!1001 &6012011866975759878
@@ -9276,6 +9133,10 @@ PrefabInstance:
     - target: {fileID: 266791899332862349, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
       propertyPath: m_LocalPosition.z
       value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: 684783143939301988, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: m_CullingMask.m_Bits
+      value: 64311
       objectReference: {fileID: 0}
     - target: {fileID: 1532299508253848650, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
       propertyPath: m_RootOrder
@@ -9365,8 +9226,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Background
       objectReference: {fileID: 0}
+    - target: {fileID: 7434387152284078068, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8165800029562662117, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
       propertyPath: m_RenderPostProcessing
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8165800029562662117, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: m_VolumeLayerMask.m_Bits
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9527,6 +9396,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Teal)
       objectReference: {fileID: 0}
+    - target: {fileID: 7805201221284281051, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
 --- !u!1001 &7824109289356955559
@@ -9539,6 +9412,10 @@ PrefabInstance:
     - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right Teal)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7824109288490680136, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7824109288490680151, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
       propertyPath: m_RootOrder
@@ -9641,6 +9518,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (On Fire)
       objectReference: {fileID: 0}
+    - target: {fileID: 7922337875907840253, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63472fd553545284ca7eb3e69297b4d9, type: 3}
 --- !u!1001 &7990547523805937099
@@ -9698,6 +9579,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Large Debris (Right Green)
       objectReference: {fileID: 0}
+    - target: {fileID: 7990547524346749775, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a57c38f24a4b5d448c7a44fc68153eb, type: 3}
 --- !u!1001 &8101499109542811072
@@ -9710,6 +9595,10 @@ PrefabInstance:
     - target: {fileID: 8101499108704856651, guid: 479216be72337544e860e536aa33a9cf, type: 3}
       propertyPath: m_Name
       value: Large Debris (Right)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8101499108704856651, guid: 479216be72337544e860e536aa33a9cf, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 8101499108704856652, guid: 479216be72337544e860e536aa33a9cf, type: 3}
       propertyPath: m_RootOrder
@@ -9767,6 +9656,10 @@ PrefabInstance:
     - target: {fileID: 9064871837872297172, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
       propertyPath: m_Name
       value: Large Debris (Blue)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9064871837872297172, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 9064871837872297173, guid: 1fb6678b8a2b4d646a382e55a3842305, type: 3}
       propertyPath: m_RootOrder

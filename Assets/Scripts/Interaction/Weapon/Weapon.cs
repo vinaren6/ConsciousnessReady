@@ -9,10 +9,7 @@ public class Weapon : MonoBehaviour
     private Transform gun;
 
     [SerializeField]
-    private float coolDown = 0.1f;
-
-    [SerializeField]
-    private float projectileSpeed = 15f;
+    private float coolDown = 0.3f;
 
 
     [Header("Projectiles")]
@@ -53,18 +50,6 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         Projectile projectile = Instantiate(defaultProjectile, gun.position, transform.rotation);
-        Rigidbody2D rigidbody2D = projectile.GetComponent<Rigidbody2D>();
-
-        //rigidbody2D.velocity = (Vector2)(gun.up * projectileSpeed) + gameObject.GetComponent<Rigidbody2D>().velocity;
-        //rigidbody2D.velocity.magnitude += gameObject.GetComponent<Rigidbody2D>().velocity.magnitude;
-
-
-        rigidbody2D.AddForce((Vector2)gun.up * projectileSpeed, ForceMode2D.Impulse);
-        //rigidbody2D.AddForce((Vector2)gun.up * projectileSpeed + gameObject.GetComponent<Rigidbody2D>().velocity.normalized, ForceMode2D.Impulse);
-
-
-        //rigidbody2D.velocity = (Vector2)(gun.up * projectileSpeed) + gameObject.GetComponent<Rigidbody2D>().velocity;
-
     }
 
 
