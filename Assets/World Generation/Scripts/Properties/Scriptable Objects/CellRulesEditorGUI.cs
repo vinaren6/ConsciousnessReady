@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 [CustomEditor(typeof(CellRules))]
 public class CellRulesEditorGUI : Editor
@@ -10,7 +11,8 @@ public class CellRulesEditorGUI : Editor
     int scrollIndex = 0;
 
 
-    public override void OnInspectorGUI() {
+    public override void OnInspectorGUI()
+    {
         serializedObject.Update();
         if (scrollPosition == null || scrollPosition.Length < 6) {
             scrollPosition = new Vector2[6];
@@ -38,6 +40,8 @@ public class CellRulesEditorGUI : Editor
             margin = new RectOffset(),
             padding = new RectOffset(16, 0, 0, 0)
         };
+
+        bool draged = false;
 
         GUILayout.BeginHorizontal();
         GUILayout.FlexibleSpace();
@@ -68,68 +72,72 @@ public class CellRulesEditorGUI : Editor
                     Rect myRect = GUILayoutUtility.GetRect(128, 64);
                     GUI.Box(myRect, "\nCopy to\nall Cells", boxStyle2);
                     if (myRect.Contains(Event.current.mousePosition)) {
-                        if (Event.current.type == EventType.DragUpdated) {
-                            DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
-                            Event.current.Use();
-                        } else if (Event.current.type == EventType.DragPerform) {
-                            List<CellRules> downLeft = new List<CellRules>(controller.cellsDownLeft);
-                            List<CellRules> downRight = new List<CellRules>(controller.cellsDownRight);
-                            List<CellRules> left = new List<CellRules>(controller.cellsLeft);
-                            List<CellRules> right = new List<CellRules>(controller.cellsRight);
-                            List<CellRules> upLeft = new List<CellRules>(controller.cellsUpLeft);
-                            List<CellRules> upRight = new List<CellRules>(controller.cellsUpRight);
-                            for (int i = 0; i < DragAndDrop.objectReferences.Length; i++) {
-                                downLeft.Add(DragAndDrop.objectReferences[i] as CellRules);
-                                downRight.Add(DragAndDrop.objectReferences[i] as CellRules);
-                                left.Add(DragAndDrop.objectReferences[i] as CellRules);
-                                right.Add(DragAndDrop.objectReferences[i] as CellRules);
-                                upLeft.Add(DragAndDrop.objectReferences[i] as CellRules);
-                                upRight.Add(DragAndDrop.objectReferences[i] as CellRules);
-                            }
-                            controller.cellsDownLeft = downLeft.ToArray();
-                            controller.cellsDownRight = downRight.ToArray();
-                            controller.cellsLeft = left.ToArray();
-                            controller.cellsRight = right.ToArray();
-                            controller.cellsUpLeft = upLeft.ToArray();
-                            controller.cellsUpRight = upRight.ToArray();
+                        draged = true;
+                        if (DragAndDrop.objectReferences.Length > 0 && DragAndDrop.objectReferences[0].GetType() == typeof(CellRules))
+                            if (Event.current.type == EventType.DragUpdated) {
+                                DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+                                Event.current.Use();
+                            } else if (Event.current.type == EventType.DragPerform) {
+                                List<CellRules> downLeft = new List<CellRules>(controller.cellsDownLeft);
+                                List<CellRules> downRight = new List<CellRules>(controller.cellsDownRight);
+                                List<CellRules> left = new List<CellRules>(controller.cellsLeft);
+                                List<CellRules> right = new List<CellRules>(controller.cellsRight);
+                                List<CellRules> upLeft = new List<CellRules>(controller.cellsUpLeft);
+                                List<CellRules> upRight = new List<CellRules>(controller.cellsUpRight);
+                                for (int i = 0; i < DragAndDrop.objectReferences.Length; i++) {
+                                    downLeft.Add(DragAndDrop.objectReferences[i] as CellRules);
+                                    downRight.Add(DragAndDrop.objectReferences[i] as CellRules);
+                                    left.Add(DragAndDrop.objectReferences[i] as CellRules);
+                                    right.Add(DragAndDrop.objectReferences[i] as CellRules);
+                                    upLeft.Add(DragAndDrop.objectReferences[i] as CellRules);
+                                    upRight.Add(DragAndDrop.objectReferences[i] as CellRules);
+                                }
+                                controller.cellsDownLeft = downLeft.ToArray();
+                                controller.cellsDownRight = downRight.ToArray();
+                                controller.cellsLeft = left.ToArray();
+                                controller.cellsRight = right.ToArray();
+                                controller.cellsUpLeft = upLeft.ToArray();
+                                controller.cellsUpRight = upRight.ToArray();
 
-                            Event.current.Use();
-                            ScenePreviewWindow._instance.Repaint();
-                        }
+                                Event.current.Use();
+                                ScenePreviewWindow._instance.Repaint();
+                            }
                     }
                 }
                 {
                     Rect myRect = GUILayoutUtility.GetRect(128, 64);
                     GUI.Box(myRect, "\nRemove from\nall Cells");
                     if (myRect.Contains(Event.current.mousePosition)) {
-                        if (Event.current.type == EventType.DragUpdated) {
-                            DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
-                            Event.current.Use();
-                        } else if (Event.current.type == EventType.DragPerform) {
-                            List<CellRules> downLeft = new List<CellRules>(controller.cellsDownLeft);
-                            List<CellRules> downRight = new List<CellRules>(controller.cellsDownRight);
-                            List<CellRules> left = new List<CellRules>(controller.cellsLeft);
-                            List<CellRules> right = new List<CellRules>(controller.cellsRight);
-                            List<CellRules> upLeft = new List<CellRules>(controller.cellsUpLeft);
-                            List<CellRules> upRight = new List<CellRules>(controller.cellsUpRight);
-                            for (int i = 0; i < DragAndDrop.objectReferences.Length; i++) {
-                                downLeft.Remove(DragAndDrop.objectReferences[i] as CellRules);
-                                downRight.Remove(DragAndDrop.objectReferences[i] as CellRules);
-                                left.Remove(DragAndDrop.objectReferences[i] as CellRules);
-                                right.Remove(DragAndDrop.objectReferences[i] as CellRules);
-                                upLeft.Remove(DragAndDrop.objectReferences[i] as CellRules);
-                                upRight.Remove(DragAndDrop.objectReferences[i] as CellRules);
-                            }
-                            controller.cellsDownLeft = downLeft.ToArray();
-                            controller.cellsDownRight = downRight.ToArray();
-                            controller.cellsLeft = left.ToArray();
-                            controller.cellsRight = right.ToArray();
-                            controller.cellsUpLeft = upLeft.ToArray();
-                            controller.cellsUpRight = upRight.ToArray();
+                        draged = true;
+                        if (DragAndDrop.objectReferences.Length > 0 && DragAndDrop.objectReferences[0].GetType() == typeof(CellRules))
+                            if (Event.current.type == EventType.DragUpdated) {
+                                DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+                                Event.current.Use();
+                            } else if (Event.current.type == EventType.DragPerform) {
+                                List<CellRules> downLeft = new List<CellRules>(controller.cellsDownLeft);
+                                List<CellRules> downRight = new List<CellRules>(controller.cellsDownRight);
+                                List<CellRules> left = new List<CellRules>(controller.cellsLeft);
+                                List<CellRules> right = new List<CellRules>(controller.cellsRight);
+                                List<CellRules> upLeft = new List<CellRules>(controller.cellsUpLeft);
+                                List<CellRules> upRight = new List<CellRules>(controller.cellsUpRight);
+                                for (int i = 0; i < DragAndDrop.objectReferences.Length; i++) {
+                                    downLeft.Remove(DragAndDrop.objectReferences[i] as CellRules);
+                                    downRight.Remove(DragAndDrop.objectReferences[i] as CellRules);
+                                    left.Remove(DragAndDrop.objectReferences[i] as CellRules);
+                                    right.Remove(DragAndDrop.objectReferences[i] as CellRules);
+                                    upLeft.Remove(DragAndDrop.objectReferences[i] as CellRules);
+                                    upRight.Remove(DragAndDrop.objectReferences[i] as CellRules);
+                                }
+                                controller.cellsDownLeft = downLeft.ToArray();
+                                controller.cellsDownRight = downRight.ToArray();
+                                controller.cellsLeft = left.ToArray();
+                                controller.cellsRight = right.ToArray();
+                                controller.cellsUpLeft = upLeft.ToArray();
+                                controller.cellsUpRight = upRight.ToArray();
 
-                            Event.current.Use();
-                            ScenePreviewWindow._instance.Repaint();
-                        }
+                                Event.current.Use();
+                                ScenePreviewWindow._instance.Repaint();
+                            }
                     }
                 }
                 GUILayout.Label("");
@@ -157,10 +165,28 @@ public class CellRulesEditorGUI : Editor
             Normalize(controller);
         }
 
+        
+        if (!draged) {
+            if (DragAndDrop.objectReferences.Length > 0 && DragAndDrop.objectReferences[0].GetType() == typeof(SceneAsset))
+                if (Event.current.type == EventType.DragUpdated) {
+                    DragAndDrop.visualMode = DragAndDropVisualMode.Copy;
+                    Event.current.Use();
+                } else if (Event.current.type == EventType.DragPerform) {
+
+                    controller.title = (DragAndDrop.objectReferences[0] as SceneAsset).name;
+                    controller.id = SceneUtility.GetBuildIndexByScenePath(DragAndDrop.paths[0]);
+                    controller.preview = AssetDatabase.LoadAssetAtPath($"Assets/Scripts/ScenePreview/Previews/{controller.title}.png", typeof(Texture2D)) as Texture2D;
+
+                    Event.current.Use();
+                    ScenePreviewWindow._instance.Repaint();
+                }
+        }
+        
 
         DrawDefaultInspector();
     }
-    private void DrawList(GUIStyle boxStyle, SerializedProperty cell, CellRules[] cellArray) {
+    private void DrawList(GUIStyle boxStyle, SerializedProperty cell, CellRules[] cellArray)
+    {
 
         scrollIndex %= 6;
         scrollPosition[scrollIndex] = GUILayout.BeginScrollView(scrollPosition[scrollIndex], boxStyle, GUILayout.Height(128));
@@ -181,7 +207,8 @@ public class CellRulesEditorGUI : Editor
         GUILayout.EndScrollView();
     }
 
-    public void Normalize(CellRules controller) {
+    public void Normalize(CellRules controller)
+    {
         foreach (CellRules item in controller.cellsDownLeft)
             if (!ExistInArray(item.cellsUpRight, controller))
                 item.cellsUpRight = AddElementToArray(item.cellsUpRight, controller);
@@ -202,7 +229,8 @@ public class CellRulesEditorGUI : Editor
                 item.cellsDownLeft = AddElementToArray(item.cellsDownLeft, controller);
     }
 
-    private bool ExistInArray<T>(T[] array, T item) {
+    private bool ExistInArray<T>(T[] array, T item)
+    {
         if (item != null)
             foreach (T arrayItem in array)
                 if (arrayItem.Equals(item))
@@ -210,7 +238,8 @@ public class CellRulesEditorGUI : Editor
         return false; //no mach
     }
 
-    T[] AddElementToArray<T>(T[] array, T element) {
+    T[] AddElementToArray<T>(T[] array, T element)
+    {
         T[] newArray = new T[array.Length + 1];
         int i;
         for (i = 0; i < array.Length; i++)
