@@ -39,8 +39,9 @@ public class PlayerMovement : MonoBehaviour
     //statice refrence to the player obj.
     static public GameObject playerObj;
 
-   
-   
+    //for testing dragger
+    public GameObject projectile;
+    [SerializeField] private InputAction shoot;
     private void Awake()
     {
         playerObj = gameObject;
@@ -48,7 +49,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        
+        shoot.Enable();
+       
 
 
 
@@ -65,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         movementX.performed += context => {
             movement.x = context.ReadValue<float>();
-            rb2d.drag = 4.0f;
+            rb2d.drag = dragFast;
         };
         movementX.canceled += context => {
             movement.x = 0;
@@ -78,7 +80,7 @@ public class PlayerMovement : MonoBehaviour
         movementY.performed += context =>
         {
             movement.y = context.ReadValue<float>();
-            rb2d.drag = 4.0f;
+            rb2d.drag = dragFast;
         };
         movementY.canceled += context =>
         {
@@ -121,7 +123,13 @@ public class PlayerMovement : MonoBehaviour
 
         };
         slowInput.canceled += context => { maxSpeed = maxSpeedValue; };
-
+        shoot.performed += context =>
+        {
+            Debug.Log("test");
+            GameObject bullet = Instantiate(projectile, transform.position , Quaternion.identity) as GameObject;
+            bullet.GetComponent<Rigidbody2D>().AddForce(transform.forward * 10);
+        };
+        slowInput.canceled += context => Debug.Log("hi");
     }
     private void Update()
     {
@@ -169,7 +177,6 @@ public class PlayerMovement : MonoBehaviour
 
             if (moveDirection == Vector2.zero)
             {
-                Vector2 RotationDirection = rb2d.velocity;
 
 
 
