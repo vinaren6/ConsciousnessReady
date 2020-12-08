@@ -2,7 +2,7 @@
 
 public class Projectile : MonoBehaviour
 {
-
+    [Header("Base Settings")]
     [SerializeField]
     private int damage = 40;
 
@@ -12,16 +12,30 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     private float particlesLifetimeAfterCollision = 2.0f;
 
+    [Header("Explosions")]
+
+    [SerializeField]
+    private Explosion impactExplosion;
+
+    [SerializeField]
+    private float explosionDelay = 5.0f;
+
+
+
     private bool hasCollided = false;
+    Collision2D other;
 
 
     private void Start()
     {
         GetComponent<Rigidbody2D>().AddForce(transform.up * speed, ForceMode2D.Impulse);
+        PlayAudioDettached();
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnCollisionEnter2D(Collision2D collison)
     {
+
+        other = collison;
 
         if (other.gameObject.tag == "Small Debris")
         {
@@ -42,6 +56,10 @@ public class Projectile : MonoBehaviour
                 enemy.TakeDamage(damage);
             }
 
+
+            Invoke("Explode", explosionDelay);
+
+
             hasCollided = true;
         }
 
@@ -55,6 +73,27 @@ public class Projectile : MonoBehaviour
             var main = particleSystem.main;
             main.maxParticles = 20;
         }
+    }
+
+    void Explode()
+    {
+        var normalVector = other.GetContact(0).normal;
+
+        Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.Euler(normalVector));
+        Destroy(gameObject);
+    }
+
+    void PlayAudioDettached()
+    {
+        var audioGameObject = transform.Find("Audio").gameObject;
+        var audioSources = audioGameObject.GetComponents<AudioSource>();
+
+        foreach (var audio in audioSources)
+        {
+            audio.Play();
+        }
+
+        audioGameObject.transform.parent = null;
     }
 
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 749970746224313499}
   - component: {fileID: 749970746224313497}
   - component: {fileID: 749970746224313496}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: UnstableSpace_Shape3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
