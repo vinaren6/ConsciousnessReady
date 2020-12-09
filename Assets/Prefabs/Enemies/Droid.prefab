@@ -109,9 +109,9 @@ MonoBehaviour:
   target: {fileID: 0}
   RayDistance: 6.5
   TargetAvoidDistance: 1.75
-  CosisionAvoidDistance: 0.5
+  CosisionAvoidDistance: 0.6
   turnSpeed: 30
-  targetDistanceMultiplier: 0.1
+  targetDistanceMultiplier: 0.02
   fireDelay: 3
   bullet: {fileID: 4896796078918369617, guid: da315062692094e4b97e8bd615054a3e, type: 3}
   guns:
