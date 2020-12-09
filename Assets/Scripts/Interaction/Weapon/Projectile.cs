@@ -4,6 +4,9 @@ public class Projectile : MonoBehaviour
 {
     [Header("Base Settings")]
     [SerializeField]
+    private Transform raycast;
+
+    [SerializeField]
     private int damage = 40;
 
     [SerializeField]
@@ -21,9 +24,9 @@ public class Projectile : MonoBehaviour
     private float explosionDelay = 5.0f;
 
 
-
     private bool hasCollided = false;
-    Collision2D other;
+    private Collision2D other;
+    private RaycastHit2D hitPoint;
 
 
     private void Start()
@@ -34,8 +37,9 @@ public class Projectile : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collison)
     {
-
         other = collison;
+        hitPoint = Physics2D.Raycast(raycast.position, raycast.up);
+       
 
         if (other.gameObject.tag == "Small Debris")
         {
@@ -47,8 +51,6 @@ public class Projectile : MonoBehaviour
             transform.SetParent(other.transform);
             Destroy(GetComponent<Rigidbody2D>());
 
-            Invoke("DecreaseParticles", particlesLifetimeAfterCollision);
-
             Health enemy = other.gameObject.GetComponent<Health>();
 
             if (enemy != null)
@@ -56,9 +58,8 @@ public class Projectile : MonoBehaviour
                 enemy.TakeDamage(damage);
             }
 
-
+            Invoke("DecreaseParticles", particlesLifetimeAfterCollision);
             Invoke("Explode", explosionDelay);
-
 
             hasCollided = true;
         }
@@ -77,9 +78,7 @@ public class Projectile : MonoBehaviour
 
     void Explode()
     {
-        var normalVector = other.GetContact(0).normal;
-
-        Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.Euler(normalVector));
+        Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.LookRotation(hitPoint.normal));
         Destroy(gameObject);
     }
 
@@ -95,5 +94,6 @@ public class Projectile : MonoBehaviour
 
         audioGameObject.transform.parent = null;
     }
+
 
 }

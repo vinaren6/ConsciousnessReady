@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 2056442799533423709}
   - component: {fileID: 8473450205684349143}
   - component: {fileID: 8498582512745929260}
-  - component: {fileID: 4502766306781102816}
-  m_Layer: 0
+  - component: {fileID: 4002426362550261732}
+  m_Layer: 12
   m_Name: Ice Meteorite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,8 +106,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!60 &4502766306781102816
-PolygonCollider2D:
+--- !u!70 &4002426362550261732
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -120,29 +120,8 @@ PolygonCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.77}
-    newSize: {x: 0.64, y: 0.77}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.21761215, y: 0.33216342}
-      - {x: -0.044454873, y: 0.38248393}
-      - {x: -0.23219553, y: 0.31241986}
-      - {x: -0.27722758, y: 0.19261217}
-      - {x: -0.32754803, y: -0.048877865}
-      - {x: -0.22774047, y: -0.299455}
-      - {x: -0.11193927, y: -0.3638243}
-      - {x: 0.061874896, y: -0.382484}
-      - {x: 0.22697115, y: -0.27512822}
-      - {x: 0.28225952, y: -0.08951912}
-      - {x: 0.2817256, y: 0.020925775}
-      - {x: 0.33006412, y: 0.15184282}
+  m_Size: {x: 0.64, y: 0.77}
+  m_Direction: 0
 --- !u!1001 &2056442800804965639
 PrefabInstance:
   m_ObjectHideFlags: 0

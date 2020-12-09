@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8328997171980769902}
   - component: {fileID: 8328997171980769889}
-  - component: {fileID: 8328997171980769888}
   - component: {fileID: 8328997171980769891}
   - component: {fileID: 8328997171980769890}
+  - component: {fileID: 7623672596565828887}
   m_Layer: 12
   m_Name: EnginePart
   m_TagString: Small Debris
@@ -85,40 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &8328997171980769888
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8328997171980769903}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.32, y: 0.38}
-    newSize: {x: 0.32, y: 0.38}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -0.07, y: 0.19}
-      - {x: -0.089999996, y: 0.14999999}
-      - {x: -0.089999996, y: 0.03}
-      - {x: -0.06, y: -0.049999997}
-      - {x: -0.03, y: -0.08}
-      - {x: 0.089999996, y: -0.08}
-      - {x: 0.099999994, y: -0.07}
-      - {x: 0.099999994, y: 0.14999999}
-      - {x: 0.089999996, y: 0.19}
 --- !u!50 &8328997171980769891
 Rigidbody2D:
   serializedVersion: 4
@@ -159,3 +125,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &7623672596565828887
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8328997171980769903}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.012211084, y: 0.009436369}
+  serializedVersion: 2
+  m_Radius: 0.08176017
