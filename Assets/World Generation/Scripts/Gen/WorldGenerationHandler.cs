@@ -24,7 +24,8 @@ public class WorldGenerationHandler : MonoBehaviour
     public string debugData = "";
 
 
-    private void Awake() {
+    private void Awake()
+    {
         if (instance == null) {
             instance = this;
         } else {
@@ -39,39 +40,104 @@ public class WorldGenerationHandler : MonoBehaviour
         ScaleCemras();
     }
 
-    private void SeperateRules() {
+    private void SeperateRules()
+    {
         List<CellRules> cellRulesDefaltL = new List<CellRules>(), cellRulesOutpostL = new List<CellRules>(), cellRulesStartL = new List<CellRules>(), cellRulesEndL = new List<CellRules>();
 
+        //add baseRules
         foreach (CellRules rule in cellRules) {
             switch (rule.type) {
                 case Enum.CellType.Default:
-                cellRulesDefaltL.Add(rule);
-                break;
+                    cellRulesDefaltL.Add(rule);
+                    break;
 
                 case Enum.CellType.Outpost:
-                cellRulesOutpostL.Add(rule);
-                break;
+                    cellRulesOutpostL.Add(rule);
+                    break;
 
                 case Enum.CellType.Start:
-                cellRulesStartL.Add(rule);
-                break;
+                    cellRulesStartL.Add(rule);
+                    break;
 
                 case Enum.CellType.End:
-                cellRulesEndL.Add(rule);
-                break;
+                    cellRulesEndL.Add(rule);
+                    break;
             }
         }
+
+        //add filped rules
+        if (settings.AllowFilps)
+            foreach (CellRules rule in cellRules) {
+                switch (rule.type) {
+                    case Enum.CellType.Default:
+
+                        //flip X
+                        CellRules flipx = FlipX(rule);
+                        cellRulesDefaltL.Add(flipx);
+
+                        //flip Y
+                        cellRulesDefaltL.Add(FlipY(rule));
+
+                        //flip X & Y
+                        cellRulesDefaltL.Add(FlipY(flipx));
+
+                        break;
+                }
+            }
 
         cellsRulles[0] = cellRulesDefaltL.ToArray();
         cellsRulles[1] = cellRulesOutpostL.ToArray();
         cellsRulles[2] = cellRulesStartL.ToArray();
         cellsRulles[3] = cellRulesEndL.ToArray();
 
-
-
     }
 
-    private void GenerateGrid() {
+    private CellRules FlipX(CellRules value)
+    {
+        CellRules rule = value.Copy();
+        rule.flipX = !rule.flipX;
+
+        {
+            CellRules[] temp;
+
+            temp = rule.cellsDownLeft;
+            rule.cellsDownLeft = rule.cellsDownRight;
+            rule.cellsDownRight = temp;
+
+            temp = rule.cellsLeft;
+            rule.cellsLeft = rule.cellsRight;
+            rule.cellsRight = temp;
+
+            temp = rule.cellsUpLeft;
+            rule.cellsUpLeft = rule.cellsUpRight;
+            rule.cellsUpRight = temp;
+        }
+
+        return rule;
+    }
+
+    private CellRules FlipY(CellRules value)
+    {
+        CellRules rule = value.Copy();
+        rule.flipY = !rule.flipY;
+
+        {
+            CellRules[] temp;
+
+            temp = rule.cellsDownLeft;
+            rule.cellsDownLeft = rule.cellsUpLeft;
+            rule.cellsUpLeft = temp;
+
+            temp = rule.cellsDownRight;
+            rule.cellsDownRight = rule.cellsUpRight;
+            rule.cellsUpRight = temp;
+        }
+
+        return rule;
+    }
+
+    private void GenerateGrid()
+    {
         float degree = Random.Range(0f, Mathf.PI * 2f);
         float dist = Random.Range(settings.minMaxDistance.x, settings.minMaxDistance.y);
         worldSize = dist + settings.sizeOffset;
@@ -138,7 +204,8 @@ public class WorldGenerationHandler : MonoBehaviour
 
     }
 
-    private void GenerateCells() {
+    private void GenerateCells()
+    {
 
         int wSize = (int)(worldSize + 0.5f);
 
@@ -160,17 +227,17 @@ public class WorldGenerationHandler : MonoBehaviour
 
                     switch (world[x, y]) {
                         case 0:
-                        obj.name = $"{x},{y} Default";
-                        break;
+                            obj.name = $"{x},{y} Default";
+                            break;
                         case 1:
-                        obj.name = $"{x},{y} Outpost";
-                        break;
+                            obj.name = $"{x},{y} Outpost";
+                            break;
                         case 2:
-                        obj.name = $"{x},{y} Start";
-                        break;
+                            obj.name = $"{x},{y} Start";
+                            break;
                         case 3:
-                        obj.name = $"{x},{y} End";
-                        break;
+                            obj.name = $"{x},{y} End";
+                            break;
                     }
 
                 } else {
@@ -199,7 +266,7 @@ public class WorldGenerationHandler : MonoBehaviour
                     if (y != 0) {
                         if (x - (y + 1 & 1) != -1)
                             worldObjs[x, y].nabors[4] = worldObjs[x - (y + 1 & 1), y - 1];
-                        if (x + 1 - (y + 1 & 1 ) < wSize)
+                        if (x + 1 - (y + 1 & 1) < wSize)
                             worldObjs[x, y].nabors[5] = worldObjs[x + 1 - (y + 1 & 1), y - 1];
                     }
                 } catch (System.Exception e) {
@@ -209,14 +276,16 @@ public class WorldGenerationHandler : MonoBehaviour
         }
     }
 
-    private void ScaleCemras() {
-        float size = ((int)(worldSize + 0.5f)) * settings.gridSize /2f+ settings.gridSize;
+    private void ScaleCemras()
+    {
+        float size = ((int)(worldSize + 0.5f)) * settings.gridSize / 2f + settings.gridSize;
         foreach (Camera cam in camScale) {
             cam.orthographicSize = size;
         }
     }
 
-    public void Regenerate() {
+    public void Regenerate()
+    {
         Transform[] children = GetComponentsInChildren<Transform>();
         for (int i = 0; i < children.Length; i++) {
             if (children[i].gameObject != gameObject)
@@ -232,7 +301,8 @@ public class WorldGenerationHandler : MonoBehaviour
     }
 
 #if UNITY_EDITOR
-    private void OnDrawGizmos() {
+    private void OnDrawGizmos()
+    {
         if (Application.isPlaying) {
             Gizmos.color = Color.green;
             Gizmos.DrawWireSphere(new Vector3(), worldSize * settings.gridSize / 2);
@@ -241,7 +311,8 @@ public class WorldGenerationHandler : MonoBehaviour
         }
     }
 
-    private void DrawCros(int x, int y, Color color) {
+    private void DrawCros(int x, int y, Color color)
+    {
         Debug.DrawLine(
             new Vector2(x * settings.gridSize - worldSize * settings.gridSize / 2 + ((y & 1) * settings.gridSize / 2),
                         y * settings.gridSize - worldSize * settings.gridSize / 2),

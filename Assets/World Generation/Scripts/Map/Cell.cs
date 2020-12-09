@@ -169,6 +169,18 @@ public class Cell : MonoBehaviour
             s = SceneManager.GetSceneByBuildIndex(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id);
             GameObject[] objs = s.GetRootGameObjects();
             for (int i = 0; i < objs.Length; i++) {
+
+                //flip pos
+                objs[i].transform.position = new Vector3(
+                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.position.x : objs[i].transform.position.x,
+                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.position.y : objs[i].transform.position.y, 
+                    objs[i].transform.position.z);
+                //flip scale
+                objs[i].transform.localScale = new Vector3(
+                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.localScale.x : objs[i].transform.localScale.x,
+                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.localScale.y : objs[i].transform.localScale.y,
+                    objs[i].transform.localScale.z);
+
                 objs[i].transform.position += transform.position;
                 SceneManager.MoveGameObjectToScene(objs[i], scene);
             }
