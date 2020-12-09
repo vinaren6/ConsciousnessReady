@@ -70,6 +70,8 @@ public class WorldGenerationHandler : MonoBehaviour
             foreach (CellRules rule in cellRules) {
                 switch (rule.type) {
                     case Enum.CellType.Default:
+                        if (!rule.Allowflip)
+                            break;
 
                         //flip X
                         CellRules flipx = FlipX(rule);
