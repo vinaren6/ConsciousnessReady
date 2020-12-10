@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4604166331748993337}
   - component: {fileID: 4604166331748993336}
   - component: {fileID: 4604166331748993343}
+  - component: {fileID: -5416606427938862967}
   m_Layer: 13
   m_Name: Droid
   m_TagString: Untagged
@@ -172,6 +173,19 @@ PolygonCollider2D:
       - {x: 0.06, y: -0.31}
       - {x: 0.28, y: -0.15}
       - {x: 0.28, y: 0.178}
+--- !u!114 &-5416606427938862967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4604166331748993342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
 --- !u!1 &4604166332448363427
 GameObject:
   m_ObjectHideFlags: 0

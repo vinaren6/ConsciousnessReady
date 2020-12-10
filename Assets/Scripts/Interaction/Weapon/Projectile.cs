@@ -13,7 +13,10 @@ public class Projectile : MonoBehaviour
     private float speed = 30f;
 
     [SerializeField]
-    private float particlesLifetimeAfterCollision = 2.0f;
+    private float particlesLifetimeAfterCollision = 2f;
+
+    [SerializeField]
+    private float selfDestructTimer = 5f;
 
     [Header("Explosions")]
 
@@ -29,17 +32,22 @@ public class Projectile : MonoBehaviour
     private RaycastHit2D hitPoint;
 
 
+
     private void Start()
     {
         GetComponent<Rigidbody2D>().AddForce(transform.up * speed, ForceMode2D.Impulse);
         PlayAudioDettached();
+        Destroy(gameObject, selfDestructTimer);
     }
 
     private void OnCollisionEnter2D(Collision2D collison)
     {
         other = collison;
+
+        var collider = GetComponent<Collider2D>();
+        collider.enabled = false;
         hitPoint = Physics2D.Raycast(raycast.position, raycast.up);
-       
+        collider.enabled = true;
 
         if (other.gameObject.tag == "Small Debris")
         {
@@ -78,7 +86,9 @@ public class Projectile : MonoBehaviour
 
     void Explode()
     {
-        Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.LookRotation(hitPoint.normal));
+
+        Explosion explosion = Instantiate(impactExplosion, transform.position, transform.rotation);
+        //Explosion explosion = Instantiate(impactExplosion, hitPoint.point, Quaternion.Euler(hitPoint.normal));
         Destroy(gameObject);
     }
 
@@ -94,6 +104,7 @@ public class Projectile : MonoBehaviour
 
         audioGameObject.transform.parent = null;
     }
+
 
 
 }

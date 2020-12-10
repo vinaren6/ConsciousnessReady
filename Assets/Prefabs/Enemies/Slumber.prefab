@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 9116341808256541652}
   - component: {fileID: 3205817726819519950}
   - component: {fileID: -4431455858582830983}
+  - component: {fileID: 4183767491791854448}
   m_Layer: 13
   m_Name: Slumber
   m_TagString: Untagged
@@ -291,3 +292,16 @@ PolygonCollider2D:
     - - {x: 0.32835135, y: 0.75338554}
       - {x: 0.2899276, y: 0.6811383}
       - {x: 0.22204141, y: 0.6934375}
+--- !u!114 &4183767491791854448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9116341808256541643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
