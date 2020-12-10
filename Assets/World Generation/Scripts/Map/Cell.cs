@@ -144,7 +144,7 @@ public class Cell : MonoBehaviour
             for (int i = 0; i < objs.Length; i++) {
                 if (((1 << objs[i].layer) & WorldGenerationHandler.instance.settings.movebleObjs.value) == 1)
                     if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
-                        int sc = SceneManager.sceneCount-1;
+                        int sc = SceneManager.sceneCount - 1;
                         if (SceneManager.GetSceneAt(sc) == scene)
                             sc--;
                         SceneManager.MoveGameObjectToScene(objs[i], SceneManager.GetSceneAt(sc));
@@ -173,13 +173,14 @@ public class Cell : MonoBehaviour
                 //flip pos
                 objs[i].transform.position = new Vector3(
                     WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.position.x : objs[i].transform.position.x,
-                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.position.y : objs[i].transform.position.y, 
+                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.position.y : objs[i].transform.position.y,
                     objs[i].transform.position.z);
                 //flip scale
-                objs[i].transform.localScale = new Vector3(
-                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.localScale.x : objs[i].transform.localScale.x,
-                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.localScale.y : objs[i].transform.localScale.y,
-                    objs[i].transform.localScale.z);
+                if (objs[i].tag == "Environment")
+                    objs[i].transform.localScale = new Vector3(
+                        WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.localScale.x : objs[i].transform.localScale.x,
+                        WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.localScale.y : objs[i].transform.localScale.y,
+                        objs[i].transform.localScale.z);
 
                 objs[i].transform.position += transform.position;
                 SceneManager.MoveGameObjectToScene(objs[i], scene);
