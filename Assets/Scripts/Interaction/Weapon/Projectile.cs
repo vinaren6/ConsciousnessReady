@@ -44,11 +44,6 @@ public class Projectile : MonoBehaviour
     {
         other = collison;
 
-        var collider = GetComponent<Collider2D>();
-        collider.enabled = false;
-        hitPoint = Physics2D.Raycast(raycast.position, raycast.up);
-        collider.enabled = true;
-
         if (other.gameObject.tag == "Small Debris")
         {
             Physics2D.IgnoreCollision(other.collider, GetComponent<Collider2D>());
@@ -86,9 +81,10 @@ public class Projectile : MonoBehaviour
 
     void Explode()
     {
+        float angle = (Mathf.Atan2(-other.contacts[0].normal.y, -other.contacts[0].normal.x) * Mathf.Rad2Deg ) - 90;
 
-        Explosion explosion = Instantiate(impactExplosion, transform.position, transform.rotation);
-        //Explosion explosion = Instantiate(impactExplosion, hitPoint.point, Quaternion.Euler(hitPoint.normal));
+        Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
+
         Destroy(gameObject);
     }
 
