@@ -76,8 +76,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567801655
+  m_SortingLayer: 7
   m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 826d3dfac2fd7d8419fac9472d145e53, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -110,11 +110,11 @@ MonoBehaviour:
   acceleration: 13
   target: {fileID: 0}
   RayDistance: 6.5
-  TargetAvoidDistance: 1.75
-  CosisionAvoidDistance: 0.6
+  TargetAvoidDistance: 5
+  CosisionAvoidDistance: 3
   turnSpeed: 30
   targetDistanceMultiplier: 0.02
-  fireDelay: 3
+  fireDelay: 1
   bullet: {fileID: 4896796078918369617, guid: da315062692094e4b97e8bd615054a3e, type: 3}
   guns:
   - {fileID: 4604166333092657181}
@@ -185,7 +185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
+  health: 75
 --- !u!1 &4604166332448363427
 GameObject:
   m_ObjectHideFlags: 0

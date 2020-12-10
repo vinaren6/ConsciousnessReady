@@ -15,6 +15,9 @@ MonoBehaviour:
   title: Blackhole
   type: 0
   id: 3
+  Allowflip: 0
+  flipX: 0
+  flipY: 0
   preview: {fileID: 2800000, guid: 105d59ad171f17f4684b249079d257a2, type: 3}
   cellsUpLeft: []
   cellsUpRight: []

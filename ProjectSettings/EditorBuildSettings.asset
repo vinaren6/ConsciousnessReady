@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/World Generation/Scenes/WorldGeneration.unity
     guid: 64090f8b4092a054db321e963b51c90a
   - enabled: 1
-    path: Assets/World Generation/Cells/Start/StartCell.unity
+    path: Assets/World Generation/Cells/StartCell.unity
     guid: 3edb4d0ad1b897b44a63a69acf79ca3c
   - enabled: 1
     path: Assets/World Generation/Cells/Astroids Cell.unity
@@ -35,5 +35,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/World Generation/Cells/Droid Cell.unity
     guid: d3be0b24509ad6e458f53b4fbb5a5377
+  - enabled: 1
+    path: Assets/World Generation/Cells/Sanctuary Outpost Cell.unity
+    guid: 001de0218ce96a04da20617569056717
+  - enabled: 1
+    path: Assets/World Generation/Cells/Unstable Space Cell.unity
+    guid: cad670ebe4f2fa84c8dbd4be02be5f6d
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1a2775d9a73d2a44c8d13cc8fe914045, type: 2}

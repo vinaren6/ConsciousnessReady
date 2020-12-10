@@ -71,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1450122937
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ae1c38ca84316bc4182369d22600e1b1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -109,22 +109,19 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.6846385, y: -0.17507543}
-      - {x: 0.74786747, y: -0.04408919}
-      - {x: 0.7254509, y: 0.10013091}
-      - {x: 0.6590291, y: 0.14875624}
-      - {x: 0.04239832, y: 0.21306802}
-      - {x: -0.36718103, y: 0.17249554}
-      - {x: -0.6961275, y: 0.12451044}
-      - {x: -0.74435294, y: 0.066284746}
-      - {x: -0.74524033, y: -0.09362304}
-      - {x: -0.68902975, y: -0.180721}
-      - {x: -0.18812619, y: -0.12950273}
-      - {x: 0.053986985, y: -0.26231143}
-      - {x: 0.17813951, y: -0.16430251}
-      - {x: 0.2190698, y: -0.1297678}
-    - - {x: 0.4963652, y: -0.06087014}
-      - {x: 0.5001662, y: 0.03263267}
+    - - {x: 0.32359585, y: -0.023482198}
+      - {x: 0.3086734, y: 0.19161996}
+      - {x: 0.22957113, y: 0.23113541}
+      - {x: 0.1473184, y: 0.20785755}
+      - {x: -0.40290192, y: 0.1339288}
+      - {x: -0.46220812, y: 0.060893163}
+      - {x: -0.45197138, y: -0.102997676}
+      - {x: -0.3973184, y: -0.18323994}
+      - {x: 0.106221944, y: -0.1322868}
+      - {x: 0.20313878, y: -0.16858436}
+    - - {x: 0.235, y: 0.16}
+      - {x: 0.195, y: 0.13}
+      - {x: 0.205, y: 0.11}
 --- !u!50 &8101499108704856655
 Rigidbody2D:
   serializedVersion: 4
@@ -137,9 +134,9 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 4
-  m_LinearDrag: 5
-  m_AngularDrag: 1
+  m_Mass: 5
+  m_LinearDrag: 3
+  m_AngularDrag: 1.5
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0

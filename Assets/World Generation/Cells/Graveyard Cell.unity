@@ -521,7 +521,8 @@ GameObject:
   - component: {fileID: 59875818}
   - component: {fileID: 59875820}
   - component: {fileID: 59875819}
-  m_Layer: 0
+  - component: {fileID: 59875821}
+  m_Layer: 13
   m_Name: Rippler (Placeholder) 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -598,8 +599,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567801655
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ffd6d1b22de16ed458c1f59b3f24a258, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -612,6 +613,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &59875821
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59875817}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.014533281, y: 0.006228566}
+  m_Size: {x: 1.0134878, y: 1.297394}
+  m_Direction: 0
 --- !u!1001 &70353288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3234,7 +3251,8 @@ GameObject:
   - component: {fileID: 797774528}
   - component: {fileID: 797774527}
   - component: {fileID: 797774526}
-  m_Layer: 0
+  - component: {fileID: 797774529}
+  m_Layer: 13
   m_Name: Rippler (Placeholder)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3297,8 +3315,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567801655
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: ffd6d1b22de16ed458c1f59b3f24a258, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3325,6 +3343,22 @@ Transform:
   m_Father: {fileID: 2061184305}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &797774529
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797774525}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.014533281, y: 0.006228566}
+  m_Size: {x: 1.0134878, y: 1.297394}
+  m_Direction: 0
 --- !u!1 &807243404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3381270748263085729, guid: 8c39713449cb97f4e863a55714487c98, type: 3}
@@ -4780,7 +4814,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 855453354}
-  m_Father: {fileID: 1920487922}
+  m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1291246931 stripped
@@ -6849,38 +6883,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3912060917718468850, guid: 3501216b498c57c4fbf601402ec1f9d9, type: 3}
   m_PrefabInstance: {fileID: 211720420}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1920487921
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1920487922}
-  m_Layer: 12
-  m_Name: StartCell
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1920487922
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1920487921}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1280964848}
-  - {fileID: 2061184305}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1926141181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3381270748263085729, guid: 8c39713449cb97f4e863a55714487c98, type: 3}
@@ -7741,7 +7743,7 @@ Transform:
   - {fileID: 187565104}
   - {fileID: 797774528}
   - {fileID: 59875818}
-  m_Father: {fileID: 1920487922}
+  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2080631197

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3651940100266763328}
   - component: {fileID: 3651940100266763329}
   - component: {fileID: 3651940100266763330}
+  - component: {fileID: 9046946532126105153}
   m_Layer: 13
   m_Name: Goo
   m_TagString: Untagged
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1567801655
-  m_SortingLayer: 6
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 3100858916107877502, guid: 723a0496dce80b9499968dbefdd553f7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -102,3 +103,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &9046946532126105153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3651940100266763331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c9b71272d4af524f93b9208a7a6b813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

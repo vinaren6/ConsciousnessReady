@@ -7,6 +7,7 @@ TagManager:
   - BackgroundController
   - Enemy Bullet
   - Small Debris
+  - Player Bullets
   layers:
   - Default
   - TransparentFX
@@ -53,6 +54,9 @@ TagManager:
   - name: Hazards
     uniqueID: 3430918519
     locked: 0
+  - name: Projectiles & Explosions
+    uniqueID: 1683445637
+    locked: 0
   - name: Environment
     uniqueID: 1450122937
     locked: 0
@@ -61,7 +65,4 @@ TagManager:
     locked: 0
   - name: Enemies
     uniqueID: 1567801655
-    locked: 0
-  - name: Projectiles
-    uniqueID: 1683445637
     locked: 0

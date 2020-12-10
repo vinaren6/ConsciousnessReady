@@ -214,12 +214,12 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 5943
-  maxSpeed: 5
+  maxSpeed: 10
   acceleration: 30
   target: {fileID: 0}
   RayDistance: 6.5
-  TargetAvoidDistance: 6
-  CosisionAvoidDistance: 1
+  TargetAvoidDistance: 3
+  CosisionAvoidDistance: 0
   turnSpeed: 20
   targetDistanceMultiplier: 0
   fireDelay: 3
@@ -237,7 +237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 200
 --- !u!1 &6465492491733383185
 GameObject:
   m_ObjectHideFlags: 0
