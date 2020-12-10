@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 7927683191028843585}
   - component: {fileID: 7927683191028843587}
   - component: {fileID: 859759295}
+  - component: {fileID: 3846221743829937922}
   m_Layer: 11
   m_Name: PlayerShip_Animated
   m_TagString: Player
@@ -379,15 +380,6 @@ MonoBehaviour:
   newRotation: 1
   propulsion: {fileID: 7927683192662318536}
   ship: {fileID: 7927683191028843614}
-  projectile: {fileID: 0}
-  shoot:
-    m_Name: 
-    m_Type: 0
-    m_ExpectedControlType: 
-    m_Id: 6c73981b-ec8d-4a79-8524-0a3d134dcf62
-    m_Processors: 
-    m_Interactions: 
-    m_SingletonActionBindings: []
 --- !u!50 &7927683191028843585
 Rigidbody2D:
   serializedVersion: 4
@@ -484,6 +476,38 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Fire Button
       m_Flags: 0
+--- !u!114 &3846221743829937922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7927683191028843613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18e2f51932c2e0a4bb8ef50f6ca037ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  projectileSpeed: 0.001
+  shoot:
+    m_Name: Shoot
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 9095914a-5504-4cb8-990d-e6dbee88fb2d
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: bcb4c29b-a9c5-46b4-9ad9-6d2f1a075297
+      m_Path: <Keyboard>/k
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shoot
+      m_Flags: 0
+  gun: {fileID: 1940802446}
+  coolDown: 1.1
+  projectile: {fileID: 6156724797011963483, guid: bcf64b62fa8540d46b6ef7946fa3eaad, type: 3}
 --- !u!1 &7927683192662318534
 GameObject:
   m_ObjectHideFlags: 0
