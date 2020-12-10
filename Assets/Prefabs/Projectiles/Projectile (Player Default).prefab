@@ -177,13 +177,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a49b50c3647caa648be9c0d4ef0570de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vx: 0
-  vy: 0
-  vz: 0.5
   raycast: {fileID: 6471075452721292861}
   damage: 40
   speed: 30
   particlesLifetimeAfterCollision: 2
+  selfDestructTimer: 2
   impactExplosion: {fileID: 4738890249466388025, guid: ac106b06d38b8984b9ca066a51dea439, type: 3}
   explosionDelay: 0
 --- !u!1 &8088132721112133516
