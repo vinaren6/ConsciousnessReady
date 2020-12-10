@@ -39,9 +39,8 @@ public class PlayerMovement : MonoBehaviour
     //statice refrence to the player obj.
     static public GameObject playerObj;
 
-    //for testing dragger
-    public GameObject projectile;
-    [SerializeField] private InputAction shoot;
+
+    
     private void Awake()
     {
         playerObj = gameObject;
@@ -49,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        shoot.Enable();
+       
        
 
 
@@ -123,13 +122,8 @@ public class PlayerMovement : MonoBehaviour
 
         };
         slowInput.canceled += context => { maxSpeed = maxSpeedValue; };
-        shoot.performed += context =>
-        {
-            Debug.Log("test");
-            GameObject bullet = Instantiate(projectile, transform.position , Quaternion.identity) as GameObject;
-            bullet.GetComponent<Rigidbody2D>().AddForce(transform.forward * 10);
-        };
-        slowInput.canceled += context => Debug.Log("hi");
+      
+      
     }
     private void Update()
     {
@@ -166,10 +160,32 @@ public class PlayerMovement : MonoBehaviour
         {
 
             float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-            //Debug.Log(angle);
+
             moveDirectioJoyCon = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+
             transform.rotation = moveDirectioJoyCon;
-            // Debug.Log(Quaternion.AngleAxis(angle + 90, Vector3.forward).z + "  " + Quaternion.AngleAxis(angle + 90, Vector3.forward).w);
+            float rotationDirection = Camera.main.transform.eulerAngles.z + angle + 90;
+            if (rotationDirection < 0)
+            {
+                rotationDirection = 360 + rotationDirection;
+            }
+            float angleMovement = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
+            float movementDirection = Camera.main.transform.eulerAngles.z + angleMovement + 90;
+            if (movementDirection < 0)
+            {
+                movementDirection = 360 + movementDirection;
+            }
+ 
+            if (movementDirection - rotationDirection <= -90 || movementDirection - rotationDirection >= 90)
+            {
+      
+                propulsion.SetBool("MovingBackwards", true);
+            }
+            else
+            {
+                propulsion.SetBool("MovingBackwards", false);
+            }
+            
 
         }
         if (newRotation)
@@ -177,7 +193,7 @@ public class PlayerMovement : MonoBehaviour
 
             if (moveDirection == Vector2.zero)
             {
-
+                propulsion.SetBool("MovingBackwards", false);
 
 
 
@@ -199,7 +215,6 @@ public class PlayerMovement : MonoBehaviour
                     if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
                     {
 
-                        //Debug.Log(newRotation - eulerRotation.z);
                         if (eulerRotation.z > 359)
                         {
                             transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
@@ -210,7 +225,7 @@ public class PlayerMovement : MonoBehaviour
                             transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 358);
                             eulerRotation = transform.rotation.eulerAngles;
                         }
-                        if ((newRotation - eulerRotation.z < 180 && newRotation - eulerRotation.z > 0) || newRotation - eulerRotation.z < -180)
+                        if ((newRotation - eulerRotation.z <= 180 && newRotation - eulerRotation.z >= 0) || newRotation - eulerRotation.z <= -180)
                         {
                             float test1 = newRotation - eulerRotation.z;
                             
@@ -224,9 +239,8 @@ public class PlayerMovement : MonoBehaviour
                             }
                             test1 = test1 * rotationAcceleration;
 
-                            if (eulerRotation.z + rotationSpeed * test1 * Time.deltaTime > newRotation && eulerRotation.z < newRotation + 180)
+                            if (eulerRotation.z + rotationSpeed * test1 * Time.deltaTime - newRotation > -0.5f && eulerRotation.z < newRotation + 180)
                             {
-                                Debug.Log("hello");
                                 transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
                             }
                             else
@@ -245,9 +259,9 @@ public class PlayerMovement : MonoBehaviour
                                 test1 = test1 / 100 + 1;
                             test1 = test1 * rotationAcceleration;
 
-                            if (eulerRotation.z - rotationSpeed * test1 * Time.deltaTime < newRotation && eulerRotation.z> newRotation - 180)
+                            if (eulerRotation.z - rotationSpeed * test1 * Time.deltaTime - newRotation < 0.5f && eulerRotation.z> newRotation - 180)
                             {
-                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
+                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y,(int) newRotation);
                             }
                             else
                             {
@@ -263,7 +277,6 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            Debug.Log("hi");
             var dir = rb2d.velocity;
             var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
@@ -284,10 +297,9 @@ public class PlayerMovement : MonoBehaviour
 
         if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed * boost)
         {
-            // movement = movement.normalized;
-            // Debug.Log(movement.x);
+       
             rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boost * Time.fixedDeltaTime, ForceMode2D.Impulse);
-            //  Debug.Log(rb2d.velocity.x);
+       
 
 
         }
