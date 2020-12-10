@@ -6,6 +6,7 @@ TagManager:
   tags:
   - BackgroundController
   - Enemy Bullet
+  - Small Debris
   layers:
   - Default
   - TransparentFX
@@ -21,9 +22,9 @@ TagManager:
   - Player
   - Environment
   - Enemies
-  - 
-  - 
-  - 
+  - Projectiles
+  - Hazards
+  - Map
   - 
   - 
   - 

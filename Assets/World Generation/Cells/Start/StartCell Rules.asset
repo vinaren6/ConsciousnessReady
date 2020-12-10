@@ -15,6 +15,9 @@ MonoBehaviour:
   title: StartCell
   type: 2
   id: 1
+  Allowflip: 0
+  flipX: 0
+  flipY: 0
   preview: {fileID: 2800000, guid: 5dcfe206237224d43be19b6919bb60e3, type: 3}
   cellsUpLeft: []
   cellsUpRight: []

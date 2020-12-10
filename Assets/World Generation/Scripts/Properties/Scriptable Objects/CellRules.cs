@@ -7,6 +7,13 @@ public class CellRules : ScriptableObject
     public Enum.CellType type;
     public int id;
 
+    public bool Allowflip = true;
+
+    [HideInInspector]
+    public bool flipX = false;
+    [HideInInspector]
+    public bool flipY = false;
+
 #if UNITY_EDITOR
     public Texture2D preview;
 #endif
@@ -15,5 +22,20 @@ public class CellRules : ScriptableObject
 
     public override string ToString() {
         return title;
+    }
+    public CellRules Copy()
+    {
+        CellRules rule = ScriptableObject.CreateInstance("CellRules") as CellRules;
+        rule.title = title;
+        rule.id = id;
+
+        rule.cellsUpLeft = cellsUpLeft;
+        rule.cellsUpRight = cellsUpRight;
+        rule.cellsLeft = cellsLeft;
+        rule.cellsRight = cellsRight;
+        rule.cellsDownLeft = cellsDownLeft;
+        rule.cellsDownRight = cellsDownRight;
+
+        return rule;
     }
 }

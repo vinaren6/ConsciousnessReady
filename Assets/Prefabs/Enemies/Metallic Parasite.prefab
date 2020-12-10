@@ -12,8 +12,9 @@ GameObject:
   - component: {fileID: 8197598952299382071}
   - component: {fileID: 8197598952299382068}
   - component: {fileID: 8197598952299382069}
-  m_Layer: 0
-  m_Name: Metallic Parasite 1
+  - component: {fileID: 8688143678585685962}
+  m_Layer: 13
+  m_Name: Metallic Parasite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,3 +120,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.23
+--- !u!114 &8688143678585685962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8197598952299382066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50

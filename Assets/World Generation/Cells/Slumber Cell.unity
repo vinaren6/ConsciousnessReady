@@ -287,6 +287,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Slumber (Purple)
       objectReference: {fileID: 0}
+    - target: {fileID: 5455490478731181620, guid: 39664158583b4a849929e10e14911e74, type: 3}
+      propertyPath: m_Layer
+      value: 13
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 39664158583b4a849929e10e14911e74, type: 3}
 --- !u!1001 &9116341807901720069
@@ -303,6 +307,10 @@ PrefabInstance:
     - target: {fileID: 9116341808256541643, guid: b1dfd406395c9ad408510d924e6e75f2, type: 3}
       propertyPath: m_Name
       value: Slumber
+      objectReference: {fileID: 0}
+    - target: {fileID: 9116341808256541643, guid: b1dfd406395c9ad408510d924e6e75f2, type: 3}
+      propertyPath: m_Layer
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 9116341808256541653, guid: b1dfd406395c9ad408510d924e6e75f2, type: 3}
       propertyPath: m_RootOrder
