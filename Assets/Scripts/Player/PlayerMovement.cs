@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float acceleration = 2f;
     [SerializeField] private float slowSpeed = 2f;
     [SerializeField]  private bool newRotation;
+    [SerializeField] private bool alwaysBoost;
+
     Vector2 movement;
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
@@ -118,7 +120,11 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                isBoost = false;
+                if (!alwaysBoost)
+                {
+                    isBoost = false;
+                }
+                
             }
             
         };
@@ -153,7 +159,7 @@ public class PlayerMovement : MonoBehaviour
         if (isBoost)
         {
             boostTimer -= Time.deltaTime;
-            if (boostTimer <= 0)
+            if (boostTimer <= 0 && !alwaysBoost)
             {
                 isBoost = false;
             }
