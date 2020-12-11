@@ -240,6 +240,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  explosion: {fileID: 0}
 --- !u!1 &6465492491733383185
 GameObject:
   m_ObjectHideFlags: 0
