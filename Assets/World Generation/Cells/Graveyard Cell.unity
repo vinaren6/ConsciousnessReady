@@ -522,6 +522,7 @@ GameObject:
   - component: {fileID: 59875820}
   - component: {fileID: 59875819}
   - component: {fileID: 59875821}
+  - component: {fileID: 59875822}
   m_Layer: 13
   m_Name: Rippler (Placeholder) 2
   m_TagString: Untagged
@@ -629,6 +630,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.014533281, y: 0.006228566}
   m_Size: {x: 1.0134878, y: 1.297394}
   m_Direction: 0
+--- !u!114 &59875822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 59875817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
 --- !u!1001 &70353288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3252,6 +3266,7 @@ GameObject:
   - component: {fileID: 797774527}
   - component: {fileID: 797774526}
   - component: {fileID: 797774529}
+  - component: {fileID: 797774530}
   m_Layer: 13
   m_Name: Rippler (Placeholder)
   m_TagString: Untagged
@@ -3359,6 +3374,19 @@ CapsuleCollider2D:
   m_Offset: {x: 0.014533281, y: 0.006228566}
   m_Size: {x: 1.0134878, y: 1.297394}
   m_Direction: 0
+--- !u!114 &797774530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797774525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
 --- !u!1 &807243404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3381270748263085729, guid: 8c39713449cb97f4e863a55714487c98, type: 3}
