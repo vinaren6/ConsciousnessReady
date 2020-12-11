@@ -518,6 +518,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Shoot
       m_Flags: 0
+    - m_Name: 
+      m_Id: a170522a-d0a4-4e45-b9da-cfe8ade4d24a
+      m_Path: 
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shoot
+      m_Flags: 0
   boostSpeed: 2
   boostTimerLengt: 20
   rotationAcceleration: 10
@@ -658,7 +666,7 @@ MonoBehaviour:
     m_SingletonActionBindings:
     - m_Name: 
       m_Id: bcb4c29b-a9c5-46b4-9ad9-6d2f1a075297
-      m_Path: <Keyboard>/k
+      m_Path: <Mouse>/rightButton
       m_Interactions: 
       m_Processors: 
       m_Groups: 

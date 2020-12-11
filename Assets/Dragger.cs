@@ -21,17 +21,20 @@ public class Dragger : MonoBehaviour
     }
      void OnCollisionEnter2D(Collision2D collision)
     {
-        if (!isCoolided)
+        if (collision.gameObject.layer != 13)
         {
-            Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
-            Destroy(GetComponent<BoxCollider2D>());
-            collision.gameObject.transform.SetParent(transform);
-            if (collision.transform.GetComponent<Dragger>() != null)
+            if (!isCoolided)
             {
-                Destroy(collision.transform.GetComponent<Dragger>());
+                Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
+                Destroy(GetComponent<BoxCollider2D>());
+                collision.gameObject.transform.SetParent(transform);
+                if (collision.transform.GetComponent<Dragger>() != null)
+                {
+                    Destroy(collision.transform.GetComponent<Dragger>());
+                }
+
+                isCoolided = true;
             }
-          
-            isCoolided = true;
         }
        // Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
         GetComponent<Rigidbody2D>().velocity = velocity;
