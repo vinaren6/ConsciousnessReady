@@ -17,8 +17,8 @@ public class AI : MonoBehaviour
     Rigidbody2D rb2d;
 
     [SerializeField]
-    Transform target;
-    Rigidbody2D targetRB2D;
+    private Transform target;
+    private Rigidbody2D targetRB2D;
 
     [SerializeField]
     private float RayDistance = 6.5f;
@@ -43,16 +43,16 @@ public class AI : MonoBehaviour
     [Space(10)]
     [Header("Guns")]
     [SerializeField]
-    float fireDelay = 3f;
+    private float fireDelay = 3f;
     [SerializeField]
-    float MaxOffsetInDegreeToFire = 45;
+    private float MaxOffsetInDegreeToFire = 45;
     [SerializeField]
-    GameObject bullet;
+    private GameObject bullet;
     [SerializeField]
-    Transform[] guns;
+    private Transform[] guns;
 
-    float activeFireDelay = 1f;
-    bool skip = false;
+    private float activeFireDelay = 1f;
+    private bool skip = false;
 
 
     [System.Flags]
