@@ -176,7 +176,7 @@ public class Cell : MonoBehaviour
                     WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.position.y : objs[i].transform.position.y,
                     objs[i].transform.position.z);
                 //flip scale
-                if (objs[i].tag == "Environment")
+                if (objs[i].layer == 12)
                     objs[i].transform.localScale = new Vector3(
                         WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.localScale.x : objs[i].transform.localScale.x,
                         WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.localScale.y : objs[i].transform.localScale.y,
