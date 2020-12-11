@@ -1,28 +1,32 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     [SerializeField]
     private float health = 100f;
 
-    //[SerializeField]
-    //private float deathEffect;
+    [SerializeField]
+    private Explosion explosion;
+
 
     public void TakeDamage(int damage)
     {
         health -= damage;
 
-        if (health <= 0 )
+        if (health <= 0)
         {
             Die();
         }
     }
 
 
-    void Die ()
+    void Die()
     {
+        if (explosion != null)
+        {
+            Instantiate(explosion, transform.position, transform.rotation);
+        }
+
         Destroy(gameObject);
     }
 }
