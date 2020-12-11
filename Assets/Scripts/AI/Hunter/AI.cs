@@ -32,6 +32,8 @@ public class AI : MonoBehaviour
     private float turning;
     [SerializeField]
     private float turnSpeed = 20f;
+    [SerializeField]
+    private float smoothTurnSpeed = 25f;
 
     [SerializeField]
     private float targetDistanceMultiplier = 0.1f;
@@ -43,12 +45,15 @@ public class AI : MonoBehaviour
     [SerializeField]
     float fireDelay = 3f;
     [SerializeField]
+    float MaxOffsetInDegreeToFire = 45;
+    [SerializeField]
     GameObject bullet;
     [SerializeField]
     Transform[] guns;
 
     float activeFireDelay = 1f;
     bool skip = false;
+
 
     [System.Flags]
     enum Behavor
@@ -60,6 +65,7 @@ public class AI : MonoBehaviour
         Kamikaze = 1 << 3,
         AntiStuck = 1 << 4,
         SmoothTracking = 1 << 5,
+        DontFireIfBlocked = 1 << 6,
         Everything = ~0
     }
 
@@ -112,8 +118,7 @@ public class AI : MonoBehaviour
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             angle -= 90;
             if (behavor.HasFlag(Behavor.SmoothTracking)) {
-                oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
-                transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
+                SmoothRoot(angle);
             } else
                 transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
 
@@ -122,8 +127,7 @@ public class AI : MonoBehaviour
             float angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
             angle += 90;
             if (behavor.HasFlag(Behavor.SmoothTracking)) {
-                oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - Time.fixedDeltaTime * turnSpeed, oldAngle + Time.fixedDeltaTime * turnSpeed);
-                transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
+                SmoothRoot(angle);
             } else
                 transform.rotation = Quaternion.AngleAxis(angle + turning, Vector3.forward);
         }
@@ -202,20 +206,29 @@ public class AI : MonoBehaviour
             //fire at target
             activeFireDelay -= Time.fixedDeltaTime;
             if (activeFireDelay < 0) {
-                if ((turning < 45 || turning < -315) && (turning > -45 || turning > 315)) {
-                    RaycastHit2D hitFire = Physics2D.Raycast(transform.position, transform.up, dist, layerMask);
-                    if (hitFire.distance == 0) {
-                        activeFireDelay = fireDelay;
-                        skip = true;
-                        foreach (Transform gun in guns) {
-                            Instantiate(bullet, gun.position, gun.rotation);
+                if ((turning < MaxOffsetInDegreeToFire || turning < MaxOffsetInDegreeToFire - 360) && (turning > -MaxOffsetInDegreeToFire || turning > 360 - MaxOffsetInDegreeToFire)) {
+                    if (behavor.HasFlag(Behavor.DontFireIfBlocked)) {
+                        RaycastHit2D hitFire = Physics2D.Raycast(transform.position, transform.up, dist, layerMask);
+                        if (hitFire.distance != 0) {
+                            return;
                         }
+                    }
+                    activeFireDelay = fireDelay;
+                    skip = true;
+                    foreach (Transform gun in guns) {
+                        Instantiate(bullet, gun.position, gun.rotation);
                     }
                 }
             }
         }
     }
 
+    private void SmoothRoot(float angle)
+    {
+        float detaTurn = Time.fixedDeltaTime * smoothTurnSpeed;
+        oldAngle = Mathf.Clamp(angle * 0.05f + oldAngle * 0.95f, oldAngle - detaTurn, oldAngle + detaTurn);
+        transform.rotation = Quaternion.AngleAxis(oldAngle + turning, Vector3.forward);
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.transform.tag == "Enemy Bullet") {
