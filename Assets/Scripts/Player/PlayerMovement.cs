@@ -133,11 +133,7 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
-        if (shoot.ReadValue<float>() == 1) {
-            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
-            Vector2 direction = (testi - (Vector2)transform.position).normalized;
-            transform.up = direction;
-        }
+        
 
       
 
@@ -171,133 +167,142 @@ public class PlayerMovement : MonoBehaviour
             }
             
         }
-      
-            if (moveDirection   != Vector2.zero)
+        if (shoot.ReadValue<float>() == 1)
         {
-
-            float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-
-            moveDirectioJoyCon = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-
-            transform.rotation = moveDirectioJoyCon;
-            float rotationDirection = Camera.main.transform.eulerAngles.z + angle + 90;
-            if (rotationDirection < 0)
-            {
-                rotationDirection = 360 + rotationDirection;
-            }
-            float angleMovement = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
-            float movementDirection = Camera.main.transform.eulerAngles.z + angleMovement + 90;
-            if (movementDirection < 0)
-            {
-                movementDirection = 360 + movementDirection;
-            }
- 
-            if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) || (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
-            {
-      
-                propulsion.SetBool("MovingBackwards", true);
-            }
-            else
-            {
-                propulsion.SetBool("MovingBackwards", false);
-            }
-            
-
+            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
+            Vector2 direction = (testi - (Vector2)transform.position).normalized;
+            transform.up = direction;
         }
-        if (newRotation)
+        else
         {
 
-            if (moveDirection == Vector2.zero)
+
+            if (moveDirection != Vector2.zero)
             {
-                propulsion.SetBool("MovingBackwards", false);
 
+                float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
 
+                moveDirectioJoyCon = Quaternion.AngleAxis(angle + 90, Vector3.forward);
 
-                if (movement != Vector2.zero)
+                transform.rotation = moveDirectioJoyCon;
+                float rotationDirection = Camera.main.transform.eulerAngles.z + angle + 90;
+                if (rotationDirection < 0)
+                {
+                    rotationDirection = 360 + rotationDirection;
+                }
+                float angleMovement = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
+                float movementDirection = Camera.main.transform.eulerAngles.z + angleMovement + 90;
+                if (movementDirection < 0)
+                {
+                    movementDirection = 360 + movementDirection;
+                }
+
+                if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) || (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
                 {
 
+                    propulsion.SetBool("MovingBackwards", true);
+                }
+                else
+                {
+                    propulsion.SetBool("MovingBackwards", false);
+                }
 
-                    float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
 
-                    Quaternion test = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+            }
+            if (newRotation)
+            {
 
-                    float newRotation = Camera.main.transform.eulerAngles.z + angle + 90;
-                    if (newRotation < 0)
+                if (moveDirection == Vector2.zero)
+                {
+                    propulsion.SetBool("MovingBackwards", false);
+
+
+
+                    if (movement != Vector2.zero)
                     {
-                        newRotation = 360 + newRotation;
-                    }
 
-                    Vector3 eulerRotation = transform.rotation.eulerAngles;
-                    if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
-                    {
 
-                        if (eulerRotation.z > 359)
+                        float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
+
+                        Quaternion test = Quaternion.AngleAxis(angle + 90, Vector3.forward);
+
+                        float newRotation = Camera.main.transform.eulerAngles.z + angle + 90;
+                        if (newRotation < 0)
                         {
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
-                            eulerRotation = transform.rotation.eulerAngles;
+                            newRotation = 360 + newRotation;
                         }
-                        if (eulerRotation.z < 0)
+
+                        Vector3 eulerRotation = transform.rotation.eulerAngles;
+                        if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
                         {
-                            transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 358);
-                            eulerRotation = transform.rotation.eulerAngles;
-                        }
-                        if ((newRotation - eulerRotation.z <= 180 && newRotation - eulerRotation.z >= 0) || newRotation - eulerRotation.z <= -180)
-                        {
-                            float test1 = newRotation - eulerRotation.z;
-                            
-                            if (test1 < -180)
+
+                            if (eulerRotation.z > 359)
                             {
-                                test1 = 1 + (180 - Mathf.Abs(test1 + 180)) / 100;
+                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
+                                eulerRotation = transform.rotation.eulerAngles;
                             }
-                            else
+                            if (eulerRotation.z < 0)
                             {
+                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 358);
+                                eulerRotation = transform.rotation.eulerAngles;
+                            }
+                            if ((newRotation - eulerRotation.z <= 180 && newRotation - eulerRotation.z >= 0) || newRotation - eulerRotation.z <= -180)
+                            {
+                                float test1 = newRotation - eulerRotation.z;
+
+                                if (test1 < -180)
+                                {
+                                    test1 = 1 + (180 - Mathf.Abs(test1 + 180)) / 100;
+                                }
+                                else
+                                {
+                                    test1 = test1 / 100 + 1;
+                                }
+                                test1 = test1 * rotationAcceleration;
+
+                                if (eulerRotation.z + rotationSpeed * test1 * Time.deltaTime - newRotation > -0.5f && eulerRotation.z < newRotation + 180)
+                                {
+                                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
+                                }
+                                else
+                                {
+                                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + rotationSpeed * test1 * Time.deltaTime);
+                                }
+
+
+
+                            }
+                            else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
+                            {
+                                float test1 = Mathf.Abs(newRotation - eulerRotation.z);
+
+
                                 test1 = test1 / 100 + 1;
+                                test1 = test1 * rotationAcceleration;
+
+                                if (eulerRotation.z - rotationSpeed * test1 * Time.deltaTime - newRotation < 0.5f && eulerRotation.z > newRotation - 180)
+                                {
+                                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, (int)newRotation);
+                                }
+                                else
+                                {
+                                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - rotationSpeed * test1 * Time.deltaTime);
+                                }
+
+
+
                             }
-                            test1 = test1 * rotationAcceleration;
-
-                            if (eulerRotation.z + rotationSpeed * test1 * Time.deltaTime - newRotation > -0.5f && eulerRotation.z < newRotation + 180)
-                            {
-                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
-                            }
-                            else
-                            {
-                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + rotationSpeed * test1  * Time.deltaTime);
-                            }
-                            
-
-
-                        }
-                        else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
-                        {
-                            float test1 = Mathf.Abs(newRotation - eulerRotation.z);
-                          
-                           
-                                test1 = test1 / 100 + 1;
-                            test1 = test1 * rotationAcceleration;
-
-                            if (eulerRotation.z - rotationSpeed * test1 * Time.deltaTime - newRotation < 0.5f && eulerRotation.z> newRotation - 180)
-                            {
-                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y,(int) newRotation);
-                            }
-                            else
-                            {
-                                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - rotationSpeed * test1 * Time.deltaTime);
-                            }
-                           
-
-
                         }
                     }
                 }
             }
+            else
+            {
+                var dir = rb2d.velocity;
+                var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
+                transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
+            }
         }
-        else
-        {
-            var dir = rb2d.velocity;
-            var angle = Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg;
-            transform.rotation = Quaternion.AngleAxis(angle - 90, Vector3.forward);
-        }
-
 
 
             

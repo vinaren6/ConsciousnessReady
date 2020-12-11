@@ -663,6 +663,14 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Shoot
       m_Flags: 0
+    - m_Name: 
+      m_Id: fd12300f-72e0-47cd-8b05-f5857eee2434
+      m_Path: <Gamepad>/rightShoulder
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shoot
+      m_Flags: 0
   gun: {fileID: 112294132145951650}
   coolDown: 1.1
   projectile: {fileID: 6156724797011963483, guid: bcf64b62fa8540d46b6ef7946fa3eaad, type: 3}
