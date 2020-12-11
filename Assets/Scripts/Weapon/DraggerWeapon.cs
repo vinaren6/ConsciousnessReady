@@ -28,7 +28,7 @@ public class DraggerWeapon : MonoBehaviour
         if (shoot.ReadValue<float>() == 1 && elapsedTime > coolDown)
         {
 
-            Debug.Log("test");
+        
             GameObject bullet = Instantiate(projectile, gun.position, transform.rotation) as GameObject;
             bullet.GetComponent<Rigidbody2D>().AddForce((Vector2)gun.up * projectileSpeed * bullet.GetComponent<Rigidbody2D>().mass, ForceMode2D.Impulse);
             elapsedTime = 0;
