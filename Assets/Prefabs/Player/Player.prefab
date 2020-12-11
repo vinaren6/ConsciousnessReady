@@ -520,7 +520,7 @@ MonoBehaviour:
       m_Flags: 0
     - m_Name: 
       m_Id: a170522a-d0a4-4e45-b9da-cfe8ade4d24a
-      m_Path: 
+      m_Path: <Mouse>/rightButton
       m_Interactions: 
       m_Processors: 
       m_Groups: 
