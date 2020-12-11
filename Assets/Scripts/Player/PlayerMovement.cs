@@ -13,6 +13,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private InputAction boostInput;
     [SerializeField] private InputAction slowInput;
+    [SerializeField] private InputAction mousePosX;
+    [SerializeField] private InputAction mousePosY;
+    [SerializeField] private InputAction shoot;
 
     float boost = 1;
     [SerializeField] private float boostSpeed = 2.5f;
@@ -63,6 +66,9 @@ public class PlayerMovement : MonoBehaviour
         movementY.Enable();
         boostInput.Enable();
         slowInput.Enable();
+        mousePosX.Enable();
+        mousePosY.Enable();
+        shoot.Enable();
         rb2d = GetComponent<Rigidbody2D>();
         movementX.performed += context => {
             movement.x = context.ReadValue<float>();
@@ -127,6 +133,16 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+        if (shoot.ReadValue<float>() == 1) {
+            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
+            Vector2 direction = (testi - (Vector2)transform.position).normalized;
+            transform.up = direction;
+        }
+
+      
+
+
+
         if (rb2d.velocity.magnitude > 0.3)
         {
             ship.SetBool("ShipMoving", true);
@@ -176,7 +192,7 @@ public class PlayerMovement : MonoBehaviour
                 movementDirection = 360 + movementDirection;
             }
  
-            if (movementDirection - rotationDirection <= -90 || movementDirection - rotationDirection >= 90)
+            if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) || (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
             {
       
                 propulsion.SetBool("MovingBackwards", true);

@@ -470,6 +470,54 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Slow Input
       m_Flags: 0
+  mousePosX:
+    m_Name: Mouse Pos X
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 9c613964-1add-4bc1-8d59-4177daaad47b
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 218840ea-34e3-4391-81c4-beee28c9e417
+      m_Path: <Mouse>/position/x
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Pos X
+      m_Flags: 0
+  mousePosY:
+    m_Name: Mouse Pos Y
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e04b1768-f67f-43b2-b359-d8acffb42ee0
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 68003e56-ab72-4d10-9932-46905ad3be85
+      m_Path: <Mouse>/position/y
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Mouse Pos Y
+      m_Flags: 0
+  shoot:
+    m_Name: Shoot
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 8d831625-b74b-4b85-8b08-5b795240d5c7
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 8589818e-9555-4cd3-981c-eae87f13a7f8
+      m_Path: <Mouse>/leftButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Shoot
+      m_Flags: 0
   boostSpeed: 2
   boostTimerLengt: 20
   rotationAcceleration: 10
