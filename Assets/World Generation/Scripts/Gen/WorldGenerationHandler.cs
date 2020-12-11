@@ -66,7 +66,7 @@ public class WorldGenerationHandler : MonoBehaviour
         }
 
         //add filped rules
-        if (settings.AllowFilps)
+        if (settings.allowFilps)
             foreach (CellRules rule in cellRules) {
                 switch (rule.type) {
                     case Enum.CellType.Default:

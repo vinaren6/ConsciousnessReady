@@ -10,7 +10,8 @@ public class WorldGenSettings : ScriptableObject
     [Space(10)]
     public bool loadOnStart = false;
     public bool fastRules = true;
-    public bool AllowFilps = true;
+    public bool allowFilps = true;
+    //public LayerMask flippebleObjects;
     [Space(10)]
     public LayerMask movebleObjs;
     public float dontUnloadObjInDistance = 8f;
