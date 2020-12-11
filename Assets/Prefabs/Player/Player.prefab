@@ -528,6 +528,7 @@ MonoBehaviour:
   acceleration: 15
   slowSpeed: 2.5
   newRotation: 1
+  alwaysBoost: 1
   propulsion: {fileID: 8037301592627414500}
   ship: {fileID: 8037301594256694386}
 --- !u!50 &8037301594256694381
