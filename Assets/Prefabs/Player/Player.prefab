@@ -609,7 +609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 112294132145951650}
   coolDown: 0.2
-  knockBack: 0.5
+  knockBack: 0
   defaultProjectile: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
   fireButton:
     m_Name: Fire Button

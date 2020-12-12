@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 6988239526022074217}
   - component: {fileID: 4817599386843855323}
   - component: {fileID: -8983695316476884922}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cloak
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,8 +74,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1567801655
+  m_SortingLayer: 7
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7ae91ad6bce1dd54c8581214f6a15ce5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -120,9 +120,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.06104958}
   serializedVersion: 2
-  m_Radius: 1.76
+  m_Radius: 1.576851
 --- !u!114 &6047506546727259409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 200
+  health: 300
   explosion: {fileID: 0}
 --- !u!114 &6988239526022074217
 MonoBehaviour:

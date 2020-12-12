@@ -53,7 +53,12 @@ public class Weapon : MonoBehaviour
     void Shoot()
     {
         Projectile projectile = Instantiate(defaultProjectile, gun.position, transform.rotation);
-        GetComponent<Rigidbody2D>().AddForce(transform.up * -knockBack, ForceMode2D.Impulse);
+
+        if (knockBack != 0)
+        {
+            GetComponent<Rigidbody2D>().AddForce(transform.up * -knockBack, ForceMode2D.Impulse);
+        }
+
     }
 
 
