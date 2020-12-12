@@ -18,11 +18,11 @@ MonoBehaviour:
     m_OverrideState: 0
     m_Value: {x: 1, y: 1, z: 1, w: 0.11178936}
   midtones:
-    m_OverrideState: 0
-    m_Value: {x: 1, y: 1, z: 1, w: 0.007232879}
+    m_OverrideState: 1
+    m_Value: {x: 1, y: 1, z: 1, w: -0.1666844}
   highlights:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 1, z: 1, w: -0.06444069}
+    m_Value: {x: 1, y: 1, z: 1, w: -0.16915272}
   shadowsStart:
     m_OverrideState: 1
     m_Value: 0.15
@@ -69,12 +69,12 @@ MonoBehaviour:
     showEyeDropper: 1
   hueShift:
     m_OverrideState: 0
-    m_Value: 1
+    m_Value: 18
     min: -180
     max: 180
   saturation:
-    m_OverrideState: 1
-    m_Value: 5
+    m_OverrideState: 0
+    m_Value: 20
     min: -100
     max: 100
 --- !u!114 &-8058982337023598328
@@ -282,7 +282,7 @@ MonoBehaviour:
   active: 1
   m_AdvancedMode: 0
   lift:
-    m_OverrideState: 0
+    m_OverrideState: 1
     m_Value: {x: 1, y: 1, z: 1, w: -0.006412481}
   gamma:
     m_OverrideState: 1
@@ -368,7 +368,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c01700fd266d6914ababb731e09af2eb, type: 3}
   m_Name: DepthOfField
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   m_AdvancedMode: 0
   mode:
     m_OverrideState: 1

@@ -529,7 +529,7 @@ MonoBehaviour:
   boostSpeed: 2
   boostTimerLengt: 20
   rotationAcceleration: 10
-  rotationSpeed: 20
+  rotationSpeed: 25
   maxSpeedValue: 5.5
   dragSlow: 3
   dragFast: 4

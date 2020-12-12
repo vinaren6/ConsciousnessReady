@@ -2849,6 +2849,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cameras
       objectReference: {fileID: 0}
+    - target: {fileID: 5541988366190943752, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 908704038}
     - target: {fileID: 6529290016855014110, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
       propertyPath: m_Follow
       value: 
@@ -3586,6 +3590,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7824109288490680151, guid: 22a2831f1cda6a44a82cb6f34388ec2d, type: 3}
   m_PrefabInstance: {fileID: 879840378}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &908704038 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+  m_PrefabInstance: {fileID: 1985459976}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &928387640
 PrefabInstance:
