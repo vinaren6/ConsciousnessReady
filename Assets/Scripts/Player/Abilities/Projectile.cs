@@ -30,11 +30,11 @@ public class Projectile : MonoBehaviour
     private RaycastHit2D hitPoint;
 
 
-
     private void Start()
     {
         GetComponent<Rigidbody2D>().AddForce(transform.up * speed, ForceMode2D.Impulse);
-        PlayAudioDettached();
+        FindObjectOfType<AudioManager>().Play("GunshotLow");
+        FindObjectOfType<AudioManager>().Play("GunshotHigh");
         Destroy(gameObject, selfDestructTimer);
     }
 
@@ -84,19 +84,6 @@ public class Projectile : MonoBehaviour
         Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
 
         Destroy(gameObject);
-    }
-
-    void PlayAudioDettached()
-    {
-        var audioGameObject = transform.Find("Audio").gameObject;
-        var audioSources = audioGameObject.GetComponents<AudioSource>();
-
-        foreach (var audio in audioSources)
-        {
-            audio.Play();
-        }
-
-        audioGameObject.transform.parent = null;
     }
 
 }
