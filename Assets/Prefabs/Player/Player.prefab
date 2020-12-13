@@ -164,7 +164,7 @@ Transform:
   m_GameObject: {fileID: 8037301594256694385}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.85, y: 0.85, z: 1}
+  m_LocalScale: {x: 0.9, y: 0.9, z: 1}
   m_Children:
   - {fileID: 8037301592627414501}
   - {fileID: 112294132145951650}
@@ -527,11 +527,11 @@ MonoBehaviour:
       m_Action: Shoot
       m_Flags: 0
   boostSpeed: 2
-  boostTimerLengt: 20
+  boostTimerLengt: 10
   rotationAcceleration: 10
-  rotationSpeed: 24
+  rotationSpeed: 25
   maxSpeedValue: 5.5
-  dragSlow: 2.5
+  dragSlow: 2.25
   dragFast: 4
   acceleration: 15
   slowSpeed: 2.5
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gun: {fileID: 112294132145951650}
   coolDown: 0.2
-  knockBack: 0
+  knockBack: 0.15
   defaultProjectile: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
   fireButton:
     m_Name: Fire Button

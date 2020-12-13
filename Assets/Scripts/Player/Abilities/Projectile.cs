@@ -11,10 +11,7 @@ public class Projectile : MonoBehaviour
     private float speed = 30f;
 
     [SerializeField]
-    private float particlesLifetimeAfterCollision = 2f;
-
-    [SerializeField]
-    private float selfDestructTimer = 5f;
+    private float selfDestructTimer = 1f;
 
     [Header("Explosions")]
 
@@ -59,7 +56,7 @@ public class Projectile : MonoBehaviour
                 enemy.TakeDamage(damage);
             }
 
-            Invoke("DecreaseParticles", particlesLifetimeAfterCollision);
+            DettachParticles();
             Invoke("Explode", explosionDelay);
 
             hasCollided = true;
@@ -67,15 +64,15 @@ public class Projectile : MonoBehaviour
 
     }
 
-    void DecreaseParticles()
+    void DettachParticles()
     {
-        if (transform.childCount > 0)
-        {
-            ParticleSystem particleSystem = transform.GetChild(0).GetComponent<ParticleSystem>();
-            var main = particleSystem.main;
-            main.maxParticles = 20;
-        }
+        var particleSystemObject = transform.Find("Ice Particles (Projectiles)").gameObject;
+        var particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
+        particleSystem.transform.parent = null;
+
+        Destroy(particleSystem, selfDestructTimer);
     }
+
 
     void Explode()
     {
