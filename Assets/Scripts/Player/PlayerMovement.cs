@@ -35,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool alwaysBoost;
     [SerializeField] private float mouseMoving = 2;
     bool mouseControl;
-    float mouseControlTimer;
+    [SerializeField] float mouseControlTimer;
     float oldMouseX;
     float oldMouseY;
     Vector2 movement;
@@ -124,10 +124,9 @@ public class PlayerMovement : MonoBehaviour
             }
             else
             {
-                if (!alwaysBoost)
-                {
+               
                     isBoost = false;
-                }
+                
                 
             }
             
@@ -163,7 +162,7 @@ public class PlayerMovement : MonoBehaviour
         if (isBoost)
         {
             boostTimer -= Time.deltaTime;
-            if (boostTimer <= 0 && !alwaysBoost)
+            if (boostTimer <= 0 )
             {
                 isBoost = false;
             }
