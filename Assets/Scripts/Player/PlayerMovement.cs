@@ -35,9 +35,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool alwaysBoost;
     [SerializeField] private float mouseMoving = 2;
     bool mouseControl;
-    [SerializeField] float mouseControlTimer;
+    float mouseControlTimer;
+    [SerializeField] float mouseControlTimerLength;
     float oldMouseX;
     float oldMouseY;
+    public bool cameraSmoothing;
     Vector2 movement;
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
@@ -142,63 +144,19 @@ public class PlayerMovement : MonoBehaviour
     }
     private void Update()
     {
+
+
+
+        AnimationBasedOnVelocity();
+
+
+
+
+        Boost();
+
+
         
-
-      
-
-
-
-        if (rb2d.velocity.magnitude > 0.3)
-        {
-            ship.SetBool("ShipMoving", true);
-            
-        }
-        else
-        {
-            ship.SetBool("ShipMoving", false);
-        }
-        propulsion.SetFloat("ShipVelocity", rb2d.velocity.magnitude);
-
-        if (isBoost)
-        {
-            if (!alwaysBoost)
-            {
-                boostTimer -= Time.deltaTime;
-            }
-           
-            if (boostTimer <= 0 )
-            {
-                isBoost = false;
-            }
-        }
-        else
-        {
-            boost = 1;
-            if (boostTimer < boostTimerLengt)
-            {
-                boostTimer += Time.deltaTime;
-            }
-            
-        }
-        
-            if (oldMouseX - mousePosX.ReadValue<float>() > mouseMoving || oldMouseY - mousePosY.ReadValue<float>() > mouseMoving)
-            {
-                mouseControl = true;
-                
-            }
-            if (mouseControl)
-            {
-                Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
-                Vector2 direction = (testi - (Vector2)transform.position).normalized;
-                transform.up = direction;
-                mouseControlTimer -= Time.deltaTime;
-                if (mouseControlTimer <= 0)
-                {
-                    mouseControl = false;
-                }
-            }     
-        
-        else
+        if(!MouseRotation())
         {
 
 
@@ -284,7 +242,14 @@ public class PlayerMovement : MonoBehaviour
                                     test1 = test1 / 100 + 1;
                                 }
                                 test1 = test1 * rotationAcceleration;
-
+                                if (test1 > 11)
+                                {
+                                    cameraSmoothing = true;
+                                }
+                                else
+                                {
+                                    cameraSmoothing = false;
+                                }
                                 if (eulerRotation.z + rotationSpeed * test1 * Time.deltaTime - newRotation > -0.5f && eulerRotation.z < newRotation + 180)
                                 {
                                     transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
@@ -304,6 +269,15 @@ public class PlayerMovement : MonoBehaviour
 
                                 test1 = test1 / 100 + 1;
                                 test1 = test1 * rotationAcceleration;
+
+                                if (test1 > 11)
+                                {
+                                    cameraSmoothing = true;
+                                }
+                                else
+                                {
+                                    cameraSmoothing = false;
+                                }
 
                                 if (eulerRotation.z - rotationSpeed * test1 * Time.deltaTime - newRotation < 0.5f && eulerRotation.z > newRotation - 180)
                                 {
@@ -353,4 +327,66 @@ public class PlayerMovement : MonoBehaviour
 
 
     }
-}
+
+    private void AnimationBasedOnVelocity()
+    {
+        if (rb2d.velocity.magnitude > 0.3)
+        {
+            ship.SetBool("ShipMoving", true);
+
+        }
+        else
+        {
+            ship.SetBool("ShipMoving", false);
+        }
+        propulsion.SetFloat("ShipVelocity", rb2d.velocity.magnitude);
+    }
+
+    private void Boost()
+    {
+        if (isBoost)
+        {
+            if (!alwaysBoost)
+            {
+                boostTimer -= Time.deltaTime;
+            }
+
+            if (boostTimer <= 0)
+            {
+                isBoost = false;
+            }
+        }
+        else
+        {
+            boost = 1;
+            if (boostTimer < boostTimerLengt)
+            {
+                boostTimer += Time.deltaTime;
+            }
+
+        }
+    }
+
+    private bool MouseRotation()
+    {
+        if (Mathf.Abs(oldMouseX - mousePosX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - mousePosY.ReadValue<float>()) > mouseMoving)
+        {
+            mouseControl = true;
+            mouseControlTimer = mouseControlTimerLength;
+
+        }
+        if (mouseControl)
+        {
+            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
+            Vector2 direction = (testi - (Vector2)transform.position).normalized;
+            transform.up = direction;
+            mouseControlTimer -= Time.deltaTime;
+            if (mouseControlTimer <= 0)
+            {
+                mouseControl = false;
+            }
+            return true;
+        }
+        return false;
+    }
+    }
