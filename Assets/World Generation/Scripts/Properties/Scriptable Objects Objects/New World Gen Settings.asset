@@ -18,7 +18,12 @@ MonoBehaviour:
   outpostAmount: 6
   loadOnStart: 0
   fastRules: 1
+  allowFilps: 1
   movebleObjs:
     serializedVersion: 2
     m_Bits: 8705
   dontUnloadObjInDistance: 16
+  startWorldMapObj: {fileID: 4131956800126878613, guid: baa16d7fa53d1394998c0d4c1479b4a4, type: 3}
+  endWorldMapObj: {fileID: 1987476433757750171, guid: c6c893533a4e4224bb667b7a1a5c5d06, type: 3}
+  outpostWorldMapObj: {fileID: 9054311306885891611, guid: 3b8e372b4f1e2f74b8a1257e07dc35f0, type: 3}
+  BackgroundWorldMapObj: {fileID: 2437851594238442615, guid: ab8145c6c32f2da4dbaf52a9fc6045ae, type: 3}

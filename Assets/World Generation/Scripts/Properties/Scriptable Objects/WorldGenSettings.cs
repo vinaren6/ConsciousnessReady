@@ -7,12 +7,21 @@ public class WorldGenSettings : ScriptableObject
     public float sizeOffset = 2f;
     public float gridSize = 16f;
     public int outpostAmount = 6;
+
     [Space(10)]
     public bool loadOnStart = false;
     public bool fastRules = true;
     public bool allowFilps = true;
     //public LayerMask flippebleObjects;
+
     [Space(10)]
     public LayerMask movebleObjs;
     public float dontUnloadObjInDistance = 8f;
+
+    [Space(10)]
+    public GameObject startWorldMapObj;
+    public GameObject endWorldMapObj;
+    public GameObject outpostWorldMapObj;
+    [Space(4)]
+    public GameObject BackgroundWorldMapObj;
 }

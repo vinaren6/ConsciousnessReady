@@ -25,6 +25,21 @@ public class Cell : MonoBehaviour
     private void Start()
     {
         enabled = false;
+
+        switch (type) {
+            case Enum.CellType.Default:
+                break;
+            case Enum.CellType.Outpost:
+                Instantiate(WorldGenerationHandler.instance.settings.outpostWorldMapObj, transform);
+                break;
+            case Enum.CellType.Start:
+                Instantiate(WorldGenerationHandler.instance.settings.startWorldMapObj, transform);
+                break;
+            case Enum.CellType.End:
+                Instantiate(WorldGenerationHandler.instance.settings.endWorldMapObj, transform);
+                break;
+        }
+
         if (WorldGenerationHandler.instance.settings.loadOnStart || type == Enum.CellType.Start) {
             LoadLevel();
         }
