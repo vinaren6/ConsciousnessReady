@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 332214776209175850}
   - component: {fileID: 5201784465962587273}
   - component: {fileID: 4413031229935624749}
+  - component: {fileID: 7043874999962752588}
   m_Layer: 18
   m_Name: Text
   m_TagString: Untagged
@@ -95,6 +96,52 @@ TextMesh:
   m_Color:
     serializedVersion: 2
     rgba: 4294967295
+--- !u!114 &7043874999962752588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1143161837845630259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0143fb5a2f1cebf4e9346137d6790f6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: 'Outpost 1
+
+    Wrong Side of the Galaxy
+
+    SSH Port
+
+    Small Dock
+
+    of
+    course I still love you
+
+    Station X
+
+    Inc Port
+
+    Port Roale
+
+    Pirate
+    Bay
+
+    Duck Dock
+
+    Roale Bay
+
+    Space Shrimp
+
+    IO Port
+
+    Nerual
+    Station
+
+    Outpost Daniel
+
+    Gramps Outpost'
 --- !u!1 &6452872455878474811
 GameObject:
   m_ObjectHideFlags: 0
