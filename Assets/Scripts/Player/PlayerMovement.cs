@@ -161,7 +161,11 @@ public class PlayerMovement : MonoBehaviour
 
         if (isBoost)
         {
-            boostTimer -= Time.deltaTime;
+            if (!alwaysBoost)
+            {
+                boostTimer -= Time.deltaTime;
+            }
+           
             if (boostTimer <= 0 )
             {
                 isBoost = false;
@@ -180,7 +184,7 @@ public class PlayerMovement : MonoBehaviour
             if (oldMouseX - mousePosX.ReadValue<float>() > mouseMoving || oldMouseY - mousePosY.ReadValue<float>() > mouseMoving)
             {
                 mouseControl = true;
-                mouseControlTimer = 1;
+                
             }
             if (mouseControl)
             {
