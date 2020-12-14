@@ -33,7 +33,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float slowSpeed = 2f;
     [SerializeField]  private bool newRotation;
     [SerializeField] private bool alwaysBoost;
-
+    [SerializeField] private float mouseMoving = 2;
+    bool mouseControl;
+    float mouseControlTimer;
+    float oldMouseX;
+    float oldMouseY;
     Vector2 movement;
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
@@ -173,12 +177,24 @@ public class PlayerMovement : MonoBehaviour
             }
             
         }
-        if (shoot.ReadValue<float>() == 1)
-        {
-            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
-            Vector2 direction = (testi - (Vector2)transform.position).normalized;
-            transform.up = direction;
-        }
+        
+            if (oldMouseX - mousePosX.ReadValue<float>() > mouseMoving || oldMouseY - mousePosY.ReadValue<float>() > mouseMoving)
+            {
+                mouseControl = true;
+                mouseControlTimer = 1;
+            }
+            if (mouseControl)
+            {
+                Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
+                Vector2 direction = (testi - (Vector2)transform.position).normalized;
+                transform.up = direction;
+                mouseControlTimer -= Time.deltaTime;
+                if (mouseControlTimer <= 0)
+                {
+                    mouseControl = false;
+                }
+            }     
+        
         else
         {
 
@@ -311,9 +327,10 @@ public class PlayerMovement : MonoBehaviour
         }
 
 
-            
-        
 
+
+        oldMouseY = mousePosY.ReadValue<float>();
+        oldMouseX = mousePosX.ReadValue<float>();
         propulsion.SetBool("NitroBoost", isBoost);
     }
 
