@@ -192,13 +192,9 @@ public class WorldGenerationHandler : MonoBehaviour
             }
         }
 
+        Transform obj = Instantiate(settings.BackgroundWorldMapObj, transform).transform;
+        obj.localScale *= worldSize * settings.gridSize;
 
-        //place world in center
-        /*
-        transform.position = new Vector3(
-            center.x * settings.gridSize,
-            center.y * settings.gridSize);
-        */
 
 #if UNITY_EDITOR
         debugData = $"Grid: {wSize}, {wSize}\nCell count: {cellCount} / {wSize * wSize}\nWorld size: {wSize * settings.gridSize}x{wSize * settings.gridSize}";
