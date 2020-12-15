@@ -21,7 +21,7 @@ public class Weapon : MonoBehaviour
     private Projectile defaultProjectile;
 
     private Controls controls = null;
-    private InputAction fireButton;
+    private InputAction shootButton;
     private float elapsedTime = 0f;
 
     private void Awake()
@@ -31,13 +31,13 @@ public class Weapon : MonoBehaviour
 
     private void OnEnable()
     {
-        fireButton = controls.Player.Shoot;
-        fireButton.Enable();
+        shootButton = controls.Player.Shoot;
+        shootButton.Enable();
     }
 
     private void OnDisable()
     {
-        fireButton.Disable();
+        shootButton.Disable();
     }
 
 
@@ -45,7 +45,7 @@ public class Weapon : MonoBehaviour
     {
         elapsedTime += Time.deltaTime;
 
-        if (fireButton.ReadValue<float>() == 1 && elapsedTime > coolDown)
+        if (shootButton.ReadValue<float>() == 1 && elapsedTime > coolDown)
         {
             Shoot();
             elapsedTime = 0f;
