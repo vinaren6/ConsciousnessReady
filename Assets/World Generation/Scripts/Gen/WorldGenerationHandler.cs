@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class WorldGenerationHandler : MonoBehaviour
@@ -8,11 +7,9 @@ public class WorldGenerationHandler : MonoBehaviour
     public static WorldGenerationHandler instance;
 
     public WorldGenSettings settings;
-    public GameObject cell;
+    [SerializeField] private GameObject cell;
 
-    public CellRules[] cellRules;
-
-    public Camera[] camScale;
+    [SerializeField] private CellRules[] cellRules;
 
     [HideInInspector]
     public CellRules[][] cellsRulles = new CellRules[4][];
@@ -37,7 +34,6 @@ public class WorldGenerationHandler : MonoBehaviour
         SeperateRules();
         GenerateGrid();
         GenerateCells();
-        ScaleCemras();
     }
 
     private void SeperateRules()
@@ -274,12 +270,10 @@ public class WorldGenerationHandler : MonoBehaviour
         }
     }
 
-    private void ScaleCemras()
+    public void ScaleCemra(Camera cam)
     {
         float size = ((int)(worldSize + 0.5f)) * settings.gridSize / 2f + settings.gridSize;
-        foreach (Camera cam in camScale) {
-            cam.orthographicSize = size;
-        }
+        cam.orthographicSize = size;
     }
 
     public void Regenerate()
@@ -295,7 +289,6 @@ public class WorldGenerationHandler : MonoBehaviour
 #endif
         GenerateGrid();
         GenerateCells();
-        ScaleCemras();
     }
 
 #if UNITY_EDITOR

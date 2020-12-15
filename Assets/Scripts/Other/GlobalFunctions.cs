@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-
-public static class GlobalFunctions
+﻿public static class GlobalFunctions
 {
     static public T[] AddElementToArray<T>(T[] array, T element)
     {
