@@ -19,6 +19,9 @@ public class Projectile : MonoBehaviour
     private bool willExplode = false;
 
     [SerializeField]
+    private bool destroyOnCollision = false;
+
+    [SerializeField]
     private Explosion impactExplosion;
 
     [SerializeField]
@@ -27,7 +30,7 @@ public class Projectile : MonoBehaviour
 
     private bool hasCollided = false;
     private Collision2D other;
-    private RaycastHit2D hitPoint;
+
 
 
     private void Start()
@@ -86,12 +89,15 @@ public class Projectile : MonoBehaviour
 
     void Explode()
     {
-        float angle = (Mathf.Atan2(-other.contacts[0].normal.y, -other.contacts[0].normal.x) * Mathf.Rad2Deg ) - 90;
+        float angle = (Mathf.Atan2(-other.contacts[0].normal.y, -other.contacts[0].normal.x) * Mathf.Rad2Deg) - 90;
 
         Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
 
-        DettachParticles();
-        Destroy(gameObject);
+        if (destroyOnCollision)
+        {
+            DettachParticles();
+            Destroy(gameObject);
+        }
     }
 
     void DettachParticles()

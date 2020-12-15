@@ -149,6 +149,7 @@ MonoBehaviour:
   speed: 30
   selfDestructTimer: 1
   willExplode: 1
+  destroyOnCollision: 1
   impactExplosion: {fileID: 4738890249466388025, guid: ac106b06d38b8984b9ca066a51dea439, type: 3}
   explosionDelay: 0
 --- !u!1001 &1373267809

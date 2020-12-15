@@ -148,9 +148,10 @@ MonoBehaviour:
   damage: 100
   speed: 45
   selfDestructTimer: 15
-  willExplode: 0
-  impactExplosion: {fileID: 0}
-  explosionDelay: 1.5
+  willExplode: 1
+  destroyedOnCollision: 0
+  impactExplosion: {fileID: 4456854949501169639, guid: f27621521dab47544bac016f6a774977, type: 3}
+  explosionDelay: 0
 --- !u!1001 &1373267809
 PrefabInstance:
   m_ObjectHideFlags: 0
