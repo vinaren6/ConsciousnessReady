@@ -16,6 +16,9 @@ public class Projectile : MonoBehaviour
     [Header("Explosions")]
 
     [SerializeField]
+    private bool willExplode = false;
+
+    [SerializeField]
     private Explosion impactExplosion;
 
     [SerializeField]
@@ -52,12 +55,12 @@ public class Projectile : MonoBehaviour
             Health enemy = other.gameObject.GetComponent<Health>();
 
             if (enemy != null)
-            {
                 enemy.TakeDamage(damage);
-            }
 
             DettachParticles();
-            Invoke("Explode", explosionDelay);
+
+            if (willExplode)
+                Invoke("Explode", explosionDelay);
 
             hasCollided = true;
         }

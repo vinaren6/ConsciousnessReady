@@ -1,4 +1,4 @@
-// GENERATED AUTOMATICALLY FROM 'Assets/Input/Controls.inputactions'
+// GENERATED AUTOMATICALLY FROM 'Assets/Input/InputActions.inputactions'
 
 using System;
 using System.Collections;
@@ -6,13 +6,13 @@ using System.Collections.Generic;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Utilities;
 
-public class @Controls : IInputActionCollection, IDisposable
+public class @InputActions : IInputActionCollection, IDisposable
 {
     public InputActionAsset asset { get; }
-    public @Controls()
+    public @InputActions()
     {
         asset = InputActionAsset.FromJson(@"{
-    ""name"": ""Controls"",
+    ""name"": ""InputActions"",
     ""maps"": [
         {
             ""name"": ""Player"",
@@ -32,7 +32,7 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""b22517a6-215f-467e-9661-5af7d06f86b9"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": ""Tap,SlowTap"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
@@ -43,7 +43,7 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""cae309fe-ef5e-454c-827e-b706c7c9d012"",
                     ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": ""Tap,SlowTap"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
@@ -54,7 +54,7 @@ public class @Controls : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""9588d967-67fd-4883-a26b-25d9b4b6de86"",
                     ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Press"",
+                    ""interactions"": ""Tap,SlowTap"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
@@ -121,8 +121,8 @@ public class @Controls : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Shoot;
     public struct PlayerActions
     {
-        private @Controls m_Wrapper;
-        public PlayerActions(@Controls wrapper) { m_Wrapper = wrapper; }
+        private @InputActions m_Wrapper;
+        public PlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }

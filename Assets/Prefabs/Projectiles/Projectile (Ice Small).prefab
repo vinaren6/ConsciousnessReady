@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2190196184049555586}
   - component: {fileID: 6303515164149006159}
   m_Layer: 14
-  m_Name: Projectile (Ice)
+  m_Name: Projectile (Ice Small)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,8 +147,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 40
   speed: 30
-  particlesLifetimeAfterCollision: 2
   selfDestructTimer: 1
+  willExplode: 1
   impactExplosion: {fileID: 4738890249466388025, guid: ac106b06d38b8984b9ca066a51dea439, type: 3}
   explosionDelay: 0
 --- !u!1001 &1373267809
