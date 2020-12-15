@@ -42,7 +42,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""cae309fe-ef5e-454c-827e-b706c7c9d012"",
-                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""path"": ""<Gamepad>/rightShoulder"",
                     ""interactions"": ""Tap,SlowTap"",
                     ""processors"": """",
                     ""groups"": """",

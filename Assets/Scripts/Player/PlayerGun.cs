@@ -10,8 +10,6 @@ public class PlayerGun : MonoBehaviour
     private Transform pointOfFire;
 
     [Header("Projectiles")]
-    [SerializeField]
-    private float coolDown = 0.3f;
 
     [Space(10)]
 

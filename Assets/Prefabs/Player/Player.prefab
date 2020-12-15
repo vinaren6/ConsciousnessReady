@@ -729,7 +729,7 @@ MonoBehaviour:
   slowSpeed: 2.5
   newRotation: 1
   alwaysBoost: 1
-  mouseMoving: 3
+  mouseMoving: 5
   mouseControlTimerLength: 0.1
   cameraSmoothing: 0
   cameraSmoothingMaxSpeed: 1
@@ -804,7 +804,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointOfFire: {fileID: 112294132145951650}
-  coolDown: 0.2
   normalProjectile: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
   normalKnockback: 0.5
   chargeProjectile: {fileID: 6303515164149006159, guid: 5c35a021e4a224c458aaf5659a640e87, type: 3}
@@ -839,8 +838,8 @@ MonoBehaviour:
       m_Action: Shoot
       m_Flags: 0
     - m_Name: 
-      m_Id: fd12300f-72e0-47cd-8b05-f5857eee2434
-      m_Path: <Gamepad>/rightShoulder
+      m_Id: 5b69d1ac-afc4-4b2a-8aa6-06cbf9da7fd4
+      m_Path: <Gamepad>/rightTrigger
       m_Interactions: 
       m_Processors: 
       m_Groups: 
