@@ -20,16 +20,18 @@ public class Weapon : MonoBehaviour
     [SerializeField]
     private Projectile defaultProjectile;
 
-    [Header("Input")]
-    [SerializeField]
+    private Controls controls = null;
     private InputAction fireButton;
-
-
     private float elapsedTime = 0f;
 
+    private void Awake()
+    {
+        controls = new Controls();
+    }
 
     private void OnEnable()
     {
+        fireButton = controls.Player.Shoot;
         fireButton.Enable();
     }
 
@@ -60,6 +62,5 @@ public class Weapon : MonoBehaviour
         }
 
     }
-
-
 }
+
