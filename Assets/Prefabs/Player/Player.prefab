@@ -805,9 +805,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointOfFire: {fileID: 112294132145951650}
   normalProjectile: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
-  normalKnockback: 0.5
+  normalKnockback: 0.15
+  coolDown: 0.2
   chargeProjectile: {fileID: 6303515164149006159, guid: 5c35a021e4a224c458aaf5659a640e87, type: 3}
-  chargeKnockback: 5
+  chargeKnockback: 6
 --- !u!114 &3814114195626538798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -832,14 +833,6 @@ MonoBehaviour:
     - m_Name: 
       m_Id: bcb4c29b-a9c5-46b4-9ad9-6d2f1a075297
       m_Path: <Mouse>/rightButton
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Shoot
-      m_Flags: 0
-    - m_Name: 
-      m_Id: 5b69d1ac-afc4-4b2a-8aa6-06cbf9da7fd4
-      m_Path: <Gamepad>/rightTrigger
       m_Interactions: 
       m_Processors: 
       m_Groups: 

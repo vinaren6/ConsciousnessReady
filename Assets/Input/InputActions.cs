@@ -24,7 +24,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""id"": ""974e511d-4188-46f0-8191-79fa423c12b9"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": """"
+                    ""interactions"": ""Press(pressPoint=0.9),SlowTap(duration=1)""
                 }
             ],
             ""bindings"": [
@@ -32,7 +32,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""b22517a6-215f-467e-9661-5af7d06f86b9"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Tap,SlowTap"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
@@ -42,8 +42,8 @@ public class @InputActions : IInputActionCollection, IDisposable
                 {
                     ""name"": """",
                     ""id"": ""cae309fe-ef5e-454c-827e-b706c7c9d012"",
-                    ""path"": ""<Gamepad>/rightShoulder"",
-                    ""interactions"": ""Tap,SlowTap"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",
@@ -54,7 +54,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""9588d967-67fd-4883-a26b-25d9b4b6de86"",
                     ""path"": ""<Keyboard>/space"",
-                    ""interactions"": ""Tap,SlowTap"",
+                    ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Shoot"",

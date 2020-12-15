@@ -17,7 +17,10 @@ public class PlayerGun : MonoBehaviour
     private Projectile normalProjectile;
 
     [SerializeField]
-    private float normalKnockback = 0.5f;
+    private float normalKnockback = 0.15f;
+
+    [SerializeField]
+    private float coolDown = 0.2f;
 
     [Space(10)]
 
@@ -28,9 +31,8 @@ public class PlayerGun : MonoBehaviour
     private float chargeKnockback = 5f;
 
 
-
-
     private InputActions inputActions;
+    private float elapsedTime = 0f;
 
 
     private void Awake()
@@ -57,13 +59,24 @@ public class PlayerGun : MonoBehaviour
         inputActions.Disable();
     }
 
+    private void Update()
+    {
+        elapsedTime += Time.deltaTime;
+    }
+
+
     public void Shoot(Projectile projectile, float knockback)
     {
-        Instantiate(projectile, pointOfFire.position, transform.rotation);
-
-        if (knockback != 0)
+        if (elapsedTime > coolDown)
         {
-            GetComponent<Rigidbody2D>().AddForce(transform.up * -knockback, ForceMode2D.Impulse);
+            Instantiate(projectile, pointOfFire.position, transform.rotation);
+
+            if (knockback != 0)
+            {
+                GetComponent<Rigidbody2D>().AddForce(transform.up * -knockback, ForceMode2D.Impulse);
+            }
+
+            elapsedTime = 0f;
         }
     }
 

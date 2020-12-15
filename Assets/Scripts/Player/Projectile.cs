@@ -33,9 +33,27 @@ public class Projectile : MonoBehaviour
     private void Start()
     {
         GetComponent<Rigidbody2D>().AddForce(transform.up * speed, ForceMode2D.Impulse);
-        FindObjectOfType<AudioManager>().Play("GunshotLow");
-        FindObjectOfType<AudioManager>().Play("GunshotHigh");
+        PickSoundEffect();
         Destroy(gameObject, selfDestructTimer);
+    }
+
+    private void PickSoundEffect()
+    {
+        Debug.Log(gameObject.tag);
+
+
+        if (gameObject.CompareTag("Projectile (Ice Small)"))
+        {
+            FindObjectOfType<AudioManager>().Play("GunshotLow");
+            FindObjectOfType<AudioManager>().Play("GunshotHigh");
+        }
+
+        if (gameObject.CompareTag("Projectile (Ice Large)"))
+        {
+            FindObjectOfType<AudioManager>().Play("GunshotLow");
+            FindObjectOfType<AudioManager>().Play("GunshotLower");
+        }
+
     }
 
     private void OnCollisionEnter2D(Collision2D collison)
@@ -57,14 +75,23 @@ public class Projectile : MonoBehaviour
             if (enemy != null)
                 enemy.TakeDamage(damage);
 
-            DettachParticles();
-
             if (willExplode)
                 Invoke("Explode", explosionDelay);
 
             hasCollided = true;
         }
 
+    }
+
+
+    void Explode()
+    {
+        float angle = (Mathf.Atan2(-other.contacts[0].normal.y, -other.contacts[0].normal.x) * Mathf.Rad2Deg ) - 90;
+
+        Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
+
+        DettachParticles();
+        Destroy(gameObject);
     }
 
     void DettachParticles()
@@ -76,14 +103,5 @@ public class Projectile : MonoBehaviour
         Destroy(particleSystem, selfDestructTimer);
     }
 
-
-    void Explode()
-    {
-        float angle = (Mathf.Atan2(-other.contacts[0].normal.y, -other.contacts[0].normal.x) * Mathf.Rad2Deg ) - 90;
-
-        Explosion explosion = Instantiate(impactExplosion, transform.position, Quaternion.AngleAxis(angle, Vector3.forward));
-
-        Destroy(gameObject);
-    }
 
 }

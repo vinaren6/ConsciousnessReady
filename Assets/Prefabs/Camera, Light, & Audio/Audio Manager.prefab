@@ -47,19 +47,27 @@ MonoBehaviour:
   sounds:
   - name: GunshotLow
     clip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
-    volume: 0.5
+    volume: 1
     pitch: 0.75
+    spatialBlend: 0
+    loop: 0
+    PlayOneShot: 0
+    source: {fileID: 0}
+  - name: GunshotLower
+    clip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
+    volume: 1
+    pitch: 0.5
     spatialBlend: 0
     loop: 0
     PlayOneShot: 0
     source: {fileID: 0}
   - name: GunshotHigh
     clip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
-    volume: 0.625
+    volume: 0.4
     pitch: 2
     spatialBlend: 0
     loop: 0
-    PlayOneShot: 0
+    PlayOneShot: 1
     source: {fileID: 0}
   - name: MusicGameplay
     clip: {fileID: 8300000, guid: 12ba1368fafa01f448390f330eb77130, type: 3}

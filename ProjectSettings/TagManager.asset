@@ -8,6 +8,8 @@ TagManager:
   - Enemy Bullet
   - Small Debris
   - Player Bullets
+  - Projectile (Ice Large)
+  - Projectile (Ice Small)
   layers:
   - Default
   - TransparentFX
