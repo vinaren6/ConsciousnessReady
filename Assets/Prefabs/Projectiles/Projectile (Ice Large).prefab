@@ -147,11 +147,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 100
   speed: 45
-  selfDestructTimer: 15
+  selfDestruct: 6
+  vanishTime: 3
   willExplode: 1
-  destroyedOnCollision: 0
   impactExplosion: {fileID: 4456854949501169639, guid: f27621521dab47544bac016f6a774977, type: 3}
-  explosionDelay: 0
+  destroyOnCollision: 0
+  willVanish: 1
+  vanishAnimation: {fileID: 1647947234213363903, guid: 075b2f3219fbe474f96f5b35520b56bb, type: 3}
 --- !u!1001 &1373267809
 PrefabInstance:
   m_ObjectHideFlags: 0

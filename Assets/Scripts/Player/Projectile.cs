@@ -11,7 +11,10 @@ public class Projectile : MonoBehaviour
     private float speed = 30f;
 
     [SerializeField]
-    private float selfDestructTimer = 1f;
+    private float selfDestruct = 1f;
+
+    [SerializeField]
+    private float vanishTime = 1f;
 
     [Header("Explosions")]
 
@@ -19,13 +22,19 @@ public class Projectile : MonoBehaviour
     private bool willExplode = false;
 
     [SerializeField]
+    private Explosion impactExplosion;
+
+    [Header("Vanish")]
+
+    [SerializeField]
     private bool destroyOnCollision = false;
 
     [SerializeField]
-    private Explosion impactExplosion;
+    private bool willVanish = false;
 
     [SerializeField]
-    private float explosionDelay = 5.0f;
+    private Explosion vanishAnimation;
+
 
 
     private bool hasCollided = false;
@@ -37,14 +46,11 @@ public class Projectile : MonoBehaviour
     {
         GetComponent<Rigidbody2D>().AddForce(transform.up * speed, ForceMode2D.Impulse);
         PickSoundEffect();
-        Destroy(gameObject, selfDestructTimer);
+        Destroy(gameObject, selfDestruct);
     }
 
     private void PickSoundEffect()
     {
-        Debug.Log(gameObject.tag);
-
-
         if (gameObject.CompareTag("Projectile (Ice Small)"))
         {
             FindObjectOfType<AudioManager>().Play("GunshotLow");
@@ -56,7 +62,6 @@ public class Projectile : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("GunshotLow");
             FindObjectOfType<AudioManager>().Play("GunshotLower");
         }
-
     }
 
     private void OnCollisionEnter2D(Collision2D collison)
@@ -79,7 +84,10 @@ public class Projectile : MonoBehaviour
                 enemy.TakeDamage(damage);
 
             if (willExplode)
-                Invoke("Explode", explosionDelay);
+                Impact();
+
+            if (willVanish)
+                Invoke("Vanish", vanishTime);
 
             hasCollided = true;
         }
@@ -87,7 +95,7 @@ public class Projectile : MonoBehaviour
     }
 
 
-    void Explode()
+    void Impact()
     {
         float angle = (Mathf.Atan2(-other.contacts[0].normal.y, -other.contacts[0].normal.x) * Mathf.Rad2Deg) - 90;
 
@@ -100,14 +108,19 @@ public class Projectile : MonoBehaviour
         }
     }
 
+    void Vanish()
+    {
+        Destroy(gameObject);
+        Explosion melting = Instantiate(vanishAnimation, transform.position, transform.rotation);
+    }
+
     void DettachParticles()
     {
         var particleSystemObject = transform.Find("Ice Particles (Projectiles)").gameObject;
         var particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
         particleSystem.transform.parent = null;
 
-        Destroy(particleSystem, selfDestructTimer);
+        Destroy(particleSystem, vanishTime);
     }
-
 
 }
