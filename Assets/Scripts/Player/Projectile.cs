@@ -112,6 +112,7 @@ public class Projectile : MonoBehaviour
     {
         Destroy(gameObject);
         Explosion melting = Instantiate(vanishAnimation, transform.position, transform.rotation);
+        melting.transform.SetParent(other.transform);
     }
 
     void DettachParticles()

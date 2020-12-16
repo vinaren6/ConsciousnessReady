@@ -27,6 +27,7 @@ public class Health : MonoBehaviour
             Instantiate(explosion, transform.position, transform.rotation);
         }
 
+        FindObjectOfType<AudioManager>().Play("GunshotLow");
         Destroy(gameObject);
     }
 }

@@ -718,7 +718,7 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Shoot
       m_Flags: 0
-  boostSpeed: 2
+  boostSpeed: 1.75
   boostTimerLengt: 10
   rotationAcceleration: 10
   rotationSpeed: 25
