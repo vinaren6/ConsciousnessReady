@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class DraggerWeapon : MonoBehaviour
+public class MoverWeapon : MonoBehaviour
 {
     [SerializeField]
     private float projectileSpeed = 0.001f;

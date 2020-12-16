@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private InputAction movementX;
     [SerializeField] private InputAction movementY;
-  
+
     [SerializeField] private InputAction rotationX;
     [SerializeField] private InputAction rotationY;
 
@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
     float boost = 1;
     [SerializeField] private float boostSpeed = 2.5f;
-    
+
     [SerializeField] private float boostTimerLengt = 10;
     [SerializeField] private float rotationAcceleration = 10;
     [SerializeField] private float rotationSpeed = 25;
@@ -31,7 +31,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dragFast = 4.0f;
     [SerializeField] private float acceleration = 2f;
     [SerializeField] private float slowSpeed = 2f;
-    [SerializeField]  private bool newRotation;
+    [SerializeField] private bool newRotation;
     [SerializeField] private bool alwaysBoost;
     [SerializeField] private float mouseMoving = 2;
     bool mouseControl;
@@ -52,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     static public GameObject playerObj;
 
 
-    
+
     private void Awake()
     {
         playerObj = gameObject;
@@ -60,13 +60,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-       
-       
-
-
-
-
-
         maxSpeed = maxSpeedValue;
         boostTimer = boostTimerLengt;
         rotationX.Enable();
@@ -79,18 +72,19 @@ public class PlayerMovement : MonoBehaviour
         mousePosY.Enable();
         shoot.Enable();
         rb2d = GetComponent<Rigidbody2D>();
-        movementX.performed += context => {
+        movementX.performed += context =>
+        {
             movement.x = context.ReadValue<float>();
             rb2d.drag = dragFast;
         };
-        movementX.canceled += context => {
+        movementX.canceled += context =>
+        {
             movement.x = 0;
             if (movement.y == 0)
             {
                 rb2d.drag = dragSlow;
             }
-            };
-
+        };
         movementY.performed += context =>
         {
             movement.y = context.ReadValue<float>();
@@ -104,90 +98,65 @@ public class PlayerMovement : MonoBehaviour
                 rb2d.drag = dragSlow;
             }
         };
-
-        rotationX.performed += context => { 
+        rotationX.performed += context =>
+        {
             if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
             {
                 moveDirection.x = context.ReadValue<float>();
-            }  } ;
+            }
+        };
         rotationX.canceled += context => moveDirection.x = 0;
-        rotationY.performed += context => {
+        rotationY.performed += context =>
+        {
             if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
             {
                 moveDirection.y = context.ReadValue<float>();
             }
         };
         rotationY.canceled += context => moveDirection.y = 0;
-        boostInput.started += context => {
+        boostInput.started += context =>
+        {
             if (boostTimer > 0)
             {
                 isBoost = true;
                 boost = boostSpeed;
-               
             }
             else
             {
-               
-                    isBoost = false;
-                
-                
+                isBoost = false;
             }
-            
         };
-        boostInput.canceled += context => { boost = 1; isBoost = false;  };
-        slowInput.started += context => {
+        boostInput.canceled += context => { boost = 1; isBoost = false; };
+        slowInput.started += context =>
+        {
             maxSpeed = slowSpeed;
-
         };
         slowInput.canceled += context => { maxSpeed = maxSpeedValue; };
-      
-      
     }
     private void Update()
     {
-
         float oldRotation = transform.rotation.eulerAngles.z;
         if (oldRotation < 0)
         {
             oldRotation = 360 + oldRotation;
         }
         AnimationBasedOnVelocity();
-
-
-
-
         Boost();
-
-
-        
-        if(!MouseRotation())
+        if (!MouseRotation())
         {
-
-
             if (moveDirection != Vector2.zero)
             {
-
                 AnalogRotation();
-
-
             }
             else
             {
                 propulsion.SetBool("MovingBackwards", false);
-
-
                 if (movement != Vector2.zero)
                 {
-
-
                     MovementRotation();
                 }
-
             }
-           
         }
-
-
         float newRotation = transform.rotation.eulerAngles.z;
         if (newRotation < 0)
         {
@@ -206,21 +175,12 @@ public class PlayerMovement : MonoBehaviour
         propulsion.SetBool("NitroBoost", isBoost);
     }
 
-
-
     private void FixedUpdate()
     {
-
         if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed * boost)
         {
-       
             rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boost * Time.fixedDeltaTime, ForceMode2D.Impulse);
-       
-
-
         }
-
-
     }
 
     private void AnimationBasedOnVelocity()
@@ -228,7 +188,6 @@ public class PlayerMovement : MonoBehaviour
         if (rb2d.velocity.magnitude > 0.3)
         {
             ship.SetBool("ShipMoving", true);
-
         }
         else
         {
@@ -245,7 +204,6 @@ public class PlayerMovement : MonoBehaviour
             {
                 boostTimer -= Time.deltaTime;
             }
-
             if (boostTimer <= 0)
             {
                 isBoost = false;
@@ -258,17 +216,15 @@ public class PlayerMovement : MonoBehaviour
             {
                 boostTimer += Time.deltaTime;
             }
-
         }
     }
 
     private bool MouseRotation()
     {
-        if (Mathf.Abs(oldMouseX - mousePosX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - mousePosY.ReadValue<float>()) > mouseMoving ||shoot.ReadValue<float>() == 1)
+        if (Mathf.Abs(oldMouseX - mousePosX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - mousePosY.ReadValue<float>()) > mouseMoving || shoot.ReadValue<float>() == 1)
         {
             mouseControl = true;
             mouseControlTimer = mouseControlTimerLength;
-
         }
         if (mouseControl)
         {
@@ -285,17 +241,14 @@ public class PlayerMovement : MonoBehaviour
             {
                 movementDirection = 360 + movementDirection;
             }
-
             if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) || (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
             {
-
                 propulsion.SetBool("MovingBackwards", true);
             }
             else
             {
                 propulsion.SetBool("MovingBackwards", false);
             }
-
             if (mouseControlTimer <= 0)
             {
                 mouseControl = false;
@@ -322,10 +275,8 @@ public class PlayerMovement : MonoBehaviour
         {
             movementDirection = 360 + movementDirection;
         }
-
         if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) || (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
         {
-
             propulsion.SetBool("MovingBackwards", true);
         }
         else
@@ -336,10 +287,8 @@ public class PlayerMovement : MonoBehaviour
     private void MovementRotation()
     {
         float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
-
-
-
         float newRotation = Camera.main.transform.eulerAngles.z + angle + 90;
+
         if (newRotation < 0)
         {
             newRotation = 360 + newRotation;
@@ -374,11 +323,11 @@ public class PlayerMovement : MonoBehaviour
 
                 if (rotationSpeedBasedOnRotationLength > cameraSmoothingMaxSpeed)
                 {
-                   // cameraSmoothing = true;
+                    // cameraSmoothing = true;
                 }
                 else
                 {
-                   // cameraSmoothing = false;
+                    // cameraSmoothing = false;
                 }
                 if (eulerRotation.z + rotationSpeed * rotationSpeedBasedOnRotationLength * Time.deltaTime - newRotation > -0.5f && eulerRotation.z < newRotation + 180)
                 {
@@ -388,27 +337,21 @@ public class PlayerMovement : MonoBehaviour
                 {
                     transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + rotationSpeed * rotationSpeedBasedOnRotationLength * rotationAcceleration * Time.deltaTime);
                 }
-
-
-
             }
             else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
             {
                 float rotationSpeedBasedOnRotationLength = Mathf.Abs(newRotation - eulerRotation.z);
 
-
                 rotationSpeedBasedOnRotationLength = rotationSpeedBasedOnRotationLength / 100 + 1;
-
 
                 if (rotationSpeedBasedOnRotationLength > cameraSmoothingMaxSpeed)
                 {
-                   // cameraSmoothing = true;
+                    // cameraSmoothing = true;
                 }
                 else
                 {
-                   // cameraSmoothing = false;
+                    // cameraSmoothing = false;
                 }
-
                 if (eulerRotation.z - rotationSpeed * rotationSpeedBasedOnRotationLength * Time.deltaTime - newRotation < 0.5f && eulerRotation.z > newRotation - 180)
                 {
                     transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, (int)newRotation);
@@ -417,10 +360,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - rotationSpeed * rotationSpeedBasedOnRotationLength * rotationAcceleration * Time.deltaTime);
                 }
-
-
-
             }
         }
     }
-    }
+}
