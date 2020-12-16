@@ -110,9 +110,12 @@ public class Projectile : MonoBehaviour
 
     void Vanish()
     {
-        Destroy(gameObject);
-        Explosion melting = Instantiate(vanishAnimation, transform.position, transform.rotation);
-        melting.transform.SetParent(other.transform);
+        if (gameObject != null)
+        {
+            Destroy(gameObject);
+            Explosion melting = Instantiate(vanishAnimation, transform.position, transform.rotation);
+            melting.transform.SetParent(other.transform);
+        }
     }
 
     void DettachParticles()
@@ -121,7 +124,7 @@ public class Projectile : MonoBehaviour
         var particleSystem = particleSystemObject.GetComponent<ParticleSystem>();
         particleSystem.transform.parent = null;
 
-        Destroy(particleSystem, vanishTime);
+        Destroy(particleSystem, selfDestruct);
     }
 
 }
