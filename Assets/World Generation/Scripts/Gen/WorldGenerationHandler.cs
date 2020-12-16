@@ -272,8 +272,11 @@ public class WorldGenerationHandler : MonoBehaviour
 
     public void ScaleCemra(Camera cam)
     {
-        float size = ((int)(worldSize + 0.5f)) * settings.gridSize / 2f + settings.gridSize;
-        cam.orthographicSize = size;
+        cam.orthographicSize = ((int)(worldSize + 0.5f)) * settings.gridSize / 2f + settings.gridSize;
+    }
+    public float GetScale()
+    {
+        return worldSize* settings.gridSize / 2;
     }
 
     public void Regenerate()

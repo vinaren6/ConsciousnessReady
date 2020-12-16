@@ -155,6 +155,7 @@ public class Cell : MonoBehaviour
     {
         if (ruleId != -1 && isLoaded) {
 
+            //dont unload objs close to player
             GameObject[] objs = scene.GetRootGameObjects();
             for (int i = 0; i < objs.Length; i++) {
                 if (((1 << objs[i].layer) & WorldGenerationHandler.instance.settings.movebleObjs.value) == 1)
@@ -183,21 +184,23 @@ public class Cell : MonoBehaviour
         try {
             s = SceneManager.GetSceneByBuildIndex(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id);
             GameObject[] objs = s.GetRootGameObjects();
+            //flip and move objects
             for (int i = 0; i < objs.Length; i++) {
+                if (objs[i].tag != "StayAtZero") {
+                    //flip pos
+                    objs[i].transform.position = new Vector3(
+                        WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.position.x : objs[i].transform.position.x,
+                        WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.position.y : objs[i].transform.position.y,
+                        objs[i].transform.position.z);
+                    //flip scale
+                    if (objs[i].layer == 12)
+                        objs[i].transform.localScale = new Vector3(
+                            WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.localScale.x : objs[i].transform.localScale.x,
+                            WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.localScale.y : objs[i].transform.localScale.y,
+                            objs[i].transform.localScale.z);
 
-                //flip pos
-                objs[i].transform.position = new Vector3(
-                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.position.x : objs[i].transform.position.x,
-                    WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.position.y : objs[i].transform.position.y,
-                    objs[i].transform.position.z);
-                //flip scale
-                if (objs[i].layer == 12)
-                    objs[i].transform.localScale = new Vector3(
-                        WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.localScale.x : objs[i].transform.localScale.x,
-                        WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipY ? -objs[i].transform.localScale.y : objs[i].transform.localScale.y,
-                        objs[i].transform.localScale.z);
-
-                objs[i].transform.position += transform.position;
+                    objs[i].transform.position += transform.position;
+                }
                 SceneManager.MoveGameObjectToScene(objs[i], scene);
             }
             AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(s);

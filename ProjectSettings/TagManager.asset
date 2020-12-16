@@ -10,6 +10,7 @@ TagManager:
   - Player Bullets
   - Projectile (Ice Large)
   - Projectile (Ice Small)
+  - StayAtZero
   layers:
   - Default
   - TransparentFX
