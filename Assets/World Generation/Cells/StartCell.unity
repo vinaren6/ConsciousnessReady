@@ -7447,6 +7447,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 112294133212330643, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: coolDown
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037301594256694380, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: mouseMoving
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037301594256694380, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: mouseControlTimerLength
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name
       value: Player

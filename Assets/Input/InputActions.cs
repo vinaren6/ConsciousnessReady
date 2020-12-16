@@ -24,7 +24,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""id"": ""974e511d-4188-46f0-8191-79fa423c12b9"",
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
-                    ""interactions"": ""Press,SlowTap(duration=1)""
+                    ""interactions"": ""Tap(duration=0.99),SlowTap(duration=1)""
                 }
             ],
             ""bindings"": [

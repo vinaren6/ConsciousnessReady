@@ -729,8 +729,8 @@ MonoBehaviour:
   slowSpeed: 2.5
   newRotation: 1
   alwaysBoost: 1
-  mouseMoving: 5
-  mouseControlTimerLength: 0.1
+  mouseMoving: 1
+  mouseControlTimerLength: 0.25
   cameraSmoothing: 0
   cameraSmoothingMaxSpeed: 1
   propulsion: {fileID: 8037301592627414500}
@@ -806,7 +806,7 @@ MonoBehaviour:
   pointOfFire: {fileID: 112294132145951650}
   normalProjectile: {fileID: 6303515164149006159, guid: c2a285c7a71382848a3a67656fe3f7cf, type: 3}
   normalKnockback: 0.15
-  coolDown: 0.2
+  coolDown: 0.15
   chargeProjectile: {fileID: 6303515164149006159, guid: 5c35a021e4a224c458aaf5659a640e87, type: 3}
   chargeKnockback: 6
 --- !u!114 &3814114195626538798
