@@ -8,7 +8,7 @@ public class Mover : MonoBehaviour
     private bool isCoolided;
     //[SerializeField] private ScriptableObject
     // Start is called before the first frame update
-    private float timer = 3;
+    private float timer = 1;
     private string childName;
     private float childMass;
     private float childDrag;
@@ -36,7 +36,13 @@ public class Mover : MonoBehaviour
                 ChildGameObject1.GetComponent<Rigidbody2D>().angularDrag = childAngularDrag;
                 ChildGameObject1.GetComponent<Rigidbody2D>().gravityScale = childGravityScale;
                 ChildGameObject1.GetComponent<Rigidbody2D>().velocity = velocity;
-                Debug.Log(ChildGameObject1.GetComponent<Rigidbody2D>().velocity + " gello");
+                if (ChildGameObject1.gameObject.GetComponent<AI>() != null && FindChildTransform(ChildGameObject1.gameObject, "Trigger").GetComponent<EnableScriptOnTrigger>() != null)
+                {
+                    // EnableScriptOnTrigger
+                    FindChildTransform(ChildGameObject1.gameObject, "Trigger").GetComponent<CircleCollider2D>().enabled = true;
+                    ChildGameObject1.gameObject.GetComponent<AI>().enabled = true;
+                    Debug.Log("poop");
+                }
                 child.parent = null;
                 Destroy(gameObject);
             }
@@ -66,7 +72,7 @@ public class Mover : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.layer != 13 && collision.gameObject.tag != "Player")
+        if ((collision.gameObject.layer == 13  || collision.gameObject.tag == "Asteroids" || collision.gameObject.tag == "Medium Debris") && collision.gameObject.tag != "Player")
         {
           
 
@@ -81,7 +87,13 @@ public class Mover : MonoBehaviour
                     Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
                     Destroy(GetComponent<BoxCollider2D>());
                     collision.gameObject.transform.SetParent(transform);
-                    if (collision.transform.GetComponent<Mover>() != null)
+                    velocity = velocity / (childMass / 10);
+                    colidedWithEnemy(collision);
+              
+               
+                    
+                
+                if (collision.transform.GetComponent<Mover>() != null)
                     {
                         Destroy(collision.transform.GetComponent<Mover>());
                     }
@@ -99,7 +111,17 @@ public class Mover : MonoBehaviour
         //col.transform.parent = transform;
 
     }
-
+   
+    void colidedWithEnemy(Collision2D collision)
+    {
+        if (collision.gameObject.GetComponent<AI>() != null && FindChildTransform(collision.gameObject, "Trigger").GetComponent<EnableScriptOnTrigger>() != null)
+        {
+            // EnableScriptOnTrigger
+            FindChildTransform(collision.gameObject, "Trigger").GetComponent<CircleCollider2D>().enabled = false;
+            collision.gameObject.GetComponent<AI>().enabled = false;
+        }
+    }
+ 
     void OnCollisionStay2D(Collision2D collision)
     {
         GetComponent<Rigidbody2D>().velocity = velocity;
