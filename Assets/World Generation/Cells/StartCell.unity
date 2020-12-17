@@ -3769,6 +3769,34 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
   m_PrefabInstance: {fileID: 1985459976}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &908704039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908704038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2d4a35bb94c1c4e93366728dc5c782, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reset:
+    m_Name: Reset
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c3ff8748-a002-4228-92f4-0464e8c12f5e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 282d6a9e-bbd5-4a1c-9d8b-7d0ede62f8b3
+      m_Path: <Keyboard>/#(R)
+      m_Interactions: Tap
+      m_Processors: 
+      m_Groups: 
+      m_Action: Reset
+      m_Flags: 0
 --- !u!95 &908704044 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 8037301594256694386, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}

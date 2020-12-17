@@ -1,20 +1,27 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 public class Reset : MonoBehaviour
 {
     [SerializeField] private InputAction reset;
 
-    private Vector3 pos;
+
+    private void OnEnable()
+    {
+        reset.Enable();
+    }
+
+    private void OnDisable()
+    {
+        reset.Disable();
+    }
 
     void Start()
     {
-        reset.Enable();
-        reset.performed += context => ResetPos();
-
-        pos = PlayerMovement.playerObj.transform.position;
+        reset.performed += context => Res();
     }
-    private void ResetPos()
+    private void Res()
     {
-        PlayerMovement.playerObj.transform.position = pos;
+        SceneManager.LoadScene(0);
     }
 }
