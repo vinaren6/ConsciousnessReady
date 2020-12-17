@@ -214,7 +214,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6047506546727259408}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 227a9725888c3684a849d4abd62a5c3e, type: 3}
   m_Name: 
@@ -228,7 +228,7 @@ MonoBehaviour:
   target: {fileID: 0}
   RayDistance: 6.5
   TargetAvoidDistance: 3
-  CosisionAvoidDistance: 0
+  CosisionAvoidDistance: 0.25
   turnSpeed: 20
   smoothTurnSpeed: 25
   targetDistanceMultiplier: 0

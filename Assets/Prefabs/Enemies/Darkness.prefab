@@ -221,7 +221,7 @@ MonoBehaviour:
   target: {fileID: 0}
   RayDistance: 6.5
   TargetAvoidDistance: 3
-  CosisionAvoidDistance: 0
+  CosisionAvoidDistance: 0.25
   turnSpeed: 20
   smoothTurnSpeed: 25
   targetDistanceMultiplier: 0

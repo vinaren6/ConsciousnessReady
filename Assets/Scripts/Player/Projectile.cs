@@ -62,6 +62,11 @@ public class Projectile : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("GunshotLow");
             FindObjectOfType<AudioManager>().Play("GunshotLower");
         }
+
+        if (gameObject.CompareTag("Enemy Bullet"))
+        {
+            FindObjectOfType<AudioManager>().Play("GunshotEnemy");
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collison)
