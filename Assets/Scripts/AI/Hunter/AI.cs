@@ -85,9 +85,11 @@ public class AI : MonoBehaviour
 
         oldAngle = transform.rotation.eulerAngles.z % 180f;
     }
-    /*
+
     private void OnEnable()
     {
+        rb2d = GetComponent<Rigidbody2D>();
+        /*
         if (target == null) {
             target = PlayerMovement.playerObj.transform;
         }
@@ -103,8 +105,10 @@ public class AI : MonoBehaviour
             angle += 90;
             turning += transform.rotation.eulerAngles.z - angle;
         }
-    }
+    
     */
+    }
+  
 
     float oldAngle = 0f;
 
