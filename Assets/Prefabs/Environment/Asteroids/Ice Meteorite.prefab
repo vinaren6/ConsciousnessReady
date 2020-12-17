@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4002426362550261732}
   m_Layer: 12
   m_Name: Ice Meteorite
-  m_TagString: Untagged
+  m_TagString: Asteroids
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
