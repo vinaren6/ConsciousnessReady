@@ -47,6 +47,8 @@ public class AI : MonoBehaviour
     [SerializeField]
     private float MaxOffsetInDegreeToFire = 45;
     [SerializeField]
+    private float fireDistance = 8f;
+    [SerializeField]
     private GameObject bullet;
     [SerializeField]
     private Transform[] guns;
@@ -209,7 +211,7 @@ public class AI : MonoBehaviour
                 if ((turning < MaxOffsetInDegreeToFire || turning < MaxOffsetInDegreeToFire - 360) && (turning > -MaxOffsetInDegreeToFire || turning > 360 - MaxOffsetInDegreeToFire)) {
                     if (behavor.HasFlag(Behavor.DontFireIfBlocked)) {
                         RaycastHit2D hitFire = Physics2D.Raycast(transform.position, transform.up, dist, layerMask);
-                        if (hitFire.distance != 0) {
+                        if (hitFire.distance != 0 || hitFire.distance > fireDistance) {
                             return;
                         }
                     }
