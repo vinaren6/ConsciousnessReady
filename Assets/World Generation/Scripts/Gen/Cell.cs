@@ -158,14 +158,28 @@ public class Cell : MonoBehaviour
             //dont unload objs close to player
             GameObject[] objs = scene.GetRootGameObjects();
             for (int i = 0; i < objs.Length; i++) {
-                if (((1 << objs[i].layer) & WorldGenerationHandler.instance.settings.movebleObjs.value) == 1)
+                if (((1 << objs[i].layer) & WorldGenerationHandler.instance.settings.movebleObjs.value) == 1) {
                     if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
                         int sc = SceneManager.sceneCount - 1;
                         if (SceneManager.GetSceneAt(sc) == scene)
                             sc--;
+                        /*
                         SceneManager.MoveGameObjectToScene(objs[i], SceneManager.GetSceneAt(sc));
-                        //Debug.Log("move " + objs[i].name + " to scene: " + SceneManager.GetSceneAt(sc).name);
+                        Debug.Log("move " + objs[i].name + " to scene: " + SceneManager.GetSceneAt(sc).name);
                     }
+                    else {
+                        Debug.Log("obj " + objs[i].name + " is to far away to move sceane: " + Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position));
+                    }
+                } else {
+                    if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
+                        Debug.Log("obj " + objs[i].name + " did not move sceane because it missing layer");
+                    } else {
+                        if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
+                            Debug.Log("obj " + objs[i].name + " did not move sceane because it missing layer, and your far away: " + Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position));
+                        }
+                        */
+                    }
+                }
             }
 
             SceneManager.UnloadSceneAsync(scene);
