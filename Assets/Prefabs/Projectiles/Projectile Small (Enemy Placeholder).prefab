@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2190196184049555586}
   - component: {fileID: 6303515164149006159}
   m_Layer: 19
-  m_Name: Projectile (Enemy Placeholder)
+  m_Name: Projectile Small (Enemy Placeholder)
   m_TagString: Enemy Bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

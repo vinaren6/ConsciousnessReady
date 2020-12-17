@@ -136,9 +136,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00000047683716, y: 0}
+  m_Offset: {x: 0.4378141, y: 0}
   serializedVersion: 2
-  m_Radius: 6
+  m_Radius: 9.538999
 --- !u!250 &1433785131
 PointEffector2D:
   m_ObjectHideFlags: 0
@@ -151,12 +151,12 @@ PointEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_ForceMagnitude: -30
+  m_ForceMagnitude: -60
   m_ForceVariation: 0
   m_DistanceScale: 1.5
   m_ForceSource: 0
   m_ForceTarget: 0
-  m_ForceMode: 1
+  m_ForceMode: 2
   m_Drag: 1
   m_AngularDrag: 0.5
 --- !u!1 &7297255637337661716
@@ -176,7 +176,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1719775824626490412
 Transform:
   m_ObjectHideFlags: 0
@@ -216,9 +216,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.015755972}
   serializedVersion: 2
-  m_Radius: 0.26
+  m_Radius: 0.27575597
 --- !u!1 &7753794601348871580
 GameObject:
   m_ObjectHideFlags: 0
