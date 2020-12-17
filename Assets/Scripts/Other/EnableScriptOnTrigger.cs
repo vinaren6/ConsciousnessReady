@@ -3,17 +3,21 @@
 public class EnableScriptOnTrigger : MonoBehaviour
 {
     [SerializeField]
-    private MonoBehaviour script;
+    private MonoBehaviour[] scripts;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-            script.enabled = true;
+        foreach (MonoBehaviour script in scripts) {
+            if (collision.tag == "Player")
+                script.enabled = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Player")
-            script.enabled = false;
+        foreach (MonoBehaviour script in scripts) {
+            if (collision.tag == "Player")
+                script.enabled = false;
+        }
     }
 }

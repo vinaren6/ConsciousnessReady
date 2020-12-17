@@ -198,7 +198,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94c2f115295cf82439a51e2b4cc3dbb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 2118020496}
+  scripts:
+  - {fileID: 2118020496}
 --- !u!114 &2118020496
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -226,6 +227,7 @@ MonoBehaviour:
   targetDistanceMultiplier: 0
   fireDelay: 3
   MaxOffsetInDegreeToFire: 45
+  fireDistance: 8
   bullet: {fileID: 7477270765736997791, guid: 19a4d12f9b9e6f943a9890dd4f644a30, type: 3}
   guns:
   - {fileID: 6159721085358635749}
