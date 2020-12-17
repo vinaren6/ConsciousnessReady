@@ -26,12 +26,12 @@ TagManager:
   - Player
   - Environment
   - Enemies
-  - Projectiles
+  - Player Projectiles
   - Hazards
   - Map
   - Sanctuary Outpost
   - World Map
-  - 
+  - Enemy Projectiles
   - 
   - 
   - 

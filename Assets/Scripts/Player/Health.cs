@@ -29,6 +29,8 @@ public class Health : MonoBehaviour
 
         FindObjectOfType<AudioManager>().Play("Explosion (High)");
         FindObjectOfType<AudioManager>().Play("Explosion (Low)");
+
         Destroy(gameObject);
+
     }
 }

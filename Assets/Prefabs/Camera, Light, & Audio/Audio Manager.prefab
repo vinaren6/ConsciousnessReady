@@ -70,7 +70,7 @@ MonoBehaviour:
     PlayOneShot: 1
     source: {fileID: 0}
   - name: MusicGameplay
-    clip: {fileID: 8300000, guid: 66a6a66579b0d084c905b5dcc19a76ec, type: 3}
+    clip: {fileID: 8300000, guid: 2430ba709774dba4c98fc33166a5c9bd, type: 3}
     volume: 0.75
     pitch: 1
     spatialBlend: 0
