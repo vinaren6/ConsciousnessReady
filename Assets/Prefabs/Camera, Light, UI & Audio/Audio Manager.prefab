@@ -95,9 +95,17 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: GunshotEnemy
     clip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
-    volume: 0.7
+    volume: 1
     pitch: 3
     spatialBlend: 0.5
     loop: 0
+    PlayOneShot: 1
+    source: {fileID: 0}
+  - name: BlackHole
+    clip: {fileID: 8300000, guid: b00f086f048920341aa0a24f709ca95a, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 1
     PlayOneShot: 1
     source: {fileID: 0}
