@@ -36,6 +36,12 @@ public class WorldGenerationHandler : MonoBehaviour
         GenerateCells();
     }
 
+    private void OnDestroy()
+    {
+        if (instance == this)
+            instance = null;
+    }
+
     private void SeperateRules()
     {
         List<CellRules> cellRulesDefaltL = new List<CellRules>(), cellRulesOutpostL = new List<CellRules>(), cellRulesStartL = new List<CellRules>(), cellRulesEndL = new List<CellRules>();
