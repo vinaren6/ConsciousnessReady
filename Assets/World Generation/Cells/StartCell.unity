@@ -7830,6 +7830,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5615980755339203145, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Name
+      value: Minimap Frame
+      objectReference: {fileID: 0}
     - target: {fileID: 5615980756617725226, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -7917,6 +7921,14 @@ PrefabInstance:
     - target: {fileID: 5615980756617725230, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757357695110, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Name
+      value: Minimap
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757357695110, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
