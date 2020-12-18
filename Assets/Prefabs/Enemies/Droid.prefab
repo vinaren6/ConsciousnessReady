@@ -107,8 +107,8 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 5943
-  maxSpeed: 10
-  acceleration: 13
+  maxSpeed: 9
+  acceleration: 10
   target: {fileID: 0}
   RayDistance: 6.5
   TargetAvoidDistance: 10
