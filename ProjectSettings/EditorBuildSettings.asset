@@ -42,6 +42,12 @@ EditorBuildSettings:
     path: Assets/World Generation/Cells/EndCell.unity
     guid: 1dab6b1e34ae8dc4ea4290d24a1cfbda
   - enabled: 1
+    path: Assets/World Generation/Cells/BFA Cell.unity
+    guid: 3768020108631194590fd8e19c564f04
+  - enabled: 1
+    path: Assets/World Generation/Cells/New Units Cell.unity
+    guid: 81aa3653aeee2914999865a2388f25ae
+  - enabled: 1
     path: Assets/World Generation/Scenes/WorldGeneration.unity
     guid: 64090f8b4092a054db321e963b51c90a
   m_configObjects:
