@@ -242,7 +242,7 @@ MonoBehaviour:
   CosisionAvoidDistance: 1
   turnSpeed: 25
   smoothTurnSpeed: 25
-  targetDistanceMultiplier: 0
+  targetDistanceMultiplier: 0.5
   fireDelay: 1
   MaxOffsetInDegreeToFire: 45
   fireDistance: 8
@@ -485,6 +485,10 @@ PrefabInstance:
     - target: {fileID: 6038904308335999536, guid: 26a6b99432f8b924ab2ac7f646ab1cf5, type: 3}
       propertyPath: TargetAvoidDistance
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6038904308335999536, guid: 26a6b99432f8b924ab2ac7f646ab1cf5, type: 3}
+      propertyPath: targetDistanceMultiplier
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6038904308335999538, guid: 26a6b99432f8b924ab2ac7f646ab1cf5, type: 3}
       propertyPath: m_RootOrder
