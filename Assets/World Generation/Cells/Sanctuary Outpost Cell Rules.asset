@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Sanctuary Outpost
   type: 0
-  id: 8
+  id: 9
   Allowflip: 1
   flipX: 0
   flipY: 0

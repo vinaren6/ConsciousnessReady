@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Blackhole
   type: 0
-  id: 3
+  id: 4
   Allowflip: 0
   flipX: 0
   flipY: 0

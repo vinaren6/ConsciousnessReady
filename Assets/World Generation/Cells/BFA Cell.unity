@@ -329,6 +329,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BFA1
       objectReference: {fileID: 0}
+    - target: {fileID: 5395636149734393034, guid: cc40dc1656363ef4ca55a4d5c08c92bd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc40dc1656363ef4ca55a4d5c08c92bd, type: 3}
 --- !u!1001 &6038904308490284095
@@ -548,7 +552,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6038904308335999540, guid: 26a6b99432f8b924ab2ac7f646ab1cf5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a6b99432f8b924ab2ac7f646ab1cf5, type: 3}
