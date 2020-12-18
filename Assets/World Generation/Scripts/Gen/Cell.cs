@@ -163,7 +163,7 @@ public class Cell : MonoBehaviour
                         int sc = SceneManager.sceneCount - 1;
                         if (SceneManager.GetSceneAt(sc) == scene)
                             sc--;
-                        /*
+                        
                         SceneManager.MoveGameObjectToScene(objs[i], SceneManager.GetSceneAt(sc));
                         Debug.Log("move " + objs[i].name + " to scene: " + SceneManager.GetSceneAt(sc).name);
                     }
@@ -175,9 +175,9 @@ public class Cell : MonoBehaviour
                         Debug.Log("obj " + objs[i].name + " did not move sceane because it missing layer");
                     } else {
                         if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
-                            Debug.Log("obj " + objs[i].name + " did not move sceane because it missing layer, and your far away: " + Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position));
+                            Debug.Log("obj " + objs[i].name + " did not move sceane because it missing layer, and was to far away: " + Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position));
                         }
-                        */
+                        
                     }
                 }
             }

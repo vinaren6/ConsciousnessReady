@@ -192,7 +192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29678142}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa2d4a35bb94c1c4e93366728dc5c782, type: 3}
   m_Name: 
@@ -208,7 +208,7 @@ MonoBehaviour:
     - m_Name: 
       m_Id: 784662c0-4a70-463e-902b-5ed43a50e8c2
       m_Path: <Keyboard>/r
-      m_Interactions: 
+      m_Interactions: Tap
       m_Processors: 
       m_Groups: 
       m_Action: Reset
