@@ -643,6 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  explosion: {fileID: 0}
 --- !u!1001 &70353288
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3387,6 +3388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 200
+  explosion: {fileID: 0}
 --- !u!1 &807243404 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3381270748263085729, guid: 8c39713449cb97f4e863a55714487c98, type: 3}
@@ -7742,7 +7744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2061184305}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Enemies
   m_TagString: Untagged
   m_Icon: {fileID: 0}
