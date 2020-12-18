@@ -165,6 +165,7 @@ public class Cell : MonoBehaviour
                             sc--;
                         
                         SceneManager.MoveGameObjectToScene(objs[i], SceneManager.GetSceneAt(sc));
+                        /*
                         Debug.Log("move " + objs[i].name + " to scene: " + SceneManager.GetSceneAt(sc).name);
                     }
                     else {
@@ -177,7 +178,7 @@ public class Cell : MonoBehaviour
                         if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
                             Debug.Log("obj " + objs[i].name + " did not move sceane because it missing layer, and was to far away: " + Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position));
                         }
-                        
+                        */
                     }
                 }
             }
