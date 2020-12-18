@@ -7853,10 +7853,42 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 430177149329609510, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: hp
+      value: 
+      objectReference: {fileID: 1985459977}
     - target: {fileID: 5615980756617725226, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_Name
       value: UI (Canvas)
       objectReference: {fileID: 0}
+    - target: {fileID: 5615980756617725228, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: targets.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980756617725228, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 5615980756329494895}
+    - target: {fileID: 5615980756617725229, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: targets.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980756617725229, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: targets.Array.data[0]
+      value: 
+      objectReference: {fileID: 5615980756329494896}
+    - target: {fileID: 5615980756617725229, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: targets.Array.data[1]
+      value: 
+      objectReference: {fileID: 5615980756329494892}
+    - target: {fileID: 5615980756617725229, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: targets.Array.data[2]
+      value: 
+      objectReference: {fileID: 5615980756329494894}
+    - target: {fileID: 5615980756617725229, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: targets.Array.data[3]
+      value: 
+      objectReference: {fileID: 1085246495}
     - target: {fileID: 5615980756617725230, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -7941,6 +7973,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5615980757036877138, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.19607843
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757036877138, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757036877138, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757036877138, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757036877138, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757036877139, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
 --- !u!1 &5615980756329494892 stripped
@@ -7967,3 +8023,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &5615980756329494894 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7855379268004108405, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+  m_PrefabInstance: {fileID: 5615980756329494891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5615980756329494895 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5615980757036877139, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+  m_PrefabInstance: {fileID: 5615980756329494891}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5615980756329494896 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5615980757357695110, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+  m_PrefabInstance: {fileID: 5615980756329494891}
+  m_PrefabAsset: {fileID: 0}

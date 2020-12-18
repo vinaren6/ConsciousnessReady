@@ -3,7 +3,7 @@
 public class AddObjToWorldmapManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject target;
+    private GameObject[] targets;
 
     [SerializeField]
     private bool defaultState;
@@ -11,9 +11,11 @@ public class AddObjToWorldmapManager : MonoBehaviour
     void Start()
     {
         if (defaultState)
-            WorldmapManager.instace.desableObjs = GlobalFunctions.AddElementToArray(WorldmapManager.instace.desableObjs, target);
+            foreach (GameObject target in targets)
+                WorldmapManager.instace.desableObjs = GlobalFunctions.AddElementToArray(WorldmapManager.instace.desableObjs, target);
         else
-            WorldmapManager.instace.enableObjs = GlobalFunctions.AddElementToArray(WorldmapManager.instace.enableObjs, target);
+            foreach (GameObject target in targets)
+                WorldmapManager.instace.enableObjs = GlobalFunctions.AddElementToArray(WorldmapManager.instace.enableObjs, target);
     }
 
 }
