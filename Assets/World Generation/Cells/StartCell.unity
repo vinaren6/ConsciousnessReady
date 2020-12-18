@@ -7036,18 +7036,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 112294133212330643, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: coolDown
-      value: 0.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037301594256694380, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: mouseMoving
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037301594256694380, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: mouseControlTimerLength
-      value: 0.25
-      objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7098,6 +7086,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+--- !u!114 &1985459977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2077842658228834804, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+  m_PrefabInstance: {fileID: 1985459976}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908704038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2008935855
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7830,10 +7829,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 5615980755339203145, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
-      propertyPath: m_Name
-      value: Minimap Frame
-      objectReference: {fileID: 0}
+    - target: {fileID: 430177149329609510, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: hp
+      value: 
+      objectReference: {fileID: 1985459977}
     - target: {fileID: 5615980756617725226, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -7921,14 +7920,6 @@ PrefabInstance:
     - target: {fileID: 5615980756617725230, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5615980757357695110, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
-      propertyPath: m_Name
-      value: Minimap
-      objectReference: {fileID: 0}
-    - target: {fileID: 5615980757357695110, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2bc532c236e772446aed7761396d58c1, type: 3}

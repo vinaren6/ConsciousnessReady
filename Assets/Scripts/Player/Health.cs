@@ -2,12 +2,18 @@
 
 public class Health : MonoBehaviour
 {
+
     [SerializeField]
     private float health = 100f;
 
     [SerializeField]
+    private float maxHealth = 100f;
+
+    [SerializeField]
     private Explosion explosion;
 
+    public float PlayerHealth { get => health; }
+    public float MaxHealth { get => maxHealth; set => maxHealth = value; }
 
     public void TakeDamage(int damage)
     {
@@ -16,6 +22,14 @@ public class Health : MonoBehaviour
         if (health <= 0)
         {
             Die();
+        }
+    }
+    public void Heal(int healing)
+    {
+        health += healing;
+
+        if (health > maxHealth) {
+            health = maxHealth;
         }
     }
 
