@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 83765493642620505}
   - component: {fileID: 83765493642620483}
   - component: {fileID: 83765493642620482}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Obelisk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 5943
-  maxSpeed: 9
+  maxSpeed: 7
   acceleration: 10
   target: {fileID: 0}
   RayDistance: 6.5

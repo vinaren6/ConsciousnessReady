@@ -727,14 +727,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 83765492491485714, guid: afaa52b9fdcee4d4a9d2e54d641b82f0, type: 3}
-      propertyPath: m_Layer
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 83765493642620482, guid: afaa52b9fdcee4d4a9d2e54d641b82f0, type: 3}
-      propertyPath: maxSpeed
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 83765493642620484, guid: afaa52b9fdcee4d4a9d2e54d641b82f0, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -783,10 +775,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Obelisk
       objectReference: {fileID: 0}
-    - target: {fileID: 83765493642620506, guid: afaa52b9fdcee4d4a9d2e54d641b82f0, type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: afaa52b9fdcee4d4a9d2e54d641b82f0, type: 3}
 --- !u!1001 &2231824566033315197
@@ -796,18 +784,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2231824566635593407, guid: d3053ef984545a842b0fdc7bd3ccbf55, type: 3}
-      propertyPath: m_Layer
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 2231824567063010032, guid: d3053ef984545a842b0fdc7bd3ccbf55, type: 3}
-      propertyPath: maxSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2231824567063010032, guid: d3053ef984545a842b0fdc7bd3ccbf55, type: 3}
-      propertyPath: acceleration
-      value: 7
-      objectReference: {fileID: 0}
     - target: {fileID: 2231824567063010038, guid: d3053ef984545a842b0fdc7bd3ccbf55, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -856,10 +832,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cargo Ship
       objectReference: {fileID: 0}
-    - target: {fileID: 2231824567063010040, guid: d3053ef984545a842b0fdc7bd3ccbf55, type: 3}
-      propertyPath: m_Layer
-      value: 13
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3053ef984545a842b0fdc7bd3ccbf55, type: 3}
 --- !u!1001 &4696570944593571198
@@ -872,10 +844,6 @@ PrefabInstance:
     - target: {fileID: 4696570942825646080, guid: 387a6660a6fb3194f8a5cf76f75be623, type: 3}
       propertyPath: m_Name
       value: Stinger
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696570942825646080, guid: 387a6660a6fb3194f8a5cf76f75be623, type: 3}
-      propertyPath: m_Layer
-      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4696570942825646330, guid: 387a6660a6fb3194f8a5cf76f75be623, type: 3}
       propertyPath: m_RootOrder
@@ -920,10 +888,6 @@ PrefabInstance:
     - target: {fileID: 4696570942825646330, guid: 387a6660a6fb3194f8a5cf76f75be623, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4696570943376267739, guid: 387a6660a6fb3194f8a5cf76f75be623, type: 3}
-      propertyPath: m_Layer
-      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 387a6660a6fb3194f8a5cf76f75be623, type: 3}

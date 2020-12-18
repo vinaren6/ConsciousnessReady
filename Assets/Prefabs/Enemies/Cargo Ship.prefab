@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2231824567063010043}
   - component: {fileID: 2231824567063010033}
   - component: {fileID: 2231824567063010032}
-  m_Layer: 0
+  m_Layer: 13
   m_Name: Cargo Ship
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -368,8 +368,8 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 5943
-  maxSpeed: 9
-  acceleration: 10
+  maxSpeed: 5
+  acceleration: 7
   target: {fileID: 0}
   RayDistance: 6.5
   TargetAvoidDistance: 10
