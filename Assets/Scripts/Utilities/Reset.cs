@@ -22,6 +22,6 @@ public class Reset : MonoBehaviour
     }
     private void Res()
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("WorldGeneration");
     }
 }
