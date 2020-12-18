@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1335420184}
   - component: {fileID: 1335420185}
-  m_Layer: 13
+  m_Layer: 16
   m_Name: MapDot (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
