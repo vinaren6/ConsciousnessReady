@@ -51,7 +51,7 @@ public class PlayerMovement : MonoBehaviour
     //statice refrence to the player obj.
     static public GameObject playerObj;
 
-
+    bool isGamepad = false;
 
     private void Awake()
     {
@@ -74,6 +74,11 @@ public class PlayerMovement : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         movementX.performed += context =>
         {
+            
+            if (context.control.displayName == "Left Stick Left")
+            {
+                isGamepad = true;
+            }
             movement.x = context.ReadValue<float>();
             rb2d.drag = dragFast;
         };
@@ -87,6 +92,11 @@ public class PlayerMovement : MonoBehaviour
         };
         movementY.performed += context =>
         {
+            Debug.Log(context.control.displayName);
+            if (context.control.displayName == "Left Stick Down")
+            {
+                isGamepad = true;
+            }
             movement.y = context.ReadValue<float>();
             rb2d.drag = dragFast;
         };
@@ -225,8 +235,9 @@ public class PlayerMovement : MonoBehaviour
         {
             mouseControl = true;
             mouseControlTimer = mouseControlTimerLength;
+            isGamepad = false;
         }
-        if (mouseControl)
+        if (!isGamepad)
         {
             Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
             Vector2 direction = (testi - (Vector2)transform.position).normalized;
@@ -251,7 +262,7 @@ public class PlayerMovement : MonoBehaviour
             }
             if (mouseControlTimer <= 0)
             {
-                mouseControl = false;
+               // mouseControl = false;
             }
             return true;
         }
