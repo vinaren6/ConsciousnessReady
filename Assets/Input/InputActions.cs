@@ -27,7 +27,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": ""Press,SlowTap(duration=0.75)""
                 },
                 {
-                    ""name"": ""AnyGamepadButton"",
+                    ""name"": ""AnyButton"",
                     ""type"": ""Button"",
                     ""id"": ""39f5d985-a437-4302-9837-422c8a0659ff"",
                     ""expectedControlType"": ""Button"",
@@ -76,7 +76,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -87,7 +87,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -98,7 +98,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -109,7 +109,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -120,7 +120,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -131,7 +131,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -142,7 +142,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -153,7 +153,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -164,7 +164,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
@@ -175,7 +175,40 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""AnyGamepadButton"",
+                    ""action"": ""AnyButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9ca95ae6-d2d2-4d6e-93da-c87eaf72f773"",
+                    ""path"": ""<Keyboard>/anyKey"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AnyButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""97500621-1645-4546-b4d2-27e2d3f323f7"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AnyButton"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""036e2b08-bf4c-4558-a061-15e0cd55f164"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""AnyButton"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -187,7 +220,7 @@ public class @InputActions : IInputActionCollection, IDisposable
         // Player
         m_Player = asset.FindActionMap("Player", throwIfNotFound: true);
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
-        m_Player_AnyGamepadButton = m_Player.FindAction("AnyGamepadButton", throwIfNotFound: true);
+        m_Player_AnyButton = m_Player.FindAction("AnyButton", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -238,13 +271,13 @@ public class @InputActions : IInputActionCollection, IDisposable
     private readonly InputActionMap m_Player;
     private IPlayerActions m_PlayerActionsCallbackInterface;
     private readonly InputAction m_Player_Shoot;
-    private readonly InputAction m_Player_AnyGamepadButton;
+    private readonly InputAction m_Player_AnyButton;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
         public PlayerActions(@InputActions wrapper) { m_Wrapper = wrapper; }
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
-        public InputAction @AnyGamepadButton => m_Wrapper.m_Player_AnyGamepadButton;
+        public InputAction @AnyButton => m_Wrapper.m_Player_AnyButton;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -257,9 +290,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Shoot.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                 @Shoot.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
                 @Shoot.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShoot;
-                @AnyGamepadButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAnyGamepadButton;
-                @AnyGamepadButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAnyGamepadButton;
-                @AnyGamepadButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAnyGamepadButton;
+                @AnyButton.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAnyButton;
+                @AnyButton.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAnyButton;
+                @AnyButton.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnAnyButton;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -267,9 +300,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @Shoot.started += instance.OnShoot;
                 @Shoot.performed += instance.OnShoot;
                 @Shoot.canceled += instance.OnShoot;
-                @AnyGamepadButton.started += instance.OnAnyGamepadButton;
-                @AnyGamepadButton.performed += instance.OnAnyGamepadButton;
-                @AnyGamepadButton.canceled += instance.OnAnyGamepadButton;
+                @AnyButton.started += instance.OnAnyButton;
+                @AnyButton.performed += instance.OnAnyButton;
+                @AnyButton.canceled += instance.OnAnyButton;
             }
         }
     }
@@ -277,6 +310,6 @@ public class @InputActions : IInputActionCollection, IDisposable
     public interface IPlayerActions
     {
         void OnShoot(InputAction.CallbackContext context);
-        void OnAnyGamepadButton(InputAction.CallbackContext context);
+        void OnAnyButton(InputAction.CallbackContext context);
     }
 }

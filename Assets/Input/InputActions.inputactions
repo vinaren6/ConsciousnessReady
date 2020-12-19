@@ -14,7 +14,7 @@
                     "interactions": "Press,SlowTap(duration=0.75)"
                 },
                 {
-                    "name": "AnyGamepadButton",
+                    "name": "AnyButton",
                     "type": "Button",
                     "id": "39f5d985-a437-4302-9837-422c8a0659ff",
                     "expectedControlType": "Button",
@@ -63,7 +63,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -74,7 +74,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -85,7 +85,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -96,7 +96,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -107,7 +107,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -118,7 +118,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -129,7 +129,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -140,7 +140,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -151,7 +151,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
@@ -162,7 +162,40 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "AnyGamepadButton",
+                    "action": "AnyButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9ca95ae6-d2d2-4d6e-93da-c87eaf72f773",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AnyButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "97500621-1645-4546-b4d2-27e2d3f323f7",
+                    "path": "<Mouse>/leftButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AnyButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "036e2b08-bf4c-4558-a061-15e0cd55f164",
+                    "path": "<Mouse>/rightButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "AnyButton",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
