@@ -4,7 +4,14 @@ using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField]
-    Health hp;
+    Health hp = null;
+
+    private void Start()
+    {
+        if (hp == null) {
+            hp = PlayerMovement.playerObj.GetComponent<Health>();
+        }
+    }
 
     private void FixedUpdate()
     {
