@@ -7845,7 +7845,7 @@ PrefabInstance:
     - target: {fileID: 430177149329609510, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: hp
       value: 
-      objectReference: {fileID: 1985459977}
+      objectReference: {fileID: 0}
     - target: {fileID: 5615980756617725226, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_Name
       value: UI (Canvas)
@@ -7983,6 +7983,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5615980757036877139, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7855379268004108405, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
