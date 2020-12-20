@@ -8,6 +8,11 @@ public class LoadThisScene : MonoBehaviour
     [SerializeField]
     private string ScreenToLoad;
 
+    [SerializeField]
+    private bool LoadAsync = false;
+
+    [SerializeField]
+    private float LoadDelay = 0f;
 
 
     public void LoadSceneUnloadRest()
@@ -26,8 +31,15 @@ public class LoadThisScene : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadSceneAsync(ScreenToLoad);
+        if (LoadAsync)
+            SceneManager.LoadSceneAsync(ScreenToLoad);
+        else
+            SceneManager.LoadScene(ScreenToLoad);
     }
 
+    public void LoadSceneWithDelay()
+    {
+        Invoke("LoadScene", LoadDelay);
+    }
 
 }
