@@ -5,6 +5,10 @@ public class EnableVictoryScreen : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        VictoryUIRefrence.instance.SetActive(true);
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.tag == "Player")
+        {
+            VictoryUIRefrence.instance.SetActive(true);
+        }      
     }
 }
