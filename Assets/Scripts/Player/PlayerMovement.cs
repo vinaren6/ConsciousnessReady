@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour
     float boostTimer = 10;
     bool isBoost;
     [SerializeField] private float maxSpeedValue = 5.5f;
-    private float maxSpeed = 5.5f;
+    public float maxSpeed = 5.5f;
     [SerializeField] float dragSlow = 1.5f;
     [SerializeField] float dragFast = 4.0f;
     [SerializeField] private float acceleration = 2f;

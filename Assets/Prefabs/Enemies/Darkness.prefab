@@ -194,7 +194,7 @@ MonoBehaviour:
   turnSpeed: 30
   smoothTurnSpeed: 25
   targetDistanceMultiplier: 0
-  fireDelay: 3
+  fireDelay: 2
   MaxOffsetInDegreeToFire: 45
   fireDistance: 8
   bullet: {fileID: 7477270765736997791, guid: 47a9928e0a1663a4abe60ea2382f4763, type: 3}
