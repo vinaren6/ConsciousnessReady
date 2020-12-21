@@ -44,6 +44,16 @@ public class Mover : MonoBehaviour
                 {
                     FindChildTransform(ChildGameObject1.gameObject, "Trigger").GetComponent<CircleCollider2D>().enabled = true;
                     ChildGameObject1.gameObject.GetComponent<AI>().enabled = true;
+                    ChildGameObject1.GetComponent<Health>().TakeDamage(80);
+                    if (explosion != null)
+                    {
+                        Transform cildTransform = FindChildTransform(this.gameObject, childName);
+                        Instantiate(explosion, cildTransform.position, cildTransform.rotation);
+                        FindObjectOfType<AudioManager>().Play("Explosion (High)");
+                        FindObjectOfType<AudioManager>().Play("Explosion (Low)");
+                    }
+
+                  
                 }
                 child.parent = null;
                 Destroy(gameObject);
@@ -100,9 +110,26 @@ public class Mover : MonoBehaviour
         }
         if ((collision.gameObject.layer == 13  || collision.gameObject.tag == "Asteroids" || collision.gameObject.tag == "Medium Debris") && collision.gameObject.tag != "Player")
         {
-          
 
+            if (collision.collider.name.Contains("Slumber") || collision.collider.name.Contains("Rippler") || collision.collider.name.Contains("BFA"))
+            {
+                if (explosion != null)
+                {
+                    Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
+                    Destroy(gameObject);
+                    Instantiate(explosion, transform.position, transform.rotation);
+                    FindObjectOfType<AudioManager>().Play("Explosion (High)");
+                    FindObjectOfType<AudioManager>().Play("Explosion (Low)");
 
+                    collision.gameObject.GetComponent<Health>().TakeDamage(80);
+                   
+                }
+
+                
+         
+                return;
+            }
+            
                 if (!isCoolided)
                 {
                     childName = collision.collider.gameObject.name;
@@ -115,7 +142,7 @@ public class Mover : MonoBehaviour
                     collision.gameObject.transform.SetParent(transform);
                     velocity = velocity / 2;
                     colidedWithEnemy(collision);
-
+                    
                 
 
 
