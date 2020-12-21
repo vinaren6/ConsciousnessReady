@@ -15,6 +15,6 @@ public class HealthBar : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.localScale = new Vector2(hp.PlayerHealth / hp.MaxHealth, 1f);
+        transform.localScale = new Vector2(hp.GetHealth / hp.MaxHealth, 1f);
     }
 }
