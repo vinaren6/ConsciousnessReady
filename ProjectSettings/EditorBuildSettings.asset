@@ -50,5 +50,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/World Generation/Scenes/WorldGeneration.unity
     guid: 64090f8b4092a054db321e963b51c90a
+  - enabled: 1
+    path: Assets/World Generation/Cells/Big Borders Cell part 1 main.unity
+    guid: c5e6e910d4554924487169bc0fa374e8
+  - enabled: 1
+    path: Assets/World Generation/Cells/Big Borders Cell part 2.unity
+    guid: b29e5d1e181c98f41844f9225fcc5cb1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1a2775d9a73d2a44c8d13cc8fe914045, type: 2}
