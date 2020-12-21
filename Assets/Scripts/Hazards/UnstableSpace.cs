@@ -2,27 +2,42 @@
 
 public class UnstableSpace : MonoBehaviour
 {
-    [Header("Base Settings")]
+    [SerializeField]
+    private PlayerMovement player;
 
     [SerializeField]
-    private float damage = 0.001f;
-
+    private int damage = 2;
 
     [SerializeField]
-    [Range(0f, 1f)]
-    private float slowDown = 0f;
+    private float slowDown = 2f;
 
-
-
-    private void OnTriggerStay2D(Collider2D collision)
+    private void Start()
     {
-        if (collision.gameObject.tag == "Player")
+        player = GameObject.FindWithTag("Player").transform.GetComponent<PlayerMovement>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        player.maxSpeed /= slowDown;
+    }
+
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
         {
-            Health Player = collision.gameObject.GetComponent<Health>();
+            Health Player = other.gameObject.GetComponent<Health>();
 
             if (Player != null)
                 Player.TakeDamage(damage);
         }
+
     }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        player.maxSpeed *= slowDown;
+    }
+
 
 }

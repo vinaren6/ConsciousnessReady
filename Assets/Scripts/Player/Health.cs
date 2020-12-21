@@ -52,20 +52,6 @@ public class Health : MonoBehaviour
         }
     }
 
-    public void TakeDamage(float damage)
-    {
-        health -= damage;
-
-        if (health <= 0)
-        {
-            Die();
-        }
-        else
-        {
-            sr.color = new Color(1, 0, 0);
-            enabled = true;
-        }
-    }
     public void Heal(int healing)
     {
         health += healing;

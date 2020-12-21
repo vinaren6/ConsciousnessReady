@@ -178,7 +178,7 @@ MonoBehaviour:
   smoothTurnSpeed: 35
   targetDistanceMultiplier: 0.02
   fireDelay: 1
-  MaxOffsetInDegreeToFire: 90
+  MaxOffsetInDegreeToFire: 180
   fireDistance: 8
   bullet: {fileID: 7477270765736997791, guid: 19a4d12f9b9e6f943a9890dd4f644a30, type: 3}
   guns:
