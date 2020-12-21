@@ -30,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float dragSlow = 1.5f;
     [SerializeField] float dragFast = 4.0f;
     [SerializeField] private float acceleration = 2f;
-    [SerializeField] private float slowSpeed = 2f;
     [SerializeField] private bool newRotation;
     [SerializeField] private bool alwaysBoost;
     [SerializeField] private float mouseMoving = 2;
@@ -139,9 +138,9 @@ public class PlayerMovement : MonoBehaviour
         boostInput.canceled += context => { boost = 1; isBoost = false; };
         slowInput.started += context =>
         {
-            maxSpeed = slowSpeed;
+            maxSpeed = maxSpeed / 2;
         };
-        slowInput.canceled += context => { maxSpeed = maxSpeedValue; };
+        slowInput.canceled += context => { maxSpeed = maxSpeed * 2; };
     }
     private void Update()
     {
