@@ -18,7 +18,8 @@ public class UnstableSpace : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        player.maxSpeed /= slowDown;
+        if (other.gameObject.tag == "Player")
+            player.maxSpeed /= slowDown;
     }
 
 
@@ -36,7 +37,8 @@ public class UnstableSpace : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        player.maxSpeed *= slowDown;
+        if (other.gameObject.tag == "Player")
+            player.maxSpeed *= slowDown;
     }
 
 
