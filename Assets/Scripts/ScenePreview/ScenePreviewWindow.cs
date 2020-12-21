@@ -157,7 +157,7 @@ public class ScenePreviewWindow : EditorWindow
 
         GUILayout.BeginVertical(boxStyle, GUILayout.Height(128));
 
-        if (cellArray.Length != 0 && !(cellArray[cellArray.Length - 1] is null || cellArray[cellArray.Length - 1].preview is null)) {
+        if (cellArray.Length != 0 && !(cellArray is null || cellArray[cellArray.Length - 1] is null || cellArray[cellArray.Length - 1].preview is null)) {
             GUILayout.Box(cellArray[cellArray.Length - 1].preview, boxStyle);
         } else
             GUILayout.Label("");
