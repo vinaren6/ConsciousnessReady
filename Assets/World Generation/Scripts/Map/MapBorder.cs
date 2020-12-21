@@ -34,7 +34,7 @@ public class MapBorder : MonoBehaviour
         image.color = new Color(image.color.r, image.color.g, image.color.b,
             (Vector3.Distance(Vector3.zero, PlayerMovement.playerObj.transform.position) - size) / gradiantDist);
 
-        player.AddForce(-new Vector2((PlayerMovement.playerObj.transform.position.x) / (gradiantDist * 40f), (PlayerMovement.playerObj.transform.position.y) / (gradiantDist * 40f)));
+        //player.AddForce(-new Vector2((PlayerMovement.playerObj.transform.position.x) / (gradiantDist * 40f), (PlayerMovement.playerObj.transform.position.y) / (gradiantDist * 40f)));
     }
 
     private void OnTriggerExit2D(Collider2D collision)

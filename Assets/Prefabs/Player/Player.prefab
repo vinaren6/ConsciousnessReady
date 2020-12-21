@@ -724,10 +724,10 @@ MonoBehaviour:
   rotationAcceleration: 10
   rotationSpeed: 25
   maxSpeedValue: 5.5
+  maxSpeed: 5.5
   dragSlow: 2.25
   dragFast: 4
   acceleration: 15
-  slowSpeed: 2.5
   newRotation: 1
   alwaysBoost: 1
   mouseMoving: 1
@@ -840,7 +840,7 @@ MonoBehaviour:
       m_Action: Shoot
       m_Flags: 0
   gun: {fileID: 112294132145951650}
-  coolDown: 1.1
+  coolDown: 2
   projectile: {fileID: 6156724797011963483, guid: bcf64b62fa8540d46b6ef7946fa3eaad, type: 3}
 --- !u!114 &2125970151
 MonoBehaviour:

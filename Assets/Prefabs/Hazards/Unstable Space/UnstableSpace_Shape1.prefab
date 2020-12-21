@@ -229,5 +229,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  damage: 2
-  slowDown: 4
+  damage: 1
+  slowDown: 3
