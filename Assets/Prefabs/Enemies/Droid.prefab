@@ -251,6 +251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 75
+  maxHealth: 100
   explosion: {fileID: 5428078186630503840, guid: 65d642e4d9e2d664ab6efa7809296a57, type: 3}
 --- !u!1 &4604166333092657180
 GameObject:

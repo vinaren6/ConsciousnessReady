@@ -401,4 +401,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 500
+  maxHealth: 100
   explosion: {fileID: 5428078186630503840, guid: ad1524a071fb54e47acb2c90423d10c7, type: 3}
