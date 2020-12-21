@@ -86,16 +86,22 @@ public class Mover : MonoBehaviour
     {
         if (isCoolided)
         {
-            //Debug.Log(collision.gameObject.tag);
             if (collision.gameObject.tag != "Small Debris" && collision.gameObject.tag != "Player")
             {
                 if ((collision.gameObject.layer == 13 || collision.gameObject.tag == "Asteroids" || collision.gameObject.tag == "Medium Debris") && collision.gameObject.tag != "Player")
                 {
-                    if (explosionCollision != null && collision.gameObject.layer != 13)
+                    if (collision.collider.name.Contains("Slumber") || collision.collider.name.Contains("Rippler") || collision.collider.name.Contains("BFA"))
                     {
-                        Instantiate(explosionCollision, collision.transform.position, collision.transform.rotation);
+                        collision.gameObject.GetComponent<Health>().TakeDamage(160);
                     }
-                    Destroy(collision.gameObject);
+                    else
+                    {
+                        if (explosionCollision != null && collision.gameObject.layer != 13)
+                        {
+                            Instantiate(explosionCollision, collision.transform.position, collision.transform.rotation);
+                        }
+                        Destroy(collision.gameObject);
+                    }
                 }
                 if (explosion != null)
                 {
@@ -115,7 +121,6 @@ public class Mover : MonoBehaviour
             {
                 if (explosion != null)
                 {
-                    Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
                     Destroy(gameObject);
                     Instantiate(explosion, transform.position, transform.rotation);
                     FindObjectOfType<AudioManager>().Play("Explosion (High)");
@@ -150,7 +155,6 @@ public class Mover : MonoBehaviour
                     {
                         Destroy(collision.transform.GetComponent<Mover>());
                     }
-                    Debug.Log(collision.gameObject.tag);
                     isCoolided = true;
                 }
         }
