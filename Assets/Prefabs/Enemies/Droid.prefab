@@ -1,5 +1,67 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1406977481755346795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6901740786152016930}
+  - component: {fileID: 988229141195696281}
+  - component: {fileID: 162428891989701697}
+  m_Layer: 13
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6901740786152016930
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406977481755346795}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4604166331748993339}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &988229141195696281
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406977481755346795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94c2f115295cf82439a51e2b4cc3dbb8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scripts:
+  - {fileID: 4604166331748993337}
+--- !u!58 &162428891989701697
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1406977481755346795}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 8.5
 --- !u!1 &4604166331748993342
 GameObject:
   m_ObjectHideFlags: 0
@@ -14,8 +76,6 @@ GameObject:
   - component: {fileID: 4604166331748993336}
   - component: {fileID: 4604166331748993343}
   - component: {fileID: -5416606427938862967}
-  - component: {fileID: 7203844480563600094}
-  - component: {fileID: 6179526152033394915}
   m_Layer: 13
   m_Name: Droid
   m_TagString: Untagged
@@ -37,6 +97,7 @@ Transform:
   - {fileID: 4604166333092657181}
   - {fileID: 4604166333350705869}
   - {fileID: 4631423091127268484}
+  - {fileID: 6901740786152016930}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -135,7 +196,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 10
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -191,36 +252,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 75
   explosion: {fileID: 5428078186630503840, guid: 65d642e4d9e2d664ab6efa7809296a57, type: 3}
---- !u!114 &7203844480563600094
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4604166331748993342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94c2f115295cf82439a51e2b4cc3dbb8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scripts:
-  - {fileID: 4604166331748993337}
---- !u!58 &6179526152033394915
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4604166331748993342}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 8.5
 --- !u!1 &4604166333092657180
 GameObject:
   m_ObjectHideFlags: 0
