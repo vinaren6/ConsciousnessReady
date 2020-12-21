@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 178354677838686516}
   m_LocalRotation: {x: -0, y: -0, z: -0.012072784, w: 0.99992716}
   m_LocalPosition: {x: 0.525, y: 0.04100001, z: 0}
-  m_LocalScale: {x: 0.6751561, y: 0.6751561, z: 2.7006245}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 1545523498570487411}
   m_RootOrder: 0
@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 1545523498570487412}
   - component: {fileID: 1545523498570487413}
   - component: {fileID: 632760086148180627}
+  - component: {fileID: 2057764544374573628}
   m_Layer: 15
   m_Name: UnstableSpace_Shape1
   m_TagString: Untagged
@@ -198,3 +199,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9b71272d4af524f93b9208a7a6b813, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!70 &2057764544374573628
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1545523498570487414}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.06861342, y: -0.0045276373}
+  m_Size: {x: 1.5303149, y: 0.49675316}
+  m_Direction: 1
