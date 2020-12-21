@@ -92,7 +92,7 @@ public class PlayerMovement : MonoBehaviour
         };
         movementY.performed += context =>
         {
-            Debug.Log(context.control.displayName);
+          
             if (context.control.displayName == "Left Stick Down")
             {
                 isGamepad = true;
