@@ -840,7 +840,7 @@ MonoBehaviour:
       m_Action: Shoot
       m_Flags: 0
   gun: {fileID: 112294132145951650}
-  coolDown: 2
+  coolDown: 1
   projectile: {fileID: 6156724797011963483, guid: bcf64b62fa8540d46b6ef7946fa3eaad, type: 3}
 --- !u!114 &2125970151
 MonoBehaviour:
