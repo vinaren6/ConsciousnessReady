@@ -29,12 +29,12 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (sr.color.b >= 1 || sr == null ) {
+        if (sr.color.b >= 1 || sr == null) {
             enabled = false;
             return;
         }
 
-        float color = sr.color.g + Time.deltaTime;
+        float color = sr.color.g + Time.deltaTime * 2f;
 
         sr.color = new Color(1, color, color);
 
@@ -44,8 +44,7 @@ public class Health : MonoBehaviour
     {
         health -= damage;
 
-        if (health <= 0)
-        {
+        if (health <= 0) {
             Die();
         } else {
             sr.color = new Color(1, 0, 0);
@@ -64,8 +63,7 @@ public class Health : MonoBehaviour
 
     void Die()
     {
-        if (explosion != null)
-        {
+        if (explosion != null) {
             Instantiate(explosion, transform.position, transform.rotation);
         }
 
