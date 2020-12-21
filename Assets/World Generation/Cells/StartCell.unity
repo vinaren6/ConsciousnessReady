@@ -2803,6 +2803,34 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1627951519, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: toggleWorldmap.m_SingletonActionBindings.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627951519, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: toggleWorldmap.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 90bc997f-c1c2-4871-a118-5b33deb48ed0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627951519, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: toggleWorldmap.m_SingletonActionBindings.Array.data[2].m_Id
+      value: 10d558fc-1ec4-4dae-acc5-0752e281d7de
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627951519, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: toggleWorldmap.m_SingletonActionBindings.Array.data[1].m_Path
+      value: <Gamepad>/start
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627951519, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: toggleWorldmap.m_SingletonActionBindings.Array.data[2].m_Path
+      value: <Gamepad>/select
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627951519, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: toggleWorldmap.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Toggle Worldmap
+      objectReference: {fileID: 0}
+    - target: {fileID: 1627951519, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
+      propertyPath: toggleWorldmap.m_SingletonActionBindings.Array.data[2].m_Action
+      value: Toggle Worldmap
+      objectReference: {fileID: 0}
     - target: {fileID: 1532299508253848650, guid: ec0d01aa1b958644d9eda5f8c5da618f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7083,6 +7111,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2404565787834042312, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 2404565787834042312, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4612933984702881880, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name
       value: Player
@@ -7130,6 +7170,18 @@ PrefabInstance:
     - target: {fileID: 8037301594256694387, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464786389277163656, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464786389277163656, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8464786389277163656, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
@@ -8072,7 +8124,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5615980757036877138, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_Color.a
-      value: 0.19607843
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5615980757036877138, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_Color.b
