@@ -212,7 +212,7 @@ public class AI : MonoBehaviour
             //fire at target
             activeFireDelay -= Time.fixedDeltaTime;
             if (activeFireDelay < 0) {
-                if (turning < MaxOffsetInDegreeToFire && turning > -MaxOffsetInDegreeToFire) {
+                if (oldAngle + turning < MaxOffsetInDegreeToFire && oldAngle + turning > -MaxOffsetInDegreeToFire) {
                     if (behavor.HasFlag(Behavor.DontFireIfBlocked)) {
                         RaycastHit2D hitFire = Physics2D.Raycast(transform.position, transform.up, dist, layerMask);
                         if (hitFire.distance != 0 || hitFire.distance > fireDistance) {
