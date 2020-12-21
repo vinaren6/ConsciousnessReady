@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5943081244095576463}
   - component: {fileID: 2762045815253410479}
   - component: {fileID: 7784975129439484798}
+  - component: {fileID: 4778511691788168258}
   m_Layer: 15
   m_Name: UnstableSpace_Shape2
   m_TagString: Untagged
@@ -209,9 +210,23 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -1.08, y: -0.50000006}
   m_Size: {x: 0.6600001, y: 0.88}
   m_Direction: 0
+--- !u!114 &4778511691788168258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5943081244095576457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e639c2a54581db24791ed6cf622dc525, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 3
+  slowDown: 0

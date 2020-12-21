@@ -51,6 +51,21 @@ public class Health : MonoBehaviour
             enabled = true;
         }
     }
+
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        if (health <= 0)
+        {
+            Die();
+        }
+        else
+        {
+            sr.color = new Color(1, 0, 0);
+            enabled = true;
+        }
+    }
     public void Heal(int healing)
     {
         health += healing;
@@ -71,6 +86,5 @@ public class Health : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Explosion (Low)");
 
         Destroy(gameObject);
-
     }
 }
