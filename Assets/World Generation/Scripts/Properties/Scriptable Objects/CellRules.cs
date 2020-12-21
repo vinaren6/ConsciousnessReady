@@ -7,7 +7,8 @@ public class CellRules : ScriptableObject
     public Enum.CellType type;
     public int id;
 
-    public bool Allowflip = true;
+    public bool AllowflipX = true;
+    public bool AllowflipY = true;
 
     [HideInInspector]
     public bool flipX = false;
