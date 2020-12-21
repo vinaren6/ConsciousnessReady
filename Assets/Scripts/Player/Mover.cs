@@ -5,7 +5,7 @@ using UnityEngine;
 public class Mover : MonoBehaviour
 {
     Vector2 velocity;
-    private bool isCoolided;
+    private bool isCoolided = false;
     //[SerializeField] private ScriptableObject
     // Start is called before the first frame update
     private float timer = 1;
@@ -14,6 +14,10 @@ public class Mover : MonoBehaviour
     private float childDrag;
     private float childAngularDrag;
     private float childGravityScale;
+
+    [SerializeField]private Explosion explosion;
+    [SerializeField] private Explosion explosionCollision;
+
     void Start()
     {
         velocity = GetComponent<Rigidbody2D>().velocity;
@@ -38,10 +42,8 @@ public class Mover : MonoBehaviour
                 ChildGameObject1.GetComponent<Rigidbody2D>().velocity = velocity;
                 if (ChildGameObject1.gameObject.GetComponent<AI>() != null && FindChildTransform(ChildGameObject1.gameObject, "Trigger").GetComponent<EnableScriptOnTrigger>() != null)
                 {
-                    // EnableScriptOnTrigger
                     FindChildTransform(ChildGameObject1.gameObject, "Trigger").GetComponent<CircleCollider2D>().enabled = true;
                     ChildGameObject1.gameObject.GetComponent<AI>().enabled = true;
-                    Debug.Log("poop");
                 }
                 child.parent = null;
                 Destroy(gameObject);
@@ -72,6 +74,30 @@ public class Mover : MonoBehaviour
     }
     void OnCollisionEnter2D(Collision2D collision)
     {
+        if (isCoolided)
+        {
+            //Debug.Log(collision.gameObject.tag);
+            if (collision.gameObject.tag != "Small Debris" && collision.gameObject.tag != "Player")
+            {
+                if ((collision.gameObject.layer == 13 || collision.gameObject.tag == "Asteroids" || collision.gameObject.tag == "Medium Debris") && collision.gameObject.tag != "Player")
+                {
+                    if (explosionCollision != null && collision.gameObject.layer != 13)
+                    {
+                        Instantiate(explosionCollision, collision.transform.position, collision.transform.rotation);
+                    }
+                    Destroy(collision.gameObject);
+                }
+                if (explosion != null)
+                {
+                    Transform cildTransform = FindChildTransform(this.gameObject, childName);
+                    Instantiate(explosion, cildTransform.position, cildTransform.rotation);
+                }
+
+                FindObjectOfType<AudioManager>().Play("Explosion (High)");
+                FindObjectOfType<AudioManager>().Play("Explosion (Low)");
+                Destroy(gameObject);
+            }
+        }
         if ((collision.gameObject.layer == 13  || collision.gameObject.tag == "Asteroids" || collision.gameObject.tag == "Medium Debris") && collision.gameObject.tag != "Player")
         {
           
@@ -87,20 +113,25 @@ public class Mover : MonoBehaviour
                     Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
                     Destroy(GetComponent<BoxCollider2D>());
                     collision.gameObject.transform.SetParent(transform);
-                    velocity = velocity / (childMass / 10);
+                    velocity = velocity / 2;
                     colidedWithEnemy(collision);
-              
-               
-                    
+
                 
+
+
                 if (collision.transform.GetComponent<Mover>() != null)
                     {
                         Destroy(collision.transform.GetComponent<Mover>());
                     }
-
+                    Debug.Log(collision.gameObject.tag);
                     isCoolided = true;
                 }
-            }
+        }
+        else if (collision.gameObject.tag != "Small Debris" && collision.gameObject.tag != "Player")
+        {
+            Destroy(gameObject);
+        }
+        
         
        // Physics2D.IgnoreCollision(collision.collider, GetComponent<Collider2D>());
         GetComponent<Rigidbody2D>().velocity = velocity;
