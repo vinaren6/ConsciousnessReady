@@ -216,11 +216,3 @@ MonoBehaviour:
       m_Groups: 
       m_Action: Reset
       m_Flags: 0
-    - m_Name: 
-      m_Id: 48164a52-5127-4b7f-aa37-c88f0c03f67f
-      m_Path: <Gamepad>/start
-      m_Interactions: 
-      m_Processors: 
-      m_Groups: 
-      m_Action: Reset
-      m_Flags: 0

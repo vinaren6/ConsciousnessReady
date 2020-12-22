@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3127731726072430313}
   - component: {fileID: 3127731726072430312}
   - component: {fileID: 4223087939787675756}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: Slumber (Green)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

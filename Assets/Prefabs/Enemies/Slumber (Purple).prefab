@@ -96,7 +96,7 @@ GameObject:
   - component: {fileID: 5455490478731181622}
   - component: {fileID: 5455490478731181623}
   - component: {fileID: -8905928722471327144}
-  m_Layer: 13
+  m_Layer: 10
   m_Name: Slumber (Purple)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -284,7 +284,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 5993bb5ac812ba74897c6929b810facd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 47945e07399db054ca140fe3d23e1bb4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
