@@ -15,7 +15,8 @@ MonoBehaviour:
   title: EndCell
   type: 3
   id: 11
-  Allowflip: 0
+  AllowflipX: 0
+  AllowflipY: 0
   flipX: 0
   flipY: 0
   preview: {fileID: 0}

@@ -72,18 +72,24 @@ public class WorldGenerationHandler : MonoBehaviour
             foreach (CellRules rule in cellRules) {
                 switch (rule.type) {
                     case Enum.CellType.Default:
-                        if (!rule.Allowflip)
-                            break;
 
                         //flip X
-                        CellRules flipx = FlipX(rule);
-                        cellRulesDefaltL.Add(flipx);
+                        if (rule.AllowflipX) {
+                            CellRules flipx = FlipX(rule);
+                            cellRulesDefaltL.Add(flipx);
 
-                        //flip Y
-                        cellRulesDefaltL.Add(FlipY(rule));
+                            if (rule.AllowflipY) {
+                                //flip X & Y
+                                cellRulesDefaltL.Add(FlipY(flipx));
 
-                        //flip X & Y
-                        cellRulesDefaltL.Add(FlipY(flipx));
+                                //flip Y
+                                cellRulesDefaltL.Add(FlipY(rule));
+                            }
+                        } else {
+                            //flip Y
+                            if (rule.AllowflipY)
+                                cellRulesDefaltL.Add(FlipY(rule));
+                        }
 
                         break;
                 }
@@ -282,7 +288,7 @@ public class WorldGenerationHandler : MonoBehaviour
     }
     public float GetScale()
     {
-        return worldSize* settings.gridSize / 2;
+        return worldSize * settings.gridSize / 2;
     }
 
     public void Regenerate()
