@@ -123,17 +123,22 @@ public class Rippler : MonoBehaviour
         angle /= 360f;
 
 
+        //if linw width is less than 0.75%
         if (lineRenderer.widthCurve.Evaluate(angle) > 0.75f) {
             //hit
             if (collision.transform.tag == "Player") {
+
+                //apply force
                 Rigidbody2D collRB2D;
                 if (collision.TryGetComponent<Rigidbody2D>(out collRB2D)) {
+                    //get angle as positive and inside 360* / 2PI
                     float radAngle = (orgAngle + Mathf.PI) % (Mathf.PI * 2f);
                     collRB2D.AddForce(new Vector2(Mathf.Sin(radAngle) * pussingForce, Mathf.Cos(radAngle)) * pussingForce, ForceMode2D.Impulse);
                 }
 
-                Health player = collision.gameObject.GetComponent<Health>();
-                if (player != null)
+                //apply damage
+                Health player;
+                if (collision.TryGetComponent<Health>(out player))
                     player.TakeDamage(damage);
             }
         }
@@ -221,7 +226,7 @@ public class Rippler : MonoBehaviour
         Keyframe[] keys = actualCurve.keys;
         for (int i = 0; i < keys.Length; i++) {
             if (!keys[i].value.Equals(1))
-            keys[i] = NewKeyframeRaw(keys[i].time, Mathf.Max(lineRenderer.widthCurve.keys[i].value - Time.fixedDeltaTime / smoothing, 0));
+                keys[i] = NewKeyframeRaw(keys[i].time, Mathf.Max(lineRenderer.widthCurve.keys[i].value - Time.fixedDeltaTime / smoothing, 0));
         }
 
         lineRenderer.widthCurve = new AnimationCurve(keys);
