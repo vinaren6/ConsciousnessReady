@@ -33,6 +33,10 @@ public class Rippler : MonoBehaviour
     [SerializeField]
     float pussingForce = 5f;
 
+    [SerializeField]
+    int damage = 50;
+
+
 
     LineRenderer lineRenderer;
 
@@ -127,6 +131,10 @@ public class Rippler : MonoBehaviour
                     float radAngle = (orgAngle + Mathf.PI) % (Mathf.PI * 2f);
                     collRB2D.AddForce(new Vector2(Mathf.Sin(radAngle) * pussingForce, Mathf.Cos(radAngle)) * pussingForce, ForceMode2D.Impulse);
                 }
+
+                Health player = collision.gameObject.GetComponent<Health>();
+                if (player != null)
+                    player.TakeDamage(damage);
             }
         }
 
@@ -225,7 +233,7 @@ public class Rippler : MonoBehaviour
         actualCurve = new AnimationCurve(keys);
         lineRenderer.widthCurve = new AnimationCurve(keys);
 
-        animator.Play("Ripple");
+        //animator.Play("Ripple");
     }
 
     Keyframe NewKeyframe(float time, float value)

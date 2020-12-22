@@ -15,13 +15,13 @@ public class Health : MonoBehaviour
     public float GetHealth { get => health; }
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
 
-    private SpriteRenderer sr = null;
+    private SpriteRenderer spriteRenderer = null;
 
     private void Start()
     {
         enabled = false;
         try {
-            sr = GetComponent<SpriteRenderer>();
+            spriteRenderer = GetComponent<SpriteRenderer>();
         } catch {
             Debug.LogWarning("no SpriteRenderer found");
         }
@@ -29,14 +29,14 @@ public class Health : MonoBehaviour
 
     private void Update()
     {
-        if (sr.color.b >= 1 || sr == null) {
+        if (spriteRenderer.color.b >= 1 || spriteRenderer == null) {
             enabled = false;
             return;
         }
 
-        float color = sr.color.g + Time.deltaTime * 2f;
+        float color = spriteRenderer.color.g + Time.deltaTime * 2f;
 
-        sr.color = new Color(1, color, color);
+        spriteRenderer.color = new Color(1, color, color);
 
     }
 
@@ -47,7 +47,7 @@ public class Health : MonoBehaviour
         if (health <= 0) {
             Die();
         } else {
-            sr.color = new Color(1, 0, 0);
+            spriteRenderer.color = new Color(1, 0, 0);
             enabled = true;
         }
     }

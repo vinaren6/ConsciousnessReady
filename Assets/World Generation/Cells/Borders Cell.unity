@@ -549,8 +549,8 @@ GameObject:
   - component: {fileID: 1101905391}
   - component: {fileID: 1101905394}
   - component: {fileID: 1101905393}
-  - component: {fileID: 1101905395}
   - component: {fileID: 1101905392}
+  - component: {fileID: 1101905395}
   m_Layer: 12
   m_Name: shape1_ssc
   m_TagString: Untagged

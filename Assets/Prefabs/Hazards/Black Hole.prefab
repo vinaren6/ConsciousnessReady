@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 1433785132}
   - component: {fileID: 1433785133}
   - component: {fileID: 1433785131}
-  - component: {fileID: 1076380807}
   m_Layer: 15
   m_Name: Black Hole
   m_TagString: Untagged
@@ -160,19 +159,6 @@ PointEffector2D:
   m_ForceMode: 2
   m_Drag: 1
   m_AngularDrag: 0.5
---- !u!114 &1076380807
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5060674361221108545}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7261b5c96f0641e4bba40b1e63b7ebbd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundClipName: GunshotEnemy
 --- !u!1 &7297255637337661716
 GameObject:
   m_ObjectHideFlags: 0

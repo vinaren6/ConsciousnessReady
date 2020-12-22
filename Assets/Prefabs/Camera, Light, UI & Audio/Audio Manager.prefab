@@ -109,3 +109,11 @@ MonoBehaviour:
     loop: 1
     PlayOneShot: 1
     source: {fileID: 0}
+  - name: Healing
+    clip: {fileID: 8300000, guid: 4d50768c71711a5458fec4bb49a6d3b9, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    loop: 0
+    PlayOneShot: 1
+    source: {fileID: 0}

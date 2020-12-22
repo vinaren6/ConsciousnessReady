@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class DamageFromCrystals : MonoBehaviour
+public class DamageOnTouch : MonoBehaviour
 {
     [SerializeField]
     private int damage = 40;
