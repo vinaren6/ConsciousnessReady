@@ -5,9 +5,10 @@ public class VictoryUIRefrence : MonoBehaviour
 
     public static GameObject instance;
 
-    void Start()
+    void Awake()
     {
         instance = gameObject;
+        gameObject.SetActive(false);
     }
 
 }
