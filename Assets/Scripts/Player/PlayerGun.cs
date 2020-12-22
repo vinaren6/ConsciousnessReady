@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.InputSystem.Interactions;
 
 public class PlayerGun : MonoBehaviour
@@ -30,23 +31,57 @@ public class PlayerGun : MonoBehaviour
     [SerializeField]
     private float chargeKnockback = 5f;
 
+    [Space(10)]
+
+    [SerializeField]
+    private Light2D leftLamp;
+
+    [SerializeField]
+    private Light2D rightLamp;
+
+    [SerializeField]
+    private float lampMultiplier = 0.01f;
+
 
     private InputActions inputActions;
     private float elapsedTime = 0f;
+
+    private float lampIntensity;
+    private bool isLampOn;
+
 
 
     private void Awake()
     {
         inputActions = new InputActions();
 
+        inputActions.Player.Shoot.started +=
+        context =>
+        {
+            isLampOn = true;
+        };
+
         inputActions.Player.Shoot.performed +=
         context =>
         {
             if (context.interaction is SlowTapInteraction)
+            {
                 Shoot(chargeProjectile, chargeKnockback);
+                isLampOn = false;
+            }
             else
                 Shoot(normalProjectile, normalKnockback);
+
+
         };
+
+        inputActions.Player.Shoot.canceled +=
+        context =>
+        {
+            isLampOn = false;
+        };
+
+
     }
 
     private void OnEnable()
@@ -59,9 +94,13 @@ public class PlayerGun : MonoBehaviour
         inputActions.Disable();
     }
 
+
     private void Update()
     {
         elapsedTime += Time.deltaTime;
+
+        LightUpLamps(isLampOn);
+
     }
 
 
@@ -78,6 +117,17 @@ public class PlayerGun : MonoBehaviour
 
             elapsedTime = 0f;
         }
+    }
+
+    private void LightUpLamps(bool isLampOn)
+    {
+        if (isLampOn && lampIntensity < 12)
+            lampIntensity += lampMultiplier;
+        else
+            lampIntensity = 0;
+
+        leftLamp.intensity = lampIntensity;
+        rightLamp.intensity = lampIntensity;
     }
 
 }

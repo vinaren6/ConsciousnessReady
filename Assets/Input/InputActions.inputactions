@@ -20,6 +20,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "ShowHotkeys",
+                    "type": "Button",
+                    "id": "ae36829f-0ae8-4eba-8af4-6ef84121558e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -196,6 +204,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "AnyButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9773fae4-e73c-4e10-9740-7c8476d774d3",
+                    "path": "<Keyboard>/c",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShowHotkeys",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

@@ -51,7 +51,7 @@ MonoBehaviour:
     pitch: 0.75
     spatialBlend: 0
     loop: 0
-    PlayOneShot: 0
+    PlayOneShot: 1
     source: {fileID: 0}
   - name: GunshotLower
     clip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
@@ -59,7 +59,7 @@ MonoBehaviour:
     pitch: 0.5
     spatialBlend: 0
     loop: 0
-    PlayOneShot: 0
+    PlayOneShot: 1
     source: {fileID: 0}
   - name: GunshotHigh
     clip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
@@ -71,7 +71,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: MusicGameplay
     clip: {fileID: 8300000, guid: 2430ba709774dba4c98fc33166a5c9bd, type: 3}
-    volume: 1
+    volume: 0.9
     pitch: 1
     spatialBlend: 0
     loop: 1
