@@ -17,7 +17,7 @@ MonoBehaviour:
   gridSize: 40
   outpostAmount: 6
   loadOnStart: 0
-  fastRules: 1
+  fastRules: 0
   allowFilps: 1
   movebleObjs:
     serializedVersion: 2
