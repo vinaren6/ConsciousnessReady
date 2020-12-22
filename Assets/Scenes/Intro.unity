@@ -199,6 +199,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ScreenToLoad: Title Screen
   LoadAsync: 1
+  LoadDelay: 0
 --- !u!114 &580050096
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,13 +226,9 @@ MonoBehaviour:
       m_Calls: []
   m_ActionEvents:
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 974e511d-4188-46f0-8191-79fa423c12b9
-    m_ActionName: Player/Shoot[/Mouse/leftButton,/DualShock4GamepadHID/rightTrigger,/Keyboard/space]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 580050095}
-        m_TargetAssemblyTypeName: GoToScreen, Assembly-CSharp
+        m_TargetAssemblyTypeName: LoadThisScene, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 1
         m_Arguments:
@@ -242,8 +239,16 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+    m_ActionId: 974e511d-4188-46f0-8191-79fa423c12b9
+    m_ActionName: Player/Shoot[/Mouse/leftButton,/DualShock4GamepadHID/rightTrigger,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
     m_ActionId: 39f5d985-a437-4302-9837-422c8a0659ff
     m_ActionName: Player/AnyGamepadButton[/DualShock4GamepadHID/buttonEast,/DualShock4GamepadHID/buttonNorth,/DualShock4GamepadHID/dpad/right,/DualShock4GamepadHID/dpad/up,/DualShock4GamepadHID/leftTrigger,/DualShock4GamepadHID/rightShoulder,/DualShock4GamepadHID/rightTrigger,/DualShock4GamepadHID/leftTrigger,/DualShock4GamepadHID/select,/DualShock4GamepadHID/start]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ae36829f-0ae8-4eba-8af4-6ef84121558e
+    m_ActionName: Player/ShowHotkeys[/Keyboard/c]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

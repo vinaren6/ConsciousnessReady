@@ -8384,6 +8384,14 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5615980757335445009, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_Color.a
+      value: 0.31764707
+      objectReference: {fileID: 0}
+    - target: {fileID: 5615980757335445011, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5615980757357695109, guid: 2bc532c236e772446aed7761396d58c1, type: 3}
       propertyPath: m_SizeDelta.x
       value: 235.85754

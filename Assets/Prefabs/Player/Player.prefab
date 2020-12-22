@@ -958,7 +958,7 @@ MonoBehaviour:
   chargeKnockback: 6
   leftLamp: {fileID: 1609391641}
   rightLamp: {fileID: 641346522}
-  lampMultiplier: 0.025
+  lampMultiplier: 0.05
 --- !u!114 &3814114195626538798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1032,6 +1032,14 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 974e511d-4188-46f0-8191-79fa423c12b9
     m_ActionName: Player/Shoot[/Mouse/leftButton,/DualShock4GamepadHID/rightTrigger,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 39f5d985-a437-4302-9837-422c8a0659ff
+    m_ActionName: Player/AnyButton[/DualShock4GamepadHID/buttonEast,/DualShock4GamepadHID/buttonNorth,/DualShock4GamepadHID/buttonWest,/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/leftTrigger,/DualShock4GamepadHID/rightShoulder,/DualShock4GamepadHID/rightTrigger,/DualShock4GamepadHID/leftShoulder,/DualShock4GamepadHID/select,/DualShock4GamepadHID/start,/Keyboard/anyKey,/Mouse/leftButton,/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ae36829f-0ae8-4eba-8af4-6ef84121558e
+    m_ActionName: Player/ShowHotkeys[/Keyboard/c]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
