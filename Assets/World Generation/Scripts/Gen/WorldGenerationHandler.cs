@@ -162,23 +162,23 @@ public class WorldGenerationHandler : MonoBehaviour
 #if UNITY_EDITOR
         int cellCount = 0;
 #endif
-
-        for (int x = 0; x < wSize; x++) {
-            for (int y = 0; y < wSize; y++) {
-                if (Vector2.Distance(new Vector2(worldSize / 2f, worldSize / 2f), new Vector2(x + 0.5f + ((y & 1) * 0.5f), y + 0.5f)) < worldSize / 2f) {
+        if (settings.isCircle)
+            for (int x = 0; x < wSize; x++) {
+                for (int y = 0; y < wSize; y++) {
+                    if (Vector2.Distance(new Vector2(worldSize / 2f, worldSize / 2f), new Vector2(x + 0.5f + ((y & 1) * 0.5f), y + 0.5f)) < worldSize / 2f) {
 #if UNITY_EDITOR
-                    DrawCros(x, y, Color.green);
-                    cellCount++;
+                        DrawCros(x, y, Color.green);
+                        cellCount++;
 #endif
-                } else {
-                    //set position to invalid
-                    world[x, y] = -1;
+                    } else {
+                        //set position to invalid
+                        world[x, y] = -1;
 #if UNITY_EDITOR
-                    DrawCros(x, y, Color.red);
+                        DrawCros(x, y, Color.red);
 #endif
+                    }
                 }
             }
-        }
 
         //define start and end positions
         world[(int)(worldSize / 2f - center.x + 0.5f), (int)(worldSize / 2f - center.y + 0.5f)] = 2;
@@ -311,7 +311,8 @@ public class WorldGenerationHandler : MonoBehaviour
     {
         if (Application.isPlaying) {
             Gizmos.color = Color.green;
-            Gizmos.DrawWireSphere(new Vector3(), worldSize * settings.gridSize / 2);
+            if (settings.isCircle)
+                Gizmos.DrawWireSphere(new Vector3(), worldSize * settings.gridSize / 2);
         } else {
             debugData = $"Min Max Distance: {settings.minMaxDistance}\nSize Offset: {settings.sizeOffset}\nGrid Size: {settings.gridSize}";
         }
