@@ -477,13 +477,14 @@ GameObject:
   - component: {fileID: 8037301594256694387}
   - component: {fileID: 8037301594256694384}
   - component: {fileID: 8037301594256694386}
-  - component: {fileID: 8037301594256694380}
   - component: {fileID: 8037301594256694381}
   - component: {fileID: 8037301594256694383}
+  - component: {fileID: 2125970151}
+  - component: {fileID: 8037301594256694380}
   - component: {fileID: 112294133212330643}
   - component: {fileID: 3814114195626538798}
-  - component: {fileID: 2125970151}
   - component: {fileID: 2077842658228834804}
+  - component: {fileID: 6912955391834563152}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -581,6 +582,116 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!50 &8037301594256694381
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037301594256694385}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.5
+  m_LinearDrag: 4
+  m_AngularDrag: 0
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!60 &8037301594256694383
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037301594256694385}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.55}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.76}
+    oldSize: {x: 1.62, y: 2.11}
+    newSize: {x: 1.62, y: 2.11}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.40956825, y: 0.42980856}
+      - {x: 0.082389556, y: 0.78655446}
+      - {x: 0.034921914, y: 0.9813675}
+      - {x: -0.046352983, y: 0.9815627}
+      - {x: -0.08775392, y: 0.79794645}
+      - {x: -0.4291622, y: 0.41644293}
+      - {x: -0.41902605, y: 0.11911595}
+      - {x: -0.31361893, y: 0.19874436}
+      - {x: 0.29218316, y: 0.19336408}
+      - {x: 0.41833505, y: 0.11965203}
+--- !u!114 &2125970151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037301594256694385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Actions: {fileID: -944628639613478452, guid: 98ffc4adb95d13c46bba985d512e4413, type: 3}
+  m_NotificationBehavior: 2
+  m_UIInputModule: {fileID: 0}
+  m_DeviceLostEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_DeviceRegainedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ControlsChangedEvent:
+    m_PersistentCalls:
+      m_Calls: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 112294133212330643}
+        m_TargetAssemblyTypeName: Weapon, Assembly-CSharp
+        m_MethodName: Shoot
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 974e511d-4188-46f0-8191-79fa423c12b9
+    m_ActionName: Player/Shoot[/Mouse/leftButton,/DualShock4GamepadHID/rightTrigger,/Keyboard/space]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 39f5d985-a437-4302-9837-422c8a0659ff
+    m_ActionName: Player/AnyButton[/DualShock4GamepadHID/buttonEast,/DualShock4GamepadHID/buttonNorth,/DualShock4GamepadHID/buttonWest,/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/leftTrigger,/DualShock4GamepadHID/rightShoulder,/DualShock4GamepadHID/rightTrigger,/DualShock4GamepadHID/leftShoulder,/DualShock4GamepadHID/select,/DualShock4GamepadHID/start,/Keyboard/anyKey,/Mouse/leftButton,/Mouse/rightButton]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: ae36829f-0ae8-4eba-8af4-6ef84121558e
+    m_ActionName: Player/ShowHotkeys[/Keyboard/c]
+  m_NeverAutoSwitchControlSchemes: 0
+  m_DefaultControlScheme: 
+  m_DefaultActionMap: Player
+  m_SplitScreenIndex: -1
+  m_Camera: {fileID: 0}
 --- !u!114 &8037301594256694380
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -882,62 +993,6 @@ MonoBehaviour:
   cameraSmoothingMaxSpeed: 1
   propulsion: {fileID: 8037301592627414500}
   ship: {fileID: 8037301594256694386}
---- !u!50 &8037301594256694381
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8037301594256694385}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 0.5
-  m_LinearDrag: 4
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 4
---- !u!60 &8037301594256694383
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8037301594256694385}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.55}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.76}
-    oldSize: {x: 1.62, y: 2.11}
-    newSize: {x: 1.62, y: 2.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 0.40956825, y: 0.42980856}
-      - {x: 0.082389556, y: 0.78655446}
-      - {x: 0.034921914, y: 0.9813675}
-      - {x: -0.046352983, y: 0.9815627}
-      - {x: -0.08775392, y: 0.79794645}
-      - {x: -0.4291622, y: 0.41644293}
-      - {x: -0.41902605, y: 0.11911595}
-      - {x: -0.31361893, y: 0.19874436}
-      - {x: 0.29218316, y: 0.19336408}
-      - {x: 0.41833505, y: 0.11965203}
 --- !u!114 &112294133212330643
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -991,60 +1046,6 @@ MonoBehaviour:
   gun: {fileID: 112294132145951650}
   coolDown: 1
   projectile: {fileID: 6156724797011963483, guid: bcf64b62fa8540d46b6ef7946fa3eaad, type: 3}
---- !u!114 &2125970151
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8037301594256694385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 98ffc4adb95d13c46bba985d512e4413, type: 3}
-  m_NotificationBehavior: 2
-  m_UIInputModule: {fileID: 0}
-  m_DeviceLostEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_DeviceRegainedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ControlsChangedEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  m_ActionEvents:
-  - m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 112294133212330643}
-        m_TargetAssemblyTypeName: Weapon, Assembly-CSharp
-        m_MethodName: Shoot
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_ActionId: 974e511d-4188-46f0-8191-79fa423c12b9
-    m_ActionName: Player/Shoot[/Mouse/leftButton,/DualShock4GamepadHID/rightTrigger,/Keyboard/space]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: 39f5d985-a437-4302-9837-422c8a0659ff
-    m_ActionName: Player/AnyButton[/DualShock4GamepadHID/buttonEast,/DualShock4GamepadHID/buttonNorth,/DualShock4GamepadHID/buttonWest,/DualShock4GamepadHID/buttonSouth,/DualShock4GamepadHID/leftTrigger,/DualShock4GamepadHID/rightShoulder,/DualShock4GamepadHID/rightTrigger,/DualShock4GamepadHID/leftShoulder,/DualShock4GamepadHID/select,/DualShock4GamepadHID/start,/Keyboard/anyKey,/Mouse/leftButton,/Mouse/rightButton]
-  - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: ae36829f-0ae8-4eba-8af4-6ef84121558e
-    m_ActionName: Player/ShowHotkeys[/Keyboard/c]
-  m_NeverAutoSwitchControlSchemes: 0
-  m_DefaultControlScheme: 
-  m_DefaultActionMap: Player
-  m_SplitScreenIndex: -1
-  m_Camera: {fileID: 0}
 --- !u!114 &2077842658228834804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,6 +1061,18 @@ MonoBehaviour:
   health: 300
   maxHealth: 300
   explosion: {fileID: 5428078186630503840, guid: 65d642e4d9e2d664ab6efa7809296a57, type: 3}
+--- !u!114 &6912955391834563152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037301594256694385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f1b5ee2f2215564b87240c09f028428, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9136303234148425631
 GameObject:
   m_ObjectHideFlags: 0

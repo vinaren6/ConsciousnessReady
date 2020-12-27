@@ -41,6 +41,14 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": ""Hook"",
+                    ""type"": ""Button"",
+                    ""id"": ""a11ed6a6-3faa-48d9-8a03-f191647f9b8e"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -59,17 +67,6 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""name"": """",
                     ""id"": ""cae309fe-ef5e-454c-827e-b706c7c9d012"",
                     ""path"": ""<Gamepad>/rightTrigger"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Shoot"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""9588d967-67fd-4883-a26b-25d9b4b6de86"",
-                    ""path"": ""<Keyboard>/space"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -230,6 +227,17 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""action"": ""ShowHotkeys"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""7267470a-125a-4279-b299-2bb7a8bdcd2c"",
+                    ""path"": ""<Keyboard>/q"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Hook"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -241,6 +249,7 @@ public class @InputActions : IInputActionCollection, IDisposable
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
         m_Player_AnyButton = m_Player.FindAction("AnyButton", throwIfNotFound: true);
         m_Player_ShowHotkeys = m_Player.FindAction("ShowHotkeys", throwIfNotFound: true);
+        m_Player_Hook = m_Player.FindAction("Hook", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -293,6 +302,7 @@ public class @InputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Shoot;
     private readonly InputAction m_Player_AnyButton;
     private readonly InputAction m_Player_ShowHotkeys;
+    private readonly InputAction m_Player_Hook;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -300,6 +310,7 @@ public class @InputActions : IInputActionCollection, IDisposable
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputAction @AnyButton => m_Wrapper.m_Player_AnyButton;
         public InputAction @ShowHotkeys => m_Wrapper.m_Player_ShowHotkeys;
+        public InputAction @Hook => m_Wrapper.m_Player_Hook;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -318,6 +329,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @ShowHotkeys.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShowHotkeys;
                 @ShowHotkeys.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShowHotkeys;
                 @ShowHotkeys.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShowHotkeys;
+                @Hook.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHook;
+                @Hook.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHook;
+                @Hook.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHook;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -331,6 +345,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @ShowHotkeys.started += instance.OnShowHotkeys;
                 @ShowHotkeys.performed += instance.OnShowHotkeys;
                 @ShowHotkeys.canceled += instance.OnShowHotkeys;
+                @Hook.started += instance.OnHook;
+                @Hook.performed += instance.OnHook;
+                @Hook.canceled += instance.OnHook;
             }
         }
     }
@@ -340,5 +357,6 @@ public class @InputActions : IInputActionCollection, IDisposable
         void OnShoot(InputAction.CallbackContext context);
         void OnAnyButton(InputAction.CallbackContext context);
         void OnShowHotkeys(InputAction.CallbackContext context);
+        void OnHook(InputAction.CallbackContext context);
     }
 }

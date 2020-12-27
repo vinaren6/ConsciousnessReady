@@ -3,7 +3,7 @@ using UnityEngine.InputSystem;
 using UnityEngine.Experimental.Rendering.Universal;
 using UnityEngine.InputSystem.Interactions;
 
-public class PlayerGun : MonoBehaviour
+public class AbilityShooting : MonoBehaviour
 {
     [Header("Base Settings")]
 
