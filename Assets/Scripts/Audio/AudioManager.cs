@@ -5,7 +5,8 @@ using UnityEngine;
 public class AudioManager : MonoBehaviour
 {
 
-    public AudioMixerGroup audioMixerGroup;
+    public AudioMixerGroup sfxAudioMixerGroup;
+    public AudioMixerGroup musicAudioMixerGroup;
 
     public Sound[] sounds;
 
@@ -35,7 +36,11 @@ public class AudioManager : MonoBehaviour
             sound.source.pitch = sound.pitch;
             sound.source.loop = sound.loop;
             sound.source.spatialBlend = sound.spatialBlend;
-            sound.source.outputAudioMixerGroup = audioMixerGroup;
+
+            if (sound.music)
+                sound.source.outputAudioMixerGroup = musicAudioMixerGroup;
+            else
+                sound.source.outputAudioMixerGroup = sfxAudioMixerGroup;
         }
     }
 

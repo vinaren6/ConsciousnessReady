@@ -43,13 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 157b92f14369fdc488b7841fec2a9878, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixerGroup: {fileID: 24300002, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
+  sfxAudioMixerGroup: {fileID: -2668638147401926902, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
+  musicAudioMixerGroup: {fileID: -8900892789126349522, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
   sounds:
   - name: GunshotLow
     clip: {fileID: 8300000, guid: dd327890c787ea740ba5b72b23c1ef42, type: 3}
     volume: 1
     pitch: 0.75
     spatialBlend: 0
+    music: 0
     loop: 0
     PlayOneShot: 1
     source: {fileID: 0}
@@ -58,6 +60,7 @@ MonoBehaviour:
     volume: 1
     pitch: 0.5
     spatialBlend: 0
+    music: 0
     loop: 0
     PlayOneShot: 1
     source: {fileID: 0}
@@ -66,6 +69,7 @@ MonoBehaviour:
     volume: 0.3
     pitch: 2
     spatialBlend: 0
+    music: 0
     loop: 0
     PlayOneShot: 1
     source: {fileID: 0}
@@ -74,6 +78,7 @@ MonoBehaviour:
     volume: 0.9
     pitch: 1
     spatialBlend: 0
+    music: 1
     loop: 1
     PlayOneShot: 0
     source: {fileID: 0}
@@ -82,6 +87,7 @@ MonoBehaviour:
     volume: 0.75
     pitch: 1
     spatialBlend: 0
+    music: 0
     loop: 0
     PlayOneShot: 1
     source: {fileID: 0}
@@ -90,6 +96,7 @@ MonoBehaviour:
     volume: 1
     pitch: 3
     spatialBlend: 0
+    music: 0
     loop: 0
     PlayOneShot: 1
     source: {fileID: 0}
@@ -98,6 +105,7 @@ MonoBehaviour:
     volume: 1
     pitch: 3
     spatialBlend: 0.5
+    music: 0
     loop: 0
     PlayOneShot: 1
     source: {fileID: 0}
@@ -106,6 +114,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     spatialBlend: 0
+    music: 0
     loop: 1
     PlayOneShot: 1
     source: {fileID: 0}
@@ -114,6 +123,7 @@ MonoBehaviour:
     volume: 1
     pitch: 1
     spatialBlend: 0
+    music: 0
     loop: 0
     PlayOneShot: 1
     source: {fileID: 0}

@@ -16,6 +16,8 @@ public class Sound
     [Range(0f, 1f)]
     public float spatialBlend = 0;
 
+    public bool music;
+
     public bool loop;
 
     public bool PlayOneShot;
