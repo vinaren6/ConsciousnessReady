@@ -8,7 +8,7 @@ public class ToggleFullscreen : MonoBehaviour
     private void Start()
     {
         if (!Screen.fullScreen) {
-            GetComponent<Toggle>().isOn = true;
+            GetComponent<Toggle>().isOn = false;
             skipFullscreen = true;
         }
     }
