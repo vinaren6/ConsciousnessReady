@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 5229768036300324457}
   - component: {fileID: 5229768036300324460}
   - component: {fileID: 729006153}
+  - component: {fileID: 6718210208886872066}
   m_Layer: 12
   m_Name: Sanctuary Outpost
   m_TagString: Untagged
@@ -257,3 +258,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healAmount: 5
+--- !u!114 &6718210208886872066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5229768036300324456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c846766ac5bffd418f372e8812116e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  experiance: 1
+  permanentExperiance: 0
