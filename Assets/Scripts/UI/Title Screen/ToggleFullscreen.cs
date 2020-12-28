@@ -3,23 +3,17 @@ using UnityEngine.UI;
 
 public class ToggleFullscreen : MonoBehaviour
 {
-    bool skipFullscreen = false;
+    Toggle toggle;
 
     private void Start()
     {
-        if (!Screen.fullScreen) {
-            GetComponent<Toggle>().isOn = false;
-            skipFullscreen = true;
-        }
+        toggle = GetComponent<Toggle>();
+        toggle.isOn = Screen.fullScreen;
     }
 
 
     public void SwitchToggle()
     {
-        if (skipFullscreen) {
-            skipFullscreen = !skipFullscreen;
-        } else {
-            Screen.fullScreen = !Screen.fullScreen;
-        }
+        Screen.fullScreen = toggle.isOn;
     }
 }
