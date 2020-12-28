@@ -43,7 +43,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """"
                 },
                 {
-                    ""name"": ""Hook"",
+                    ""name"": ""NeedleHook"",
                     ""type"": ""Button"",
                     ""id"": ""a11ed6a6-3faa-48d9-8a03-f191647f9b8e"",
                     ""expectedControlType"": ""Button"",
@@ -235,7 +235,7 @@ public class @InputActions : IInputActionCollection, IDisposable
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
-                    ""action"": ""Hook"",
+                    ""action"": ""NeedleHook"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -249,7 +249,7 @@ public class @InputActions : IInputActionCollection, IDisposable
         m_Player_Shoot = m_Player.FindAction("Shoot", throwIfNotFound: true);
         m_Player_AnyButton = m_Player.FindAction("AnyButton", throwIfNotFound: true);
         m_Player_ShowHotkeys = m_Player.FindAction("ShowHotkeys", throwIfNotFound: true);
-        m_Player_Hook = m_Player.FindAction("Hook", throwIfNotFound: true);
+        m_Player_NeedleHook = m_Player.FindAction("NeedleHook", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -302,7 +302,7 @@ public class @InputActions : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Shoot;
     private readonly InputAction m_Player_AnyButton;
     private readonly InputAction m_Player_ShowHotkeys;
-    private readonly InputAction m_Player_Hook;
+    private readonly InputAction m_Player_NeedleHook;
     public struct PlayerActions
     {
         private @InputActions m_Wrapper;
@@ -310,7 +310,7 @@ public class @InputActions : IInputActionCollection, IDisposable
         public InputAction @Shoot => m_Wrapper.m_Player_Shoot;
         public InputAction @AnyButton => m_Wrapper.m_Player_AnyButton;
         public InputAction @ShowHotkeys => m_Wrapper.m_Player_ShowHotkeys;
-        public InputAction @Hook => m_Wrapper.m_Player_Hook;
+        public InputAction @NeedleHook => m_Wrapper.m_Player_NeedleHook;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -329,9 +329,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @ShowHotkeys.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShowHotkeys;
                 @ShowHotkeys.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShowHotkeys;
                 @ShowHotkeys.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnShowHotkeys;
-                @Hook.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHook;
-                @Hook.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHook;
-                @Hook.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnHook;
+                @NeedleHook.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNeedleHook;
+                @NeedleHook.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNeedleHook;
+                @NeedleHook.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnNeedleHook;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -345,9 +345,9 @@ public class @InputActions : IInputActionCollection, IDisposable
                 @ShowHotkeys.started += instance.OnShowHotkeys;
                 @ShowHotkeys.performed += instance.OnShowHotkeys;
                 @ShowHotkeys.canceled += instance.OnShowHotkeys;
-                @Hook.started += instance.OnHook;
-                @Hook.performed += instance.OnHook;
-                @Hook.canceled += instance.OnHook;
+                @NeedleHook.started += instance.OnNeedleHook;
+                @NeedleHook.performed += instance.OnNeedleHook;
+                @NeedleHook.canceled += instance.OnNeedleHook;
             }
         }
     }
@@ -357,6 +357,6 @@ public class @InputActions : IInputActionCollection, IDisposable
         void OnShoot(InputAction.CallbackContext context);
         void OnAnyButton(InputAction.CallbackContext context);
         void OnShowHotkeys(InputAction.CallbackContext context);
-        void OnHook(InputAction.CallbackContext context);
+        void OnNeedleHook(InputAction.CallbackContext context);
     }
 }
