@@ -201,7 +201,7 @@ public class Cell : MonoBehaviour
             GameObject[] objs = s.GetRootGameObjects();
             //flip and move objects
             for (int i = 0; i < objs.Length; i++) {
-                if (objs[i].tag != "StayAtZero") {
+                if (!objs[i].CompareTag("StayAtZero")) {
                     //flip pos
                     objs[i].transform.position = new Vector3(
                         WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].flipX ? -objs[i].transform.position.x : objs[i].transform.position.x,
@@ -228,18 +228,7 @@ public class Cell : MonoBehaviour
             LoadingLevel = false;
         }
     }
-    void LoadCoompleate(AsyncOperation obj)
-    {
 
-        Scene s = SceneManager.GetSceneByBuildIndex(WorldGenerationHandler.instance.cellsRulles[(int)type][ruleId].id);
-        GameObject[] objs = s.GetRootGameObjects();
-        for (int i = 0; i < objs.Length; i++) {
-            objs[i].transform.position += transform.position;
-            SceneManager.MoveGameObjectToScene(objs[i], scene);
-        }
-        AsyncOperation asyncUnload = SceneManager.UnloadSceneAsync(s);
-        asyncUnload.completed += EndLoad;
-    }
     void EndLoad(AsyncOperation obj)
     {
         LoadingLevel = false;
@@ -275,7 +264,7 @@ public class Cell : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.tag == "Player" && !isLoaded && !enabled && GameHaveStarted) {
+        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.CompareTag("Player") && !isLoaded && !enabled && GameHaveStarted) {
             if (ruleId != -1) {
                 //if (scene.name == transform.name + " Scene") {
                 //LoadingLevel = true;
@@ -290,7 +279,7 @@ public class Cell : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.tag == "Player" && isLoaded && type != Enum.CellType.Start)
+        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.CompareTag("Player") && isLoaded && type != Enum.CellType.Start)
             UnloadSceane();
     }
 
