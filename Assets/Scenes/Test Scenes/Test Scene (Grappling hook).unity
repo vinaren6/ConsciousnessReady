@@ -2926,17 +2926,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: easingType
-      value: 16
+    - target: {fileID: 537845269, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: catchObject
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: needleTime
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: needleLength
-      value: 1.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name

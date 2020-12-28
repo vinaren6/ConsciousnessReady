@@ -374,10 +374,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0059369355, y: 6.3378496}
+  m_Offset: {x: -0.0019814782, y: 3.2765741}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0}
@@ -388,7 +388,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.009456171, y: 0.06471634}
+  m_Size: {x: 0.02767098, y: 6.516609}
   m_EdgeRadius: 0
 --- !u!114 &537845269
 MonoBehaviour:
@@ -1112,8 +1112,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1b5ee2f2215564b87240c09f028428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needleSpeed: 5
-  needleLength: 1.5
+  needleTime: 0.175
+  needleLength: 1.25
+  easingType: 16
   needleHook: {fileID: 4737504863407876991}
 --- !u!1 &9136303234148425631
 GameObject:
@@ -1214,7 +1215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 373023038663484966, guid: a84dfb67a8d8a0644963a6f3144bb332, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3558200368672614334, guid: a84dfb67a8d8a0644963a6f3144bb332, type: 3}
       propertyPath: m_FlipX

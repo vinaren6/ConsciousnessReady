@@ -18,6 +18,8 @@ public class AbilityNeedleHook : MonoBehaviour
     private GameObject needleHook;
 
     private InputActions inputActions;
+    private bool needleMoving = false;
+    Tween needleAnimation;
 
 
     private void Awake()
@@ -27,7 +29,8 @@ public class AbilityNeedleHook : MonoBehaviour
         inputActions.Player.NeedleHook.performed +=
         context =>
         {
-            StartCoroutine("Pierce");
+            if (!needleMoving)
+                StartCoroutine("Pierce");
         };
     }
 
@@ -41,17 +44,30 @@ public class AbilityNeedleHook : MonoBehaviour
         inputActions.Disable();
     }
 
+    private void Update()
+    {
+        if (needleHook.GetComponent<NeedleHook>().struckAnObject)
+        {
+            needleAnimation.Rewind();
+            needleMoving = false;
+            needleHook.GetComponent<NeedleHook>().struckAnObject = false;
+        }
+    }
+
 
     IEnumerator Pierce()
     {
-        needleHook.SetActive(true);
+        needleMoving = true;
 
-        needleHook
+        needleAnimation =
+            needleHook
             .transform.DOScaleY(needleLength, needleTime)
             .SetEase(easingType)
             .SetLoops(2, LoopType.Yoyo);
-        yield return null;
 
+        yield return needleAnimation.WaitForCompletion();
+
+        needleMoving = false;
     }
 
 

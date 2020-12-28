@@ -3,14 +3,15 @@
 public class NeedleHook : MonoBehaviour
 {
 
-    private void Start()
+    [HideInInspector]
+    public bool struckAnObject;
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        struckAnObject = true;
+
+        other.transform.SetParent(transform);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
