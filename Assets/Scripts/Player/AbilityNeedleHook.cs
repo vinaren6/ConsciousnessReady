@@ -1,14 +1,18 @@
 ﻿using System.Collections;
 using UnityEngine;
+using DG.Tweening;
 
 public class AbilityNeedleHook : MonoBehaviour
 {
 
     [SerializeField]
-    private float needleSpeed = 5f;
+    private float needleTime = 1f;
 
     [SerializeField]
     private float needleLength = 1.5f;
+
+    [SerializeField]
+    private Ease easingType;
 
     [SerializeField]
     private GameObject needleHook;
@@ -42,17 +46,11 @@ public class AbilityNeedleHook : MonoBehaviour
     {
         needleHook.SetActive(true);
 
-        while (needleHook.transform.localScale.y < needleLength)
-        {
-            needleHook.transform.localScale += new Vector3(0, needleSpeed * Time.deltaTime, 0);
-            yield return null;
-        }
-
-        while (needleHook.transform.localScale.y >= 0)
-        {
-            needleHook.transform.localScale -= new Vector3(0, needleSpeed * Time.deltaTime, 0);
-            yield return null;
-        }
+        needleHook
+            .transform.DOScaleY(needleLength, needleTime)
+            .SetEase(easingType)
+            .SetLoops(2, LoopType.Yoyo);
+        yield return null;
 
     }
 
