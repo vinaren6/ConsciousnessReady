@@ -12,9 +12,10 @@ public class GrantExperience : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (!haveBeenTrigered && collision.transform.CompareTag("Player")) {
-            haveBeenTrigered = true;
             ExperiancePoints.Experiance += experiance;
             ExperiancePoints.PermanentExperiance += permanentExperiance;
+            haveBeenTrigered = true;
+            enabled = false;
         }
     }
 
