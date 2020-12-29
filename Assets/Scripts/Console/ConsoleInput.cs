@@ -10,7 +10,8 @@ public class ConsoleInput : MonoBehaviour
 
 
     private InputField text;
-    public static ConsoleController console = null;
+    private static ConsoleController console = null;
+    public static ConsoleController Console { get => console is null ? console = new ConsoleController() : console; }
 
     private void OnEnable()
     {
@@ -54,6 +55,7 @@ public class ConsoleInput : MonoBehaviour
     }
 
     float t = 1;
+
     public void ZeroTime()
     {
         t = Time.timeScale;
