@@ -15,6 +15,7 @@ public class AbilityHook : MonoBehaviour
 
 
     private InputActions inputActions;
+    GameObject[] allChildren;
     private bool hookMoving = false;
 
 
@@ -42,11 +43,26 @@ public class AbilityHook : MonoBehaviour
         inputActions.Disable();
     }
 
+    private void Start()
+    {
+        allChildren = new GameObject[transform.childCount];
+    }
+
     private void ExtendHook()
     {
+        FindObjectOfType<AudioManager>().Play("Hook");
+        ResetChain();
+
         hookChain.SetActive(true);
         hookProjectile.GetComponent<Rigidbody2D>().AddForce(transform.up * hookSpeed * (Time.fixedDeltaTime * 50), ForceMode2D.Impulse);
-        //hookProjectile.GetComponent<Rigidbody2D>().velocity = new Vector3(5000, 0, 0);
+    }
+
+    private void ResetChain()
+    {
+        foreach (Transform child in hookChain.transform)
+        {
+            child.position = new Vector3(transform.position.x, transform.position.y, 0);
+        }
     }
 
     private void RetractHook()

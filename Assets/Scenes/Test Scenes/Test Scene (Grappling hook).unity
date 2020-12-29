@@ -2019,50 +2019,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7805201221284281044, guid: d78aa0e77adfa5d458da1fb3373ddd25, type: 3}
   m_PrefabInstance: {fileID: 580927502}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &596662559 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5175649088923735225, guid: 37710a667a6880043b99434159e4f589, type: 3}
+--- !u!114 &596662565 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 596662565, guid: 37710a667a6880043b99434159e4f589, type: 3}
   m_PrefabInstance: {fileID: 5175649088232064640}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &596662560
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596662559}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0008670017, y: 0.003886167}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.08, y: 0.04}
-    newSize: {x: 0.08, y: 0.04}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.17168523, y: 0.0837466}
-  m_EdgeRadius: 0
---- !u!114 &596662565
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 596662559}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9fd0e85be9245c4aa3113569ee0da82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attachedToObject: 0
 --- !u!1 &607704973
 GameObject:
   m_ObjectHideFlags: 0
@@ -4759,6 +4726,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5574169507288589878, guid: 91d785e5355677d4d8d5be9a3ad88a04, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574169507288589879, guid: 91d785e5355677d4d8d5be9a3ad88a04, type: 3}
+      propertyPath: sounds.Array.data[9].pitch
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 5574169507288589879, guid: 91d785e5355677d4d8d5be9a3ad88a04, type: 3}
+      propertyPath: sounds.Array.data[9].PlayOneShot
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7918,10 +7893,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 596662560, guid: 37710a667a6880043b99434159e4f589, type: 3}
+      propertyPath: m_Size.y
+      value: 0.20931844
+      objectReference: {fileID: 0}
+    - target: {fileID: 596662560, guid: 37710a667a6880043b99434159e4f589, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.0135779455
+      objectReference: {fileID: 0}
     - target: {fileID: 2073595120654023522, guid: 37710a667a6880043b99434159e4f589, type: 3}
       propertyPath: player
       value: 
       objectReference: {fileID: 867844630}
+    - target: {fileID: 5175649088092075141, guid: 37710a667a6880043b99434159e4f589, type: 3}
+      propertyPath: m_Mass
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 5175649088317612142, guid: 37710a667a6880043b99434159e4f589, type: 3}
       propertyPath: m_Name
       value: HookChain
@@ -7974,13 +7961,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5175649088923735225, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Layer
-      value: 14
-      objectReference: {fileID: 0}
     - target: {fileID: 5175649088923735226, guid: 37710a667a6880043b99434159e4f589, type: 3}
       propertyPath: m_Mass
-      value: 20
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175649088923735226, guid: 37710a667a6880043b99434159e4f589, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175649089792083675, guid: 37710a667a6880043b99434159e4f589, type: 3}
+      propertyPath: m_Mass
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 5175649089792083675, guid: 37710a667a6880043b99434159e4f589, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37710a667a6880043b99434159e4f589, type: 3}
