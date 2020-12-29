@@ -2,16 +2,23 @@
 
 public class Hook : MonoBehaviour
 {
+    private Rigidbody2D rigidBody2D;
+    public bool attachedToObject;
 
-    private void OnTriggerEnter2D(Collider2D collider)
+
+    private void Start()
     {
-        var player = GameObject.FindGameObjectWithTag("Player");
-        player.AddComponent<HingeJoint2D>();
-        var rope = collider.gameObject;
-        var hinge = player.GetComponent<HingeJoint2D>();
-        var rb = rope.GetComponent<Rigidbody2D>();
-        hinge.connectedBody = rb;
-        hinge.connectedAnchor = new Vector2(0, -2.5f);
+        rigidBody2D = gameObject.GetComponent<Rigidbody2D>();
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        attachedToObject = true;
+
+        HingeJoint2D hingeFromCollidedObject = other.gameObject.AddComponent(typeof(HingeJoint2D)) as HingeJoint2D;
+
+        hingeFromCollidedObject.connectedBody = this.rigidBody2D;
+        hingeFromCollidedObject.connectedAnchor = new Vector2(0, 0.02f);
     }
 
 

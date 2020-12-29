@@ -4,35 +4,31 @@ using DG.Tweening;
 
 public class AbilityHook : MonoBehaviour
 {
+    [SerializeField]
+    private GameObject hookChain;
 
     [SerializeField]
-    private float hookSpeed = 1f;
+    private Hook hookProjectile;
 
     [SerializeField]
-    private float hookLength = 1.5f;
+    private float hookSpeed = 10000f;
 
-    [SerializeField]
-    private Ease easingType;
-
-    [SerializeField]
-    private GameObject hookGameObject;
-
-    private Hook hook;
 
     private InputActions inputActions;
     private bool hookMoving = false;
-    Tween hookAnimation;
 
 
     private void Awake()
     {
         inputActions = new InputActions();
 
-        inputActions.Player.NeedleHook.performed +=
+        inputActions.Player.Hook.performed +=
         context =>
         {
-            if (!hookMoving)
-                StartCoroutine("ExtendHook");
+            if (!hookProjectile.attachedToObject)
+                ExtendHook();
+            else
+                RetractHook();
         };
     }
 
@@ -46,19 +42,17 @@ public class AbilityHook : MonoBehaviour
         inputActions.Disable();
     }
 
-    IEnumerator ExtendHook()
+    private void ExtendHook()
     {
-        hookMoving = true;
-
-        hookAnimation =
-            hookGameObject
-            .transform.DOScaleY(hookLength, hookSpeed)
-            .SetEase(easingType);
-
-        yield return hookAnimation.WaitForCompletion();
-
-        hookMoving = false;
+        hookChain.SetActive(true);
+        hookProjectile.GetComponent<Rigidbody2D>().AddForce(transform.up * hookSpeed * (Time.fixedDeltaTime * 50), ForceMode2D.Impulse);
+        //hookProjectile.GetComponent<Rigidbody2D>().velocity = new Vector3(5000, 0, 0);
     }
 
+    private void RetractHook()
+    {
+        hookChain.SetActive(false);
+        hookProjectile.attachedToObject = false;
+    }
 
 }

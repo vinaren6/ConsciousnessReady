@@ -30,7 +30,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "NeedleHook",
+                    "name": "Hook",
                     "type": "Button",
                     "id": "a11ed6a6-3faa-48d9-8a03-f191647f9b8e",
                     "expectedControlType": "Button",
@@ -222,7 +222,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "NeedleHook",
+                    "action": "Hook",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
