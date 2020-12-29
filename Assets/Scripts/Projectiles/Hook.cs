@@ -2,12 +2,16 @@
 
 public class Hook : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject player;
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        player.transform.SetParent(other.transform);
+        var player = GameObject.FindGameObjectWithTag("Player");
+        player.AddComponent<HingeJoint2D>();
+        var rope = collider.gameObject;
+        var hinge = player.GetComponent<HingeJoint2D>();
+        var rb = rope.GetComponent<Rigidbody2D>();
+        hinge.connectedBody = rb;
+        hinge.connectedAnchor = new Vector2(0, -2.5f);
     }
 
 
