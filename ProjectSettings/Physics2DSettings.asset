@@ -7,7 +7,7 @@ Physics2DSettings:
   m_Gravity: {x: 0, y: 0}
   m_DefaultMaterial: {fileID: 0}
   m_VelocityIterations: 8
-  m_PositionIterations: 3
+  m_PositionIterations: 9999
   m_VelocityThreshold: 1
   m_MaxLinearCorrection: 0.2
   m_MaxAngularCorrection: 8
@@ -53,4 +53,4 @@ Physics2DSettings:
   m_ColliderAsleepColor: {r: 0.5686275, g: 0.95686275, b: 0.54509807, a: 0.36078432}
   m_ColliderContactColor: {r: 1, g: 0, b: 1, a: 0.6862745}
   m_ColliderAABBColor: {r: 1, g: 1, b: 0, a: 0.2509804}
-  m_LayerCollisionMatrix: ffbcf7ffffbcf7ffffbcf7ffffffffffffbcf7ffffbcf7ffffffffffffffffffc88af7ffc801f7ffff00f7ffffb1fffffff8fffffff8f7ffc830f7ffffb9f7fffffff7fffffff7fffffff7ffc818f0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
+  m_LayerCollisionMatrix: ffbce7ffffbce7ffffbce7ffffffffffffbce7ffffbce7ffffffffffffffffffc88ae7ffc801e7ffff00e7ffffb1effffff8effffff8e7ffc830e7ffffb9e7ffffffe7ffffffe7ffffffe7ffc818e0ffc800e0ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff

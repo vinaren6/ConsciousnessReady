@@ -11,6 +11,7 @@ TagManager:
   - Projectile (Ice Large)
   - Projectile (Ice Small)
   - StayAtZero
+  - Medium Debris
   layers:
   - Default
   - TransparentFX
@@ -32,7 +33,7 @@ TagManager:
   - Sanctuary Outpost
   - World Map
   - Enemy Projectiles
-  - 
+  - Hook
   - 
   - 
   - 
