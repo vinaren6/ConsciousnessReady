@@ -12,7 +12,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     private Explosion explosion;
 
-    public float GetHealth { get => health; }
+    public float GetHealth { get => health; set => health = value < maxHealth ? value : maxHealth; }
     public float MaxHealth { get => maxHealth; set => maxHealth = value; }
 
     private SpriteRenderer spriteRenderer = null;
