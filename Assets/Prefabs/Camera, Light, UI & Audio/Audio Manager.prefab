@@ -128,11 +128,11 @@ MonoBehaviour:
     PlayOneShot: 1
     source: {fileID: 0}
   - name: Hook
-    clip: {fileID: 8300000, guid: 47546f5fc384c624a9f644b95a5f8dca, type: 3}
+    clip: {fileID: 8300000, guid: 97b0683c357f4d342be99923b7bf598f, type: 3}
     volume: 0.441
     pitch: 1
     spatialBlend: 0
     music: 0
     loop: 0
-    PlayOneShot: 1
+    PlayOneShot: 0
     source: {fileID: 0}

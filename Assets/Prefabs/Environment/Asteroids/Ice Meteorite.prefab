@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8473450205684349143}
   - component: {fileID: 8498582512745929260}
   - component: {fileID: 4002426362550261732}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: Ice Meteorite
   m_TagString: Asteroids
   m_Icon: {fileID: 0}

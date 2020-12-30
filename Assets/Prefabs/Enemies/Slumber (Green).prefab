@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4223087939787675756}
   m_Layer: 10
   m_Name: Slumber (Green)
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

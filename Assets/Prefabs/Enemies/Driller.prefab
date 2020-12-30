@@ -100,7 +100,7 @@ GameObject:
   - component: {fileID: 7358733778629622215}
   m_Layer: 13
   m_Name: Driller
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7805201221284281044}
   - component: {fileID: 7805201221284281046}
   - component: {fileID: 7805201221284281045}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: Large Debris (Teal)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1450122937
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2e57fb1610116484a9ac58091183d774, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

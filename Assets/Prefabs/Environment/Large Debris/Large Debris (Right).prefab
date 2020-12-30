@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8101499108704856654}
   - component: {fileID: 8101499108704856653}
   - component: {fileID: 8101499108704856655}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: Large Debris (Right)
   m_TagString: Medium Debris
   m_Icon: {fileID: 0}

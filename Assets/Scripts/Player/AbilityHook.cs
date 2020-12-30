@@ -8,6 +8,9 @@ public class AbilityHook : MonoBehaviour
     private GameObject hookChain;
 
     [SerializeField]
+    private GameObject pointOfFire;
+
+    [SerializeField]
     private Hook hookProjectile;
 
     [SerializeField]
@@ -17,6 +20,10 @@ public class AbilityHook : MonoBehaviour
     private InputActions inputActions;
     GameObject[] allChildren;
     private bool hookMoving = false;
+
+    RaycastHit2D raycastHit;
+    string nameOfTarget;
+    float distanceToTarget;
 
 
     private void Awake()
@@ -50,14 +57,36 @@ public class AbilityHook : MonoBehaviour
 
     private void ExtendHook()
     {
+        MeasureDistanceToObject();
+
+        Debug.Log(nameOfTarget + " " + distanceToTarget);
+
         FindObjectOfType<AudioManager>().Play("Hook");
-        ResetChain();
+        ResetPositionChain();
 
         hookChain.SetActive(true);
         hookProjectile.GetComponent<Rigidbody2D>().AddForce(transform.up * hookSpeed * (Time.fixedDeltaTime * 50), ForceMode2D.Impulse);
     }
 
-    private void ResetChain()
+    public void MeasureDistanceToObject()
+    {
+        raycastHit = Physics2D.Raycast(pointOfFire.transform.position, transform.up, 5, LayerMask.GetMask("Debris", "Enemies"));
+
+        if (raycastHit.collider != null)
+        {
+            distanceToTarget = Mathf.Abs(raycastHit.point.y - transform.position.y);
+            nameOfTarget = raycastHit.collider.gameObject.name;
+        }
+        else
+        {
+            distanceToTarget = 0;
+            nameOfTarget = "Object not hookable";
+        }
+
+
+    }
+
+    private void ResetPositionChain()
     {
         foreach (Transform child in hookChain.transform)
         {
@@ -65,10 +94,20 @@ public class AbilityHook : MonoBehaviour
         }
     }
 
+    public void ResetVelocityChain()
+    {
+        foreach (Transform child in hookChain.transform)
+        {
+            child.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        }
+    }
+
+
     private void RetractHook()
     {
         hookChain.SetActive(false);
         hookProjectile.attachedToObject = false;
+        hookProjectile.DeattachFromPreviousObject();
     }
 
 }

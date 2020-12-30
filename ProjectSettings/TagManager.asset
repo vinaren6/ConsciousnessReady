@@ -12,6 +12,8 @@ TagManager:
   - Projectile (Ice Small)
   - StayAtZero
   - Medium Debris
+  - Hookable
+  - Asteroids
   layers:
   - Default
   - TransparentFX
@@ -34,8 +36,8 @@ TagManager:
   - World Map
   - Enemy Projectiles
   - Hook
-  - 
-  - 
+  - Mothership
+  - Debris
   - 
   - 
   - 

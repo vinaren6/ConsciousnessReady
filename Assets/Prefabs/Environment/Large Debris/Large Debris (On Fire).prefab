@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7922337875907840243}
   - component: {fileID: 7922337875907840242}
   - component: {fileID: 7922337875907840241}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: Large Debris (On Fire)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

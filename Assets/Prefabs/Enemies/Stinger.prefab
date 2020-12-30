@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4696570942825646328}
   m_Layer: 13
   m_Name: Stinger
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -309,7 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4696570944511232623}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 7226743359652282292}
   - component: {fileID: 8701927169865521918}
   - component: {fileID: 2387615450523524873}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

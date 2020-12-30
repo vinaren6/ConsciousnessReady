@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 431847369}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 1 (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   m_Component:
   - component: {fileID: 766253785}
   - component: {fileID: 766253786}
-  m_Layer: 13
+  m_Layer: 16
   m_Name: MapDot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -121,7 +121,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1071790926}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 1 (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -151,7 +151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1270264010}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -181,7 +181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1446090516}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -211,7 +211,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2057869397}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 1 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 6008798047878695449}
   m_Layer: 13
   m_Name: BFA2
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

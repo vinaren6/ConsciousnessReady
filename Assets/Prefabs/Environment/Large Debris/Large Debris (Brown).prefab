@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2298225835891463742}
   - component: {fileID: 2298225835891463736}
   - component: {fileID: 2298225835891463737}
-  m_Layer: 12
+  m_Layer: 22
   m_Name: Large Debris (Brown)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1450122937
-  m_SortingLayer: 4
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: c25f91a46c269744ea5e529ee57f62d8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

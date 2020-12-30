@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 228914104}
   m_Layer: 13
   m_Name: Darkness
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -226,7 +226,7 @@ GameObject:
   - component: {fileID: 4130642437867670299}
   - component: {fileID: 7232927814042479935}
   - component: {fileID: 2020104309274790436}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -286,7 +286,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6159721085358635749}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Gun
   m_TagString: Untagged
   m_Icon: {fileID: 0}

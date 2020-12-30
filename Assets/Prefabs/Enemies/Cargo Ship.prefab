@@ -98,7 +98,7 @@ GameObject:
   - component: {fileID: 2231824567063010032}
   m_Layer: 13
   m_Name: Cargo Ship
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 3694084707765949609}
   - component: {fileID: 5449045347911650332}
   - component: {fileID: 7335082525975083881}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

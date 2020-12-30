@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 141830738}
   - component: {fileID: 141830740}
   - component: {fileID: 141830739}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Rippler Ring
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -88,7 +88,7 @@ GameObject:
   - component: {fileID: -534547359881916336}
   m_Layer: 13
   m_Name: Rippler
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -91,7 +91,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 83765492622890503}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -128,7 +128,7 @@ GameObject:
   - component: {fileID: 83765493642620482}
   m_Layer: 13
   m_Name: Obelisk
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -353,7 +353,7 @@ GameObject:
   - component: {fileID: 3460331547308714667}
   - component: {fileID: 5352729124222441147}
   - component: {fileID: 388904033626934319}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}

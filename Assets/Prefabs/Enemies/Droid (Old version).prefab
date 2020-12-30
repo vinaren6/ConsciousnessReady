@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: -5416606427938862967}
   m_Layer: 13
   m_Name: Droid (Old version)
-  m_TagString: Untagged
+  m_TagString: Hookable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 4604166332448363436}
   - component: {fileID: 4604166332448363438}
   - component: {fileID: 4604166332448363437}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -262,7 +262,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4604166333092657181}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -292,7 +292,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4604166333350705869}
-  m_Layer: 13
+  m_Layer: 2
   m_Name: gun 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
