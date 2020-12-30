@@ -35,7 +35,7 @@ public class ConsoleController
 
     //How many log lines should be retained?
     //Note that strings submitted to appendLogLine with embedded newlines will be counted as a single line.
-    const int scrollbackSize = 20;
+    const int scrollbackSize = 16;
 
     Queue<string> scrollback = new Queue<string>(scrollbackSize);
     List<string> commandHistory = new List<string>();
@@ -174,9 +174,12 @@ public class ConsoleController
 
     void Help(string[] args)
     {
+        //StringBuilder sb = new StringBuilder();
         foreach (CommandRegistration reg in commands.Values) {
+            //sb.Append(string.Format("{0}: \t{1}\n", reg.Command, reg.Help));
             AppendLogLine(string.Format("{0}: \t{1}", reg.Command, reg.Help));
         }
+        //AppendLogLine(sb.ToString());
     }
 
     void RepeatCommand(string[] args)
