@@ -1875,11 +1875,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 699377905920364670, guid: ca7d6463c83c83841a438baf9ae82edd, type: 3}
   m_PrefabInstance: {fileID: 475265794}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &544076208 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 112294132145951649, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-  m_PrefabInstance: {fileID: 867844626}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &580927502
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2903,73 +2898,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 537845269, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 867844630}
-    - target: {fileID: 537845269, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: catchObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: hook
-      value: 
-      objectReference: {fileID: 596662565}
     - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: hookChain
       value: 
       objectReference: {fileID: 342494354}
     - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: hookSpeed
-      value: 80000
-      objectReference: {fileID: 0}
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: needleTime
-      value: 0.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: pointOfFire
-      value: 
-      objectReference: {fileID: 544076208}
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: hookGameObject
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: hookProjectile
       value: 
       objectReference: {fileID: 596662565}
-    - target: {fileID: 4612933984702881880, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4737504863407876991, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_Name
-      value: Hook
-      objectReference: {fileID: 0}
-    - target: {fileID: 4737504863407876991, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037301594256694381, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_BodyType
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037301594256694384, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694387, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_RootOrder
@@ -3013,10 +2952,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694387, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9136303234148425631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -4771,14 +4706,6 @@ PrefabInstance:
     - target: {fileID: 5574169507288589878, guid: 91d785e5355677d4d8d5be9a3ad88a04, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5574169507288589879, guid: 91d785e5355677d4d8d5be9a3ad88a04, type: 3}
-      propertyPath: sounds.Array.data[9].pitch
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 5574169507288589879, guid: 91d785e5355677d4d8d5be9a3ad88a04, type: 3}
-      propertyPath: sounds.Array.data[9].volume
-      value: 0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91d785e5355677d4d8d5be9a3ad88a04, type: 3}
@@ -7855,22 +7782,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 596662560, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Size.x
-      value: 0.25195742
-      objectReference: {fileID: 0}
-    - target: {fileID: 596662560, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Size.y
-      value: 0.36941358
-      objectReference: {fileID: 0}
-    - target: {fileID: 596662560, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.0008670017
-      objectReference: {fileID: 0}
-    - target: {fileID: 596662560, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.0052957237
-      objectReference: {fileID: 0}
     - target: {fileID: 596662565, guid: 37710a667a6880043b99434159e4f589, type: 3}
       propertyPath: abilityHook
       value: 
@@ -7879,17 +7790,9 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 867844630}
-    - target: {fileID: 5175649088092075141, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Mass
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 5175649088317612142, guid: 37710a667a6880043b99434159e4f589, type: 3}
       propertyPath: m_Name
       value: HookChain
-      objectReference: {fileID: 0}
-    - target: {fileID: 5175649088317612142, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5175649088317612145, guid: 37710a667a6880043b99434159e4f589, type: 3}
       propertyPath: m_RootOrder
@@ -7933,22 +7836,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5175649088317612145, guid: 37710a667a6880043b99434159e4f589, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5175649088923735226, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Mass
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 5175649088923735226, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_SleepingMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5175649089792083675, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_Mass
-      value: 40
-      objectReference: {fileID: 0}
-    - target: {fileID: 5175649089792083675, guid: 37710a667a6880043b99434159e4f589, type: 3}
-      propertyPath: m_UseAutoMass
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

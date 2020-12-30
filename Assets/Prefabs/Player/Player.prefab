@@ -191,7 +191,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2404565787834042312
 Transform:
   m_ObjectHideFlags: 0
@@ -1073,10 +1073,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f1b5ee2f2215564b87240c09f028428, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hookSpeed: 1
-  hookLength: 1.5
-  easingType: 16
-  hookGameObject: {fileID: 0}
+  hookChain: {fileID: 0}
+  pointOfFire: {fileID: 112294132145951649}
+  hookProjectile: {fileID: 0}
+  hookSpeed: 60000
 --- !u!1 &9136303234148425631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1093,7 +1093,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1258432959763766139
 Transform:
   m_ObjectHideFlags: 0

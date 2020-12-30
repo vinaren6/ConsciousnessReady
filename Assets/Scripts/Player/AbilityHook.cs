@@ -58,6 +58,7 @@ public class AbilityHook : MonoBehaviour
     private void ExtendHook()
     {
         MeasureDistanceToObject();
+        SetChainLength();
 
         Debug.Log(nameOfTarget + " " + distanceToTarget);
 
@@ -70,7 +71,7 @@ public class AbilityHook : MonoBehaviour
 
     public void MeasureDistanceToObject()
     {
-        raycastHit = Physics2D.Raycast(pointOfFire.transform.position, transform.up, 5, LayerMask.GetMask("Debris", "Enemies"));
+        raycastHit = Physics2D.Raycast(pointOfFire.transform.position, transform.up, 25, LayerMask.GetMask("Debris", "Enemies"));
 
         if (raycastHit.collider != null)
         {
@@ -82,15 +83,14 @@ public class AbilityHook : MonoBehaviour
             distanceToTarget = 0;
             nameOfTarget = "Object not hookable";
         }
-
-
     }
 
     private void ResetPositionChain()
     {
         foreach (Transform child in hookChain.transform)
         {
-            child.position = new Vector3(transform.position.x, transform.position.y, 0);
+            if (!child.CompareTag("PlayerPhantom"))
+                child.position = new Vector3(transform.position.x, transform.position.y, 0);
         }
     }
 
@@ -99,6 +99,18 @@ public class AbilityHook : MonoBehaviour
         foreach (Transform child in hookChain.transform)
         {
             child.GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+        }
+    }
+
+    private void SetChainLength()
+    {
+        foreach (Transform child in hookChain.transform)
+        {
+            if (!child.CompareTag("PlayerPhantom"))
+            {
+                var hingeDistance = new Vector2(0, 0.02f / Mathf.Lerp(1, 5, distanceToTarget)); // Lista ut hinge distance
+                child.GetComponent<HingeJoint2D>().connectedAnchor = hingeDistance;
+            }
         }
     }
 

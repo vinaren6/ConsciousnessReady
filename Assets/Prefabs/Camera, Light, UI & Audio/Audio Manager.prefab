@@ -129,8 +129,8 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Hook
     clip: {fileID: 8300000, guid: 97b0683c357f4d342be99923b7bf598f, type: 3}
-    volume: 0.441
-    pitch: 1
+    volume: 0.35
+    pitch: 1.25
     spatialBlend: 0
     music: 0
     loop: 0

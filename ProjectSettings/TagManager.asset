@@ -14,6 +14,7 @@ TagManager:
   - Medium Debris
   - Hookable
   - Asteroids
+  - PlayerPhantom
   layers:
   - Default
   - TransparentFX

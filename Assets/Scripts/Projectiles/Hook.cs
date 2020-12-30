@@ -21,8 +21,6 @@ public class Hook : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-
         previousAttachedObject = other.gameObject;
 
         attachedToObject = true;
