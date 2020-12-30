@@ -50,15 +50,18 @@ public class ConsoleController
     public ConsoleController()
     {
         //When adding commands, you must add a call below to registerCommand() with its name, implementation method, and help text.
-        RegisterCommand("echo", Echo, "echoes arguments back as array (for testing argument parser)");
+        RegisterCommand("echo", Echo, "Echoes arguments back as array (for testing argument parser)");
         RegisterCommand("help", Help, "Print this help.");
         RegisterCommand(repeatCmdName, RepeatCommand, "Repeat last command.");
         RegisterCommand("reload", Reload, "Reload scene.");
-        RegisterCommand("@echo", EchoSetting, "echo given commands, can be set to on or off.");
-        RegisterCommand("sethp", PlayerHealth, "set hitpoints. usage: sethp <hp> || sethp <hp> <maxhp>");
-        RegisterCommand("fullScreen", FullScreen, "toggle fullScreen");
-        RegisterCommand("experiance.add", ExperianceAdd, "add experiance");
-        RegisterCommand("experiance.addPermanent", ExperianceAddPermanent, "add permanent experiance");
+        RegisterCommand("@echo", EchoSetting, "Echo given commands, can be set to on or off.");
+        RegisterCommand("sethp", PlayerHealth, "Set hitpoints. usage: sethp <hp> || sethp <hp> <maxhp>");
+        RegisterCommand("fullScreen", FullScreen, "Ttoggle fullScree.n");
+        RegisterCommand("experiance.add", ExperianceAdd, "Add experiance.");
+        RegisterCommand("experiance.addPermanent", ExperianceAddPermanent, "Add permanent experiance.");
+        RegisterCommand("tp.exit", TeleportToExit, "Teleport to end cell.");
+        RegisterCommand("tp.outpost", TeleportToNerestOutpost, "Teleport to nerest outpost.");
+
     }
 
     public void RegisterCommand(string command, CommandHandler handler, string help)
@@ -70,7 +73,7 @@ public class ConsoleController
     {
         Debug.Log(line);
 
-        if (scrollback.Count >= ConsoleController.scrollbackSize) {
+        if (scrollback.Count >= scrollbackSize) {
             scrollback.Dequeue();
         }
         scrollback.Enqueue(line);
@@ -171,7 +174,7 @@ public class ConsoleController
     void Help(string[] args)
     {
         foreach (CommandRegistration reg in commands.Values) {
-            AppendLogLine(string.Format("{0}: {1}", reg.Command, reg.Help));
+            AppendLogLine(string.Format("{0}: \t{1}", reg.Command, reg.Help));
         }
     }
 
@@ -244,6 +247,38 @@ public class ConsoleController
         }
         ExperiancePoints.PermanentExperiance += points;
 
+    }
+
+    void TeleportToExit(string[] args)
+    {
+        Cell[] cells = WorldGenerationHandler.instance.gameObject.GetComponentsInChildren<Cell>();
+        foreach (Cell cell in cells) {
+            if (cell.type == Enum.CellType.End) {
+                PlayerMovement.playerObj.transform.position = cell.transform.position;
+                return;
+            }
+        }
+    }
+
+    void TeleportToNerestOutpost(string[] args)
+    {
+        Cell[] cells = WorldGenerationHandler.instance.gameObject.GetComponentsInChildren<Cell>();
+        List<Cell> outposts = new List<Cell>();
+        foreach (Cell cell in cells) {
+            if (cell.type == Enum.CellType.Outpost) {
+                outposts.Add(cell);
+            }
+        }
+        int id = -1;
+        float dist = -1f;
+        for (int i = 0; i < outposts.Count; i++) {
+            float d = Vector3.Distance(PlayerMovement.playerObj.transform.position, outposts[i].transform.position);
+            if (d > dist) {
+                dist = d;
+                id = i;
+            }
+        }
+        PlayerMovement.playerObj.transform.position = outposts[id].transform.position;
     }
 
     #endregion
