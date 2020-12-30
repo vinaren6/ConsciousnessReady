@@ -50,19 +50,19 @@ public class ConsoleController
     public ConsoleController()
     {
         //When adding commands, you must add a call below to registerCommand() with its name, implementation method, and help text.
-        RegisterCommand("echo", Echo, "Echoes arguments back as array (for testing argument parser)");
-        RegisterCommand("help", Help, "Print this help.");
-        RegisterCommand(repeatCmdName, RepeatCommand, "Repeat last command.");
-        RegisterCommand("reload", Reload, "Reload scene.");
         RegisterCommand("@echo", EchoSetting, "Echo given commands, can be set to on or off.");
-        RegisterCommand("sethp", PlayerHealth, "Set hitpoints. usage: sethp <hp> || sethp <hp> <maxhp>");
-        RegisterCommand("fullScreen", FullScreen, "Ttoggle fullScree.n");
+        RegisterCommand("clear", Clear, "Clear log");
+        RegisterCommand("echo", Echo, "Echoes arguments back as array (for testing argument parser)");
         RegisterCommand("experiance.add", ExperianceAdd, "Add experiance.");
         RegisterCommand("experiance.addPermanent", ExperianceAddPermanent, "Add permanent experiance.");
+        RegisterCommand("fullScreen", FullScreen, "Ttoggle fullScree.n");
+        RegisterCommand("help", Help, "Print this help.");
+        RegisterCommand("reload", Reload, "Reload scene.");
+        RegisterCommand(repeatCmdName, RepeatCommand, "Repeat last command.");
+        RegisterCommand("sethp", PlayerHealth, "Set hitpoints. usage: sethp <hp> || sethp <hp> <maxhp>");
         RegisterCommand("tp", Teleport, "Teleport to X Y position. tp <x> <y>");
         RegisterCommand("tp.exit", TeleportToExit, "Teleport to end cell.");
         RegisterCommand("tp.outpost", TeleportToNerestOutpost, "Teleport to nerest outpost.");
-
     }
 
     public void RegisterCommand(string command, CommandHandler handler, string help)
@@ -298,6 +298,11 @@ public class ConsoleController
             }
         }
         PlayerMovement.playerObj.transform.position = outposts[id].transform.position;
+    }
+
+    void Clear(string[] args)
+    {
+        scrollback = new Queue<string>(scrollbackSize);
     }
 
     #endregion
