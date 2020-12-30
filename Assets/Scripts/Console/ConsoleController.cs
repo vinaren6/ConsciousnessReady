@@ -59,6 +59,7 @@ public class ConsoleController
         RegisterCommand("fullScreen", FullScreen, "Ttoggle fullScree.n");
         RegisterCommand("experiance.add", ExperianceAdd, "Add experiance.");
         RegisterCommand("experiance.addPermanent", ExperianceAddPermanent, "Add permanent experiance.");
+        RegisterCommand("tp", Teleport, "Teleport to X Y position. tp <x> <y>");
         RegisterCommand("tp.exit", TeleportToExit, "Teleport to end cell.");
         RegisterCommand("tp.outpost", TeleportToNerestOutpost, "Teleport to nerest outpost.");
 
@@ -247,6 +248,21 @@ public class ConsoleController
         }
         ExperiancePoints.PermanentExperiance += points;
 
+    }
+
+    void Teleport(string[] args)
+    {
+
+        if (!float.TryParse(args[1], out float posx)) {
+            AppendLogLine("Expected an integer.");
+            return;
+        }
+        if (!float.TryParse(args[1], out float posy)) {
+            AppendLogLine("Expected an integer.");
+            return;
+        }
+
+        PlayerMovement.playerObj.transform.position = new Vector3(posx, posy);
     }
 
     void TeleportToExit(string[] args)
