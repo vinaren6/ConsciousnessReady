@@ -99,7 +99,7 @@ public class AbilityShooting : MonoBehaviour
     {
         elapsedTime += Time.deltaTime;
 
-        LightUpLamps(isLampOn);
+        //LightUpLamps(isLampOn);
 
     }
 

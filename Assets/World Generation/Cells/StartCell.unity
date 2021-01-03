@@ -8161,7 +8161,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1909718082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8717,6 +8717,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 641346520, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 641346522, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 641346522, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.1124498
+      objectReference: {fileID: 0}
+    - target: {fileID: 641346522, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 641346522, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Intensity
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1609391639, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1609391641, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: m_Intensity
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name
       value: Player

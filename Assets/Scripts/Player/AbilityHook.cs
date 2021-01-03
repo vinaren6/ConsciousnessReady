@@ -108,8 +108,8 @@ public class AbilityHook : MonoBehaviour
         {
             if (!child.CompareTag("PlayerPhantom"))
             {
-                var hingeDistance = new Vector2(0, 0.02f / Mathf.Lerp(1, 5, distanceToTarget)); // Lista ut hinge distance
-                child.GetComponent<HingeJoint2D>().connectedAnchor = hingeDistance;
+                Vector2 hingeDistance = new Vector2(0, 0.02f / (distanceToTarget * 0.75f + 1f)); // Lista ut hinge distance
+                child.GetComponent<HingeJoint2D>().anchor = hingeDistance;
             }
         }
     }
@@ -117,9 +117,9 @@ public class AbilityHook : MonoBehaviour
 
     private void RetractHook()
     {
+        hookProjectile.DeattachFromPreviousObject();
         hookChain.SetActive(false);
         hookProjectile.attachedToObject = false;
-        hookProjectile.DeattachFromPreviousObject();
     }
 
 }
