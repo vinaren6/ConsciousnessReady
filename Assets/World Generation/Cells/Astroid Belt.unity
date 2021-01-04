@@ -136,7 +136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1507062196444731583, guid: 9586fc1321a50c24093df1f0ecf9e217, type: 3}
       propertyPath: m_RootOrder
-      value: 116
+      value: 110
       objectReference: {fileID: 0}
     - target: {fileID: 1507062196444731583, guid: 9586fc1321a50c24093df1f0ecf9e217, type: 3}
       propertyPath: m_LocalScale.x
@@ -270,11 +270,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5616886016963265053, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_Name
-      value: Driller (1)
+      value: Driller2 (1)
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_RootOrder
-      value: 113
+      value: 119
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalScale.x
@@ -1667,11 +1667,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5616886016963265053, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_Name
-      value: Driller (3)
+      value: Driller2
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_RootOrder
-      value: 110
+      value: 116
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5010,7 +5010,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5461943647276019796, guid: ebfb498db4799c3438bbb9df85c13f9d, type: 3}
       propertyPath: m_RootOrder
-      value: 118
+      value: 112
       objectReference: {fileID: 0}
     - target: {fileID: 5461943647276019796, guid: ebfb498db4799c3438bbb9df85c13f9d, type: 3}
       propertyPath: m_LocalScale.x
@@ -5823,7 +5823,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5167890395412708885, guid: 0dba76b5e3afafb4ca198961c0930102, type: 3}
       propertyPath: m_RootOrder
-      value: 121
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 5167890395412708885, guid: 0dba76b5e3afafb4ca198961c0930102, type: 3}
       propertyPath: m_LocalScale.x
@@ -6527,7 +6527,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4598074019089595609, guid: bf1d40898f0e7974c8fa13ae9e13754d, type: 3}
       propertyPath: m_RootOrder
-      value: 119
+      value: 113
       objectReference: {fileID: 0}
     - target: {fileID: 4598074019089595609, guid: bf1d40898f0e7974c8fa13ae9e13754d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7532,29 +7532,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5317691597816117932, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 4.18
+      objectReference: {fileID: 0}
+    - target: {fileID: 5317691597816117932, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 4.14
+      objectReference: {fileID: 0}
     - target: {fileID: 5616886016963265053, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_Name
-      value: Driller (2)
+      value: Driller2 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_RootOrder
-      value: 114
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 120
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.47
+      value: -15.483
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.42
+      value: -7.369
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8063,19 +8063,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5616886016963265053, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_Name
-      value: Driller (4)
+      value: Driller2 (2)
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_RootOrder
-      value: 111
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8523,7 +8515,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6789095310693909696, guid: 341d3e71bfe12c640acb7fd246d3e7da, type: 3}
       propertyPath: m_RootOrder
-      value: 120
+      value: 114
       objectReference: {fileID: 0}
     - target: {fileID: 6789095310693909696, guid: 341d3e71bfe12c640acb7fd246d3e7da, type: 3}
       propertyPath: m_LocalScale.x
@@ -8592,7 +8584,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1231654979378553390, guid: 332960ab17cf39a4b87fd3d7b87317cd, type: 3}
       propertyPath: m_RootOrder
-      value: 117
+      value: 111
       objectReference: {fileID: 0}
     - target: {fileID: 1231654979378553390, guid: 332960ab17cf39a4b87fd3d7b87317cd, type: 3}
       propertyPath: m_LocalScale.x
@@ -8787,19 +8779,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5616886016963265053, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_Name
-      value: Driller (5)
+      value: Driller2 (5)
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_RootOrder
-      value: 115
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.3
+      value: 121
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8995,11 +8979,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5616886016963265053, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_Name
-      value: Driller
+      value: Driller2 (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_RootOrder
-      value: 112
+      value: 118
       objectReference: {fileID: 0}
     - target: {fileID: 7534003618834346206, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
       propertyPath: m_LocalScale.x
@@ -9051,3 +9035,64 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c777b083bb5a21240865e16bda27e75a, type: 3}
+--- !u!1001 &7837430231433486476
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_RootOrder
+      value: 122
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.74562794
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.66636246
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874196, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 83.574
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874198, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: health
+      value: 2000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837430231840874201, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
+      propertyPath: m_Name
+      value: Driller1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
