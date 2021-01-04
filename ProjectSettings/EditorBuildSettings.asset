@@ -12,8 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: 6d8ec1f1446d3f04c8bd2068b9a26f98
   - enabled: 1
-    path: Assets/World Generation/Scenes/WorldGeneration (New test).unity
-    guid: 64090f8b4092a054db321e963b51c90a
+    path: Assets/World Generation/Scenes/WorldGeneration.unity
+    guid: b2919a00e34f711428ea8c1eb0c1d323
   - enabled: 1
     path: Assets/World Generation/Cells/Astroid Belt (Drillers).unity
     guid: a95b54bbade94b04a9070f0e399bbf2c

@@ -9060,6 +9060,10 @@ PrefabInstance:
       propertyPath: desableScripts.Array.data[7]
       value: 
       objectReference: {fileID: 658564017}
+    - target: {fileID: 3814114195626538798, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: projectileSpeed
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name
       value: Player
