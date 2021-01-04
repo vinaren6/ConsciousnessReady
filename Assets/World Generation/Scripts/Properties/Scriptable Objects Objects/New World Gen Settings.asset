@@ -22,7 +22,7 @@ MonoBehaviour:
   allowFilps: 1
   movebleObjs:
     serializedVersion: 2
-    m_Bits: 12801
+    m_Bits: 4207105
   dontUnloadObjInDistance: 16
   startWorldMapObj: {fileID: 4131956800126878613, guid: baa16d7fa53d1394998c0d4c1479b4a4, type: 3}
   endWorldMapObj: {fileID: 1987476433757750171, guid: c6c893533a4e4224bb667b7a1a5c5d06, type: 3}

@@ -114,7 +114,7 @@ Transform:
   m_GameObject: {fileID: 5616886016963265053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.23, y: 6.09, z: 0}
-  m_LocalScale: {x: 0.35, y: 0.35, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 1}
   m_Children:
   - {fileID: 8685633436216874581}
   m_Father: {fileID: 0}
@@ -263,7 +263,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 5943
-  maxSpeed: 5
+  maxSpeed: 7
   acceleration: 7
   target: {fileID: 0}
   RayDistance: 6.5
@@ -290,6 +290,6 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -2.8893943, y: 1.9872686}
   serializedVersion: 2
-  m_Radius: 8.5
+  m_Radius: 51.37905
