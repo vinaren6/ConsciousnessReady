@@ -10,15 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1ee275ff0c4464397bcf3873650857, type: 3}
-  m_Name: Borders Cell Rules
+  m_Name: FragmentsOfHome Rules
   m_EditorClassIdentifier: 
-  title: Borders (Blue)
-  type: 0
-  id: 6
-  Allowflip: 1
+  title: FragmentsOfHome
+  type: 2
+  id: 2
+  AllowflipX: 0
+  AllowflipY: 0
   flipX: 0
   flipY: 0
-  preview: {fileID: 2800000, guid: 105d59ad171f17f4684b249079d257a2, type: 3}
+  preview: {fileID: 0}
   cellsUpLeft: []
   cellsUpRight: []
   cellsLeft: []

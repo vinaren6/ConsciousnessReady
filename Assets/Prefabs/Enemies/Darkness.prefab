@@ -401,8 +401,9 @@ PolygonCollider2D:
       - {x: -0.50990176, y: 0.04122092}
       - {x: -0.18965074, y: -0.5136156}
       - {x: -0.17943133, y: -0.7497099}
-      - {x: -0.17943114, y: -0.9427133}
-      - {x: -0.05954562, y: -1.1794825}
+      - {x: -0.254991, y: -1.2017751}
+      - {x: -0.037957296, y: -1.2982197}
+      - {x: 0.15938616, y: -1.1490002}
       - {x: 0.09143387, y: -0.9283209}
 --- !u!50 &2118020500
 Rigidbody2D:
@@ -437,21 +438,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227a9725888c3684a849d4abd62a5c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavor: 101
+  behavor: 33
   layerMask:
     serializedVersion: 2
-    m_Bits: 5943
-  maxSpeed: 10
+    m_Bits: 1847
+  maxSpeed: 30
   acceleration: 30
   target: {fileID: 0}
-  RayDistance: 6.5
+  RayDistance: 30
   TargetAvoidDistance: 3
-  CosisionAvoidDistance: 1
-  turnSpeed: 30
-  smoothTurnSpeed: 25
+  CosisionAvoidDistance: 3
+  turnSpeed: 5
+  smoothTurnSpeed: 35
   targetDistanceMultiplier: 0
   fireDelay: 2
-  MaxOffsetInDegreeToFire: 180
+  MaxOffsetInDegreeToFire: 90
   fireDistance: 8
   bullet: {fileID: 7477270765736997791, guid: 47a9928e0a1663a4abe60ea2382f4763, type: 3}
   guns:
@@ -530,9 +531,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.20783234, y: 0}
   serializedVersion: 2
-  m_Radius: 8.5
+  m_Radius: 18.425
 --- !u!1 &5980371562867562942
 GameObject:
   m_ObjectHideFlags: 0

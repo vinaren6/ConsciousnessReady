@@ -12,49 +12,49 @@ EditorBuildSettings:
     path: Assets/Scenes/Title Screen.unity
     guid: 6d8ec1f1446d3f04c8bd2068b9a26f98
   - enabled: 1
-    path: Assets/World Generation/Cells/StartCell.unity
+    path: Assets/World Generation/Cells/Playtest/StartCell.unity
     guid: 3edb4d0ad1b897b44a63a69acf79ca3c
   - enabled: 1
-    path: Assets/World Generation/Cells/Astroids Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Astroids Cell.unity
     guid: 6aeb0d45d0284aa4797d70ad56dac198
   - enabled: 1
-    path: Assets/World Generation/Cells/Blackhole Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Blackhole Cell.unity
     guid: fc35b39a4149f4c4a8b2c8e06e12baa6
   - enabled: 1
-    path: Assets/World Generation/Cells/Slumber Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Slumber Cell.unity
     guid: 35f816ab5e7d3f249aef561db5be6f91
   - enabled: 1
-    path: Assets/World Generation/Cells/Borders Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Borders Cell.unity
     guid: a617072bd9d582949834f8d369f53b32
   - enabled: 1
-    path: Assets/World Generation/Cells/Graveyard Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Graveyard Cell.unity
     guid: 08b326ae33572de4db4ce90381a35f13
   - enabled: 1
-    path: Assets/World Generation/Cells/Droid Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Droid Cell.unity
     guid: d3be0b24509ad6e458f53b4fbb5a5377
   - enabled: 1
-    path: Assets/World Generation/Cells/Sanctuary Outpost Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Sanctuary Outpost Cell.unity
     guid: 001de0218ce96a04da20617569056717
   - enabled: 1
-    path: Assets/World Generation/Cells/Unstable Space Cell.unity
+    path: Assets/World Generation/Cells/Playtest/Unstable Space Cell.unity
     guid: cad670ebe4f2fa84c8dbd4be02be5f6d
   - enabled: 1
-    path: Assets/World Generation/Cells/EndCell.unity
+    path: Assets/World Generation/Cells/Playtest/EndCell.unity
     guid: 1dab6b1e34ae8dc4ea4290d24a1cfbda
   - enabled: 1
-    path: Assets/World Generation/Cells/BFA Cell.unity
+    path: Assets/World Generation/Cells/Playtest/BFA Cell.unity
     guid: 3768020108631194590fd8e19c564f04
   - enabled: 1
-    path: Assets/World Generation/Cells/New Units Cell.unity
+    path: Assets/World Generation/Cells/Playtest/New Units Cell.unity
     guid: 81aa3653aeee2914999865a2388f25ae
   - enabled: 1
     path: Assets/World Generation/Scenes/WorldGeneration.unity
     guid: 64090f8b4092a054db321e963b51c90a
   - enabled: 1
-    path: Assets/World Generation/Cells/Big Borders Cell part 1 main.unity
+    path: Assets/World Generation/Cells/Playtest/Big Borders Cell part 1 main.unity
     guid: c5e6e910d4554924487169bc0fa374e8
   - enabled: 1
-    path: Assets/World Generation/Cells/Big Borders Cell part 2.unity
+    path: Assets/World Generation/Cells/Playtest/Big Borders Cell part 2.unity
     guid: b29e5d1e181c98f41844f9225fcc5cb1
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 1a2775d9a73d2a44c8d13cc8fe914045, type: 2}
