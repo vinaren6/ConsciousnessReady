@@ -8,12 +8,15 @@ public class Mover : MonoBehaviour
     private bool isCoolided = false;
     //[SerializeField] private ScriptableObject
     // Start is called before the first frame update
-    private float timer = 1;
+    [SerializeField]
+    private float ExplosionTimerOnCollision = 1;
     private string childName;
     private float childMass;
     private float childDrag;
     private float childAngularDrag;
     private float childGravityScale;
+    [SerializeField]
+    private float collisionSpeed = 2;
 
     [SerializeField]private Explosion explosion;
     [SerializeField] private Explosion explosionCollision;
@@ -29,8 +32,8 @@ public class Mover : MonoBehaviour
         velocity = GetComponent<Rigidbody2D>().velocity;
         if (isCoolided)
         {
-            timer -= Time.deltaTime;
-            if (timer <= 0)
+            ExplosionTimerOnCollision -= Time.deltaTime;
+            if (ExplosionTimerOnCollision <= 0)
             {
                 Transform child = FindChildTransform(gameObject, childName); //Replace "ChildName" with the child objects name.
                 GameObject ChildGameObject1 = transform.GetChild(0).gameObject;
@@ -145,7 +148,7 @@ public class Mover : MonoBehaviour
                     Destroy(collision.gameObject.GetComponent<Rigidbody2D>());
                     Destroy(GetComponent<BoxCollider2D>());
                     collision.gameObject.transform.SetParent(transform);
-                    velocity = velocity / 2;
+                    velocity = velocity / collisionSpeed;
                     colidedWithEnemy(collision);
                     
                 
@@ -154,13 +157,17 @@ public class Mover : MonoBehaviour
                 if (collision.transform.GetComponent<Mover>() != null)
                     {
                         Destroy(collision.transform.GetComponent<Mover>());
-                    }
+                    
+                }
                     isCoolided = true;
                 }
         }
         else if (collision.gameObject.tag != "Small Debris" && collision.gameObject.tag != "Player")
         {
             Destroy(gameObject);
+            Instantiate(explosion, transform.position, transform.rotation);
+            FindObjectOfType<AudioManager>().Play("Explosion (High)");
+            FindObjectOfType<AudioManager>().Play("Explosion (Low)");
         }
         
         
