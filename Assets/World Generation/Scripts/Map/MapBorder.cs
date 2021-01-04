@@ -17,7 +17,7 @@ public class MapBorder : MonoBehaviour
 
     private float size;
 
-    private Rigidbody2D player;
+    //private Rigidbody2D player;
 
     void Start()
     {
@@ -26,7 +26,7 @@ public class MapBorder : MonoBehaviour
         enabled = false;
         image.enabled = false;
 
-        player = PlayerMovement.playerObj.GetComponent<Rigidbody2D>();
+        //player = PlayerMovement.playerObj.GetComponent<Rigidbody2D>();
     }
 
     void Update()

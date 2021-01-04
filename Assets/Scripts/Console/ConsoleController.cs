@@ -38,8 +38,8 @@ public class ConsoleController
     const int scrollbackSize = 16;
 
     Queue<string> scrollback = new Queue<string>(scrollbackSize);
-    List<string> commandHistory = new List<string>();
-    Dictionary<string, CommandRegistration> commands = new Dictionary<string, CommandRegistration>();
+    readonly List<string> commandHistory = new List<string>();
+    readonly Dictionary<string, CommandRegistration> commands = new Dictionary<string, CommandRegistration>();
 
     public string[] Log { get; private set; } //Copy of scrollback as an array for easier use by ConsoleView
 
@@ -143,6 +143,7 @@ public class ConsoleController
 
     //A test command to demonstrate argument checking/parsing.
     //Will repeat the given word a specified number of times.
+    /*
     void Babble(string[] args)
     {
         if (args.Length < 2) {
@@ -162,7 +163,7 @@ public class ConsoleController
             }
         }
     }
-
+    */
     void Echo(string[] args)
     {
         StringBuilder sb = new StringBuilder();

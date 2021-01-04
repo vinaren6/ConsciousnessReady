@@ -33,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool newRotation;
     [SerializeField] private bool alwaysBoost;
     [SerializeField] private float mouseMoving = 2;
-    bool mouseControl;
+    //bool mouseControl;
     float mouseControlTimer;
     [SerializeField] float mouseControlTimerLength;
     float oldMouseX;
@@ -138,9 +138,9 @@ public class PlayerMovement : MonoBehaviour
         boostInput.canceled += context => { boost = 1; isBoost = false; };
         slowInput.started += context =>
         {
-            maxSpeed = maxSpeed / 2;
+            maxSpeed /= 2;
         };
-        slowInput.canceled += context => { maxSpeed = maxSpeed * 2; };
+        slowInput.canceled += context => { maxSpeed *= 2; };
     }
     private void Update()
     {
@@ -232,7 +232,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Mathf.Abs(oldMouseX - mousePosX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - mousePosY.ReadValue<float>()) > mouseMoving || shoot.ReadValue<float>() == 1)
         {
-            mouseControl = true;
+            //mouseControl = true;
             mouseControlTimer = mouseControlTimerLength;
             isGamepad = false;
         }

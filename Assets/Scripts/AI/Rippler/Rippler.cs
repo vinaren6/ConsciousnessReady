@@ -46,13 +46,13 @@ public class Rippler : MonoBehaviour
 
     AnimationCurve actualCurve;
 
-    Animator animator;
+    //Animator animator;
 
     void Start()
     {
         lineRenderer = NewLine();
         coll = GetComponent<CircleCollider2D>();
-        animator = gameObject.transform.parent.GetComponent<Animator>();
+        //animator = gameObject.transform.parent.GetComponent<Animator>();
         ResetCurve();
     }
 
@@ -126,19 +126,17 @@ public class Rippler : MonoBehaviour
         //if linw width is less than 0.75%
         if (lineRenderer.widthCurve.Evaluate(angle) > 0.75f) {
             //hit
-            if (collision.transform.tag == "Player") {
+            if (collision.transform.CompareTag("Player")) {
 
                 //apply force
-                Rigidbody2D collRB2D;
-                if (collision.TryGetComponent<Rigidbody2D>(out collRB2D)) {
+                if (collision.TryGetComponent<Rigidbody2D>(out Rigidbody2D collRB2D)) {
                     //get angle as positive and inside 360* / 2PI
                     float radAngle = (orgAngle + Mathf.PI) % (Mathf.PI * 2f);
                     collRB2D.AddForce(new Vector2(Mathf.Sin(radAngle) * pussingForce, Mathf.Cos(radAngle)) * pussingForce, ForceMode2D.Impulse);
                 }
 
                 //apply damage
-                Health player;
-                if (collision.TryGetComponent<Health>(out player))
+                if (collision.TryGetComponent<Health>(out Health player))
                     player.TakeDamage(damage);
             }
         }
@@ -248,8 +246,9 @@ public class Rippler : MonoBehaviour
 
     Keyframe NewKeyframeRaw(float time, float value)
     {
-        Keyframe k = new Keyframe(time, value, 0, 0);
-        k.weightedMode = WeightedMode.None;
+        Keyframe k = new Keyframe(time, value, 0, 0) {
+            weightedMode = WeightedMode.None
+        };
         return k;
     }
 

@@ -8,7 +8,7 @@ public class EnableScriptOnTrigger : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         foreach (MonoBehaviour script in scripts) {
-            if (collision.tag == "Player")
+            if (collision.CompareTag("Player"))
                 script.enabled = true;
         }
     }
@@ -16,7 +16,7 @@ public class EnableScriptOnTrigger : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         foreach (MonoBehaviour script in scripts) {
-            if (collision.tag == "Player")
+            if (collision.CompareTag("Player"))
                 script.enabled = false;
         }
     }
