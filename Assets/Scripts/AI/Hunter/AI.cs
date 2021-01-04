@@ -237,7 +237,7 @@ public class AI : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Enemy Bullet") {
+        if (collision.transform.CompareTag("Enemy Bullet")) {
             if (!skip)
                 Destroy(collision.gameObject);
         }
