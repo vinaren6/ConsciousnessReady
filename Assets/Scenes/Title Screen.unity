@@ -313,6 +313,7 @@ MonoBehaviour:
   adjustMusicVolume: 1
   adjustSFXVolume: 0
   audioMixer: {fileID: 24100000, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
+  audioMixerGroup: {fileID: -8900892789126349522, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
 --- !u!114 &96808934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -686,6 +687,7 @@ MonoBehaviour:
   adjustMusicVolume: 0
   adjustSFXVolume: 0
   audioMixer: {fileID: 24100000, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
+  audioMixerGroup: {fileID: 24300002, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
 --- !u!114 &165282727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1892,6 +1894,7 @@ MonoBehaviour:
   adjustMusicVolume: 0
   adjustSFXVolume: 1
   audioMixer: {fileID: 24100000, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
+  audioMixerGroup: {fileID: -2668638147401926902, guid: e19ef10080325cc4988bcfee481f3616, type: 2}
 --- !u!114 &784659879
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e4e74e637e85ab4da6c0ee157789a3a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceleration: 0.1
+  acceleration: 0.15
   targetTag: Player
 --- !u!58 &5339534833242060042
 CircleCollider2D:

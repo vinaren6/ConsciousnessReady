@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: BFA
   type: 0
-  id: 12
+  id: 5
   AllowflipX: 1
   AllowflipY: 1
   flipX: 0

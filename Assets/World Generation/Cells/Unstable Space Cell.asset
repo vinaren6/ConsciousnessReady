@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8b1ee275ff0c4464397bcf3873650857, type: 3}
-  m_Name: EndCell Rules
+  m_Name: Unstable Space Cell
   m_EditorClassIdentifier: 
-  title: EndCell
-  type: 3
-  id: 11
-  AllowflipX: 0
-  AllowflipY: 0
+  title: Unstable Space
+  type: 0
+  id: 16
+  AllowflipX: 1
+  AllowflipY: 1
   flipX: 0
   flipY: 0
   preview: {fileID: 0}

@@ -485,6 +485,7 @@ GameObject:
   - component: {fileID: 3814114195626538798}
   - component: {fileID: 2077842658228834804}
   - component: {fileID: 867844631}
+  - component: {fileID: 908704039}
   m_Layer: 11
   m_Name: Player
   m_TagString: Player
@@ -1077,6 +1078,31 @@ MonoBehaviour:
   pointOfFire: {fileID: 112294132145951649}
   hookProjectile: {fileID: 0}
   hookSpeed: 60000
+--- !u!114 &908704039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8037301594256694385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f6c24da0adbe2a4bbdd534f845b5b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enable:
+  - {fileID: 0}
+  desable:
+  - {fileID: 0}
+  desableScripts:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &9136303234148425631
 GameObject:
   m_ObjectHideFlags: 0

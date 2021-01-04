@@ -123,72 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &112022451
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_Name
-      value: Ice Meteorite (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.01
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4213835321177553065, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-  m_SourcePrefab: {fileID: 100100000, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
 --- !u!1 &334998586
 GameObject:
   m_ObjectHideFlags: 0
@@ -323,7 +257,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334998586}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.37, y: 0, z: 0}
+  m_LocalPosition: {x: 6.35, y: 1.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 8667493477708394363}
@@ -426,24 +360,92 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!1 &349310516 stripped
+--- !u!1 &358753721 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-  m_PrefabInstance: {fileID: 112022451}
+  m_CorrespondingSourceObject: {fileID: 8753250484159444052, guid: 8658c44701a715345af81f8f3842a1ef, type: 3}
+  m_PrefabInstance: {fileID: 8753250484323356621}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &349310517
-MonoBehaviour:
+--- !u!1001 &464098165
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 349310516}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c507c9983c15edc46ad876b164df74e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 611749923, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: objectToOrbit
+      value: 
+      objectReference: {fileID: 358753721}
+    - target: {fileID: 183623948526610275, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_Name
+      value: Ice Meteorite (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 8.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -4.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6418513
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.7668292
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 100.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498582512745929260, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_SleepingMode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8498582512745929260, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
 --- !u!1001 &517708584
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -451,6 +453,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 611749923, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: objectToOrbit
+      value: 
+      objectReference: {fileID: 358753721}
     - target: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
       propertyPath: m_Name
       value: Ice Meteorite
@@ -458,14 +464,6 @@ PrefabInstance:
     - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
       propertyPath: m_RootOrder
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.25000006
-      objectReference: {fileID: 0}
-    - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.25000006
       objectReference: {fileID: 0}
     - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -507,31 +505,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 100.14
       objectReference: {fileID: 0}
-    - target: {fileID: 4213835321177553065, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4213835321177553065, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
---- !u!1 &611749917 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
-  m_PrefabInstance: {fileID: 517708584}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &611749923
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 611749917}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c507c9983c15edc46ad876b164df74e4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 15
 --- !u!4 &8667493477708394363
 Transform:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Earth (Start Point)
   type: 2
-  id: 2
+  id: 9
   AllowflipX: 0
   AllowflipY: 0
   flipX: 0

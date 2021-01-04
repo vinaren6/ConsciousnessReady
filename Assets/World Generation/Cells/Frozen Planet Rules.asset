@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: Frozen Planet
   type: 0
-  id: 4
+  id: 10
   AllowflipX: 1
   AllowflipY: 1
   flipX: 0
