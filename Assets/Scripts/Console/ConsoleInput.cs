@@ -53,16 +53,4 @@ public class ConsoleInput : MonoBehaviour
             text.text = "";
         }
     }
-
-    float t = 1;
-
-    public void ZeroTime()
-    {
-        t = Time.timeScale;
-        Time.timeScale = 0;
-    }
-    public void RestoreTime()
-    {
-        Time.timeScale = t;
-    }
 }

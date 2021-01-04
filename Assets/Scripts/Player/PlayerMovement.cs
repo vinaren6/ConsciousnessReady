@@ -57,6 +57,11 @@ public class PlayerMovement : MonoBehaviour
         playerObj = gameObject;
     }
 
+    private void OnDestroy()
+    {
+        playerObj = null;
+    }
+
     void Start()
     {
         maxSpeed = maxSpeedValue;

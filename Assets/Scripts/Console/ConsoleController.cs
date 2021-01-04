@@ -214,7 +214,7 @@ public class ConsoleController
 
     void PlayerHealth(string[] args)
     {
-        if (!Int32.TryParse(args[1], out int hp)) {
+        if (!Int32.TryParse(args[0], out int hp)) {
             AppendLogLine("Expected an integer.");
             return;
         }
@@ -222,7 +222,7 @@ public class ConsoleController
         Health h = PlayerMovement.playerObj.GetComponent<Health>();
 
         if (args.Length > 1) {
-            if (!Int32.TryParse(args[2], out int maxHp)) {
+            if (!Int32.TryParse(args[1], out int maxHp)) {
                 AppendLogLine("Expected an integer.");
                 return;
             }
@@ -238,7 +238,7 @@ public class ConsoleController
 
     void ExperianceAdd(string[] args)
     {
-        if (!Int32.TryParse(args[1], out int points)) {
+        if (!Int32.TryParse(args[0], out int points)) {
             AppendLogLine("Expected an integer.");
             return;
         }
@@ -247,7 +247,7 @@ public class ConsoleController
     }
     void ExperianceAddPermanent(string[] args)
     {
-        if (!Int32.TryParse(args[1], out int points)) {
+        if (!Int32.TryParse(args[0], out int points)) {
             AppendLogLine("Expected an integer.");
             return;
         }
@@ -258,7 +258,7 @@ public class ConsoleController
     void Teleport(string[] args)
     {
 
-        if (!float.TryParse(args[1], out float posx)) {
+        if (!float.TryParse(args[0], out float posx)) {
             AppendLogLine("Expected an integer.");
             return;
         }
@@ -309,7 +309,7 @@ public class ConsoleController
 
     void Kill(string[] args)
     {
-        if (args.Length > 0 && float.TryParse(args[1], out float t)) {
+        if (args.Length > 0 && float.TryParse(args[0], out float t)) {
             GameObject.Destroy(PlayerMovement.playerObj, t);
             return;
         }
