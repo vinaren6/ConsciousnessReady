@@ -9086,10 +9086,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 83.574
       objectReference: {fileID: 0}
-    - target: {fileID: 7837430231840874198, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
-      propertyPath: health
-      value: 2000
-      objectReference: {fileID: 0}
     - target: {fileID: 7837430231840874201, guid: 4a9fd4eef086065459c9724a49ae5c86, type: 3}
       propertyPath: m_Name
       value: Driller1
