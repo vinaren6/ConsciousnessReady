@@ -15,7 +15,7 @@ PlayerSettings:
   companyName: DefaultCompany
   productName: Consciousness Ready
   defaultCursor: {fileID: 2800000, guid: 4c2a06f5a84776c4aa0457c654a10f4f, type: 3}
-  cursorHotspot: {x: 0, y: 0}
+  cursorHotspot: {x: 16, y: 16}
   m_SplashScreenBackgroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_ShowUnitySplashScreen: 1
   m_ShowUnitySplashLogo: 1
