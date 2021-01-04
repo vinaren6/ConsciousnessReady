@@ -313,7 +313,7 @@ public class ConsoleController
             GameObject.Destroy(PlayerMovement.playerObj, t);
             return;
         }
-        GameObject.Destroy(PlayerMovement.playerObj);
+        PlayerMovement.playerObj.GetComponent<Health>().Die();
     }
 
     #endregion

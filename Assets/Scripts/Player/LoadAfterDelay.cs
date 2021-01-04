@@ -7,7 +7,7 @@ public class LoadAfterDelay : MonoBehaviour
     [SerializeField] string scene = "WorldGeneration";
     [SerializeField] float delay = 10f;
 
-    void Start()
+    void OnEnable()
     {
         StartCoroutine(WaitAndPrint());
     }

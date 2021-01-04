@@ -17,6 +17,8 @@ public class Health : MonoBehaviour
 
     private SpriteRenderer spriteRenderer = null;
 
+    private bool damageOrHeal = false;
+
     private void Start()
     {
         enabled = false;
@@ -35,8 +37,10 @@ public class Health : MonoBehaviour
         }
 
         float color = spriteRenderer.color.g + Time.deltaTime * 2f;
-
-        spriteRenderer.color = new Color(1, color, color);
+        if (damageOrHeal)
+            spriteRenderer.color = new Color(color, 1, color);
+        else
+            spriteRenderer.color = new Color(1, color, color);
 
     }
 
@@ -47,6 +51,7 @@ public class Health : MonoBehaviour
         if (health <= 0) {
             Die();
         } else {
+            damageOrHeal = false;
             spriteRenderer.color = new Color(1, 0, 0);
             enabled = true;
         }
@@ -58,11 +63,15 @@ public class Health : MonoBehaviour
 
         if (health > maxHealth) {
             health = maxHealth;
+        } else {
+            damageOrHeal = true;
+            spriteRenderer.color = new Color(0, 1, 0);
+            enabled = true;
         }
     }
 
 
-    void Die()
+    public void Die()
     {
         if (explosion != null) {
             Instantiate(explosion, transform.position, transform.rotation);

@@ -5,6 +5,7 @@ public class Death : MonoBehaviour
 
     [SerializeField] GameObject[] enable;
     [SerializeField] GameObject[] desable;
+    [SerializeField] MonoBehaviour[] desableScripts;
 
     private void OnDestroy()
     {
@@ -13,6 +14,9 @@ public class Death : MonoBehaviour
         }
         foreach (GameObject obj in desable) {
             obj.SetActive(false);
+        }
+        foreach (MonoBehaviour obj in desableScripts) {
+            obj.enabled = false;
         }
     }
 }
