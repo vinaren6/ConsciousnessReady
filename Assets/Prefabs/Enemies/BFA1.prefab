@@ -284,7 +284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4034222750506772629
 Transform:
   m_ObjectHideFlags: 0
@@ -505,7 +505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6938041432812919733
 Transform:
   m_ObjectHideFlags: 0
@@ -786,7 +786,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4289187689400480765
 Transform:
   m_ObjectHideFlags: 0
@@ -1218,7 +1218,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227a9725888c3684a849d4abd62a5c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavor: 33
+  behavor: 37
   layerMask:
     serializedVersion: 2
     m_Bits: 5943
@@ -1233,7 +1233,7 @@ MonoBehaviour:
   targetDistanceMultiplier: 0
   fireDelay: 0
   MaxOffsetInDegreeToFire: 90
-  fireDistance: 8
+  fireDistance: 7
   bullet: {fileID: 7477270765736997791, guid: f88da7bb469b33d4d8a1a4215744f69d, type: 3}
   guns:
   - {fileID: 1832284456}
@@ -1334,7 +1334,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5235116110310392484
 Transform:
   m_ObjectHideFlags: 0

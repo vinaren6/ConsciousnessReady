@@ -384,6 +384,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice Meteorite (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -460,6 +464,10 @@ PrefabInstance:
     - target: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
       propertyPath: m_Name
       value: Ice Meteorite
+      objectReference: {fileID: 0}
+    - target: {fileID: 2056442799533423708, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2056442799533423709, guid: b3931d7ff3929894a834b325ee6dc33e, type: 3}
       propertyPath: m_RootOrder

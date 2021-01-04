@@ -130,6 +130,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1904946272, guid: cc40dc1656363ef4ca55a4d5c08c92bd, type: 3}
+      propertyPath: MaxOffsetInDegreeToFire
+      value: 180
+      objectReference: {fileID: 0}
     - target: {fileID: 5395636149734393031, guid: cc40dc1656363ef4ca55a4d5c08c92bd, type: 3}
       propertyPath: m_RootOrder
       value: 0
