@@ -57,6 +57,7 @@ public class ConsoleController
         RegisterCommand("experiance.addPermanent", ExperianceAddPermanent, "Add permanent experiance.");
         RegisterCommand("fullScreen", FullScreen, "Ttoggle fullScree.n");
         RegisterCommand("help", Help, "Print this help.");
+        RegisterCommand("kill", Kill, "Kills player. (can be given a delay)");
         RegisterCommand("reload", Reload, "Reload scene.");
         RegisterCommand(repeatCmdName, RepeatCommand, "Repeat last command.");
         RegisterCommand("sethp", PlayerHealth, "Set hitpoints. usage: sethp <hp> || sethp <hp> <maxhp>");
@@ -303,6 +304,15 @@ public class ConsoleController
     void Clear(string[] args)
     {
         scrollback = new Queue<string>(scrollbackSize);
+    }
+
+    void Kill(string[] args)
+    {
+        if (args.Length > 0 && float.TryParse(args[1], out float t)) {
+            GameObject.Destroy(PlayerMovement.playerObj, t);
+            return;
+        }
+        GameObject.Destroy(PlayerMovement.playerObj);
     }
 
     #endregion
