@@ -6733,6 +6733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1473191376}
   - component: {fileID: 1473191377}
+  - component: {fileID: 1473191378}
   m_Layer: 5
   m_Name: VictoryUI
   m_TagString: Untagged
@@ -6773,6 +6774,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f532ecbe7f1c84393a7c078ed22849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1473191378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473191375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50613383c2ea0b845ba41e4fde9fd5df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Title Screen
+  delay: 5
 --- !u!1 &1545042676
 GameObject:
   m_ObjectHideFlags: 0
