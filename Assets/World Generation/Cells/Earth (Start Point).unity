@@ -653,7 +653,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 130.8, y: -126.6}
+  m_AnchoredPosition: {x: 120.5, y: -93.6}
   m_SizeDelta: {x: 247.42676, y: 86.2168}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &74267492
@@ -676,20 +676,20 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'OPTIONS:
-
-    PRESS ESCAPE OR START
-
-
-    WORLD MAP:
+  m_text: 'WORLD MAP:
 
     press m or select
 
 
+    OPTIONS:
+
+    PRESS ESCAPE OR
+    START
+
+
     MISSION:
 
-    FIND
-    HUMANITY''S NEW HOME'
+    FIND HUMANITY''S NEW HOME'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5df0a2be43158c646b3218ab41817e05, type: 2}
   m_sharedMaterial: {fileID: 5863034717795052828, guid: 5df0a2be43158c646b3218ab41817e05, type: 2}
@@ -698,8 +698,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 1023410175
-  m_fontColor: {r: 1, g: 1, b: 1, a: 0.23529412}
+    rgba: 687865855
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0.15686275}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
