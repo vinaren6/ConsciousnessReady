@@ -22,7 +22,7 @@
                     "interactions": ""
                 },
                 {
-                    "name": "ShowHotkeys",
+                    "name": "ShowIngameOptions",
                     "type": "Button",
                     "id": "ae36829f-0ae8-4eba-8af4-6ef84121558e",
                     "expectedControlType": "Button",
@@ -207,11 +207,22 @@
                 {
                     "name": "",
                     "id": "9773fae4-e73c-4e10-9740-7c8476d774d3",
-                    "path": "<Keyboard>/c",
+                    "path": "<Keyboard>/escape",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "ShowHotkeys",
+                    "action": "ShowIngameOptions",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a746d17d-c972-4459-8460-8ac83bc2e96f",
+                    "path": "<Gamepad>/start",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "ShowIngameOptions",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
