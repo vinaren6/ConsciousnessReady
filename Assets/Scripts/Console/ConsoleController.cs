@@ -290,11 +290,11 @@ public class ConsoleController
                 outposts.Add(cell);
             }
         }
-        int id = -1;
-        float dist = -1f;
-        for (int i = 0; i < outposts.Count; i++) {
+        int id = 0;
+        float dist = Vector3.Distance(PlayerMovement.playerObj.transform.position, outposts[0].transform.position);
+        for (int i = 1; i < outposts.Count; i++) {
             float d = Vector3.Distance(PlayerMovement.playerObj.transform.position, outposts[i].transform.position);
-            if (d > dist) {
+            if (d < dist) {
                 dist = d;
                 id = i;
             }
