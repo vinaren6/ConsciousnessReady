@@ -138,7 +138,7 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: Mover
     clip: {fileID: 8300000, guid: 07ce8e58d0a9c9a4ea61fe71726f5b36, type: 3}
-    volume: 0.343
+    volume: 1
     pitch: 0.1
     spatialBlend: 0
     music: 0

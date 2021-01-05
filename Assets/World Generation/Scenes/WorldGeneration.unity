@@ -171,6 +171,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: a54125f10f2f12344bd62e85014dfb8d, type: 2}
   - {fileID: 11400000, guid: 093640b0de0a6bb4fa530acdfaa9e061, type: 2}
   - {fileID: 11400000, guid: aa38132c2fc6ff54282d8e72033940b5, type: 2}
+  - {fileID: 11400000, guid: 2397746ed3cad7b42b6c2acf4cf2dbfa, type: 2}
   debugData: 'Min Max Distance: (10.0, 16.0)
 
     Size Offset: 3.5
