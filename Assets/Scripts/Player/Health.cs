@@ -36,7 +36,8 @@ public class Health : MonoBehaviour
             return;
         }
 
-        float color = spriteRenderer.color.g + Time.deltaTime * 2f;
+        float color = spriteRenderer.color.b + Time.deltaTime * 2f;
+
         if (damageOrHeal)
             spriteRenderer.color = new Color(color, 1, color);
         else
