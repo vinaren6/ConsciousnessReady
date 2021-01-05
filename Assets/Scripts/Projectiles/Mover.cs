@@ -34,6 +34,7 @@ public class Mover : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(DestroyTimerNoCollided);
         velocity = GetComponent<Rigidbody2D>().velocity;
         if (isCoolided)
         {
@@ -69,7 +70,7 @@ public class Mover : MonoBehaviour
         }
         else
         {
-            DestroyTimerNoCollided = -Time.deltaTime;
+            DestroyTimerNoCollided -= Time.deltaTime;
             if (DestroyTimerNoCollided <= 0)
             {
                 Destroy(gameObject);
