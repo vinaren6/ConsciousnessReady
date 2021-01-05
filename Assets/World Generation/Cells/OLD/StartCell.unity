@@ -4423,11 +4423,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 8037301594256694386, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
   m_PrefabInstance: {fileID: 1985459976}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &922379023 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 2124463603046454613, guid: 1c522ca9efdb08744b15fdc01727f676, type: 3}
-  m_PrefabInstance: {fileID: 2124463603270481498}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &928387640
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4906,7 +4901,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2087261127}
-  - {fileID: 922379023}
+  - {fileID: 2124463603270481499}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9682,6 +9677,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1c522ca9efdb08744b15fdc01727f676, type: 3}
+--- !u!4 &2124463603270481499 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 233299744701491274, guid: 1c522ca9efdb08744b15fdc01727f676, type: 3}
+  m_PrefabInstance: {fileID: 2124463603270481498}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2372290264156381470
 GameObject:
   m_ObjectHideFlags: 0
@@ -9845,14 +9845,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0.83137256, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 0}
+  m_Texture: {fileID: 2800000, guid: 05be62515e8fe484cb3c6c23f12d1a1d, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
