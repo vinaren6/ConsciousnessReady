@@ -1031,6 +1031,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1545663774}
+  startOnThisButton: {fileID: 0}
 --- !u!1 &131301289
 GameObject:
   m_ObjectHideFlags: 0
@@ -5914,7 +5915,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1909718085}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -10619,7 +10620,7 @@ RectTransform:
   - {fileID: 182046265}
   - {fileID: 1927006827}
   m_Father: {fileID: 1909718085}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10746,7 +10747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: WorldGeneration
-  delay: 3
+  delay: 2.5
 --- !u!1001 &1590338956
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12185,7 +12186,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1741320961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12391,6 +12392,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1545663774}
+  startOnThisButton: {fileID: 1750852380}
 --- !u!114 &1750852384
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13497,8 +13499,8 @@ RectTransform:
   - {fileID: 1473191376}
   - {fileID: 3370834}
   - {fileID: 670595795}
-  - {fileID: 1545663775}
   - {fileID: 893083835}
+  - {fileID: 1545663775}
   - {fileID: 749084361}
   - {fileID: 1558486696}
   m_Father: {fileID: 0}
@@ -13555,6 +13557,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 1545663774}
+  startOnThisButton: {fileID: 1750852380}
 --- !u!1 &1927006826
 GameObject:
   m_ObjectHideFlags: 0

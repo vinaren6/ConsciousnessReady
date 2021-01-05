@@ -1,10 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class OptionsMenu : MonoBehaviour
 {
     [SerializeField]
     private GameObject panel;
+
+    [SerializeField]
+    private GameObject startOnThisButton;
+
 
     private InputActions inputActions;
     private void Awake()
@@ -32,6 +37,8 @@ public class OptionsMenu : MonoBehaviour
     {
         Time.timeScale = 0;
         panel.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(startOnThisButton);
     }
 
     public void HideOptions()
@@ -39,5 +46,6 @@ public class OptionsMenu : MonoBehaviour
         panel.SetActive(false);
         Time.timeScale = 1;
     }
+
 
 }
