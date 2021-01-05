@@ -17,13 +17,18 @@ public class Mover : MonoBehaviour
     private float childGravityScale;
     [SerializeField]
     private float collisionSpeed = 2;
-
+    [SerializeField]
+    private float DestroyTimerNoCollided = 10f;
     [SerializeField]private Explosion explosion;
     [SerializeField] private Explosion explosionCollision;
 
     void Start()
     {
+       
+        FindObjectOfType<AudioManager>().Play("Mover");
+        FindObjectOfType<AudioManager>().Play("Explosion (Low)");
         velocity = GetComponent<Rigidbody2D>().velocity;
+        
     }
 
     // Update is called once per frame
@@ -59,6 +64,14 @@ public class Mover : MonoBehaviour
                   
                 }
                 child.parent = null;
+                Destroy(gameObject);
+            }
+        }
+        else
+        {
+            DestroyTimerNoCollided = -Time.deltaTime;
+            if (DestroyTimerNoCollided <= 0)
+            {
                 Destroy(gameObject);
             }
         }
