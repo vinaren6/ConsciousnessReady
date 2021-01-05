@@ -173,7 +173,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d155f87dac7c19c48b30d7e103005aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: {fileID: 0}
+  hp: {fileID: 1985459977}
 --- !u!114 &3370836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5469,7 +5469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &749084361
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5901,7 +5901,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &893083835
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10192,7 +10192,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1458453560}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
   m_Name: 
@@ -10250,13 +10250,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1473191376}
   - component: {fileID: 1473191377}
+  - component: {fileID: 1473191378}
   m_Layer: 5
   m_Name: VictoryUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1473191376
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10290,6 +10291,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75f532ecbe7f1c84393a7c078ed22849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1473191378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473191375}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 50613383c2ea0b845ba41e4fde9fd5df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scene: Tittle Screen
+  delay: 5
 --- !u!4 &1497282568 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2025748267864659010, guid: fada67b3affcc3146b59883107b4f6b0, type: 3}
@@ -12170,7 +12185,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1741320961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13509,7 +13524,7 @@ MonoBehaviour:
   targets:
   - {fileID: 1171188205}
   - {fileID: 1025420066}
-  - {fileID: 0}
+  - {fileID: 3370833}
   - {fileID: 670595794}
   defaultState: 1
 --- !u!114 &1909718087
@@ -14138,6 +14153,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+--- !u!114 &1985459977 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2077842658228834804, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+  m_PrefabInstance: {fileID: 1985459976}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 908704038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17280d7bf20ebf64e85b5de42e294bf7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2008935855
 PrefabInstance:
   m_ObjectHideFlags: 0
