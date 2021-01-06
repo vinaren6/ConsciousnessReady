@@ -11378,7 +11378,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: WorldGeneration
-  delay: 4
+  delay: 3
 --- !u!1 &1567031065
 GameObject:
   m_ObjectHideFlags: 0

@@ -3483,7 +3483,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: Chapter1
   LoadAsync: 0
-  LoadDelay: 1.5
+  LoadDelay: 0.75
 --- !u!82 &2114574118
 AudioSource:
   m_ObjectHideFlags: 0
