@@ -10,6 +10,11 @@ public class OptionsMenu : MonoBehaviour
     [SerializeField]
     private GameObject startOnThisButton;
 
+    [SerializeField]
+    private WorldmapManager worldmapManager;
+
+    public bool menuOpen = false;
+
 
     private InputActions inputActions;
     private void Awake()
@@ -35,16 +40,24 @@ public class OptionsMenu : MonoBehaviour
 
     public void DisplayOptions()
     {
-        Time.timeScale = 0;
-        panel.SetActive(true);
-        EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(startOnThisButton);
+        
+        if (worldmapManager.toggle)
+        {
+            menuOpen = true;
+
+            Time.timeScale = 0;
+            panel.SetActive(true);
+            EventSystem.current.SetSelectedGameObject(null);
+            EventSystem.current.SetSelectedGameObject(startOnThisButton);
+        }
+
     }
 
     public void HideOptions()
     {
         panel.SetActive(false);
         Time.timeScale = 1;
+        menuOpen = false;
     }
 
 

@@ -1772,8 +1772,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26efbde59eb89545b058d69cdb1dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScreenToLoad: WorldGeneration
-  LoadAsync: 1
+  SceneToLoad: WorldGeneration
+  LoadAsync: 0
   LoadDelay: 0
 --- !u!114 &2145776850
 MonoBehaviour:

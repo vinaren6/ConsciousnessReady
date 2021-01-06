@@ -12,14 +12,8 @@ public class IsCutsceneFinished : MonoBehaviour
 
     private void Update()
     {
-        //CheckIfCutSceneIsFinished();
-
-        Debug.Log(playableDirector.time);
-
         if (playableDirector.time > switchToGameAtSecond)
             gameObject.GetComponent<LoadThisScene>().LoadScene();
     }
-
-
 
 }

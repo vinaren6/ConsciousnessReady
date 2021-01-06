@@ -6,7 +6,7 @@ public class LoadThisScene : MonoBehaviour
 {
 
     [SerializeField]
-    private string ScreenToLoad;
+    private string SceneToLoad;
 
     [SerializeField]
     private bool LoadAsync = false;
@@ -23,7 +23,7 @@ public class LoadThisScene : MonoBehaviour
         {
             Scene scene = SceneManager.GetSceneAt(i);
 
-            if (scene.name != ScreenToLoad)
+            if (scene.name != SceneToLoad)
                 SceneManager.UnloadSceneAsync(scene);
         }
     }
@@ -32,9 +32,9 @@ public class LoadThisScene : MonoBehaviour
     public void LoadScene()
     {
         if (LoadAsync)
-            SceneManager.LoadSceneAsync(ScreenToLoad);
+            SceneManager.LoadSceneAsync(SceneToLoad);
         else
-            SceneManager.LoadScene(ScreenToLoad);
+            SceneManager.LoadScene(SceneToLoad);
     }
 
     public void LoadSceneWithDelay()

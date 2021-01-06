@@ -3481,7 +3481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26efbde59eb89545b058d69cdb1dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScreenToLoad: Chapter1
+  SceneToLoad: Chapter1
   LoadAsync: 0
   LoadDelay: 1.5
 --- !u!82 &2114574118

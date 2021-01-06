@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f26efbde59eb89545b058d69cdb1dee5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ScreenToLoad: Title Screen
+  SceneToLoad: Title Screen
   LoadAsync: 1
   LoadDelay: 0
 --- !u!114 &580050096
@@ -249,6 +249,10 @@ MonoBehaviour:
       m_Calls: []
     m_ActionId: ae36829f-0ae8-4eba-8af4-6ef84121558e
     m_ActionName: Player/ShowHotkeys[/Keyboard/c]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a11ed6a6-3faa-48d9-8a03-f191647f9b8e
+    m_ActionName: Player/Hook[/Keyboard/q]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

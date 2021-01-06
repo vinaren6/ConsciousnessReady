@@ -9,7 +9,7 @@ public class WorldmapManager : MonoBehaviour
     public GameObject[] enableObjs;
     public GameObject[] desableObjs;
 
-    private bool toggle = true;
+    public bool toggle = true;
 
     public static WorldmapManager instace;
 
