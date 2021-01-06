@@ -145,3 +145,12 @@ MonoBehaviour:
     loop: 0
     PlayOneShot: 0
     source: {fileID: 0}
+  - name: DeathScreenSound
+    clip: {fileID: 8300000, guid: e6cb3f80f9bde0646b1d8fbbe2b2e083, type: 3}
+    volume: 1
+    pitch: 1
+    spatialBlend: 0
+    music: 0
+    loop: 0
+    PlayOneShot: 0
+    source: {fileID: 0}
