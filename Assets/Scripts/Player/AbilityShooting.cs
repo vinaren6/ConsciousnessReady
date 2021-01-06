@@ -34,10 +34,7 @@ public class AbilityShooting : MonoBehaviour
     [Space(10)]
 
     [SerializeField]
-    private Light2D leftLamp;
-
-    [SerializeField]
-    private Light2D rightLamp;
+    private Light2D chargeLamp;
 
     [SerializeField]
     private float lampMultiplier = 0.01f;
@@ -99,7 +96,7 @@ public class AbilityShooting : MonoBehaviour
     {
         elapsedTime += Time.deltaTime;
 
-        //LightUpLamps(isLampOn);
+        LightUpLamps(isLampOn);
 
     }
 
@@ -121,13 +118,12 @@ public class AbilityShooting : MonoBehaviour
 
     private void LightUpLamps(bool isLampOn)
     {
-        if (isLampOn && lampIntensity < 12)
+        if (isLampOn && lampIntensity < 6)
             lampIntensity += lampMultiplier;
         else
             lampIntensity = 0;
 
-        leftLamp.intensity = lampIntensity;
-        rightLamp.intensity = lampIntensity;
+        chargeLamp.intensity = lampIntensity;
     }
 
 }
