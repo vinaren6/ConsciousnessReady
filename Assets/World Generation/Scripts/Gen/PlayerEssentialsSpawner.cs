@@ -6,10 +6,12 @@ public class PlayerEssentialsSpawner : MonoBehaviour
 {
     [SerializeField] GameObject playerEssentials;
     static bool haveSpaned = false;
+    bool isActive = false;
     void Start()
     {
         if (!haveSpaned) {
             haveSpaned = true;
+            isActive = true;
             StartCoroutine(Wait());
         }
     }
@@ -20,6 +22,10 @@ public class PlayerEssentialsSpawner : MonoBehaviour
         Vector3 pos = transform.position;
         SceneManager.MoveGameObjectToScene(gameObject, SceneManager.GetSceneAt(0));
         transform.position = pos;
-        Destroy(this);
+    }
+    private void OnDestroy()
+    {
+        if (isActive)
+            haveSpaned = false;
     }
 }
