@@ -279,7 +279,7 @@ public class Cell : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.CompareTag("Player") && isLoaded && type != Enum.CellType.Start)
+        if (!WorldGenerationHandler.instance.settings.loadOnStart && collision.CompareTag("Player") && isLoaded /* && type != Enum.CellType.Start */)
             UnloadSceane();
     }
 

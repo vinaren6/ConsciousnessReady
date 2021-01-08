@@ -15,7 +15,7 @@ public class ConsoleController
     public event LogChangedHandler LogChanged;
 
     public delegate void VisibilityChangedHandler(bool visible);
-    public event VisibilityChangedHandler VisibilityChanged;
+    //public event VisibilityChangedHandler VisibilityChanged;
     #endregion
 
     //Object to hold information about each command
