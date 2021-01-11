@@ -2,16 +2,31 @@ version: 2
 importPivots: 1
 tpsheetFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Sprites/Enemies/Obelisk/ObeliskAiming.tpsheet
+- Assets/Sprites/Enemies/Obelisk/ObeliskAimingProjectile.tpsheet
+- Assets/Sprites/Enemies/Obelisk/ObeliskAttack.tpsheet
+- Assets/Sprites/Enemies/Obelisk/ObeliskAttackProjectile.tpsheet
+- Assets/Sprites/Enemies/Obelisk/ObeliskIdle.tpsheet
 - Assets/Sprites/Hazards/Unstable Space/Shape1/UnstableSpace_Shape1_SpriteAtlas.tpsheet
 - Assets/Sprites/Hazards/Unstable Space/Shape2/UnstableSpace_Shape2_SpriteAtlas.tpsheet
 - Assets/Sprites/Hazards/Unstable Space/Shape3/Shape3 SpriteAtlas.tpsheet
 textureFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Sprites/Enemies/Obelisk/ObeliskAiming.png
+- Assets/Sprites/Enemies/Obelisk/ObeliskAimingProjectile.png
+- Assets/Sprites/Enemies/Obelisk/ObeliskAttack.png
+- Assets/Sprites/Enemies/Obelisk/ObeliskAttackProjectile.png
+- Assets/Sprites/Enemies/Obelisk/ObeliskIdle.png
 - Assets/Sprites/Hazards/Unstable Space/Shape1/UnstableSpace_Shape1_SpriteAtlas.png
 - Assets/Sprites/Hazards/Unstable Space/Shape2/UnstableSpace_Shape2_SpriteAtlas.png
 - Assets/Sprites/Hazards/Unstable Space/Shape3/Shape3 SpriteAtlas.png
 normalmapFileNames:
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
+- 
 - 
 - 
 - 
