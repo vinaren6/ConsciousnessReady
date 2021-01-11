@@ -14,12 +14,24 @@ public class AbilityHook : MonoBehaviour
     private Hook hookProjectile;
 
     [SerializeField]
+    private HingeJoint2D hookAnchor;
+
+    [SerializeField]
+    private GameObject playerPhantom;
+
+    [SerializeField]
     private float hookSpeed = 10000f;
 
 
-    private InputActions inputActions;
+    InputActions inputActions;
     GameObject[] allChildren;
-    private bool hookMoving = false;
+    bool hookMoving = false;
+    Rigidbody2D rigidBody2D;
+    GameObject phantomPlayer;
+    PlayerMovement playerMovement;
+    float savedPlayerMaxSpeed;
+    float savedPlayerAcceleration;
+    
 
     RaycastHit2D raycastHit;
     string nameOfTarget;
@@ -53,12 +65,17 @@ public class AbilityHook : MonoBehaviour
     private void Start()
     {
         allChildren = new GameObject[transform.childCount];
+        rigidBody2D = GetComponent<Rigidbody2D>();
+        playerMovement = GetComponent<PlayerMovement>();
+
+        savedPlayerMaxSpeed = playerMovement.maxSpeed;
+        savedPlayerAcceleration = playerMovement.acceleration;
     }
 
     private void ExtendHook()
     {
-        MeasureDistanceToObject();
-        SetChainLength();
+        RaycastForward();
+        //SetChainLength();
 
         Debug.Log(nameOfTarget + " " + distanceToTarget);
 
@@ -67,9 +84,15 @@ public class AbilityHook : MonoBehaviour
 
         hookChain.SetActive(true);
         hookProjectile.GetComponent<Rigidbody2D>().AddForce(transform.up * hookSpeed * (Time.fixedDeltaTime * 50), ForceMode2D.Impulse);
+
+        if (raycastHit.collider != null)
+        {
+            hookProjectile.AttachToObject(raycastHit);
+            AttachAnchorToPlayer();
+        }
     }
 
-    public void MeasureDistanceToObject()
+    public void RaycastForward()
     {
         raycastHit = Physics2D.Raycast(pointOfFire.transform.position, transform.up, 25, LayerMask.GetMask("Debris", "Enemies"));
 
@@ -114,9 +137,24 @@ public class AbilityHook : MonoBehaviour
         }
     }
 
+    private void AttachAnchorToPlayer()
+    {
+        hookAnchor.connectedBody = this.rigidBody2D;
+        playerMovement.acceleration = 20000;
+        playerMovement.maxSpeed = 15000;
+
+    }
+
+    private void AttachAnchorToPhantom()
+    {
+        hookAnchor.connectedBody = playerPhantom.GetComponent<Rigidbody2D>();
+        playerMovement.maxSpeed = savedPlayerMaxSpeed;
+        playerMovement.acceleration = savedPlayerAcceleration;
+    }
 
     private void RetractHook()
     {
+        AttachAnchorToPhantom();
         hookProjectile.DeattachFromPreviousObject();
         hookChain.SetActive(false);
         hookProjectile.attachedToObject = false;

@@ -19,26 +19,24 @@ public class Hook : MonoBehaviour
         rigidBody2D = gameObject.GetComponent<Rigidbody2D>();
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+
+    public void AttachToObject(RaycastHit2D raycast)
     {
-        if (!attachedToObject)
-        {
-            previousAttachedObject = other.gameObject;
-            attachedToObject = true;
+        previousAttachedObject = raycast.collider.gameObject;
+        attachedToObject = true;
 
-            foreignRigidBody2D = other.GetComponent<Rigidbody2D>();
+        foreignRigidBody2D = raycast.collider.GetComponent<Rigidbody2D>();
 
-            HingeJoint2D hingeFromCollidedObject = other.gameObject.AddComponent(typeof(HingeJoint2D)) as HingeJoint2D;
+        HingeJoint2D hingeFromCollidedObject = raycast.collider.gameObject.AddComponent(typeof(HingeJoint2D)) as HingeJoint2D;
 
-            foreignRigidBody2D.bodyType = RigidbodyType2D.Static;
-            abilityHook.ResetVelocityChain();
+        //foreignRigidBody2D.bodyType = RigidbodyType2D.Static;
+        abilityHook.ResetVelocityChain();
 
-            transform.position = other.transform.position;
-            hingeFromCollidedObject.connectedBody = this.rigidBody2D;
-            hingeFromCollidedObject.anchor = new Vector2(0, 0);
-        }
-
+        transform.position = raycast.transform.position;
+        hingeFromCollidedObject.connectedBody = this.rigidBody2D;
+        hingeFromCollidedObject.anchor = new Vector2(0, 0);
     }
+
 
     public void DeattachFromPreviousObject()
     {

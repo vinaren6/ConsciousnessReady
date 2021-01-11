@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
     public float maxSpeed = 5.5f;
     [SerializeField] float dragSlow = 1.5f;
     [SerializeField] float dragFast = 4.0f;
-    [SerializeField] private float acceleration = 2f;
+    public float acceleration = 2f;
     [SerializeField] private bool newRotation;
     [SerializeField] private bool alwaysBoost;
     [SerializeField] private float mouseMoving = 2;
