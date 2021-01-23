@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4696570942825646081}
   - component: {fileID: 4696570942825646331}
   - component: {fileID: 4696570942825646328}
+  - component: {fileID: 7211588299811822432}
   m_Layer: 13
   m_Name: Stinger
   m_TagString: Hookable
@@ -199,7 +200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 227a9725888c3684a849d4abd62a5c3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  behavor: 21
+  behavor: 1
   layerMask:
     serializedVersion: 2
     m_Bits: 5943
@@ -218,6 +219,19 @@ MonoBehaviour:
   bullet: {fileID: 7477270765736997791, guid: 19a4d12f9b9e6f943a9890dd4f644a30, type: 3}
   guns:
   - {fileID: 4696570944511232623}
+--- !u!114 &7211588299811822432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4696570942825646080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 131bb0e1bc428124aa7edd2ef0e0ee6a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 40
 --- !u!1 &4696570943376267739
 GameObject:
   m_ObjectHideFlags: 0
