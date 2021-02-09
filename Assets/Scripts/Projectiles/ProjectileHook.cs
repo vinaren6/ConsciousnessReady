@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Hook : MonoBehaviour
+public class ProjectileHook : MonoBehaviour
 {
     [SerializeField]
     private AbilityHook abilityHook;
@@ -11,7 +11,7 @@ public class Hook : MonoBehaviour
 
 
     [HideInInspector]
-    public bool attachedToObject;
+    public bool attachedToObject = false;
 
 
     private void Start()

@@ -11,7 +11,7 @@ public class AbilityHook : MonoBehaviour
     private GameObject pointOfFire;
 
     [SerializeField]
-    private Hook hookProjectile;
+    private ProjectileHook hookProjectile;
 
     [SerializeField]
     private HingeJoint2D hookAnchor;
@@ -24,9 +24,9 @@ public class AbilityHook : MonoBehaviour
 
 
     InputActions inputActions;
-    GameObject[] allChildren;
+    GameObject[] chainLinks;
     bool hookMoving = false;
-    Rigidbody2D rigidBody2D;
+    Rigidbody2D playerRigidBody;
     GameObject phantomPlayer;
     PlayerMovement playerMovement;
     float savedPlayerMaxSpeed;
@@ -64,8 +64,8 @@ public class AbilityHook : MonoBehaviour
 
     private void Start()
     {
-        allChildren = new GameObject[transform.childCount];
-        rigidBody2D = GetComponent<Rigidbody2D>();
+        chainLinks = new GameObject[transform.childCount];
+        playerRigidBody = GetComponent<Rigidbody2D>();
         playerMovement = GetComponent<PlayerMovement>();
 
         savedPlayerMaxSpeed = playerMovement.maxSpeed;
@@ -139,7 +139,7 @@ public class AbilityHook : MonoBehaviour
 
     private void AttachAnchorToPlayer()
     {
-        hookAnchor.connectedBody = this.rigidBody2D;
+        hookAnchor.connectedBody = this.playerRigidBody;
         playerMovement.acceleration = 20000;
         playerMovement.maxSpeed = 15000;
 

@@ -2984,6 +2984,18 @@ PrefabInstance:
       propertyPath: hookProjectile
       value: 
       objectReference: {fileID: 596662565}
+    - target: {fileID: 8037301594256694380, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: mousePosX.m_SingletonActionBindings.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037301594256694380, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: mousePosX.m_SingletonActionBindings.Array.data[1].m_Id
+      value: 54b280fd-8e2d-4eb2-b95e-1ad3ca5dcbdd
+      objectReference: {fileID: 0}
+    - target: {fileID: 8037301594256694380, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
+      propertyPath: mousePosX.m_SingletonActionBindings.Array.data[1].m_Action
+      value: Mouse Pos X
+      objectReference: {fileID: 0}
     - target: {fileID: 8037301594256694385, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Name
       value: Player

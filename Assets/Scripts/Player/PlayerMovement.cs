@@ -1,26 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private InputAction movementX;
-    [SerializeField] private InputAction movementY;
-
-    [SerializeField] private InputAction rotationX;
-    [SerializeField] private InputAction rotationY;
-
-    [SerializeField] private InputAction boostInput;
-    [SerializeField] private InputAction slowInput;
-    [SerializeField] private InputAction mousePosX;
-    [SerializeField] private InputAction mousePosY;
-    [SerializeField] private InputAction shoot;
+    private InputActions inputActions;
 
     float boost = 1;
     [SerializeField] private float boostSpeed = 2.5f;
 
-    [SerializeField] private float boostTimerLengt = 10;
+    [SerializeField] private float boostTimerLength = 10;
     [SerializeField] private float rotationAcceleration = 10;
     [SerializeField] private float rotationSpeed = 25;
     float boostTimer = 10;
@@ -33,7 +21,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool newRotation;
     [SerializeField] private bool alwaysBoost;
     [SerializeField] private float mouseMoving = 2;
-    //bool mouseControl;
+
     float mouseControlTimer;
     [SerializeField] float mouseControlTimerLength;
     float oldMouseX;
@@ -52,8 +40,21 @@ public class PlayerMovement : MonoBehaviour
 
     bool isGamepad = false;
 
+
+    private void OnEnable()
+    {
+        inputActions.Enable();
+    }
+
+    private void OnDisable()
+    {
+        inputActions.Disable();
+    }
+
     private void Awake()
     {
+        inputActions = new InputActions();
+
         playerObj = gameObject;
     }
 
@@ -62,23 +63,15 @@ public class PlayerMovement : MonoBehaviour
         playerObj = null;
     }
 
+
     void Start()
     {
         maxSpeed = maxSpeedValue;
-        boostTimer = boostTimerLengt;
-        rotationX.Enable();
-        rotationY.Enable();
-        movementX.Enable();
-        movementY.Enable();
-        boostInput.Enable();
-        slowInput.Enable();
-        mousePosX.Enable();
-        mousePosY.Enable();
-        shoot.Enable();
+        boostTimer = boostTimerLength;
+
         rb2d = GetComponent<Rigidbody2D>();
-        movementX.performed += context =>
+        inputActions.Player.MovementX.performed += context =>
         {
-            
             if (context.control.displayName == "Left Stick Left")
             {
                 isGamepad = true;
@@ -86,7 +79,8 @@ public class PlayerMovement : MonoBehaviour
             movement.x = context.ReadValue<float>();
             rb2d.drag = dragFast;
         };
-        movementX.canceled += context =>
+
+        inputActions.Player.MovementX.canceled += context =>
         {
             movement.x = 0;
             if (movement.y == 0)
@@ -94,9 +88,10 @@ public class PlayerMovement : MonoBehaviour
                 rb2d.drag = dragSlow;
             }
         };
-        movementY.performed += context =>
+
+        inputActions.Player.MovementY.performed += context =>
         {
-          
+
             if (context.control.displayName == "Left Stick Down")
             {
                 isGamepad = true;
@@ -104,7 +99,8 @@ public class PlayerMovement : MonoBehaviour
             movement.y = context.ReadValue<float>();
             rb2d.drag = dragFast;
         };
-        movementY.canceled += context =>
+
+        inputActions.Player.MovementY.canceled += context =>
         {
             movement.y = 0;
             if (movement.x == 0)
@@ -112,23 +108,28 @@ public class PlayerMovement : MonoBehaviour
                 rb2d.drag = dragSlow;
             }
         };
-        rotationX.performed += context =>
+
+        inputActions.Player.RotationX.performed += context =>
         {
-            if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
+            if (Mathf.Abs(inputActions.Player.MovementY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(inputActions.Player.MovementX.ReadValue<float>()) > deadSpaceRotation)
             {
                 moveDirection.x = context.ReadValue<float>();
             }
         };
-        rotationX.canceled += context => moveDirection.x = 0;
-        rotationY.performed += context =>
+        inputActions.Player.RotationX.canceled += context => moveDirection.x = 0;
+
+
+        inputActions.Player.RotationY.performed += context =>
         {
-            if (Mathf.Abs(rotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(rotationX.ReadValue<float>()) > deadSpaceRotation)
+            if (Mathf.Abs(inputActions.Player.RotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(inputActions.Player.RotationY.ReadValue<float>()) > deadSpaceRotation)
             {
                 moveDirection.y = context.ReadValue<float>();
             }
         };
-        rotationY.canceled += context => moveDirection.y = 0;
-        boostInput.started += context =>
+
+        inputActions.Player.RotationY.canceled += context => moveDirection.y = 0;
+
+        inputActions.Player.Boost.started += context =>
         {
             if (boostTimer > 0)
             {
@@ -140,13 +141,24 @@ public class PlayerMovement : MonoBehaviour
                 isBoost = false;
             }
         };
-        boostInput.canceled += context => { boost = 1; isBoost = false; };
-        slowInput.started += context =>
+
+        inputActions.Player.Boost.canceled += context => 
+        { 
+            boost = 1; 
+            isBoost = false; 
+        };
+
+        inputActions.Player.Slow.started += context =>
         {
             maxSpeed /= 2;
         };
-        slowInput.canceled += context => { maxSpeed *= 2; };
+
+        inputActions.Player.Slow.canceled += context => 
+        { 
+            maxSpeed *= 2; 
+        };
     }
+
     private void Update()
     {
         float oldRotation = transform.rotation.eulerAngles.z;
@@ -184,8 +196,8 @@ public class PlayerMovement : MonoBehaviour
         {
             cameraSmoothing = false;
         }
-        oldMouseY = mousePosY.ReadValue<float>();
-        oldMouseX = mousePosX.ReadValue<float>();
+        oldMouseY = inputActions.Player.RotationY.ReadValue<float>();
+        oldMouseX = inputActions.Player.RotationX.ReadValue<float>();
         propulsion.SetBool("NitroBoost", isBoost);
     }
 
@@ -226,7 +238,7 @@ public class PlayerMovement : MonoBehaviour
         else
         {
             boost = 1;
-            if (boostTimer < boostTimerLengt)
+            if (boostTimer < boostTimerLength)
             {
                 boostTimer += Time.deltaTime;
             }
@@ -235,15 +247,14 @@ public class PlayerMovement : MonoBehaviour
 
     private bool MouseRotation()
     {
-        if (Mathf.Abs(oldMouseX - mousePosX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - mousePosY.ReadValue<float>()) > mouseMoving || shoot.ReadValue<float>() == 1)
+        if (Mathf.Abs(oldMouseX - inputActions.Player.MousePositionX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - inputActions.Player.MousePositionY.ReadValue<float>()) > mouseMoving || inputActions.Player.Shoot.ReadValue<float>() == 1)
         {
-            //mouseControl = true;
             mouseControlTimer = mouseControlTimerLength;
             isGamepad = false;
         }
         if (!isGamepad)
         {
-            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(mousePosX.ReadValue<float>(), mousePosY.ReadValue<float>()));
+            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(inputActions.Player.MousePositionX.ReadValue<float>(), inputActions.Player.MousePositionY.ReadValue<float>()));
             Vector2 direction = (testi - (Vector2)transform.position).normalized;
             Vector2 directionNormal = direction.normalized;
             float angleMouse = Mathf.Atan2(-directionNormal.y, -directionNormal.x) * Mathf.Rad2Deg;
@@ -264,10 +275,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 propulsion.SetBool("MovingBackwards", false);
             }
-            if (mouseControlTimer <= 0)
-            {
-               // mouseControl = false;
-            }
+
             return true;
         }
         return false;
@@ -336,14 +344,7 @@ public class PlayerMovement : MonoBehaviour
                     rotationSpeedBasedOnRotationLength = rotationSpeedBasedOnRotationLength / 100 + 1;
                 }
 
-                if (rotationSpeedBasedOnRotationLength > cameraSmoothingMaxSpeed)
-                {
-                    // cameraSmoothing = true;
-                }
-                else
-                {
-                    // cameraSmoothing = false;
-                }
+
                 if (eulerRotation.z + rotationSpeed * rotationSpeedBasedOnRotationLength * Time.deltaTime - newRotation > -0.5f && eulerRotation.z < newRotation + 180)
                 {
                     transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
@@ -359,14 +360,7 @@ public class PlayerMovement : MonoBehaviour
 
                 rotationSpeedBasedOnRotationLength = rotationSpeedBasedOnRotationLength / 100 + 1;
 
-                if (rotationSpeedBasedOnRotationLength > cameraSmoothingMaxSpeed)
-                {
-                    // cameraSmoothing = true;
-                }
-                else
-                {
-                    // cameraSmoothing = false;
-                }
+
                 if (eulerRotation.z - rotationSpeed * rotationSpeedBasedOnRotationLength * Time.deltaTime - newRotation < 0.5f && eulerRotation.z > newRotation - 180)
                 {
                     transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, (int)newRotation);
