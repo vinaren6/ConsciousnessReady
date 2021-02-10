@@ -1,54 +1,33 @@
 ﻿using UnityEngine;
-using UnityEngine.InputSystem;
+
 
 public class PlayerMovement : MonoBehaviour
 {
 
-    [SerializeField] 
-    private float boostSpeed = 2.5f;
-
-    [SerializeField] 
-    private float rotationAcceleration = 10;
-
-    [SerializeField] 
-    private float rotationSpeed = 25;
-
-    [SerializeField] 
-    private float maxSpeed = 5.5f;
-
-    [SerializeField] 
-    private float dragWhileFloating = 1.5f;
-
-    [SerializeField] 
-    private float dragWhileMoving = 4.0f;
-
-    [SerializeField] 
-    private float mouseMoving = 2;
-
-    [SerializeField]
-    private Animator propulsion;
-
-    [SerializeField]
-    private Animator ship;
-
-
-    private InputActions input;
-
-    float boost = 1;
-    bool boostAnimationState;
+    static public GameObject playerObj;
     public float acceleration = 2f;
 
-    float oldMouseX;
-    float oldMouseY;
+    [SerializeField] private float maxSpeed = 5.5f;
+    [SerializeField] private float boostSpeed = 2.5f;
+    [SerializeField] private float rotationSpeed = 25;
+    [SerializeField] private float rotationAcceleration = 10;
+    [SerializeField] private float dragWhileFloating = 1.5f;
+    [SerializeField] private float dragWhileMoving = 4.0f;
+    [SerializeField] private float pixelsBeforeMouseMoves = 2;
+    [SerializeField] private float deadSpaceRotation = 0.2f;
+    [SerializeField] private Animator propulsion;
+    [SerializeField] private Animator ship;
 
+    InputActions input;
     Vector2 movement;
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
     Rigidbody2D rigidBody;
-    float deadSpaceRotation = 0.2f;
 
-    static public GameObject playerObj;
-
+    float boost = 1;
+    bool boostAnimationState;
+    float oldMouseX;
+    float oldMouseY;
     bool isGamepad = false;
 
 
@@ -78,6 +57,9 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+
+        #region Movement
+
         input.Player.MovementX.performed += context =>
         {
             if (context.control.displayName == "Left Stick Left")
@@ -99,11 +81,11 @@ public class PlayerMovement : MonoBehaviour
 
         input.Player.MovementY.performed += context =>
         {
-
             if (context.control.displayName == "Left Stick Down")
             {
                 isGamepad = true;
             }
+
             movement.y = context.ReadValue<float>();
             rigidBody.drag = dragWhileMoving;
         };
@@ -116,6 +98,10 @@ public class PlayerMovement : MonoBehaviour
                 rigidBody.drag = dragWhileFloating;
             }
         };
+
+        #endregion  
+
+        #region Rotation
 
         input.Player.RotationX.performed += context =>
         {
@@ -137,61 +123,55 @@ public class PlayerMovement : MonoBehaviour
 
         input.Player.RotationY.canceled += context => moveDirection.y = 0;
 
+        #endregion
+
+        #region Boost
+
         input.Player.Boost.started += context =>
         {
             boostAnimationState = true;
             boost = boostSpeed;
         };
 
-        input.Player.Boost.canceled += context => 
-        { 
+        input.Player.Boost.canceled += context =>
+        {
             boostAnimationState = false;
             boost = 1;
         };
+
+        #endregion
+
+        #region Slow
 
         input.Player.Slow.started += context =>
         {
             maxSpeed /= 2;
         };
 
-        input.Player.Slow.canceled += context => 
-        { 
-            maxSpeed *= 2; 
+        input.Player.Slow.canceled += context =>
+        {
+            maxSpeed *= 2;
         };
+
+        #endregion
     }
 
     private void Update()
     {
-        float oldRotation = transform.rotation.eulerAngles.z;
-
-        if (oldRotation < 0)
-        {
-            oldRotation = 360 + oldRotation;
-        }
-
         AnimationBasedOnVelocity();
 
         if (!MouseRotation())
         {
             if (moveDirection != Vector2.zero)
-            {
                 AnalogRotation();
-            }
+
             else
             {
                 propulsion.SetBool("MovingBackwards", false);
+
                 if (movement != Vector2.zero)
-                {
                     MovementRotation();
-                }
             }
-        }
-
-        float newRotation = transform.rotation.eulerAngles.z;
-
-        if (newRotation < 0)
-        {
-            newRotation = 360 + newRotation;
         }
 
         oldMouseY = input.Player.RotationY.ReadValue<float>();
@@ -210,20 +190,17 @@ public class PlayerMovement : MonoBehaviour
     private void AnimationBasedOnVelocity()
     {
         if (rigidBody.velocity.magnitude > 0.3)
-        {
             ship.SetBool("ShipMoving", true);
-        }
         else
-        {
             ship.SetBool("ShipMoving", false);
-        }
+
         propulsion.SetFloat("ShipVelocity", rigidBody.velocity.magnitude);
     }
 
 
     private bool MouseRotation()
     {
-        if (Mathf.Abs(oldMouseX - input.Player.MousePositionX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - input.Player.MousePositionY.ReadValue<float>()) > mouseMoving || input.Player.Shoot.ReadValue<float>() == 1)
+        if (Mathf.Abs(oldMouseX - input.Player.MousePositionX.ReadValue<float>()) > pixelsBeforeMouseMoves || Mathf.Abs(oldMouseY - input.Player.MousePositionY.ReadValue<float>()) > pixelsBeforeMouseMoves || input.Player.Shoot.ReadValue<float>() == 1)
         {
             isGamepad = false;
         }
@@ -233,11 +210,14 @@ public class PlayerMovement : MonoBehaviour
             Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(input.Player.MousePositionX.ReadValue<float>(), input.Player.MousePositionY.ReadValue<float>()));
             Vector2 direction = (testi - (Vector2)transform.position).normalized;
             Vector2 directionNormal = direction.normalized;
+
             float angleMouse = Mathf.Atan2(-directionNormal.y, -directionNormal.x) * Mathf.Rad2Deg;
             float rotationDirection = Camera.main.transform.eulerAngles.z + angleMouse + 90;
+
             transform.up = direction;
             float angleMovement = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
             float movementDirection = Camera.main.transform.eulerAngles.z + angleMovement + 90;
+
             if (movementDirection < 0)
             {
                 movementDirection = 360 + movementDirection;
