@@ -3,39 +3,50 @@ using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
+
+    [SerializeField] 
+    private float boostSpeed = 2.5f;
+
+    [SerializeField] 
+    private float rotationAcceleration = 10;
+
+    [SerializeField] 
+    private float rotationSpeed = 25;
+
+    [SerializeField] 
+    private float maxSpeed = 5.5f;
+
+    [SerializeField] 
+    private float dragWhileFloating = 1.5f;
+
+    [SerializeField] 
+    private float dragWhileMoving = 4.0f;
+
+    [SerializeField] 
+    private float mouseMoving = 2;
+
+    [SerializeField]
+    private Animator propulsion;
+
+    [SerializeField]
+    private Animator ship;
+
+
     private InputActions inputActions;
 
     float boost = 1;
-    [SerializeField] private float boostSpeed = 2.5f;
-
-    [SerializeField] private float boostTimerLength = 10;
-    [SerializeField] private float rotationAcceleration = 10;
-    [SerializeField] private float rotationSpeed = 25;
-    float boostTimer = 10;
-    bool isBoost;
-    [SerializeField] private float maxSpeedValue = 5.5f;
-    public float maxSpeed = 5.5f;
-    [SerializeField] float dragSlow = 1.5f;
-    [SerializeField] float dragFast = 4.0f;
+    bool boostAnimationState;
     public float acceleration = 2f;
-    [SerializeField] private bool newRotation;
-    [SerializeField] private bool alwaysBoost;
-    [SerializeField] private float mouseMoving = 2;
 
-    float mouseControlTimer;
-    [SerializeField] float mouseControlTimerLength;
     float oldMouseX;
     float oldMouseY;
-    public bool cameraSmoothing;
-    [SerializeField] private float cameraSmoothingMaxSpeed = 1;
+
     Vector2 movement;
     Vector2 moveDirection;
     Quaternion moveDirectioJoyCon;
-    Rigidbody2D rb2d;
+    Rigidbody2D rigidBody;
     float deadSpaceRotation = 0.2f;
-    [SerializeField] Animator propulsion;
-    [SerializeField] Animator ship;
-    //statice refrence to the player obj.
+
     static public GameObject playerObj;
 
     bool isGamepad = false;
@@ -66,10 +77,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Start()
     {
-        maxSpeed = maxSpeedValue;
-        boostTimer = boostTimerLength;
-
-        rb2d = GetComponent<Rigidbody2D>();
+        rigidBody = GetComponent<Rigidbody2D>();
         inputActions.Player.MovementX.performed += context =>
         {
             if (context.control.displayName == "Left Stick Left")
@@ -77,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
                 isGamepad = true;
             }
             movement.x = context.ReadValue<float>();
-            rb2d.drag = dragFast;
+            rigidBody.drag = dragWhileMoving;
         };
 
         inputActions.Player.MovementX.canceled += context =>
@@ -85,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
             movement.x = 0;
             if (movement.y == 0)
             {
-                rb2d.drag = dragSlow;
+                rigidBody.drag = dragWhileFloating;
             }
         };
 
@@ -97,7 +105,7 @@ public class PlayerMovement : MonoBehaviour
                 isGamepad = true;
             }
             movement.y = context.ReadValue<float>();
-            rb2d.drag = dragFast;
+            rigidBody.drag = dragWhileMoving;
         };
 
         inputActions.Player.MovementY.canceled += context =>
@@ -105,7 +113,7 @@ public class PlayerMovement : MonoBehaviour
             movement.y = 0;
             if (movement.x == 0)
             {
-                rb2d.drag = dragSlow;
+                rigidBody.drag = dragWhileFloating;
             }
         };
 
@@ -131,21 +139,14 @@ public class PlayerMovement : MonoBehaviour
 
         inputActions.Player.Boost.started += context =>
         {
-            if (boostTimer > 0)
-            {
-                isBoost = true;
-                boost = boostSpeed;
-            }
-            else
-            {
-                isBoost = false;
-            }
+            boostAnimationState = true;
+            boost = boostSpeed;
         };
 
         inputActions.Player.Boost.canceled += context => 
         { 
-            boost = 1; 
-            isBoost = false; 
+            boostAnimationState = false;
+            boost = 1;
         };
 
         inputActions.Player.Slow.started += context =>
@@ -162,12 +163,14 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         float oldRotation = transform.rotation.eulerAngles.z;
+
         if (oldRotation < 0)
         {
             oldRotation = 360 + oldRotation;
         }
+
         AnimationBasedOnVelocity();
-        Boost();
+
         if (!MouseRotation())
         {
             if (moveDirection != Vector2.zero)
@@ -183,35 +186,30 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+
         float newRotation = transform.rotation.eulerAngles.z;
+
         if (newRotation < 0)
         {
             newRotation = 360 + newRotation;
         }
-        if (Mathf.Abs(oldRotation - newRotation) > cameraSmoothingMaxSpeed)
-        {
-            cameraSmoothing = true;
-        }
-        else
-        {
-            cameraSmoothing = false;
-        }
+
         oldMouseY = inputActions.Player.RotationY.ReadValue<float>();
         oldMouseX = inputActions.Player.RotationX.ReadValue<float>();
-        propulsion.SetBool("NitroBoost", isBoost);
+        propulsion.SetBool("NitroBoost", boostAnimationState);
     }
 
     private void FixedUpdate()
     {
-        if (rb2d.velocity.magnitude < movement.magnitude * maxSpeed * boost)
+        if (rigidBody.velocity.magnitude < movement.magnitude * maxSpeed * boost)
         {
-            rb2d.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boost * Time.fixedDeltaTime, ForceMode2D.Impulse);
+            rigidBody.AddForce(movement.normalized * new Vector2(Mathf.Abs(movement.x), Mathf.Abs(movement.y)) * acceleration * boost * Time.fixedDeltaTime, ForceMode2D.Impulse);
         }
     }
 
     private void AnimationBasedOnVelocity()
     {
-        if (rb2d.velocity.magnitude > 0.3)
+        if (rigidBody.velocity.magnitude > 0.3)
         {
             ship.SetBool("ShipMoving", true);
         }
@@ -219,39 +217,17 @@ public class PlayerMovement : MonoBehaviour
         {
             ship.SetBool("ShipMoving", false);
         }
-        propulsion.SetFloat("ShipVelocity", rb2d.velocity.magnitude);
+        propulsion.SetFloat("ShipVelocity", rigidBody.velocity.magnitude);
     }
 
-    private void Boost()
-    {
-        if (isBoost)
-        {
-            if (!alwaysBoost)
-            {
-                boostTimer -= Time.deltaTime;
-            }
-            if (boostTimer <= 0)
-            {
-                isBoost = false;
-            }
-        }
-        else
-        {
-            boost = 1;
-            if (boostTimer < boostTimerLength)
-            {
-                boostTimer += Time.deltaTime;
-            }
-        }
-    }
 
     private bool MouseRotation()
     {
         if (Mathf.Abs(oldMouseX - inputActions.Player.MousePositionX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - inputActions.Player.MousePositionY.ReadValue<float>()) > mouseMoving || inputActions.Player.Shoot.ReadValue<float>() == 1)
         {
-            mouseControlTimer = mouseControlTimerLength;
             isGamepad = false;
         }
+
         if (!isGamepad)
         {
             Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(inputActions.Player.MousePositionX.ReadValue<float>(), inputActions.Player.MousePositionY.ReadValue<float>()));
@@ -260,7 +236,6 @@ public class PlayerMovement : MonoBehaviour
             float angleMouse = Mathf.Atan2(-directionNormal.y, -directionNormal.x) * Mathf.Rad2Deg;
             float rotationDirection = Camera.main.transform.eulerAngles.z + angleMouse + 90;
             transform.up = direction;
-            mouseControlTimer -= Time.deltaTime;
             float angleMovement = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
             float movementDirection = Camera.main.transform.eulerAngles.z + angleMovement + 90;
             if (movementDirection < 0)
@@ -307,6 +282,7 @@ public class PlayerMovement : MonoBehaviour
             propulsion.SetBool("MovingBackwards", false);
         }
     }
+
     private void MovementRotation()
     {
         float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;

@@ -2970,7 +2970,7 @@ PrefabInstance:
       objectReference: {fileID: 342494354}
     - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 867844631, guid: f33f893b4661e3a46a0ba15a5933ff2a, type: 3}
       propertyPath: hookAnchor
@@ -3067,7 +3067,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 867844626}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 867844630}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f1b5ee2f2215564b87240c09f028428, type: 3}
   m_Name: 

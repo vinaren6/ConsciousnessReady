@@ -68,7 +68,7 @@ public class AbilityHook : MonoBehaviour
         playerRigidBody = GetComponent<Rigidbody2D>();
         playerMovement = GetComponent<PlayerMovement>();
 
-        savedPlayerMaxSpeed = playerMovement.maxSpeed;
+        //savedPlayerMaxSpeed = playerMovement.maxSpeed;
         savedPlayerAcceleration = playerMovement.acceleration;
     }
 
@@ -140,16 +140,16 @@ public class AbilityHook : MonoBehaviour
     private void AttachAnchorToPlayer()
     {
         hookAnchor.connectedBody = this.playerRigidBody;
-        playerMovement.acceleration = 20000;
-        playerMovement.maxSpeed = 15000;
+        //playerMovement.acceleration = 20000;
+        //playerMovement.maxSpeed = 15000;
 
     }
 
     private void AttachAnchorToPhantom()
     {
         hookAnchor.connectedBody = playerPhantom.GetComponent<Rigidbody2D>();
-        playerMovement.maxSpeed = savedPlayerMaxSpeed;
-        playerMovement.acceleration = savedPlayerAcceleration;
+        //playerMovement.maxSpeed = savedPlayerMaxSpeed;
+        //playerMovement.acceleration = savedPlayerAcceleration;
     }
 
     private void RetractHook()
