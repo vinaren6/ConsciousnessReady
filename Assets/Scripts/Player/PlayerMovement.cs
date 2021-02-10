@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     private Animator ship;
 
 
-    private InputActions inputActions;
+    private InputActions input;
 
     float boost = 1;
     bool boostAnimationState;
@@ -54,17 +54,17 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnEnable()
     {
-        inputActions.Enable();
+        input.Enable();
     }
 
     private void OnDisable()
     {
-        inputActions.Disable();
+        input.Disable();
     }
 
     private void Awake()
     {
-        inputActions = new InputActions();
+        input = new InputActions();
 
         playerObj = gameObject;
     }
@@ -78,7 +78,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
-        inputActions.Player.MovementX.performed += context =>
+        input.Player.MovementX.performed += context =>
         {
             if (context.control.displayName == "Left Stick Left")
             {
@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
             rigidBody.drag = dragWhileMoving;
         };
 
-        inputActions.Player.MovementX.canceled += context =>
+        input.Player.MovementX.canceled += context =>
         {
             movement.x = 0;
             if (movement.y == 0)
@@ -97,7 +97,7 @@ public class PlayerMovement : MonoBehaviour
             }
         };
 
-        inputActions.Player.MovementY.performed += context =>
+        input.Player.MovementY.performed += context =>
         {
 
             if (context.control.displayName == "Left Stick Down")
@@ -108,7 +108,7 @@ public class PlayerMovement : MonoBehaviour
             rigidBody.drag = dragWhileMoving;
         };
 
-        inputActions.Player.MovementY.canceled += context =>
+        input.Player.MovementY.canceled += context =>
         {
             movement.y = 0;
             if (movement.x == 0)
@@ -117,44 +117,44 @@ public class PlayerMovement : MonoBehaviour
             }
         };
 
-        inputActions.Player.RotationX.performed += context =>
+        input.Player.RotationX.performed += context =>
         {
-            if (Mathf.Abs(inputActions.Player.MovementY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(inputActions.Player.MovementX.ReadValue<float>()) > deadSpaceRotation)
+            if (Mathf.Abs(input.Player.MovementY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(input.Player.MovementX.ReadValue<float>()) > deadSpaceRotation)
             {
                 moveDirection.x = context.ReadValue<float>();
             }
         };
-        inputActions.Player.RotationX.canceled += context => moveDirection.x = 0;
+        input.Player.RotationX.canceled += context => moveDirection.x = 0;
 
 
-        inputActions.Player.RotationY.performed += context =>
+        input.Player.RotationY.performed += context =>
         {
-            if (Mathf.Abs(inputActions.Player.RotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(inputActions.Player.RotationY.ReadValue<float>()) > deadSpaceRotation)
+            if (Mathf.Abs(input.Player.RotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(input.Player.RotationX.ReadValue<float>()) > deadSpaceRotation)
             {
                 moveDirection.y = context.ReadValue<float>();
             }
         };
 
-        inputActions.Player.RotationY.canceled += context => moveDirection.y = 0;
+        input.Player.RotationY.canceled += context => moveDirection.y = 0;
 
-        inputActions.Player.Boost.started += context =>
+        input.Player.Boost.started += context =>
         {
             boostAnimationState = true;
             boost = boostSpeed;
         };
 
-        inputActions.Player.Boost.canceled += context => 
+        input.Player.Boost.canceled += context => 
         { 
             boostAnimationState = false;
             boost = 1;
         };
 
-        inputActions.Player.Slow.started += context =>
+        input.Player.Slow.started += context =>
         {
             maxSpeed /= 2;
         };
 
-        inputActions.Player.Slow.canceled += context => 
+        input.Player.Slow.canceled += context => 
         { 
             maxSpeed *= 2; 
         };
@@ -194,8 +194,8 @@ public class PlayerMovement : MonoBehaviour
             newRotation = 360 + newRotation;
         }
 
-        oldMouseY = inputActions.Player.RotationY.ReadValue<float>();
-        oldMouseX = inputActions.Player.RotationX.ReadValue<float>();
+        oldMouseY = input.Player.RotationY.ReadValue<float>();
+        oldMouseX = input.Player.RotationX.ReadValue<float>();
         propulsion.SetBool("NitroBoost", boostAnimationState);
     }
 
@@ -223,14 +223,14 @@ public class PlayerMovement : MonoBehaviour
 
     private bool MouseRotation()
     {
-        if (Mathf.Abs(oldMouseX - inputActions.Player.MousePositionX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - inputActions.Player.MousePositionY.ReadValue<float>()) > mouseMoving || inputActions.Player.Shoot.ReadValue<float>() == 1)
+        if (Mathf.Abs(oldMouseX - input.Player.MousePositionX.ReadValue<float>()) > mouseMoving || Mathf.Abs(oldMouseY - input.Player.MousePositionY.ReadValue<float>()) > mouseMoving || input.Player.Shoot.ReadValue<float>() == 1)
         {
             isGamepad = false;
         }
 
         if (!isGamepad)
         {
-            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(inputActions.Player.MousePositionX.ReadValue<float>(), inputActions.Player.MousePositionY.ReadValue<float>()));
+            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(input.Player.MousePositionX.ReadValue<float>(), input.Player.MousePositionY.ReadValue<float>()));
             Vector2 direction = (testi - (Vector2)transform.position).normalized;
             Vector2 directionNormal = direction.normalized;
             float angleMouse = Mathf.Atan2(-directionNormal.y, -directionNormal.x) * Mathf.Rad2Deg;
