@@ -219,7 +219,7 @@ public class ConsoleController
             return;
         }
 
-        Health h = PlayerMovement.playerObj.GetComponent<Health>();
+        Health h = PlayerMovement.playerObject.GetComponent<Health>();
 
         if (args.Length > 1) {
             if (!Int32.TryParse(args[1], out int maxHp)) {
@@ -267,7 +267,7 @@ public class ConsoleController
             return;
         }
 
-        PlayerMovement.playerObj.transform.position = new Vector3(posx, posy);
+        PlayerMovement.playerObject.transform.position = new Vector3(posx, posy);
     }
 
     void TeleportToExit(string[] args)
@@ -275,7 +275,7 @@ public class ConsoleController
         Cell[] cells = WorldGenerationHandler.instance.gameObject.GetComponentsInChildren<Cell>();
         foreach (Cell cell in cells) {
             if (cell.type == Enum.CellType.End) {
-                PlayerMovement.playerObj.transform.position = cell.transform.position;
+                PlayerMovement.playerObject.transform.position = cell.transform.position;
                 return;
             }
         }
@@ -291,15 +291,15 @@ public class ConsoleController
             }
         }
         int id = 0;
-        float dist = Vector3.Distance(PlayerMovement.playerObj.transform.position, outposts[0].transform.position);
+        float dist = Vector3.Distance(PlayerMovement.playerObject.transform.position, outposts[0].transform.position);
         for (int i = 1; i < outposts.Count; i++) {
-            float d = Vector3.Distance(PlayerMovement.playerObj.transform.position, outposts[i].transform.position);
+            float d = Vector3.Distance(PlayerMovement.playerObject.transform.position, outposts[i].transform.position);
             if (d < dist) {
                 dist = d;
                 id = i;
             }
         }
-        PlayerMovement.playerObj.transform.position = outposts[id].transform.position;
+        PlayerMovement.playerObject.transform.position = outposts[id].transform.position;
     }
 
     void Clear(string[] args)
@@ -310,10 +310,10 @@ public class ConsoleController
     void Kill(string[] args)
     {
         if (args.Length > 0 && float.TryParse(args[0], out float t)) {
-            GameObject.Destroy(PlayerMovement.playerObj, t);
+            GameObject.Destroy(PlayerMovement.playerObject, t);
             return;
         }
-        PlayerMovement.playerObj.GetComponent<Health>().Die();
+        PlayerMovement.playerObject.GetComponent<Health>().Die();
     }
 
     #endregion

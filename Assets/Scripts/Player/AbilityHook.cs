@@ -69,7 +69,7 @@ public class AbilityHook : MonoBehaviour
         playerMovement = GetComponent<PlayerMovement>();
 
         //savedPlayerMaxSpeed = playerMovement.maxSpeed;
-        savedPlayerAcceleration = playerMovement.acceleration;
+        //savedPlayerAcceleration = playerMovement.acceleration;
     }
 
     private void ExtendHook()

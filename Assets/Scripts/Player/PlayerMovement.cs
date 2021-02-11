@@ -1,18 +1,16 @@
 ﻿using UnityEngine;
-
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
 
-    static public GameObject playerObj;
-    public float acceleration = 2f;
+    static public GameObject playerObject;
 
     [SerializeField] private float maxSpeed = 5.5f;
+    [SerializeField] private float acceleration = 2f;
     [SerializeField] private float boostSpeed = 2.5f;
-    [SerializeField] private float rotationSpeed = 25;
-    [SerializeField] private float rotationAcceleration = 10;
-    [SerializeField] private float dragWhileFloating = 1.5f;
     [SerializeField] private float dragWhileMoving = 4.0f;
+    [SerializeField] private float dragWhileFloating = 1.5f;
     [SerializeField] private float pixelsBeforeMouseMoves = 2;
     [SerializeField] private float deadSpaceRotation = 0.2f;
     [SerializeField] private Animator propulsion;
@@ -21,14 +19,13 @@ public class PlayerMovement : MonoBehaviour
     InputActions input;
     Vector2 movement;
     Vector2 moveDirection;
-    Quaternion moveDirectioJoyCon;
     Rigidbody2D rigidBody;
 
     float boost = 1;
     bool boostAnimationState;
     float oldMouseX;
     float oldMouseY;
-    bool isGamepad = false;
+    bool isGamepad;
 
 
     private void OnEnable()
@@ -45,12 +42,12 @@ public class PlayerMovement : MonoBehaviour
     {
         input = new InputActions();
 
-        playerObj = gameObject;
+        playerObject = gameObject;
     }
 
     private void OnDestroy()
     {
-        playerObj = null;
+        playerObject = null;
     }
 
 
@@ -62,10 +59,7 @@ public class PlayerMovement : MonoBehaviour
 
         input.Player.MovementX.performed += context =>
         {
-            if (context.control.displayName == "Left Stick Left")
-            {
-                isGamepad = true;
-            }
+            GetInputMethod(context);
             movement.x = context.ReadValue<float>();
             rigidBody.drag = dragWhileMoving;
         };
@@ -81,10 +75,7 @@ public class PlayerMovement : MonoBehaviour
 
         input.Player.MovementY.performed += context =>
         {
-            if (context.control.displayName == "Left Stick Down")
-            {
-                isGamepad = true;
-            }
+            GetInputMethod(context);
 
             movement.y = context.ReadValue<float>();
             rigidBody.drag = dragWhileMoving;
@@ -105,20 +96,17 @@ public class PlayerMovement : MonoBehaviour
 
         input.Player.RotationX.performed += context =>
         {
-            if (Mathf.Abs(input.Player.MovementY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(input.Player.MovementX.ReadValue<float>()) > deadSpaceRotation)
-            {
-                moveDirection.x = context.ReadValue<float>();
-            }
+            moveDirection.x = context.ReadValue<float>();
+
         };
         input.Player.RotationX.canceled += context => moveDirection.x = 0;
 
 
         input.Player.RotationY.performed += context =>
         {
-            if (Mathf.Abs(input.Player.RotationY.ReadValue<float>()) > deadSpaceRotation || Mathf.Abs(input.Player.RotationX.ReadValue<float>()) > deadSpaceRotation)
-            {
-                moveDirection.y = context.ReadValue<float>();
-            }
+
+            moveDirection.y = context.ReadValue<float>();
+
         };
 
         input.Player.RotationY.canceled += context => moveDirection.y = 0;
@@ -156,23 +144,32 @@ public class PlayerMovement : MonoBehaviour
         #endregion
     }
 
+    private void GetInputMethod(InputAction.CallbackContext context)
+    {
+        if (context.control.displayName == "Left Stick Left" || context.control.displayName == "Left Stick Right" ||
+            context.control.displayName == "Right Stick Left" || context.control.displayName == "Right Stick Right")
+        {
+            isGamepad = true;
+        }
+        else
+        {
+            isGamepad = false;
+        }
+    }
+
     private void Update()
     {
         AnimationBasedOnVelocity();
 
-        if (!MouseRotation())
+        if (!isGamepad)
         {
-            if (moveDirection != Vector2.zero)
-                AnalogRotation();
-
-            else
-            {
-                propulsion.SetBool("MovingBackwards", false);
-
-                if (movement != Vector2.zero)
-                    MovementRotation();
-            }
+            MouseRotation();
         }
+        else
+        {
+            GamepadRotation();
+        }
+
 
         oldMouseY = input.Player.RotationY.ReadValue<float>();
         oldMouseX = input.Player.RotationX.ReadValue<float>();
@@ -198,62 +195,25 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    private bool MouseRotation()
+    private void MouseRotation()
     {
-        if (Mathf.Abs(oldMouseX - input.Player.MousePositionX.ReadValue<float>()) > pixelsBeforeMouseMoves || Mathf.Abs(oldMouseY - input.Player.MousePositionY.ReadValue<float>()) > pixelsBeforeMouseMoves || input.Player.Shoot.ReadValue<float>() == 1)
-        {
-            isGamepad = false;
-        }
 
-        if (!isGamepad)
-        {
-            Vector2 testi = Camera.main.ScreenToWorldPoint(new Vector2(input.Player.MousePositionX.ReadValue<float>(), input.Player.MousePositionY.ReadValue<float>()));
-            Vector2 direction = (testi - (Vector2)transform.position).normalized;
-            Vector2 directionNormal = direction.normalized;
+        Vector2 mouseScreenCoordinate = Camera.main.ScreenToWorldPoint(new Vector2(input.Player.MousePositionX.ReadValue<float>(), input.Player.MousePositionY.ReadValue<float>()));
+        Vector2 direction = (mouseScreenCoordinate - (Vector2)transform.position).normalized;
 
-            float angleMouse = Mathf.Atan2(-directionNormal.y, -directionNormal.x) * Mathf.Rad2Deg;
-            float rotationDirection = Camera.main.transform.eulerAngles.z + angleMouse + 90;
+        transform.up = direction;
 
-            transform.up = direction;
-            float angleMovement = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
-            float movementDirection = Camera.main.transform.eulerAngles.z + angleMovement + 90;
+        // Set Propulsion Animation State
+        float rotationDirection = Mathf.Atan2(-direction.y, -direction.x) * Mathf.Rad2Deg + 90;
+        float movementDirection = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg + 90;
 
-            if (movementDirection < 0)
-            {
-                movementDirection = 360 + movementDirection;
-            }
-            if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) || (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
-            {
-                propulsion.SetBool("MovingBackwards", true);
-            }
-            else
-            {
-                propulsion.SetBool("MovingBackwards", false);
-            }
-
-            return true;
-        }
-        return false;
-    }
-    private void AnalogRotation()
-    {
-        float angle = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg;
-
-        moveDirectioJoyCon = Quaternion.AngleAxis(angle + 90, Vector3.forward);
-
-        transform.rotation = moveDirectioJoyCon;
-        float rotationDirection = Camera.main.transform.eulerAngles.z + angle + 90;
-        if (rotationDirection < 0)
-        {
-            rotationDirection = 360 + rotationDirection;
-        }
-        float angleMovement = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
-        float movementDirection = Camera.main.transform.eulerAngles.z + angleMovement + 90;
         if (movementDirection < 0)
         {
             movementDirection = 360 + movementDirection;
         }
-        if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) || (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
+
+        if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) ||
+            (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
         {
             propulsion.SetBool("MovingBackwards", true);
         }
@@ -263,69 +223,35 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void MovementRotation()
+    private void GamepadRotation()
     {
-        float angle = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg;
-        float newRotation = Camera.main.transform.eulerAngles.z + angle + 90;
+        float rotationDirection = Mathf.Atan2(moveDirection.y, moveDirection.x) * Mathf.Rad2Deg + 90;
+        float movementDirection = Mathf.Atan2(-movement.y, -movement.x) * Mathf.Rad2Deg + 90;
 
-        if (newRotation < 0)
+        transform.rotation = Quaternion.AngleAxis(rotationDirection, Vector3.forward);
+
+        // Set Propulsion Animation State
+
+        if (rotationDirection < 0)
         {
-            newRotation = 360 + newRotation;
+            rotationDirection = 360 + rotationDirection;
         }
 
-        Vector3 eulerRotation = transform.rotation.eulerAngles;
-        if (newRotation < eulerRotation.z - 0.5 || newRotation > eulerRotation.z + 0.5)
+        if (movementDirection < 0)
         {
-
-            if (eulerRotation.z > 359)
-            {
-                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 0);
-                eulerRotation = transform.rotation.eulerAngles;
-            }
-            if (eulerRotation.z < 0)
-            {
-                transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, 358);
-                eulerRotation = transform.rotation.eulerAngles;
-            }
-            if ((newRotation - eulerRotation.z <= 180 && newRotation - eulerRotation.z >= 0) || newRotation - eulerRotation.z <= -180)
-            {
-                float rotationSpeedBasedOnRotationLength = newRotation - eulerRotation.z;
-
-                if (rotationSpeedBasedOnRotationLength < -180)
-                {
-                    rotationSpeedBasedOnRotationLength = 1 + (180 - Mathf.Abs(rotationSpeedBasedOnRotationLength + 180)) / 100;
-                }
-                else
-                {
-                    rotationSpeedBasedOnRotationLength = rotationSpeedBasedOnRotationLength / 100 + 1;
-                }
-
-
-                if (eulerRotation.z + rotationSpeed * rotationSpeedBasedOnRotationLength * Time.deltaTime - newRotation > -0.5f && eulerRotation.z < newRotation + 180)
-                {
-                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, newRotation);
-                }
-                else
-                {
-                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z + rotationSpeed * rotationSpeedBasedOnRotationLength * rotationAcceleration * Time.deltaTime);
-                }
-            }
-            else if (newRotation - eulerRotation.z >= 180 || (newRotation - eulerRotation.z < 0 && newRotation - eulerRotation.z > -180))
-            {
-                float rotationSpeedBasedOnRotationLength = Mathf.Abs(newRotation - eulerRotation.z);
-
-                rotationSpeedBasedOnRotationLength = rotationSpeedBasedOnRotationLength / 100 + 1;
-
-
-                if (eulerRotation.z - rotationSpeed * rotationSpeedBasedOnRotationLength * Time.deltaTime - newRotation < 0.5f && eulerRotation.z > newRotation - 180)
-                {
-                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, (int)newRotation);
-                }
-                else
-                {
-                    transform.rotation = Quaternion.Euler(eulerRotation.x, eulerRotation.y, eulerRotation.z - rotationSpeed * rotationSpeedBasedOnRotationLength * rotationAcceleration * Time.deltaTime);
-                }
-            }
+            movementDirection = 360 + movementDirection;
         }
+
+        if ((movementDirection - rotationDirection <= -90 && movementDirection - rotationDirection >= -270) ||
+            (movementDirection - rotationDirection >= 90 && movementDirection - rotationDirection <= 270))
+        {
+            propulsion.SetBool("MovingBackwards", true);
+        }
+        else
+        {
+            propulsion.SetBool("MovingBackwards", false);
+        }
+
     }
+
 }

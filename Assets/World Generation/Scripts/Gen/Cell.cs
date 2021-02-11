@@ -159,7 +159,7 @@ public class Cell : MonoBehaviour
             GameObject[] objs = scene.GetRootGameObjects();
             for (int i = 0; i < objs.Length; i++) {
                 if (((1 << objs[i].layer) & WorldGenerationHandler.instance.settings.movebleObjs.value) == 1) {
-                    if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObj.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
+                    if (Vector3.Distance(objs[i].transform.position, PlayerMovement.playerObject.transform.position) < WorldGenerationHandler.instance.settings.dontUnloadObjInDistance) {
                         int sc = SceneManager.sceneCount - 1;
                         if (SceneManager.GetSceneAt(sc) == scene)
                             sc--;

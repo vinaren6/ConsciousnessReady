@@ -9,7 +9,7 @@ public class HealthBar : MonoBehaviour
     private void Start()
     {
         if (hp == null) {
-            hp = PlayerMovement.playerObj.GetComponent<Health>();
+            hp = PlayerMovement.playerObject.GetComponent<Health>();
         }
     }
 

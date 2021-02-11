@@ -79,7 +79,7 @@ public class AI : MonoBehaviour
 
         rb2d = GetComponent<Rigidbody2D>();
         if (target == null) {
-            target = PlayerMovement.playerObj.transform;
+            target = PlayerMovement.playerObject.transform;
         }
         targetRB2D = target.GetComponent<Rigidbody2D>();
 
